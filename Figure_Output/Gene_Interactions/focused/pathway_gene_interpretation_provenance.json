@@ -1,0 +1,67 @@
+{
+  "input_sha256": {
+    "Files_For_Manuscript/gene_interactions_reference/pathways_hallmark_2026.1.gmt": "eecaf6dad908334ae885406ec72bdc0646d8917588ed7c219fac92fc5363f596",
+    "Files_For_Manuscript/gene_interactions_reference/pathways_reactome_2026.1.gmt": "5d61f289a2400cddfbb3a3353829fd2284a360bbe50f2093b566c4b7bea93341",
+    "Files_For_Manuscript/gene_interactions_reference/spi1_dorothea_targets.tsv": "cc6e0fd0c2d2943320879b5f2b2dcc26177d13d90df3e787ae36708418af8baf",
+    "Files_For_Manuscript/gene_interactions_reference/spi1_dorothea_sources.json": "90d39f73a2fa640f5667fe40b4709e4e7e78eac4b8e65f7d21b2cff8f60d8c11",
+    "Files_For_Manuscript/gene_interactions_reference/gene_function_evidence.json": "a5ef7a6d7fc1293b147947401eeeb9aa53747a922f8781f17bf1d1b2aaf89702",
+    "Figure_Output/Gene_Interactions/focused/xgboost_cv_shap_interactions.csv": "79f30323f6d09d46ed8e59c75c042223e85e53fddc71ffe1233d0d3fce4d185b",
+    "Figure_Output/Gene_Interactions/focused/pathway_provenance.json": "32bbda6ae597194dceeca27726e43fa0d5c3b4e62008b01930cad1eff4f624ed"
+  },
+  "xgboost_genes": [
+    "GBP5",
+    "AHNAK",
+    "JMJD1C",
+    "MNDA",
+    "LYZ",
+    "SPI1"
+  ],
+  "paper_genes": [
+    "GBP5",
+    "BNIP3L",
+    "KLF6",
+    "DYSF",
+    "LASP1",
+    "PCBP1"
+  ],
+  "excluded_from_new_scores": [
+    "GBP5",
+    "AHNAK",
+    "JMJD1C",
+    "MNDA",
+    "LYZ",
+    "SPI1",
+    "BNIP3L",
+    "KLF6",
+    "DYSF",
+    "LASP1",
+    "PCBP1"
+  ],
+  "programs": {
+    "HALLMARK_INTERFERON_ALPHA_RESPONSE": "Interferon alpha",
+    "HALLMARK_INTERFERON_GAMMA_RESPONSE": "Interferon gamma",
+    "HALLMARK_TNFA_SIGNALING_VIA_NFKB": "TNF / NF-kB",
+    "HALLMARK_INFLAMMATORY_RESPONSE": "Inflammatory response",
+    "REACTOME_NEUTROPHIL_DEGRANULATION": "Neutrophil degranulation",
+    "HALLMARK_IL2_STAT5_SIGNALING": "IL2 / STAT5",
+    "REACTOME_FACTORS_INVOLVED_IN_MEGAKARYOCYTE_DEVELOPMENT_AND_PLATELET_PRODUCTION": "Megakaryocyte / platelet",
+    "SPI1_TARGETS": "SPI1 signed targets"
+  },
+  "expression_source": "Training-reference VST; original pathway inputs and hashes are recorded in pathway_provenance.json",
+  "gene_bh_tests": 66,
+  "program_bh_tests": 48,
+  "gene_program_bh_tests": 288,
+  "residual_pairs_descriptive": 90,
+  "program_standardization": "Gene and composite sample SDs fitted on training only; signed mean for SPI1, equal positive means for curated sets",
+  "regression": "Separate splits; TB + cohort with/without broad composition; HC3 covariance and residual-df t intervals",
+  "pair_shap_source": "Saved original model explanation; separate split-specific VST, not the new expression matrix",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "scipy": "1.13.1",
+    "statsmodels": "0.14.6",
+    "gseapy": "1.1.13"
+  },
+  "resources": "Numerical libraries limited to one thread; GSEA workers limited to two",
+  "literature_review_date": "2026-10-21"
+}

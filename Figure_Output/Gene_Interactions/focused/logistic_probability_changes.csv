@@ -1,0 +1,245 @@
+comparison,sample_id,tb_positive,true_class_probability_change_pp
+No penalty vs paper,GHL109_combined_61bp,1,0.21022134478826393
+No penalty vs paper,GHL114_combined_61bp,1,0.38331642196333116
+No penalty vs paper,GHL119_combined_61bp,1,3.641185204084829
+No penalty vs paper,GHL123_combined_61bp,1,7.7806503067393
+No penalty vs paper,GHL128_combined_61bp,0,15.69098200672962
+No penalty vs paper,GHL131_combined_61bp,1,-1.7585231426853531
+No penalty vs paper,GHL132_combined_61bp,0,-5.157220322331618
+No penalty vs paper,GHL138_combined_61bp,0,-1.6182134278126092
+No penalty vs paper,GHL144_combined_61bp,1,4.564676626557307
+No penalty vs paper,GHL161_combined_61bp,0,-12.74213390138222
+No penalty vs paper,GHL166_combined_61bp,0,10.845311225168253
+No penalty vs paper,GHL172_combined_61bp,0,-0.5036625700495574
+No penalty vs paper,GHL188_combined_61bp,0,-1.3353598101091144
+No penalty vs paper,GHL206_combined_61bp,1,-0.026076642815120454
+No penalty vs paper,GHL208_combined_61bp,1,6.988941346121891
+No penalty vs paper,GHL210_combined_61bp,0,-1.7991264932492284
+No penalty vs paper,GHL229_combined_61bp,1,1.1266084753973726
+No penalty vs paper,GHL235_combined_61bp,1,0.04273536399683753
+No penalty vs paper,GHL248_combined_61bp,1,0.024140821205065333
+No penalty vs paper,GHL264_combined_61bp,1,4.845129236000723
+No penalty vs paper,GHL269_combined_61bp,0,3.967271888223678
+No penalty vs paper,GHL27_combined_61bp,1,13.47158137686587
+No penalty vs paper,GHL3_combined_61bp,0,-10.28622511593637
+No penalty vs paper,GHL34_combined_61bp,1,0.5273112558357829
+No penalty vs paper,GHL45_combined_61bp,1,1.017413176748816
+No penalty vs paper,GHL56_combined_61bp,1,-0.4822652462057042
+No penalty vs paper,GHL58_combined_61bp,0,1.0271869356172303
+No penalty vs paper,GHL72_combined_61bp,1,3.57091670106382
+No penalty vs paper,GHL89_combined_61bp,0,-0.10443322323238635
+No penalty vs paper,GHL93_combined_61bp,1,0.8981031539105011
+No penalty vs paper,R2D2_P114_combined_61bp,0,-5.509981816972326
+No penalty vs paper,R2D2_P118_combined_61bp,0,-0.4862107949502342
+No penalty vs paper,R2D2_P119_combined_61bp,0,1.8850584067444096
+No penalty vs paper,R2D2_P124_combined_61bp,1,-0.9746931296287342
+No penalty vs paper,R2D2_P127_combined_61bp,0,0.1768957480411837
+No penalty vs paper,R2D2_P131_combined_61bp,0,6.779375494255624
+No penalty vs paper,R2D2_P232_combined_61bp,1,3.2203684551796674
+No penalty vs paper,R2D2_P33_combined_61bp,1,-0.7496917657502822
+No penalty vs paper,R2D2_U102_combined_61bp,0,8.630578927196092
+No penalty vs paper,R2D2_U103_combined_61bp,0,-19.269607109762187
+No penalty vs paper,R2D2_U112_combined_61bp,0,25.53991830499755
+No penalty vs paper,R2D2_U114_combined_61bp,0,1.4668489220940328
+No penalty vs paper,R2D2_U131_combined_61bp,0,2.673010712547112
+No penalty vs paper,R2D2_U132_combined_61bp,0,6.7145929008777365
+No penalty vs paper,R2D2_U133_combined_61bp,0,7.862861734404203
+No penalty vs paper,R2D2_U269_combined_61bp,1,0.7926620732589873
+No penalty vs paper,R2D2_U312_combined_61bp,1,13.50846361423531
+No penalty vs paper,R2D2_U315_combined_61bp,1,2.6286474664294013
+No penalty vs paper,R2D2_U323_combined_61bp,1,8.7012933787325
+No penalty vs paper,R2D2_U329_combined_61bp,1,2.7645005027316483
+No penalty vs paper,R2D2_U332_combined_61bp,1,0.2257171385641854
+No penalty vs paper,R2D2_V130_combined_61bp,1,23.97015467708261
+No penalty vs paper,R2D2_V139_combined_61bp,0,-9.879247218090024
+No penalty vs paper,R2D2_V143_combined_61bp,0,4.2944619452319195
+No penalty vs paper,R2D2_V151_combined_61bp,0,5.150849384536427
+No penalty vs paper,R2D2_V157_combined_61bp,1,-10.565094719728485
+No penalty vs paper,R2D2_V167_combined_61bp,1,-2.1878698403399954
+No penalty vs paper,R2D2_V190_combined_61bp,1,0.0007482320032337064
+No penalty vs paper,R2D2_V218_combined_61bp,1,-1.2500418591639084
+No penalty vs paper,R2D2_V242_combined_61bp,1,1.7576417655503884
+No penalty vs paper,R2D2_V273_combined_61bp,1,-0.9202391101174157
+L2 vs no penalty,GHL109_combined_61bp,1,-0.7184352921089099
+L2 vs no penalty,GHL114_combined_61bp,1,-0.4423120469868258
+L2 vs no penalty,GHL119_combined_61bp,1,-4.645472348699697
+L2 vs no penalty,GHL123_combined_61bp,1,-1.9273811837221655
+L2 vs no penalty,GHL128_combined_61bp,0,-3.414734180875423
+L2 vs no penalty,GHL131_combined_61bp,1,-2.017817304266367
+L2 vs no penalty,GHL132_combined_61bp,0,-4.815006875015565
+L2 vs no penalty,GHL138_combined_61bp,0,-1.1614391804390112
+L2 vs no penalty,GHL144_combined_61bp,1,-2.7021278495102385
+L2 vs no penalty,GHL161_combined_61bp,0,-0.008841489859190421
+L2 vs no penalty,GHL166_combined_61bp,0,0.05907112420731053
+L2 vs no penalty,GHL172_combined_61bp,0,-1.9211243556746138
+L2 vs no penalty,GHL188_combined_61bp,0,-2.0922662507512375
+L2 vs no penalty,GHL206_combined_61bp,1,-0.225633811266146
+L2 vs no penalty,GHL208_combined_61bp,1,-0.9318648286879228
+L2 vs no penalty,GHL210_combined_61bp,0,-3.0776397832577325
+L2 vs no penalty,GHL229_combined_61bp,1,-1.3000008936665641
+L2 vs no penalty,GHL235_combined_61bp,1,-0.23537172039193033
+L2 vs no penalty,GHL248_combined_61bp,1,-0.5086436582229847
+L2 vs no penalty,GHL264_combined_61bp,1,-0.7735862389727455
+L2 vs no penalty,GHL269_combined_61bp,0,-4.7231683995640985
+L2 vs no penalty,GHL27_combined_61bp,1,-2.7504770995346095
+L2 vs no penalty,GHL3_combined_61bp,0,0.46972408216167105
+L2 vs no penalty,GHL34_combined_61bp,1,-0.34992987831230504
+L2 vs no penalty,GHL45_combined_61bp,1,-2.345581478209857
+L2 vs no penalty,GHL56_combined_61bp,1,-0.8425429189073963
+L2 vs no penalty,GHL58_combined_61bp,0,1.0717283944024103
+L2 vs no penalty,GHL72_combined_61bp,1,2.999777187872417
+L2 vs no penalty,GHL89_combined_61bp,0,-2.242496732629537
+L2 vs no penalty,GHL93_combined_61bp,1,-1.6112010402814847
+L2 vs no penalty,R2D2_P114_combined_61bp,0,-2.7197152116448517
+L2 vs no penalty,R2D2_P118_combined_61bp,0,-4.293581743571798
+L2 vs no penalty,R2D2_P119_combined_61bp,0,-2.0716774968330354
+L2 vs no penalty,R2D2_P124_combined_61bp,1,-0.8177479338961402
+L2 vs no penalty,R2D2_P127_combined_61bp,0,-2.1006863702327907
+L2 vs no penalty,R2D2_P131_combined_61bp,0,-3.373448788950001
+L2 vs no penalty,R2D2_P232_combined_61bp,1,-2.0495432685406545
+L2 vs no penalty,R2D2_P33_combined_61bp,1,-2.3127019562601103
+L2 vs no penalty,R2D2_U102_combined_61bp,0,-2.0950876429644607
+L2 vs no penalty,R2D2_U103_combined_61bp,0,0.06248933954988711
+L2 vs no penalty,R2D2_U112_combined_61bp,0,-0.04267931667908398
+L2 vs no penalty,R2D2_U114_combined_61bp,0,-2.3323720377090047
+L2 vs no penalty,R2D2_U131_combined_61bp,0,-1.2122204945624937
+L2 vs no penalty,R2D2_U132_combined_61bp,0,2.0875662472652046
+L2 vs no penalty,R2D2_U133_combined_61bp,0,5.77282741532038
+L2 vs no penalty,R2D2_U269_combined_61bp,1,-0.5154017810252598
+L2 vs no penalty,R2D2_U312_combined_61bp,1,-1.193787066851637
+L2 vs no penalty,R2D2_U315_combined_61bp,1,-0.6494213727175624
+L2 vs no penalty,R2D2_U323_combined_61bp,1,-1.4472996588022702
+L2 vs no penalty,R2D2_U329_combined_61bp,1,-2.0816793904177233
+L2 vs no penalty,R2D2_U332_combined_61bp,1,-0.520847016209236
+L2 vs no penalty,R2D2_V130_combined_61bp,1,-0.745155289763566
+L2 vs no penalty,R2D2_V139_combined_61bp,0,-4.855944455396894
+L2 vs no penalty,R2D2_V143_combined_61bp,0,-2.4291069346963123
+L2 vs no penalty,R2D2_V151_combined_61bp,0,-1.7714437382073345
+L2 vs no penalty,R2D2_V157_combined_61bp,1,-4.028227386335759
+L2 vs no penalty,R2D2_V167_combined_61bp,1,-1.2413184396326549
+L2 vs no penalty,R2D2_V190_combined_61bp,1,-2.0876211490858942
+L2 vs no penalty,R2D2_V218_combined_61bp,1,-2.5885859207234407
+L2 vs no penalty,R2D2_V242_combined_61bp,1,-0.6871434073404292
+L2 vs no penalty,R2D2_V273_combined_61bp,1,-1.4872773620818736
+L1 vs no penalty,GHL109_combined_61bp,1,-0.6894961138873001
+L1 vs no penalty,GHL114_combined_61bp,1,-0.411592939791805
+L1 vs no penalty,GHL119_combined_61bp,1,-1.8255404164665756
+L1 vs no penalty,GHL123_combined_61bp,1,0.18295663082307234
+L1 vs no penalty,GHL128_combined_61bp,0,-2.905849818128109
+L1 vs no penalty,GHL131_combined_61bp,1,-2.489320973367659
+L1 vs no penalty,GHL132_combined_61bp,0,-10.034723266228806
+L1 vs no penalty,GHL138_combined_61bp,0,-2.455149891785513
+L1 vs no penalty,GHL144_combined_61bp,1,-1.537669058357416
+L1 vs no penalty,GHL161_combined_61bp,0,-4.4804900936812775
+L1 vs no penalty,GHL166_combined_61bp,0,3.0867054540643535
+L1 vs no penalty,GHL172_combined_61bp,0,-2.5694766143583125
+L1 vs no penalty,GHL188_combined_61bp,0,-2.4899658052377025
+L1 vs no penalty,GHL206_combined_61bp,1,-0.225797520524329
+L1 vs no penalty,GHL208_combined_61bp,1,1.54409917472208
+L1 vs no penalty,GHL210_combined_61bp,0,-3.5458215466942637
+L1 vs no penalty,GHL229_combined_61bp,1,-0.8994722112499076
+L1 vs no penalty,GHL235_combined_61bp,1,-0.20887945801504326
+L1 vs no penalty,GHL248_combined_61bp,1,-0.5046820837046773
+L1 vs no penalty,GHL264_combined_61bp,1,0.20805412534817824
+L1 vs no penalty,GHL269_combined_61bp,0,-5.833176059184863
+L1 vs no penalty,GHL27_combined_61bp,1,1.2749802245661246
+L1 vs no penalty,GHL3_combined_61bp,0,-5.975514462549936
+L1 vs no penalty,GHL34_combined_61bp,1,-0.2580586872729329
+L1 vs no penalty,GHL45_combined_61bp,1,-1.3411405995650827
+L1 vs no penalty,GHL56_combined_61bp,1,-1.5538874567098904
+L1 vs no penalty,GHL58_combined_61bp,0,-2.4802384590419946
+L1 vs no penalty,GHL72_combined_61bp,1,5.647717053386144
+L1 vs no penalty,GHL89_combined_61bp,0,-2.704897977732486
+L1 vs no penalty,GHL93_combined_61bp,1,-1.1751469441554696
+L1 vs no penalty,R2D2_P114_combined_61bp,0,-1.5979493545840606
+L1 vs no penalty,R2D2_P118_combined_61bp,0,-3.8732463508041493
+L1 vs no penalty,R2D2_P119_combined_61bp,0,-1.904296846586373
+L1 vs no penalty,R2D2_P124_combined_61bp,1,0.12700690049991525
+L1 vs no penalty,R2D2_P127_combined_61bp,0,-2.3474776753226068
+L1 vs no penalty,R2D2_P131_combined_61bp,0,-2.471787297600536
+L1 vs no penalty,R2D2_P232_combined_61bp,1,-0.9357481304162252
+L1 vs no penalty,R2D2_P33_combined_61bp,1,-2.7103695187951637
+L1 vs no penalty,R2D2_U102_combined_61bp,0,4.261137422082328
+L1 vs no penalty,R2D2_U103_combined_61bp,0,-2.1052955483925384
+L1 vs no penalty,R2D2_U112_combined_61bp,0,3.381439945347865
+L1 vs no penalty,R2D2_U114_combined_61bp,0,-3.884598961134041
+L1 vs no penalty,R2D2_U131_combined_61bp,0,0.4734386189119144
+L1 vs no penalty,R2D2_U132_combined_61bp,0,2.188342245854946
+L1 vs no penalty,R2D2_U133_combined_61bp,0,5.071920828611121
+L1 vs no penalty,R2D2_U269_combined_61bp,1,-0.40046578673994526
+L1 vs no penalty,R2D2_U312_combined_61bp,1,-3.4551351894352655
+L1 vs no penalty,R2D2_U315_combined_61bp,1,-0.581652096292673
+L1 vs no penalty,R2D2_U323_combined_61bp,1,-0.7088725142798569
+L1 vs no penalty,R2D2_U329_combined_61bp,1,-2.277882524720065
+L1 vs no penalty,R2D2_U332_combined_61bp,1,-0.6017216116543711
+L1 vs no penalty,R2D2_V130_combined_61bp,1,2.2091663607962886
+L1 vs no penalty,R2D2_V139_combined_61bp,0,-3.569912875266612
+L1 vs no penalty,R2D2_V143_combined_61bp,0,-2.972612838572944
+L1 vs no penalty,R2D2_V151_combined_61bp,0,-1.8190475749806034
+L1 vs no penalty,R2D2_V157_combined_61bp,1,-6.543435169372913
+L1 vs no penalty,R2D2_V167_combined_61bp,1,-2.129432559992994
+L1 vs no penalty,R2D2_V190_combined_61bp,1,-2.0431204864802655
+L1 vs no penalty,R2D2_V218_combined_61bp,1,-2.8312727098143586
+L1 vs no penalty,R2D2_V242_combined_61bp,1,-0.7358405553616776
+L1 vs no penalty,R2D2_V273_combined_61bp,1,-1.1551261951805114
+Elastic net vs no penalty,GHL109_combined_61bp,1,-0.7082295035164887
+Elastic net vs no penalty,GHL114_combined_61bp,1,-0.4295310082608972
+Elastic net vs no penalty,GHL119_combined_61bp,1,-3.2834248899410667
+Elastic net vs no penalty,GHL123_combined_61bp,1,-0.8997446796201403
+Elastic net vs no penalty,GHL128_combined_61bp,0,-3.1444937131282877
+Elastic net vs no penalty,GHL131_combined_61bp,1,-2.2479286638060647
+Elastic net vs no penalty,GHL132_combined_61bp,0,-7.220172622540027
+Elastic net vs no penalty,GHL138_combined_61bp,0,-1.7832244616795778
+Elastic net vs no penalty,GHL144_combined_61bp,1,-2.132834136982631
+Elastic net vs no penalty,GHL161_combined_61bp,0,-2.151584443137111
+Elastic net vs no penalty,GHL166_combined_61bp,0,1.507769343141535
+Elastic net vs no penalty,GHL172_combined_61bp,0,-2.230383286000613
+Elastic net vs no penalty,GHL188_combined_61bp,0,-2.292044746461397
+Elastic net vs no penalty,GHL206_combined_61bp,1,-0.22712097005126441
+Elastic net vs no penalty,GHL208_combined_61bp,1,0.2982826703858854
+Elastic net vs no penalty,GHL210_combined_61bp,0,-3.3122270148642716
+Elastic net vs no penalty,GHL229_combined_61bp,1,-1.1147601161660026
+Elastic net vs no penalty,GHL235_combined_61bp,1,-0.22350896696150535
+Elastic net vs no penalty,GHL248_combined_61bp,1,-0.5089159981943925
+Elastic net vs no penalty,GHL264_combined_61bp,1,-0.3095958511322161
+Elastic net vs no penalty,GHL269_combined_61bp,0,-5.231479610244105
+Elastic net vs no penalty,GHL27_combined_61bp,1,-0.7531385286574266
+Elastic net vs no penalty,GHL3_combined_61bp,0,-2.6242239457250127
+Elastic net vs no penalty,GHL34_combined_61bp,1,-0.30628963860599434
+Elastic net vs no penalty,GHL45_combined_61bp,1,-1.8579877029859637
+Elastic net vs no penalty,GHL56_combined_61bp,1,-1.1549562983915518
+Elastic net vs no penalty,GHL58_combined_61bp,0,-0.610115632277991
+Elastic net vs no penalty,GHL72_combined_61bp,1,4.228195366675331
+Elastic net vs no penalty,GHL89_combined_61bp,0,-2.467827277860937
+Elastic net vs no penalty,GHL93_combined_61bp,1,-1.4038285783660287
+Elastic net vs no penalty,R2D2_P114_combined_61bp,0,-2.199189797726792
+Elastic net vs no penalty,R2D2_P118_combined_61bp,0,-4.096178666265734
+Elastic net vs no penalty,R2D2_P119_combined_61bp,0,-2.001658627301242
+Elastic net vs no penalty,R2D2_P124_combined_61bp,1,-0.37611082251074457
+Elastic net vs no penalty,R2D2_P127_combined_61bp,0,-2.2206545028473137
+Elastic net vs no penalty,R2D2_P131_combined_61bp,0,-2.9381450464435743
+Elastic net vs no penalty,R2D2_P232_combined_61bp,1,-1.5105836293955899
+Elastic net vs no penalty,R2D2_P33_combined_61bp,1,-2.5103960366338107
+Elastic net vs no penalty,R2D2_U102_combined_61bp,0,0.9719361976388674
+Elastic net vs no penalty,R2D2_U103_combined_61bp,0,-0.9812422792598308
+Elastic net vs no penalty,R2D2_U112_combined_61bp,0,1.6942506679270304
+Elastic net vs no penalty,R2D2_U114_combined_61bp,0,-3.045603933114861
+Elastic net vs no penalty,R2D2_U131_combined_61bp,0,-0.3749442036703021
+Elastic net vs no penalty,R2D2_U132_combined_61bp,0,2.1549392124834976
+Elastic net vs no penalty,R2D2_U133_combined_61bp,0,5.448993083414555
+Elastic net vs no penalty,R2D2_U269_combined_61bp,1,-0.4613815135039778
+Elastic net vs no penalty,R2D2_U312_combined_61bp,1,-2.2534618863153555
+Elastic net vs no penalty,R2D2_U315_combined_61bp,1,-0.6201056378989711
+Elastic net vs no penalty,R2D2_U323_combined_61bp,1,-1.089231619585318
+Elastic net vs no penalty,R2D2_U329_combined_61bp,1,-2.175564454063872
+Elastic net vs no penalty,R2D2_U332_combined_61bp,1,-0.5595798004482067
+Elastic net vs no penalty,R2D2_V130_combined_61bp,1,0.6888176438260118
+Elastic net vs no penalty,R2D2_V139_combined_61bp,0,-4.258377859379625
+Elastic net vs no penalty,R2D2_V143_combined_61bp,0,-2.688294752260492
+Elastic net vs no penalty,R2D2_V151_combined_61bp,0,-1.7980617463175919
+Elastic net vs no penalty,R2D2_V157_combined_61bp,1,-5.228420333501182
+Elastic net vs no penalty,R2D2_V167_combined_61bp,1,-1.6608898088854906
+Elastic net vs no penalty,R2D2_V190_combined_61bp,1,-2.073788592346071
+Elastic net vs no penalty,R2D2_V218_combined_61bp,1,-2.7136479335422514
+Elastic net vs no penalty,R2D2_V242_combined_61bp,1,-0.7120482034007725
+Elastic net vs no penalty,R2D2_V273_combined_61bp,1,-1.3403179214825367

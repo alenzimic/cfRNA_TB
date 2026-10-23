@@ -1,0 +1,26 @@
+{
+  "normalization": "training-reference parametric DESeq2 VST",
+  "input_sha256": {
+    "Files_For_Manuscript/gene_interactions_reference/reference.json": "81e389c984905a46cca8a945738e9708c085df616093b22db8bd1dc83d0dd981",
+    "Files_For_Manuscript/counts.train.tsv": "a0ab4a4aad94971d461af4f497e54b5c44edee4da9b92e4f66a20d9be9510e50",
+    "Files_For_Manuscript/counts.test.tsv": "f72ca78638c7cf5a9bdf8d6fa703fc4254b2957700e2552c5fabf13776c8b502",
+    "Files_For_Manuscript/counts.val.tsv": "f29ccb2bdcf9adf9826ae7a105ed0c3640a0dc7558ad6e56c9f943359b7a4044",
+    "Files_For_Manuscript/metadata.train.tsv": "94d32911a0a262170a1e4335edfd4f4361e3673419806ab9a0204a88a3747c73",
+    "Files_For_Manuscript/metadata.test.tsv": "8f8cb59eb154181ed98e619079821d924e724f0e4320b982360b7595354f5b7b",
+    "Files_For_Manuscript/metadata.val.tsv": "ca53eacbe8378b27f07e20ff9ef750f47e9663baad4993d975070c58d6f7a2e1"
+  },
+  "seed": 87,
+  "training_detection_filter": "count >= 10 in >= 13 training participants",
+  "eligible_genes": 11279,
+  "pca_genes": 1000,
+  "pca_components": 20,
+  "selected_clusters": 2,
+  "bootstrap_replicates": 100,
+  "versions": {
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "scikit-learn": "1.6.1",
+    "umap-learn": "0.5.7",
+    "seaborn": "0.13.2"
+  }
+}

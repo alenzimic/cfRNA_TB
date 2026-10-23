@@ -1,0 +1,52 @@
+{
+  "status": "published_113_gene_set_unresolved",
+  "r_version": "4.1.3",
+  "deseq2_version": "1.34.0",
+  "selected_gene_count": 142,
+  "paper_reported_gene_count": 113,
+  "candidate_file": "training_candidates.tsv",
+  "candidate_sha256": "347d295e9568658c782cd4bf27db9753066af6a2282a269159ff6ae78a8f2ccc",
+  "input_sha256": {
+    "Files_For_Manuscript/counts.train.tsv": "a0ab4a4aad94971d461af4f497e54b5c44edee4da9b92e4f66a20d9be9510e50",
+    "Files_For_Manuscript/metadata.train.tsv": "94d32911a0a262170a1e4335edfd4f4361e3673419806ab9a0204a88a3747c73",
+    "Files_For_Manuscript/gencode.biotype.name.key.tsv": "91f45261a64ab6e0730419c5a6c5751b733d8544960354d0e845bd3c32eca3a0",
+    "Files_For_Manuscript/genes_to_exlude.tsv": "6ae03bf78c333fe1b5e51b6a89b5f93c929e771c9c5f92571021a3fece091fcf",
+    "Files_For_Manuscript/gene_interactions_reference/training_de_genes.tsv": "baace3e7cc3699bccdf70bb380bb234638dddc0878a76fa21197186fac606ea6",
+    "Scripts_For_Manuscript/Figure_2.ipynb": "265db89b5a796dd77773306da5881bef31efed07600e3077a1b60d033dfa3b05"
+  },
+  "article": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11164910/",
+  "source": {
+    "notebook": "Scripts_For_Manuscript/Figure_2.ipynb",
+    "de_cell_zero_based": 5,
+    "candidate_cell_zero_based": 9
+  },
+  "filter": "Training-only DESeq2 ~tb; positive versus negative; results(alpha=0.05); padj < 0.05 and baseMean > 100; order by padj.",
+  "n_training_samples": 130,
+  "n_input_genes": 56634,
+  "n_positive": 73,
+  "n_negative": 57,
+  "outlier_replaced_genes": 312,
+  "all_training_samples_pass_qc": true,
+  "selected_genes_missing_annotation": 0,
+  "duplicate_selected_ids": 0,
+  "duplicate_selected_symbols": 0,
+  "selected_gene_types": {
+    "lncRNA": 1,
+    "protein_coding": 138,
+    "snoRNA": 1,
+    "snRNA": 1,
+    "unprocessed_pseudogene": 1
+  },
+  "selected_blacklist_overlap": 0,
+  "padj_exactly_cutoff": 0,
+  "base_mean_exactly_cutoff": 0,
+  "same_ids_as_existing_142_reference": true,
+  "max_absolute_statistic_difference_from_existing_reference": {
+    "baseMean": 2.72848410531878e-12,
+    "log2FoldChange": 4.44089209850063e-15,
+    "padj": 9.4542429440736e-17
+  },
+  "unused_default_results_candidate_count": 142,
+  "conclusion": "The source filter reproduces 142 genes even with the article's stated R and DESeq2 versions. This is not an identified 113-gene paper input list. No arbitrary truncation or extra filter has been applied. The exact 113-gene benchmark arm remains unavailable.",
+  "protocol_note": "DE is fitted to raw training counts before VST in the original notebook. Changing prediction normalization therefore cannot resolve this candidate-count discrepancy. The unused default results(dds) call is reported only as a provenance check."
+}

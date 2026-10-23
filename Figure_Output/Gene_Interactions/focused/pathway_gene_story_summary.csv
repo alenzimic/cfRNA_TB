@@ -1,0 +1,7 @@
+gene,TB effect train / test / validation (SD),TB direction consistent,TB BH66 < 0.05 in all splits,Program links with same sign and BH288 < 0.05 in all splits
+GBP5,+1.23 / +1.31 / +1.62,True,True,+ Interferon alpha; + Interferon gamma
+AHNAK,-0.34 / -0.49 / -0.40,True,False,None meeting the all-three-split criterion
+JMJD1C,-0.43 / -0.75 / +0.12,False,False,None meeting the all-three-split criterion
+MNDA,+0.47 / +0.46 / +0.45,True,False,+ Neutrophil degranulation; + SPI1 signed targets
+LYZ,+0.24 / +0.56 / +0.46,True,False,None meeting the all-three-split criterion
+SPI1,+0.38 / +0.89 / +0.28,True,False,+ TNF / NF-kB; + Inflammatory response; + Neutrophil degranulation; + SPI1 signed targets

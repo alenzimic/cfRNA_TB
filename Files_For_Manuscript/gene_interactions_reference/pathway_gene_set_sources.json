@@ -1,0 +1,18 @@
+{
+  "release": "MSigDB 2026.1.Hs",
+  "download_date": "2026-10-21",
+  "files": [
+    {
+      "file": "pathways_hallmark_2026.1.gmt",
+      "url": "https://data.broadinstitute.org/gsea-msigdb/msigdb/release/2026.1.Hs/h.all.v2026.1.Hs.symbols.gmt",
+      "sha256": "eecaf6dad908334ae885406ec72bdc0646d8917588ed7c219fac92fc5363f596",
+      "bytes": 48686
+    },
+    {
+      "file": "pathways_reactome_2026.1.gmt",
+      "url": "https://data.broadinstitute.org/gsea-msigdb/msigdb/release/2026.1.Hs/c2.cp.reactome.v2026.1.Hs.symbols.gmt",
+      "sha256": "5d61f289a2400cddfbb3a3353829fd2284a360bbe50f2093b566c4b7bea93341",
+      "bytes": 898680
+    }
+  ]
+}

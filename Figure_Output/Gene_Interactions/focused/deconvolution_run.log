@@ -1,0 +1,36 @@
+Warning messages:
+1: replacing previous import ‘gplots::lowess’ by ‘stats::lowess’ when loading ‘BayesPrism’ 
+2: replacing previous import ‘BiocParallel::register’ by ‘NMF::register’ when loading ‘BayesPrism’ 
+8 of 251 paired samples complete; batch minutes: 28 
+16 of 251 paired samples complete; batch minutes: 27.9 
+24 of 251 paired samples complete; batch minutes: 28.3 
+32 of 251 paired samples complete; batch minutes: 27.6 
+40 of 251 paired samples complete; batch minutes: 27 
+48 of 251 paired samples complete; batch minutes: 27 
+56 of 251 paired samples complete; batch minutes: 27.8 
+64 of 251 paired samples complete; batch minutes: 27.1 
+72 of 251 paired samples complete; batch minutes: 27.7 
+80 of 251 paired samples complete; batch minutes: 27.5 
+88 of 251 paired samples complete; batch minutes: 27.8 
+96 of 251 paired samples complete; batch minutes: 27.9 
+104 of 251 paired samples complete; batch minutes: 28.1 
+112 of 251 paired samples complete; batch minutes: 27.5 
+120 of 251 paired samples complete; batch minutes: 27.5 
+128 of 251 paired samples complete; batch minutes: 27.6 
+136 of 251 paired samples complete; batch minutes: 28.1 
+144 of 251 paired samples complete; batch minutes: 27.4 
+152 of 251 paired samples complete; batch minutes: 27.6 
+160 of 251 paired samples complete; batch minutes: 27.3 
+168 of 251 paired samples complete; batch minutes: 27.8 
+176 of 251 paired samples complete; batch minutes: 27.6 
+184 of 251 paired samples complete; batch minutes: 27.7 
+192 of 251 paired samples complete; batch minutes: 29.3 
+200 of 251 paired samples complete; batch minutes: 27.1 
+208 of 251 paired samples complete; batch minutes: 26.8 
+216 of 251 paired samples complete; batch minutes: 26.6 
+224 of 251 paired samples complete; batch minutes: 27 
+232 of 251 paired samples complete; batch minutes: 27.5 
+240 of 251 paired samples complete; batch minutes: 28.4 
+248 of 251 paired samples complete; batch minutes: 28.4 
+251 of 251 paired samples complete; batch minutes: 26.3 
+Completed 251 matched pairs.

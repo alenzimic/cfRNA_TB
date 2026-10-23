@@ -1,0 +1,6 @@
+split,cohort,tb_positive_n,available_n,missing_n
+train,GHL,39,34,5
+train,R2D2,34,34,0
+test,GHL,18,16,2
+test,R2D2,16,16,0
+val,TBSQUARE,35,35,0

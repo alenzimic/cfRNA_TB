@@ -1,0 +1,16 @@
+model,train_auc,test_auc,n_features,feature_count_status,source,reconstruction,is_reference
+GFS,0.921172795001202,0.946623093681917,6,Verified final genes,Reported paper AUC; ml_auc.txt,Verified six-gene refit scored above,False
+RF,1.0,0.93681917211329,113,Reported DE input pool; list unavailable,Reported paper AUC; ml_auc.txt,Original fitted model and selected settings unavailable,False
+EXTRATREES,1.0,0.934640522875817,113,Reported DE input pool; list unavailable,Reported paper AUC; ml_auc.txt,Original fitted model and selected settings unavailable,False
+C5,1.0,0.931372549019608,113,Reported DE input pool; list unavailable,Reported paper AUC; ml_auc.txt,Original fitted model and selected settings unavailable,False
+SVMLIN,0.925258351357847,0.931372549019608,113,Reported DE input pool; list unavailable,Reported paper AUC; ml_auc.txt,Original fitted model and selected settings unavailable,False
+GLMNETRidge,0.90675318433069,0.922657952069717,113,Reported DE input pool; list unavailable,Reported paper AUC; ml_auc.txt,Original fitted model and selected settings unavailable,False
+NNET,0.903869262196587,0.922657952069717,113,Reported DE input pool; list unavailable,Reported paper AUC; ml_auc.txt,Original fitted model and selected settings unavailable,False
+SVMRAD,0.967075222302331,0.912854030501089,113,Reported DE input pool; list unavailable,Reported paper AUC; ml_auc.txt,Original fitted model and selected settings unavailable,False
+PAM,0.892573900504686,0.90958605664488,113,Reported DE input pool; list unavailable,Reported paper AUC; ml_auc.txt,Original fitted model and selected settings unavailable,False
+KNN,0.884162460946888,0.904684095860566,113,Reported DE input pool; list unavailable,Reported paper AUC; ml_auc.txt,Original fitted model and selected settings unavailable,False
+NB,0.954698389810142,0.893246187363834,113,Reported DE input pool; list unavailable,Reported paper AUC; ml_auc.txt,Original fitted model and selected settings unavailable,False
+GLMNETLasso,0.996635424176881,0.888888888888889,113,Reported DE input pool; list unavailable,Reported paper AUC; ml_auc.txt,Original fitted model and selected settings unavailable,False
+RPART,0.830088920932468,0.840958605664488,113,Reported DE input pool; list unavailable,Reported paper AUC; ml_auc.txt,Original fitted model and selected settings unavailable,False
+LDA,1.0,0.594226579520697,113,Reported DE input pool; list unavailable,Reported paper AUC; ml_auc.txt,Original fitted model and selected settings unavailable,False
+GLM,0.581951453977409,0.567538126361656,113,Reported DE input pool; list unavailable,Reported paper AUC; ml_auc.txt,Original fitted model and selected settings unavailable,False

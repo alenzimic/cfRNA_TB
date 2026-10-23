@@ -1,0 +1,23 @@
+{
+  "input_sha256": {
+    "Figure_Output/Gene_Interactions/focused/gfs/expression_vst.csv": "7d697ffbae406defb5bd098b5ffd004cb3005dc5b5ba3e74315e7d90a072ee94",
+    "Figure_Output/Gene_Interactions/focused/gfs/settings.json": "9a0c27891ec62c3965494a92ae405916ff22ab52fb6c3556c146a7d0aaa6d9bf",
+    "Figure_Output/Gene_Interactions/focused/gfs/cv_selected_genes.csv": "b46d319938291e07d053d6b958bfe5f93aeb245a476679958d9d26f4db55bc4a",
+    "Figure_Output/Gene_Interactions/focused/gfs/cv_refined_selected_genes.csv": "9e615680dfdb979df2824fa6a572ed364abd26961dfbd4a6dfc6941bf60f8a2a",
+    "Figure_Output/Gene_Interactions/focused/gfs_prediction_scores.csv": "e49165f34c3ff05a8d45298b01b34c4bac12ef999107d13d49e967a9ee5d674f",
+    "Files_For_Manuscript/discovery_cell_types.tsv": "6933c1a4f4dd16a8054d7e47a8cefa4dda3ab41a185ae4091de663c34f236c6f",
+    "Files_For_Manuscript/metadata.train.tsv": "94d32911a0a262170a1e4335edfd4f4361e3673419806ab9a0204a88a3747c73",
+    "Files_For_Manuscript/metadata.test.tsv": "8f8cb59eb154181ed98e619079821d924e724f0e4320b982360b7595354f5b7b",
+    "Files_For_Manuscript/metadata.val.tsv": "ca53eacbe8378b27f07e20ff9ef750f47e9663baad4993d975070c58d6f7a2e1"
+  },
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "scipy": "1.13.1",
+    "statsmodels": "0.14.6",
+    "xgboost-cpu": "3.0.5"
+  },
+  "signal": "Mean training z score of SPI1, MNDA, LYZ; fixed positive equal weights",
+  "primary_adjustment": "cohort + log(myeloid/other) + log(lymphoid/other) + log(erythroid_platelet/other)",
+  "intervals": "HC3 robust covariance, residual-df t, 95%, exploratory"
+}

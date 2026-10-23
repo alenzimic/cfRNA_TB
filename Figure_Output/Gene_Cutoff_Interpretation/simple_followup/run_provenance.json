@@ -1,0 +1,71 @@
+{
+  "seed": 87,
+  "cutoffs": [
+    0.01,
+    0.05,
+    0.1,
+    0.5
+  ],
+  "minimum_base_mean": 100,
+  "cutoff_settings": {
+    "penalty": "l2",
+    "C": 1.0,
+    "fit_intercept": true,
+    "tol": 1e-10,
+    "max_iter": 2000,
+    "random_state": 87,
+    "solver": "lbfgs"
+  },
+  "ablation_settings": {
+    "penalty": "l2",
+    "C": 1.0,
+    "fit_intercept": true,
+    "tol": 1e-10,
+    "max_iter": 2000,
+    "random_state": 87,
+    "solver": "saga"
+  },
+  "bootstrap_repeats": 2000,
+  "confidence_level": 0.95,
+  "cutoff_reference_rule": "padj < 0.05",
+  "selected_winner": null,
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "scipy": "1.13.1",
+    "scikit-learn": "1.6.1",
+    "matplotlib": "3.9.4",
+    "seaborn": "0.13.2"
+  },
+  "source_sha256": {
+    "Files_For_Manuscript/gene_cutoff_reference/reference.json": "68977cdd8a8daa53627a2d9561382b814be499d12190ecd080a3e86c702bfee2",
+    "Files_For_Manuscript/gene_cutoff_reference/paper_model/model.json": "9631307560ac37b246377ac21d5f2ba8eb05f3dd958fd775822211710f93d43f",
+    "Files_For_Manuscript/ml_auc.txt": "94f76c43b17b8d567cb392ec129ed03cb0ee0bbdf9438dbd34cd1982c2e83657",
+    "Scripts_For_Manuscript/gene_interactions.ipynb": "96017448768cc8d80190dec91b26a5780968d7e2d17364787cc77fcd9ea844a9"
+  },
+  "verified_reference_inputs": {
+    "Files_For_Manuscript/counts.train.tsv": "a0ab4a4aad94971d461af4f497e54b5c44edee4da9b92e4f66a20d9be9510e50",
+    "Files_For_Manuscript/metadata.train.tsv": "94d32911a0a262170a1e4335edfd4f4361e3673419806ab9a0204a88a3747c73",
+    "Files_For_Manuscript/gencode.biotype.name.key.tsv": "91f45261a64ab6e0730419c5a6c5751b733d8544960354d0e845bd3c32eca3a0",
+    "Files_For_Manuscript/gene_cutoff_reference/folds.csv": "8dbc090808488173a423d628dce6d57abde45c324dc5d0edba1a53d614553044"
+  },
+  "verified_paper_inputs": {
+    "Files_For_Manuscript/counts.train.tsv": "a0ab4a4aad94971d461af4f497e54b5c44edee4da9b92e4f66a20d9be9510e50",
+    "Files_For_Manuscript/counts.test.tsv": "f72ca78638c7cf5a9bdf8d6fa703fc4254b2957700e2552c5fabf13776c8b502",
+    "Files_For_Manuscript/counts.val.tsv": "f29ccb2bdcf9adf9826ae7a105ed0c3640a0dc7558ad6e56c9f943359b7a4044",
+    "Files_For_Manuscript/metadata.train.tsv": "94d32911a0a262170a1e4335edfd4f4361e3673419806ab9a0204a88a3747c73",
+    "Files_For_Manuscript/metadata.test.tsv": "8f8cb59eb154181ed98e619079821d924e724f0e4320b982360b7595354f5b7b",
+    "Files_For_Manuscript/metadata.val.tsv": "ca53eacbe8378b27f07e20ff9ef750f47e9663baad4993d975070c58d6f7a2e1",
+    "Scripts_For_Manuscript/Figure_2.ipynb": "265db89b5a796dd77773306da5881bef31efed07600e3077a1b60d033dfa3b05"
+  },
+  "verified_paper_outputs": {
+    "Files_For_Manuscript/gene_cutoff_reference/paper_model/paper_features.tsv": "b5c4f0f8213b57a13628172aea02540ddf85378b14064820323baca96f85c8d5",
+    "Files_For_Manuscript/gene_cutoff_reference/paper_model/r_predictions.csv": "031588dd76ca9490028b99a4c9a20ae76f8eb5dac446b4868feba4f97c68a751",
+    "Files_For_Manuscript/gene_cutoff_reference/paper_model/r_metrics.csv": "3d6f58001b7c9f6030ce05f20dbb0ec4ee15e07b3d87aa084a247835417f698e"
+  },
+  "normalization": {
+    "cutoffs": "Fold-specific training VST and training standardization.",
+    "ablation": "Original split-specific paper VST; training standardization."
+  },
+  "interpretation": "Exploratory; overlapping training folds and previously examined evaluation cohorts."
+}

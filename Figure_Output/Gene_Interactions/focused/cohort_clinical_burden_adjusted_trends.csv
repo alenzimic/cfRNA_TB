@@ -1,0 +1,10 @@
+split,adjustment,n,excluded,estimate,ci_lower,ci_upper,p_value,df_resid,formula,q_primary_family
+train,Cohort,68,0,0.23490213021791462,0.034476663456286416,0.4353275969795428,0.022327811707687013,65.0,three_gene_signal ~ burden_order + C(cohort),
+train,Cohort + demographics,68,0,0.24026280595612554,0.024368512784872953,0.4561570991273781,0.0297572625074193,62.0,three_gene_signal ~ burden_order + C(cohort) + age_decades + male + hiv_positive,
+train,Cohort + demographics + composition,68,0,0.20081684924343013,0.003994630602284083,0.39763906788457615,0.045670125743203824,59.0,three_gene_signal ~ burden_order + C(cohort) + age_decades + male + hiv_positive + rna_myeloid_vs_other + rna_lymphoid_vs_other + rna_erythroid_platelet_vs_other,0.13701037722961149
+test,Cohort,32,0,0.058416144719636576,-0.2375936624028646,0.35442595184213777,0.6894555583235943,29.0,three_gene_signal ~ burden_order + C(cohort),
+test,Cohort + demographics,32,0,0.047626242020980245,-0.274929084273935,0.3701815683158955,0.7639205171329169,26.0,three_gene_signal ~ burden_order + C(cohort) + age_decades + male + hiv_positive,
+test,Cohort + demographics + composition,32,0,0.15625866426836,-0.13354432486793494,0.4460616534046549,0.2761988829117281,23.0,three_gene_signal ~ burden_order + C(cohort) + age_decades + male + hiv_positive + rna_myeloid_vs_other + rna_lymphoid_vs_other + rna_erythroid_platelet_vs_other,0.4142983243675922
+val,Cohort,35,0,0.1722659613363688,-0.16101147640453284,0.5055433990772704,0.3006187571685308,33.0,three_gene_signal ~ burden_order,
+val,Cohort + demographics,35,0,0.30901328575175036,-0.02755503201045445,0.6455816035139552,0.07054742740320721,30.0,three_gene_signal ~ burden_order + age_decades + male + hiv_positive,
+val,Cohort + demographics + composition,35,0,0.07158120871908447,-0.18542721498119713,0.32858963241936606,0.5724083245661564,27.0,three_gene_signal ~ burden_order + age_decades + male + hiv_positive + rna_myeloid_vs_other + rna_lymphoid_vs_other + rna_erythroid_platelet_vs_other,0.5724083245661564

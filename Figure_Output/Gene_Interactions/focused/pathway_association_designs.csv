@@ -1,0 +1,7 @@
+split,adjustment,participants,parameters,condition_number,rank_ties
+train,Cohort,130,3,3.5581525919025805,0
+train,Cohort + composition,130,6,9.763602636273232,0
+test,Cohort,61,3,3.480262153779683,0
+test,Cohort + composition,61,6,8.04220594494816,0
+val,Cohort,60,2,2.862205209272468,0
+val,Cohort + composition,60,5,6.339435435710212,0

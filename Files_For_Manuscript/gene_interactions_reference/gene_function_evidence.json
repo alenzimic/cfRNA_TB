@@ -1,0 +1,177 @@
+{
+  "review_date": "2026-10-21",
+  "scope": "XGBoost six and paper-only five; primary experimental literature",
+  "genes": [
+    {
+      "gene": "GBP5",
+      "function": "Interferon-responsive guanylate-binding GTPase involved in antimicrobial host defense.",
+      "evidence_context": "Human whole-blood multicohort TB study identified GBP5 in a three-gene diagnostic panel; experimental human and mouse work also connects GBP5 to selected inflammasome responses.",
+      "hypothesis": "A reporter of an interferon-associated host-response component shared by both classifier panels.",
+      "limitation": "Whole-blood diagnostic association does not identify the plasma RNA source or establish TB specificity of GBP5 alone; RNA abundance does not measure inflammasome assembly.",
+      "sources": [
+        {
+          "label": "Sweeney et al., 2016: multicohort human TB signature",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26907218/"
+        },
+        {
+          "label": "Shenoy et al., 2012: experimental GBP5 function",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/22461501/"
+        }
+      ]
+    },
+    {
+      "gene": "AHNAK",
+      "function": "Large scaffold protein that organizes signaling complexes; experimental evidence links AHNAK1 to T-cell calcium entry and NFAT signaling.",
+      "evidence_context": "Ahnak1-deficient mouse CD4 T cells had impaired TCR-induced calcium entry, IL-2 production and proliferation; infection experiments used Leishmania major.",
+      "hypothesis": "An immune-signaling or broader cellular-state component that may complement the myeloid/interferon genes.",
+      "limitation": "The cited mechanism is principally mouse T-cell evidence, not human TB or plasma-source validation. Hallmark IL2\u2013STAT5 membership is an expression-signature annotation, not proof of IL2\u2013STAT5 activation.",
+      "sources": [
+        {
+          "label": "Matza et al., 2008: AHNAK1 and T-cell activation",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18191595/"
+        }
+      ]
+    },
+    {
+      "gene": "JMJD1C",
+      "function": "Chromatin and transcription-associated regulator with context-dependent hematopoietic functions, including evidence related to megakaryocyte differentiation.",
+      "evidence_context": "Human cell-line and cord-blood work linked JMJD1C to megakaryopoiesis and actin organization. Knockdown effects differed between K562 and MEG-01. An adult mouse knockout study found healthy hematopoiesis and JAK2 V617F-driven myeloproliferative disease initiation largely preserved.",
+      "hypothesis": "A competing hematopoietic/platelet-associated or transcriptional-state component, rather than an assumed specific myeloid TB effector.",
+      "limitation": "The 2022 study mainly used cell lines and did not assay platelet generation. Leukemia or megakaryocyte evidence does not establish a TB mechanism or prove normal adult hematopoiesis requires JMJD1C.",
+      "sources": [
+        {
+          "label": "JMJD1C in megakaryopoiesis models (2022)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9688414/"
+        },
+        {
+          "label": "Staehle et al., 2020: adult mouse knockout",
+          "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0228362"
+        }
+      ]
+    },
+    {
+      "gene": "MNDA",
+      "function": "Myeloid-associated nuclear protein that helps regulate IRF7 expression and type I interferon amplification.",
+      "evidence_context": "Human primary monocytes and THP-1 perturbation experiments showed MNDA supports IRF7 promoter recruitment of STAT2/RNA polymerase II and IFN-alpha induction after nucleic-acid or viral stimulation.",
+      "hypothesis": "A bridge between myeloid RNA contribution and interferon-associated cellular state.",
+      "limitation": "This functional study tested innate/antiviral signaling, not TB specificity. Myeloid association alone does not establish direct SPI1 regulation.",
+      "sources": [
+        {
+          "label": "Gu et al., 2022: MNDA\u2013IRF7 mechanism",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35013241/"
+        }
+      ]
+    },
+    {
+      "gene": "LYZ",
+      "function": "Lysozyme, an antimicrobial enzyme that hydrolyzes bacterial peptidoglycan; its RNA is a common myeloid marker.",
+      "evidence_context": "Human TB PBMC single-cell research used LYZ with other markers to annotate myeloid cells; curated Reactome records its antimicrobial reaction and neutrophil-granule membership.",
+      "hypothesis": "A marker of RNA sources and/or myeloid antimicrobial programs; test whether it follows monocyte/neutrophil contributions and broader panel-excluded programs.",
+      "limitation": "The cited discovery single-cell cohort had four TB patients and four controls. Marker use is not evidence that LYZ alone is TB-specific, that all plasma LYZ is myeloid, or that lysozyme-mediated killing is increased.",
+      "sources": [
+        {
+          "label": "Lyu et al., 2024: human TB single-cell study",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10953544/"
+        },
+        {
+          "label": "Reactome: LYZ\u2013peptidoglycan reaction",
+          "url": "https://reactome.org/content/detail/R-HSA-8862300"
+        }
+      ]
+    },
+    {
+      "gene": "SPI1",
+      "function": "Encodes PU.1, a transcription factor involved in hematopoietic differentiation and lineage-specific gene expression.",
+      "evidence_context": "A human/murine experimental expression study found high PU.1 in mature human monocytes and peripheral-blood neutrophils; PU.1 also has lymphoid roles.",
+      "hypothesis": "An immune-cell identity component that may covary with MNDA/LYZ and granulopoiesis-related expression.",
+      "limitation": "SPI1 RNA is not a measurement of PU.1 protein abundance, DNA binding, target regulation or activity. Shared expression is insufficient to infer a SPI1\u2192MNDA causal edge.",
+      "sources": [
+        {
+          "label": "Chen et al., 1995: PU.1 expression in myeloid cells",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/7742552/"
+        },
+        {
+          "label": "Human MNDA promoter analysis (1997)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/9136080/"
+        }
+      ]
+    },
+    {
+      "gene": "BNIP3L",
+      "function": "NIX protein participates in mitochondrial removal during reticulocyte maturation.",
+      "evidence_context": "Knockout-model experiments connect NIX to erythroid mitochondrial clearance.",
+      "hypothesis": "An erythroid or mitochondrial-quality-control component in the paper panel.",
+      "limitation": "Plasma RNA does not measure mitophagy flux, and the mechanism is not evidence of TB specificity.",
+      "sources": [
+        {
+          "label": "Schweers et al., 2007",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18048346/"
+        }
+      ]
+    },
+    {
+      "gene": "KLF6",
+      "function": "Transcription factor with experimentally supported roles in inflammatory macrophage responses.",
+      "evidence_context": "Macrophage gain/loss-of-function experiments and myeloid perturbation; additional work in human monocyte-derived macrophages.",
+      "hypothesis": "An inflammatory or cell-state contribution; the paper panel also has direct immune biology.",
+      "limitation": "A conditional expression difference does not establish KLF6 activity or a specific macrophage polarization state.",
+      "sources": [
+        {
+          "label": "Macrophage polarization study",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4036156/"
+        },
+        {
+          "label": "Human macrophage study",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7774039/"
+        }
+      ]
+    },
+    {
+      "gene": "DYSF",
+      "function": "Dysferlin is involved in membrane repair and has experimentally studied monocyte adhesion and phagocytosis roles.",
+      "evidence_context": "Human monocytes/THP1 adhesion study; deficiency studies in patient and mouse systems.",
+      "hypothesis": "A membrane/monocyte component that complements the paper panel\u2019s shared GBP5 signal.",
+      "limitation": "Results depend on experimental condition; higher RNA does not necessarily mean greater phagocytosis or identify the plasma source.",
+      "sources": [
+        {
+          "label": "Human monocyte adhesion",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3656271/"
+        },
+        {
+          "label": "Deficiency and phagocytosis",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2258254/"
+        }
+      ]
+    },
+    {
+      "gene": "LASP1",
+      "function": "Actin/focal-adhesion scaffold associated with cell migration and survival.",
+      "evidence_context": "Cell perturbation and localization experiments; broad cytoskeletal function.",
+      "hypothesis": "A cellular-structure or source-state contribution, without a specific myeloid/TB assignment.",
+      "limitation": "Migration effects are context dependent; no annotation in these two collections is not evidence of no biological function.",
+      "sources": [
+        {
+          "label": "Focal adhesion and migration",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/15138294/"
+        },
+        {
+          "label": "Gene-disruption study",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/19531578/"
+        }
+      ]
+    },
+    {
+      "gene": "PCBP1",
+      "function": "Poly(C)-binding RNA-associated protein with an experimentally demonstrated iron-chaperone function.",
+      "evidence_context": "Biochemical, yeast and human-cell experiments support iron delivery to ferritin.",
+      "hypothesis": "An RNA-processing/iron-handling component in the paper panel.",
+      "limitation": "These functions do not establish iron redistribution, viral infection, or a TB-specific mechanism in these samples.",
+      "sources": [
+        {
+          "label": "Iron delivery to ferritin",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18511687/"
+        }
+      ]
+    }
+  ]
+}

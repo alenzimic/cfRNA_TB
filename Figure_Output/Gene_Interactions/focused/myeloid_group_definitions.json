@@ -1,0 +1,108 @@
+{
+  "primary": {
+    "myeloid": [
+      "Monocyte",
+      "Macrophage",
+      "neutrophil",
+      "Mature.conventional.dendritic.cell",
+      "Myeloid.progenitor",
+      "Basophil",
+      "Mast.cell"
+    ],
+    "lymphoid": [
+      "NK.Cell",
+      "B.cell",
+      "T.Cell",
+      "Plasmablast",
+      "Thymocyte"
+    ],
+    "erythroid_platelet": [
+      "Erythrocyte.erythroid.progenitor",
+      "Platelet"
+    ],
+    "other": [
+      "Intrahepatic.cholangiocyte",
+      "Secretory.cell",
+      "Respiratory.ciliated.cell",
+      "Ionocyte.luminal.epithelial.cell.of.mammary.gland",
+      "Fibroblast.mesenchymal.stem.cell",
+      "Respiratory.secretory.cell",
+      "Basal.cell",
+      "Endothelial.cell",
+      "Stromal.cell",
+      "Adventitial.cell",
+      "Gland.cell",
+      "Salivary.bronchial.secretory.cell",
+      "Pericyte.cell",
+      "Pancreatic.Stellate.cell",
+      "Pancreatic.alpha.beta.cell",
+      "Basal.prostate.cell",
+      "Prostate.epithelia",
+      "Salivary.gland.cell",
+      "Intestinal.enterocyte",
+      "Intestinal.secretory.cell",
+      "Intestinal.tuft.cell",
+      "Type.II.Pneumocyte",
+      "Cell.of.skeletal.muscle",
+      "Schwann.cell",
+      "Tendon.cell",
+      "Mesothelial.cell",
+      "Kidney.epithelial.cell"
+    ]
+  },
+  "sensitivity": {
+    "myeloid": [
+      "Monocyte",
+      "Macrophage",
+      "neutrophil",
+      "Mature.conventional.dendritic.cell",
+      "Myeloid.progenitor",
+      "Basophil",
+      "Mast.cell"
+    ],
+    "lymphoid": [
+      "NK.Cell",
+      "B.cell",
+      "T.Cell",
+      "Plasmablast",
+      "Thymocyte"
+    ],
+    "erythroid": [
+      "Erythrocyte.erythroid.progenitor"
+    ],
+    "platelet": [
+      "Platelet"
+    ],
+    "endothelial": [
+      "Endothelial.cell"
+    ],
+    "other": [
+      "Intrahepatic.cholangiocyte",
+      "Secretory.cell",
+      "Respiratory.ciliated.cell",
+      "Ionocyte.luminal.epithelial.cell.of.mammary.gland",
+      "Fibroblast.mesenchymal.stem.cell",
+      "Respiratory.secretory.cell",
+      "Basal.cell",
+      "Stromal.cell",
+      "Adventitial.cell",
+      "Gland.cell",
+      "Salivary.bronchial.secretory.cell",
+      "Pericyte.cell",
+      "Pancreatic.Stellate.cell",
+      "Pancreatic.alpha.beta.cell",
+      "Basal.prostate.cell",
+      "Prostate.epithelia",
+      "Salivary.gland.cell",
+      "Intestinal.enterocyte",
+      "Intestinal.secretory.cell",
+      "Intestinal.tuft.cell",
+      "Type.II.Pneumocyte",
+      "Cell.of.skeletal.muscle",
+      "Schwann.cell",
+      "Tendon.cell",
+      "Mesothelial.cell",
+      "Kidney.epithelial.cell"
+    ]
+  }
+}

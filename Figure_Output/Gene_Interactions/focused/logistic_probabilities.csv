@@ -1,0 +1,1256 @@
+model,split,sample_id,tb_positive,probability
+"Paper replica: no intercept, no penalty",train,GHL1_combined_61bp,0,0.13878906104031602
+"Paper replica: no intercept, no penalty",train,GHL103_combined_61bp,1,0.9555297423879655
+"Paper replica: no intercept, no penalty",train,GHL105_combined_61bp,1,0.9607892220565704
+"Paper replica: no intercept, no penalty",train,GHL107_combined_61bp,0,0.07477696623021497
+"Paper replica: no intercept, no penalty",train,GHL108_combined_61bp,1,0.993772491883831
+"Paper replica: no intercept, no penalty",train,GHL112_combined_61bp,1,0.7751771766775554
+"Paper replica: no intercept, no penalty",train,GHL121_combined_61bp,0,0.93806751918468
+"Paper replica: no intercept, no penalty",train,GHL124_combined_61bp,1,0.6686768941882221
+"Paper replica: no intercept, no penalty",train,GHL126_combined_61bp,1,0.9355547394874869
+"Paper replica: no intercept, no penalty",train,GHL13_combined_61bp,1,0.8881378564781002
+"Paper replica: no intercept, no penalty",train,GHL133_combined_61bp,1,0.9509005207364498
+"Paper replica: no intercept, no penalty",train,GHL134_combined_61bp,0,0.2185812433495613
+"Paper replica: no intercept, no penalty",train,GHL136_combined_61bp,1,0.5376163941390346
+"Paper replica: no intercept, no penalty",train,GHL141_combined_61bp,1,0.833264094924741
+"Paper replica: no intercept, no penalty",train,GHL158_combined_61bp,0,0.19060780516524575
+"Paper replica: no intercept, no penalty",train,GHL16_combined_61bp,1,0.9331954540097448
+"Paper replica: no intercept, no penalty",train,GHL169_combined_61bp,1,0.15410530367249697
+"Paper replica: no intercept, no penalty",train,GHL17_combined_61bp,1,0.6025274593688359
+"Paper replica: no intercept, no penalty",train,GHL170_combined_61bp,1,0.6986085821270883
+"Paper replica: no intercept, no penalty",train,GHL186_combined_61bp,0,0.8965455199183192
+"Paper replica: no intercept, no penalty",train,GHL19_combined_61bp,1,0.7480292763965295
+"Paper replica: no intercept, no penalty",train,GHL192_combined_61bp,1,0.9796921626140593
+"Paper replica: no intercept, no penalty",train,GHL199_combined_61bp,0,0.2742377155229498
+"Paper replica: no intercept, no penalty",train,GHL201_combined_61bp,0,0.004739084619999183
+"Paper replica: no intercept, no penalty",train,GHL204_combined_61bp,1,0.993316708873344
+"Paper replica: no intercept, no penalty",train,GHL217_combined_61bp,1,0.8667132426738776
+"Paper replica: no intercept, no penalty",train,GHL22_combined_61bp,0,0.048391089935913664
+"Paper replica: no intercept, no penalty",train,GHL223_combined_61bp,0,0.9674178724182952
+"Paper replica: no intercept, no penalty",train,GHL230_combined_61bp,1,0.5402756855748754
+"Paper replica: no intercept, no penalty",train,GHL252_combined_61bp,1,0.2626249879417768
+"Paper replica: no intercept, no penalty",train,GHL274_combined_61bp,1,0.9843507503227341
+"Paper replica: no intercept, no penalty",train,GHL276_combined_61bp,1,0.994046890534174
+"Paper replica: no intercept, no penalty",train,GHL277_combined_61bp,0,0.47668979425845165
+"Paper replica: no intercept, no penalty",train,GHL284_combined_61bp,1,0.5378037538090957
+"Paper replica: no intercept, no penalty",train,GHL286_combined_61bp,1,0.9593640760517412
+"Paper replica: no intercept, no penalty",train,GHL288_combined_61bp,0,0.9273812479711345
+"Paper replica: no intercept, no penalty",train,GHL30_combined_61bp,0,0.018325645097753255
+"Paper replica: no intercept, no penalty",train,GHL308_combined_61bp,1,0.5185320494427315
+"Paper replica: no intercept, no penalty",train,GHL35_combined_61bp,1,0.9748739880185071
+"Paper replica: no intercept, no penalty",train,GHL36_combined_61bp,1,0.9779745006579919
+"Paper replica: no intercept, no penalty",train,GHL37_combined_61bp,1,0.62579961606056
+"Paper replica: no intercept, no penalty",train,GHL40_combined_61bp,0,0.49386027566705565
+"Paper replica: no intercept, no penalty",train,GHL46_combined_61bp,1,0.7849018682942168
+"Paper replica: no intercept, no penalty",train,GHL47_combined_61bp,1,0.5321114356544531
+"Paper replica: no intercept, no penalty",train,GHL52_combined_61bp,0,0.13608788879719028
+"Paper replica: no intercept, no penalty",train,GHL53_combined_61bp,1,0.5013278762831598
+"Paper replica: no intercept, no penalty",train,GHL57_combined_61bp,1,0.9040921561277728
+"Paper replica: no intercept, no penalty",train,GHL59_combined_61bp,1,0.9478272340301591
+"Paper replica: no intercept, no penalty",train,GHL61_combined_61bp,1,0.9888599274182462
+"Paper replica: no intercept, no penalty",train,GHL62_combined_61bp,1,0.9943450471961329
+"Paper replica: no intercept, no penalty",train,GHL63_combined_61bp,0,0.2327231442495649
+"Paper replica: no intercept, no penalty",train,GHL65_combined_61bp,1,0.7604703221870779
+"Paper replica: no intercept, no penalty",train,GHL69_combined_61bp,0,0.05178626575521374
+"Paper replica: no intercept, no penalty",train,GHL7_combined_61bp,0,0.014504737345567845
+"Paper replica: no intercept, no penalty",train,GHL70_combined_61bp,0,0.4121638857191548
+"Paper replica: no intercept, no penalty",train,GHL71_combined_61bp,1,0.9713726642774617
+"Paper replica: no intercept, no penalty",train,GHL75_combined_61bp,0,0.020230724873168775
+"Paper replica: no intercept, no penalty",train,GHL76_combined_61bp,0,0.4842354524555357
+"Paper replica: no intercept, no penalty",train,GHL84_combined_61bp,1,0.995741652767892
+"Paper replica: no intercept, no penalty",train,GHL88_combined_61bp,1,0.7944113056780898
+"Paper replica: no intercept, no penalty",train,GHL9_combined_61bp,0,0.2946174026285973
+"Paper replica: no intercept, no penalty",train,GHL94_combined_61bp,0,0.03491380173730538
+"Paper replica: no intercept, no penalty",train,GHL99_combined_61bp,0,0.0768436336542453
+"Paper replica: no intercept, no penalty",train,R2D2_P1_combined_61bp,0,0.20778861593890888
+"Paper replica: no intercept, no penalty",train,R2D2_P104_combined_61bp,0,0.4060693029567822
+"Paper replica: no intercept, no penalty",train,R2D2_P105_combined_61bp,0,0.0647796122082518
+"Paper replica: no intercept, no penalty",train,R2D2_P108_combined_61bp,0,0.4472191744129714
+"Paper replica: no intercept, no penalty",train,R2D2_P110_combined_61bp,0,0.05951461233742094
+"Paper replica: no intercept, no penalty",train,R2D2_P113_combined_61bp,0,0.07966922053882476
+"Paper replica: no intercept, no penalty",train,R2D2_P126_combined_61bp,0,0.213027831862966
+"Paper replica: no intercept, no penalty",train,R2D2_P129_combined_61bp,0,0.6824876825096284
+"Paper replica: no intercept, no penalty",train,R2D2_P130_combined_61bp,0,0.1958446283760658
+"Paper replica: no intercept, no penalty",train,R2D2_P133_combined_61bp,0,0.20229550728388848
+"Paper replica: no intercept, no penalty",train,R2D2_P152_combined_61bp,1,0.9559335308469352
+"Paper replica: no intercept, no penalty",train,R2D2_P18_combined_61bp,1,0.5300565382043966
+"Paper replica: no intercept, no penalty",train,R2D2_P202_combined_61bp,1,0.6125814743719654
+"Paper replica: no intercept, no penalty",train,R2D2_P214_combined_61bp,1,0.93849367858995
+"Paper replica: no intercept, no penalty",train,R2D2_P22_combined_61bp,1,0.7009635812658142
+"Paper replica: no intercept, no penalty",train,R2D2_P241_combined_61bp,1,0.6470530077873708
+"Paper replica: no intercept, no penalty",train,R2D2_P245_combined_61bp,1,0.6104740127541481
+"Paper replica: no intercept, no penalty",train,R2D2_P96_combined_61bp,1,0.8764944210886483
+"Paper replica: no intercept, no penalty",train,R2D2_U100_combined_61bp,0,0.30670571053939916
+"Paper replica: no intercept, no penalty",train,R2D2_U105_combined_61bp,0,0.11776138769413416
+"Paper replica: no intercept, no penalty",train,R2D2_U106_combined_61bp,0,0.022457759329556362
+"Paper replica: no intercept, no penalty",train,R2D2_U110_combined_61bp,0,0.06878858094657055
+"Paper replica: no intercept, no penalty",train,R2D2_U111_combined_61bp,0,0.03754962164880494
+"Paper replica: no intercept, no penalty",train,R2D2_U118_combined_61bp,0,0.3596257887061221
+"Paper replica: no intercept, no penalty",train,R2D2_U122_combined_61bp,0,0.04807410409646531
+"Paper replica: no intercept, no penalty",train,R2D2_U124_combined_61bp,0,0.29058823942137624
+"Paper replica: no intercept, no penalty",train,R2D2_U129_combined_61bp,0,0.24009277348627392
+"Paper replica: no intercept, no penalty",train,R2D2_U130_combined_61bp,0,0.18874111795493945
+"Paper replica: no intercept, no penalty",train,R2D2_U273_combined_61bp,1,0.9600891456525213
+"Paper replica: no intercept, no penalty",train,R2D2_U287_combined_61bp,1,0.9955010716561724
+"Paper replica: no intercept, no penalty",train,R2D2_U298_combined_61bp,1,0.9847830126880516
+"Paper replica: no intercept, no penalty",train,R2D2_U314_combined_61bp,1,0.907894570531223
+"Paper replica: no intercept, no penalty",train,R2D2_U316_combined_61bp,1,0.9188974641310423
+"Paper replica: no intercept, no penalty",train,R2D2_U337_combined_61bp,1,0.8010367026366125
+"Paper replica: no intercept, no penalty",train,R2D2_U341_combined_61bp,1,0.9600559585418962
+"Paper replica: no intercept, no penalty",train,R2D2_U343_combined_61bp,1,0.9805081177378548
+"Paper replica: no intercept, no penalty",train,R2D2_U355_combined_61bp,1,0.624933653964448
+"Paper replica: no intercept, no penalty",train,R2D2_U357_combined_61bp,1,0.9957059114954102
+"Paper replica: no intercept, no penalty",train,R2D2_U362_combined_61bp,1,0.9833540273066884
+"Paper replica: no intercept, no penalty",train,R2D2_U363_combined_61bp,1,0.9451247646817955
+"Paper replica: no intercept, no penalty",train,R2D2_U371_combined_61bp,1,0.9958420049376399
+"Paper replica: no intercept, no penalty",train,R2D2_V104_combined_61bp,1,0.9944351138331704
+"Paper replica: no intercept, no penalty",train,R2D2_V108_combined_61bp,0,0.013870149970535876
+"Paper replica: no intercept, no penalty",train,R2D2_V118_combined_61bp,1,0.5068189926389961
+"Paper replica: no intercept, no penalty",train,R2D2_V119_combined_61bp,0,0.2509261693917535
+"Paper replica: no intercept, no penalty",train,R2D2_V120_combined_61bp,0,0.056882890736908547
+"Paper replica: no intercept, no penalty",train,R2D2_V121_combined_61bp,0,0.5828492264256993
+"Paper replica: no intercept, no penalty",train,R2D2_V124_combined_61bp,0,0.023713840301335113
+"Paper replica: no intercept, no penalty",train,R2D2_V126_combined_61bp,0,0.15881662013636097
+"Paper replica: no intercept, no penalty",train,R2D2_V127_combined_61bp,1,0.20429984797632922
+"Paper replica: no intercept, no penalty",train,R2D2_V128_combined_61bp,1,0.07467357018620321
+"Paper replica: no intercept, no penalty",train,R2D2_V129_combined_61bp,1,0.5422331594958448
+"Paper replica: no intercept, no penalty",train,R2D2_V132_combined_61bp,0,0.9114202834801356
+"Paper replica: no intercept, no penalty",train,R2D2_V137_combined_61bp,0,0.0004180787829142245
+"Paper replica: no intercept, no penalty",train,R2D2_V146_combined_61bp,1,0.990846881166331
+"Paper replica: no intercept, no penalty",train,R2D2_V147_combined_61bp,1,0.8979103261414987
+"Paper replica: no intercept, no penalty",train,R2D2_V152_combined_61bp,0,0.4467517910955736
+"Paper replica: no intercept, no penalty",train,R2D2_V153_combined_61bp,0,0.1720599792488297
+"Paper replica: no intercept, no penalty",train,R2D2_V159_combined_61bp,0,0.17031303869826273
+"Paper replica: no intercept, no penalty",train,R2D2_V16_combined_61bp,0,0.16989081775306278
+"Paper replica: no intercept, no penalty",train,R2D2_V160_combined_61bp,1,0.9934958566922636
+"Paper replica: no intercept, no penalty",train,R2D2_V162_combined_61bp,0,0.15529097685229185
+"Paper replica: no intercept, no penalty",train,R2D2_V165_combined_61bp,1,0.9690184485819469
+"Paper replica: no intercept, no penalty",train,R2D2_V166_combined_61bp,1,0.8051126234754374
+"Paper replica: no intercept, no penalty",train,R2D2_V172_combined_61bp,1,0.8300119306638268
+"Paper replica: no intercept, no penalty",train,R2D2_V20_combined_61bp,1,0.9707089702777313
+"Paper replica: no intercept, no penalty",train,R2D2_V286_combined_61bp,1,0.6286601166601042
+"Paper replica: no intercept, no penalty",test,GHL109_combined_61bp,1,0.9848327260248801
+"Paper replica: no intercept, no penalty",test,GHL114_combined_61bp,1,0.9892305196849335
+"Paper replica: no intercept, no penalty",test,GHL119_combined_61bp,1,0.6414508387071353
+"Paper replica: no intercept, no penalty",test,GHL123_combined_61bp,1,0.7845023837453949
+"Paper replica: no intercept, no penalty",test,GHL128_combined_61bp,0,0.5548136881418243
+"Paper replica: no intercept, no penalty",test,GHL131_combined_61bp,1,0.9718564439190933
+"Paper replica: no intercept, no penalty",test,GHL132_combined_61bp,0,0.1581994679143527
+"Paper replica: no intercept, no penalty",test,GHL138_combined_61bp,0,0.26197266452806206
+"Paper replica: no intercept, no penalty",test,GHL144_combined_61bp,1,0.880999860867046
+"Paper replica: no intercept, no penalty",test,GHL161_combined_61bp,0,0.3969295872230649
+"Paper replica: no intercept, no penalty",test,GHL166_combined_61bp,0,0.61481238612166
+"Paper replica: no intercept, no penalty",test,GHL172_combined_61bp,0,0.04507064725734925
+"Paper replica: no intercept, no penalty",test,GHL188_combined_61bp,0,0.06178243783495958
+"Paper replica: no intercept, no penalty",test,GHL206_combined_61bp,1,0.9975150120873254
+"Paper replica: no intercept, no penalty",test,GHL208_combined_61bp,1,0.8215096061274337
+"Paper replica: no intercept, no penalty",test,GHL210_combined_61bp,0,0.12833743743673823
+"Paper replica: no intercept, no penalty",test,GHL229_combined_61bp,1,0.9405512063379252
+"Paper replica: no intercept, no penalty",test,GHL235_combined_61bp,1,0.9973283764520493
+"Paper replica: no intercept, no penalty",test,GHL248_combined_61bp,1,0.9930205391951581
+"Paper replica: no intercept, no penalty",test,GHL264_combined_61bp,1,0.6172845478674783
+"Paper replica: no intercept, no penalty",test,GHL269_combined_61bp,0,0.40143173133391585
+"Paper replica: no intercept, no penalty",test,GHL27_combined_61bp,1,0.6880018268645987
+"Paper replica: no intercept, no penalty",test,GHL3_combined_61bp,0,0.44925325070560834
+"Paper replica: no intercept, no penalty",test,GHL34_combined_61bp,1,0.989523380063857
+"Paper replica: no intercept, no penalty",test,GHL45_combined_61bp,1,0.9352751749936947
+"Paper replica: no intercept, no penalty",test,GHL56_combined_61bp,1,0.9951266112480951
+"Paper replica: no intercept, no penalty",test,GHL58_combined_61bp,0,0.4145782762952646
+"Paper replica: no intercept, no penalty",test,GHL72_combined_61bp,1,0.08795668264138427
+"Paper replica: no intercept, no penalty",test,GHL89_combined_61bp,0,0.06587618138117328
+"Paper replica: no intercept, no penalty",test,GHL93_combined_61bp,1,0.9553525264304223
+"Paper replica: no intercept, no penalty",test,R2D2_P114_combined_61bp,0,0.28301674026679297
+"Paper replica: no intercept, no penalty",test,R2D2_P118_combined_61bp,0,0.14757385958127348
+"Paper replica: no intercept, no penalty",test,R2D2_P119_combined_61bp,0,0.11261357614918509
+"Paper replica: no intercept, no penalty",test,R2D2_P124_combined_61bp,1,0.5592748395180122
+"Paper replica: no intercept, no penalty",test,R2D2_P127_combined_61bp,0,0.3483488106494762
+"Paper replica: no intercept, no penalty",test,R2D2_P131_combined_61bp,0,0.29715046300118564
+"Paper replica: no intercept, no penalty",test,R2D2_P232_combined_61bp,1,0.5556594167499639
+"Paper replica: no intercept, no penalty",test,R2D2_P33_combined_61bp,1,0.9179077159631894
+"Paper replica: no intercept, no penalty",test,R2D2_U102_combined_61bp,0,0.4877971033595358
+"Paper replica: no intercept, no penalty",test,R2D2_U103_combined_61bp,0,0.37683519322942394
+"Paper replica: no intercept, no penalty",test,R2D2_U112_combined_61bp,0,0.3852171289579674
+"Paper replica: no intercept, no penalty",test,R2D2_U114_combined_61bp,0,0.08362493823290222
+"Paper replica: no intercept, no penalty",test,R2D2_U131_combined_61bp,0,0.09265735324569625
+"Paper replica: no intercept, no penalty",test,R2D2_U132_combined_61bp,0,0.845932332732817
+"Paper replica: no intercept, no penalty",test,R2D2_U133_combined_61bp,0,0.8555363678705475
+"Paper replica: no intercept, no penalty",test,R2D2_U269_combined_61bp,1,0.9834125504567094
+"Paper replica: no intercept, no penalty",test,R2D2_U312_combined_61bp,1,0.5473502252590368
+"Paper replica: no intercept, no penalty",test,R2D2_U315_combined_61bp,1,0.9539995065360628
+"Paper replica: no intercept, no penalty",test,R2D2_U323_combined_61bp,1,0.8575222190100176
+"Paper replica: no intercept, no penalty",test,R2D2_U329_combined_61bp,1,0.9263944016337322
+"Paper replica: no intercept, no penalty",test,R2D2_U332_combined_61bp,1,0.9926195799338348
+"Paper replica: no intercept, no penalty",test,R2D2_V130_combined_61bp,1,0.5063422478286382
+"Paper replica: no intercept, no penalty",test,R2D2_V139_combined_61bp,0,0.21394625734803793
+"Paper replica: no intercept, no penalty",test,R2D2_V143_combined_61bp,0,0.20480470004125487
+"Paper replica: no intercept, no penalty",test,R2D2_V151_combined_61bp,0,0.3106743000454834
+"Paper replica: no intercept, no penalty",test,R2D2_V157_combined_61bp,1,0.8321089617886771
+"Paper replica: no intercept, no penalty",test,R2D2_V167_combined_61bp,1,0.9767602919240738
+"Paper replica: no intercept, no penalty",test,R2D2_V190_combined_61bp,1,0.9390450444107586
+"Paper replica: no intercept, no penalty",test,R2D2_V218_combined_61bp,1,0.9109864975727753
+"Paper replica: no intercept, no penalty",test,R2D2_V242_combined_61bp,1,0.9695614039377927
+"Paper replica: no intercept, no penalty",test,R2D2_V273_combined_61bp,1,0.9436587136129941
+"Paper replica: no intercept, no penalty",val,TBSQUARE_553_combined_61bp,1,0.8980906692984059
+"Paper replica: no intercept, no penalty",val,TBSQUARE_554_combined_61bp,0,0.3249917048226595
+"Paper replica: no intercept, no penalty",val,TBSQUARE_555_combined_61bp,1,0.9901490111841155
+"Paper replica: no intercept, no penalty",val,TBSQUARE_557_combined_61bp,0,0.1402828963101007
+"Paper replica: no intercept, no penalty",val,TBSQUARE_561_combined_61bp,1,0.8315443249778814
+"Paper replica: no intercept, no penalty",val,TBSQUARE_564_combined_61bp,0,0.42325481114790225
+"Paper replica: no intercept, no penalty",val,TBSQUARE_568_combined_61bp,0,0.7489430281391485
+"Paper replica: no intercept, no penalty",val,TBSQUARE_569_combined_61bp,1,0.9927336418594456
+"Paper replica: no intercept, no penalty",val,TBSQUARE_570_combined_61bp,1,0.926195788486724
+"Paper replica: no intercept, no penalty",val,TBSQUARE_572_combined_61bp,0,0.2991505719030283
+"Paper replica: no intercept, no penalty",val,TBSQUARE_573_combined_61bp,1,0.838507590971014
+"Paper replica: no intercept, no penalty",val,TBSQUARE_577_combined_61bp,0,0.04895339973726379
+"Paper replica: no intercept, no penalty",val,TBSQUARE_578_combined_61bp,1,0.8150523026334631
+"Paper replica: no intercept, no penalty",val,TBSQUARE_583_combined_61bp,0,0.8157423581259873
+"Paper replica: no intercept, no penalty",val,TBSQUARE_584_combined_61bp,1,0.9633172092483211
+"Paper replica: no intercept, no penalty",val,TBSQUARE_589_combined_61bp,0,0.06113260638275815
+"Paper replica: no intercept, no penalty",val,TBSQUARE_591_combined_61bp,1,0.9096175169483358
+"Paper replica: no intercept, no penalty",val,TBSQUARE_596_combined_61bp,0,0.0901823333047857
+"Paper replica: no intercept, no penalty",val,TBSQUARE_597_combined_61bp,1,0.9172879543108097
+"Paper replica: no intercept, no penalty",val,TBSQUARE_598_combined_61bp,1,0.9861302389188376
+"Paper replica: no intercept, no penalty",val,TBSQUARE_599_combined_61bp,0,0.8268427848429185
+"Paper replica: no intercept, no penalty",val,TBSQUARE_601_combined_61bp,1,0.9598659715324103
+"Paper replica: no intercept, no penalty",val,TBSQUARE_602_combined_61bp,1,0.9555794063460048
+"Paper replica: no intercept, no penalty",val,TBSQUARE_603_combined_61bp,0,0.04361174592809673
+"Paper replica: no intercept, no penalty",val,TBSQUARE_608_combined_61bp,0,0.1498968465563255
+"Paper replica: no intercept, no penalty",val,TBSQUARE_609_combined_61bp,1,0.9773052826655703
+"Paper replica: no intercept, no penalty",val,TBSQUARE_610_combined_61bp,0,0.42528770738406385
+"Paper replica: no intercept, no penalty",val,TBSQUARE_611_combined_61bp,1,0.22682315460381192
+"Paper replica: no intercept, no penalty",val,TBSQUARE_612_combined_61bp,1,0.9933451978543139
+"Paper replica: no intercept, no penalty",val,TBSQUARE_613_combined_61bp,0,0.7546301239069586
+"Paper replica: no intercept, no penalty",val,TBSQUARE_614_combined_61bp,1,0.6993783945257138
+"Paper replica: no intercept, no penalty",val,TBSQUARE_616_combined_61bp,0,0.8856868216130439
+"Paper replica: no intercept, no penalty",val,TBSQUARE_617_combined_61bp,1,0.9718699195351783
+"Paper replica: no intercept, no penalty",val,TBSQUARE_618_combined_61bp,1,0.9227594885275123
+"Paper replica: no intercept, no penalty",val,TBSQUARE_619_combined_61bp,0,0.4421142388288311
+"Paper replica: no intercept, no penalty",val,TBSQUARE_620_combined_61bp,1,0.9916461105758981
+"Paper replica: no intercept, no penalty",val,TBSQUARE_623_combined_61bp,1,0.9398706113135141
+"Paper replica: no intercept, no penalty",val,TBSQUARE_628_combined_61bp,1,0.9558878607919523
+"Paper replica: no intercept, no penalty",val,TBSQUARE_630_combined_61bp,1,0.90229027853825
+"Paper replica: no intercept, no penalty",val,TBSQUARE_631_combined_61bp,0,0.8036460711615786
+"Paper replica: no intercept, no penalty",val,TBSQUARE_634_combined_61bp,0,0.37228190990965127
+"Paper replica: no intercept, no penalty",val,TBSQUARE_635_combined_61bp,1,0.997952850688513
+"Paper replica: no intercept, no penalty",val,TBSQUARE_636_combined_61bp,1,0.9863133096898823
+"Paper replica: no intercept, no penalty",val,TBSQUARE_637_combined_61bp,0,0.2870430384111305
+"Paper replica: no intercept, no penalty",val,TBSQUARE_638_combined_61bp,0,0.22197348705106548
+"Paper replica: no intercept, no penalty",val,TBSQUARE_640_combined_61bp,1,0.9400939433982435
+"Paper replica: no intercept, no penalty",val,TBSQUARE_648_combined_61bp,1,0.875903836983665
+"Paper replica: no intercept, no penalty",val,TBSQUARE_649_combined_61bp,1,0.9872533273177218
+"Paper replica: no intercept, no penalty",val,TBSQUARE_661_combined_61bp,1,0.9261562198565545
+"Paper replica: no intercept, no penalty",val,TBSQUARE_693_combined_61bp,1,0.9571213450999573
+"Paper replica: no intercept, no penalty",val,TBSQUARE_694_combined_61bp,0,0.4925234033425446
+"Paper replica: no intercept, no penalty",val,TBSQUARE_695_combined_61bp,0,0.02941885033496181
+"Paper replica: no intercept, no penalty",val,TBSQUARE_696_combined_61bp,0,0.34413030142225026
+"Paper replica: no intercept, no penalty",val,TBSQUARE_697_combined_61bp,1,0.9476623187858237
+"Paper replica: no intercept, no penalty",val,TBSQUARE_698_combined_61bp,0,0.2491283417341554
+"Paper replica: no intercept, no penalty",val,TBSQUARE_699_combined_61bp,1,0.5966479309446611
+"Paper replica: no intercept, no penalty",val,TBSQUARE_702_combined_61bp,0,0.3567274571452917
+"Paper replica: no intercept, no penalty",val,TBSQUARE_703_combined_61bp,1,0.5023871050980494
+"Paper replica: no intercept, no penalty",val,TBSQUARE_708_combined_61bp,1,0.9615131734893754
+"Paper replica: no intercept, no penalty",val,TBSQUARE_711_combined_61bp,1,0.5508407170735407
+Logistic GLM: no penalty,train,GHL1_combined_61bp,0,0.15833357549012986
+Logistic GLM: no penalty,train,GHL103_combined_61bp,1,0.952213232090181
+Logistic GLM: no penalty,train,GHL105_combined_61bp,1,0.9793827635372205
+Logistic GLM: no penalty,train,GHL107_combined_61bp,0,0.08803033038825007
+Logistic GLM: no penalty,train,GHL108_combined_61bp,1,0.9947981761200755
+Logistic GLM: no penalty,train,GHL112_combined_61bp,1,0.8215365412662787
+Logistic GLM: no penalty,train,GHL121_combined_61bp,0,0.9491628789625904
+Logistic GLM: no penalty,train,GHL124_combined_61bp,1,0.47698802710795396
+Logistic GLM: no penalty,train,GHL126_combined_61bp,1,0.9369484607336794
+Logistic GLM: no penalty,train,GHL13_combined_61bp,1,0.9130178618230436
+Logistic GLM: no penalty,train,GHL133_combined_61bp,1,0.9696672004286055
+Logistic GLM: no penalty,train,GHL134_combined_61bp,0,0.22846578117780936
+Logistic GLM: no penalty,train,GHL136_combined_61bp,1,0.6386373539440715
+Logistic GLM: no penalty,train,GHL141_combined_61bp,1,0.8214273326189859
+Logistic GLM: no penalty,train,GHL158_combined_61bp,0,0.15560789470040653
+Logistic GLM: no penalty,train,GHL16_combined_61bp,1,0.941349515575925
+Logistic GLM: no penalty,train,GHL169_combined_61bp,1,0.10428575898445505
+Logistic GLM: no penalty,train,GHL17_combined_61bp,1,0.5982933895855516
+Logistic GLM: no penalty,train,GHL170_combined_61bp,1,0.7492484792323402
+Logistic GLM: no penalty,train,GHL186_combined_61bp,0,0.7466268031000396
+Logistic GLM: no penalty,train,GHL19_combined_61bp,1,0.7811002040025432
+Logistic GLM: no penalty,train,GHL192_combined_61bp,1,0.9845228771049751
+Logistic GLM: no penalty,train,GHL199_combined_61bp,0,0.29780877042639187
+Logistic GLM: no penalty,train,GHL201_combined_61bp,0,0.0062530326704077375
+Logistic GLM: no penalty,train,GHL204_combined_61bp,1,0.9900437958136484
+Logistic GLM: no penalty,train,GHL217_combined_61bp,1,0.8551446790001801
+Logistic GLM: no penalty,train,GHL22_combined_61bp,0,0.07615049996340639
+Logistic GLM: no penalty,train,GHL223_combined_61bp,0,0.9498318978131918
+Logistic GLM: no penalty,train,GHL230_combined_61bp,1,0.5322807986685554
+Logistic GLM: no penalty,train,GHL252_combined_61bp,1,0.32704508498772933
+Logistic GLM: no penalty,train,GHL274_combined_61bp,1,0.9775553210505702
+Logistic GLM: no penalty,train,GHL276_combined_61bp,1,0.9917067480358508
+Logistic GLM: no penalty,train,GHL277_combined_61bp,0,0.4106604574406704
+Logistic GLM: no penalty,train,GHL284_combined_61bp,1,0.459385451659075
+Logistic GLM: no penalty,train,GHL286_combined_61bp,1,0.915448765208187
+Logistic GLM: no penalty,train,GHL288_combined_61bp,0,0.9157153491889605
+Logistic GLM: no penalty,train,GHL30_combined_61bp,0,0.017238914623837517
+Logistic GLM: no penalty,train,GHL308_combined_61bp,1,0.3725803677627735
+Logistic GLM: no penalty,train,GHL35_combined_61bp,1,0.9729097855241994
+Logistic GLM: no penalty,train,GHL36_combined_61bp,1,0.9888323776371263
+Logistic GLM: no penalty,train,GHL37_combined_61bp,1,0.5147881875567972
+Logistic GLM: no penalty,train,GHL40_combined_61bp,0,0.440200854835125
+Logistic GLM: no penalty,train,GHL46_combined_61bp,1,0.8342553925644635
+Logistic GLM: no penalty,train,GHL47_combined_61bp,1,0.7162271625330365
+Logistic GLM: no penalty,train,GHL52_combined_61bp,0,0.20959963000679632
+Logistic GLM: no penalty,train,GHL53_combined_61bp,1,0.5453684438089283
+Logistic GLM: no penalty,train,GHL57_combined_61bp,1,0.897820550083235
+Logistic GLM: no penalty,train,GHL59_combined_61bp,1,0.9422871499878576
+Logistic GLM: no penalty,train,GHL61_combined_61bp,1,0.9809055597786575
+Logistic GLM: no penalty,train,GHL62_combined_61bp,1,0.9938837931531056
+Logistic GLM: no penalty,train,GHL63_combined_61bp,0,0.2740438938961349
+Logistic GLM: no penalty,train,GHL65_combined_61bp,1,0.7686743092480138
+Logistic GLM: no penalty,train,GHL69_combined_61bp,0,0.06313360918959575
+Logistic GLM: no penalty,train,GHL7_combined_61bp,0,0.02038873994773492
+Logistic GLM: no penalty,train,GHL70_combined_61bp,0,0.5615553063297807
+Logistic GLM: no penalty,train,GHL71_combined_61bp,1,0.9755318495047821
+Logistic GLM: no penalty,train,GHL75_combined_61bp,0,0.026908028357640428
+Logistic GLM: no penalty,train,GHL76_combined_61bp,0,0.6458096276794437
+Logistic GLM: no penalty,train,GHL84_combined_61bp,1,0.9946325567069436
+Logistic GLM: no penalty,train,GHL88_combined_61bp,1,0.8121033849635475
+Logistic GLM: no penalty,train,GHL9_combined_61bp,0,0.36164309320165655
+Logistic GLM: no penalty,train,GHL94_combined_61bp,0,0.03933215876829778
+Logistic GLM: no penalty,train,GHL99_combined_61bp,0,0.05510683220840384
+Logistic GLM: no penalty,train,R2D2_P1_combined_61bp,0,0.17278034682516621
+Logistic GLM: no penalty,train,R2D2_P104_combined_61bp,0,0.34164084707982895
+Logistic GLM: no penalty,train,R2D2_P105_combined_61bp,0,0.041879801674721
+Logistic GLM: no penalty,train,R2D2_P108_combined_61bp,0,0.28508586869605246
+Logistic GLM: no penalty,train,R2D2_P110_combined_61bp,0,0.0450863120116266
+Logistic GLM: no penalty,train,R2D2_P113_combined_61bp,0,0.03963324987705826
+Logistic GLM: no penalty,train,R2D2_P126_combined_61bp,0,0.125804190945879
+Logistic GLM: no penalty,train,R2D2_P129_combined_61bp,0,0.6707190163790373
+Logistic GLM: no penalty,train,R2D2_P130_combined_61bp,0,0.1491512552182389
+Logistic GLM: no penalty,train,R2D2_P133_combined_61bp,0,0.20835352579196348
+Logistic GLM: no penalty,train,R2D2_P152_combined_61bp,1,0.9545619252160364
+Logistic GLM: no penalty,train,R2D2_P18_combined_61bp,1,0.4143436705711011
+Logistic GLM: no penalty,train,R2D2_P202_combined_61bp,1,0.5902820162193021
+Logistic GLM: no penalty,train,R2D2_P214_combined_61bp,1,0.9538586002269537
+Logistic GLM: no penalty,train,R2D2_P22_combined_61bp,1,0.5917044267962376
+Logistic GLM: no penalty,train,R2D2_P241_combined_61bp,1,0.6550378625130099
+Logistic GLM: no penalty,train,R2D2_P245_combined_61bp,1,0.6321074035580977
+Logistic GLM: no penalty,train,R2D2_P96_combined_61bp,1,0.8907472291756006
+Logistic GLM: no penalty,train,R2D2_U100_combined_61bp,0,0.2784645511325789
+Logistic GLM: no penalty,train,R2D2_U105_combined_61bp,0,0.17162431182734827
+Logistic GLM: no penalty,train,R2D2_U106_combined_61bp,0,0.02249229656228792
+Logistic GLM: no penalty,train,R2D2_U110_combined_61bp,0,0.06828900440469873
+Logistic GLM: no penalty,train,R2D2_U111_combined_61bp,0,0.029545335494545903
+Logistic GLM: no penalty,train,R2D2_U118_combined_61bp,0,0.4405512432257342
+Logistic GLM: no penalty,train,R2D2_U122_combined_61bp,0,0.02965564615680893
+Logistic GLM: no penalty,train,R2D2_U124_combined_61bp,0,0.21829916503002378
+Logistic GLM: no penalty,train,R2D2_U129_combined_61bp,0,0.149366386672804
+Logistic GLM: no penalty,train,R2D2_U130_combined_61bp,0,0.17425049397063347
+Logistic GLM: no penalty,train,R2D2_U273_combined_61bp,1,0.9712058619311147
+Logistic GLM: no penalty,train,R2D2_U287_combined_61bp,1,0.9980807471727526
+Logistic GLM: no penalty,train,R2D2_U298_combined_61bp,1,0.9900607314677388
+Logistic GLM: no penalty,train,R2D2_U314_combined_61bp,1,0.9548830742611522
+Logistic GLM: no penalty,train,R2D2_U316_combined_61bp,1,0.9506674232430598
+Logistic GLM: no penalty,train,R2D2_U337_combined_61bp,1,0.8714825955897806
+Logistic GLM: no penalty,train,R2D2_U341_combined_61bp,1,0.969696612474959
+Logistic GLM: no penalty,train,R2D2_U343_combined_61bp,1,0.947014161735062
+Logistic GLM: no penalty,train,R2D2_U355_combined_61bp,1,0.561877229758819
+Logistic GLM: no penalty,train,R2D2_U357_combined_61bp,1,0.9964625736145458
+Logistic GLM: no penalty,train,R2D2_U362_combined_61bp,1,0.9885120343518624
+Logistic GLM: no penalty,train,R2D2_U363_combined_61bp,1,0.9623163329407232
+Logistic GLM: no penalty,train,R2D2_U371_combined_61bp,1,0.9966868901848785
+Logistic GLM: no penalty,train,R2D2_V104_combined_61bp,1,0.9969814804941131
+Logistic GLM: no penalty,train,R2D2_V108_combined_61bp,0,0.016867656929162925
+Logistic GLM: no penalty,train,R2D2_V118_combined_61bp,1,0.5252132341833234
+Logistic GLM: no penalty,train,R2D2_V119_combined_61bp,0,0.17417153353929743
+Logistic GLM: no penalty,train,R2D2_V120_combined_61bp,0,0.0490182577987857
+Logistic GLM: no penalty,train,R2D2_V121_combined_61bp,0,0.7401430173731174
+Logistic GLM: no penalty,train,R2D2_V124_combined_61bp,0,0.03346499683950529
+Logistic GLM: no penalty,train,R2D2_V126_combined_61bp,0,0.1964331147485191
+Logistic GLM: no penalty,train,R2D2_V127_combined_61bp,1,0.3313362991529354
+Logistic GLM: no penalty,train,R2D2_V128_combined_61bp,1,0.12340583423457038
+Logistic GLM: no penalty,train,R2D2_V129_combined_61bp,1,0.6995106800303866
+Logistic GLM: no penalty,train,R2D2_V132_combined_61bp,0,0.9429607308391448
+Logistic GLM: no penalty,train,R2D2_V137_combined_61bp,0,0.002758016435943675
+Logistic GLM: no penalty,train,R2D2_V146_combined_61bp,1,0.989659698675969
+Logistic GLM: no penalty,train,R2D2_V147_combined_61bp,1,0.8902111760993511
+Logistic GLM: no penalty,train,R2D2_V152_combined_61bp,0,0.28741064927968535
+Logistic GLM: no penalty,train,R2D2_V153_combined_61bp,0,0.20194190345452814
+Logistic GLM: no penalty,train,R2D2_V159_combined_61bp,0,0.14222474556889034
+Logistic GLM: no penalty,train,R2D2_V16_combined_61bp,0,0.12998641502129643
+Logistic GLM: no penalty,train,R2D2_V160_combined_61bp,1,0.9956481091555006
+Logistic GLM: no penalty,train,R2D2_V162_combined_61bp,0,0.13748252455080157
+Logistic GLM: no penalty,train,R2D2_V165_combined_61bp,1,0.9771722721050767
+Logistic GLM: no penalty,train,R2D2_V166_combined_61bp,1,0.8299216830405282
+Logistic GLM: no penalty,train,R2D2_V172_combined_61bp,1,0.8262053500897374
+Logistic GLM: no penalty,train,R2D2_V20_combined_61bp,1,0.9691382384340531
+Logistic GLM: no penalty,train,R2D2_V286_combined_61bp,1,0.5660334792610606
+Logistic GLM: no penalty,test,GHL109_combined_61bp,1,0.9869349394727628
+Logistic GLM: no penalty,test,GHL114_combined_61bp,1,0.9930636839045668
+Logistic GLM: no penalty,test,GHL119_combined_61bp,1,0.6778626907479836
+Logistic GLM: no penalty,test,GHL123_combined_61bp,1,0.862308886812788
+Logistic GLM: no penalty,test,GHL128_combined_61bp,0,0.3979038680745281
+Logistic GLM: no penalty,test,GHL131_combined_61bp,1,0.9542712124922398
+Logistic GLM: no penalty,test,GHL132_combined_61bp,0,0.20977167113766887
+Logistic GLM: no penalty,test,GHL138_combined_61bp,0,0.27815479880618815
+Logistic GLM: no penalty,test,GHL144_combined_61bp,1,0.926646627132619
+Logistic GLM: no penalty,test,GHL161_combined_61bp,0,0.5243509262368871
+Logistic GLM: no penalty,test,GHL166_combined_61bp,0,0.5063592738699775
+Logistic GLM: no penalty,test,GHL172_combined_61bp,0,0.050107272957844826
+Logistic GLM: no penalty,test,GHL188_combined_61bp,0,0.07513603593605073
+Logistic GLM: no penalty,test,GHL206_combined_61bp,1,0.9972542456591742
+Logistic GLM: no penalty,test,GHL208_combined_61bp,1,0.8913990195886526
+Logistic GLM: no penalty,test,GHL210_combined_61bp,0,0.1463287023692305
+Logistic GLM: no penalty,test,GHL229_combined_61bp,1,0.9518172910918989
+Logistic GLM: no penalty,test,GHL235_combined_61bp,1,0.9977557300920177
+Logistic GLM: no penalty,test,GHL248_combined_61bp,1,0.9932619474072087
+Logistic GLM: no penalty,test,GHL264_combined_61bp,1,0.6657358402274856
+Logistic GLM: no penalty,test,GHL269_combined_61bp,0,0.3617590124516791
+Logistic GLM: no penalty,test,GHL27_combined_61bp,1,0.8227176406332574
+Logistic GLM: no penalty,test,GHL3_combined_61bp,0,0.552115501864972
+Logistic GLM: no penalty,test,GHL34_combined_61bp,1,0.9947964926222148
+Logistic GLM: no penalty,test,GHL45_combined_61bp,1,0.9454493067611829
+Logistic GLM: no penalty,test,GHL56_combined_61bp,1,0.990303958786038
+Logistic GLM: no penalty,test,GHL58_combined_61bp,0,0.4043064069390923
+Logistic GLM: no penalty,test,GHL72_combined_61bp,1,0.12366584965202247
+Logistic GLM: no penalty,test,GHL89_combined_61bp,0,0.06692051361349714
+Logistic GLM: no penalty,test,GHL93_combined_61bp,1,0.9643335579695274
+Logistic GLM: no penalty,test,R2D2_P114_combined_61bp,0,0.3381165584365162
+Logistic GLM: no penalty,test,R2D2_P118_combined_61bp,0,0.15243596753077582
+Logistic GLM: no penalty,test,R2D2_P119_combined_61bp,0,0.09376299208174099
+Logistic GLM: no penalty,test,R2D2_P124_combined_61bp,1,0.5495279082217248
+Logistic GLM: no penalty,test,R2D2_P127_combined_61bp,0,0.34657985316906437
+Logistic GLM: no penalty,test,R2D2_P131_combined_61bp,0,0.2293567080586294
+Logistic GLM: no penalty,test,R2D2_P232_combined_61bp,1,0.5878631013017606
+Logistic GLM: no penalty,test,R2D2_P33_combined_61bp,1,0.9104107983056866
+Logistic GLM: no penalty,test,R2D2_U102_combined_61bp,0,0.4014913140875749
+Logistic GLM: no penalty,test,R2D2_U103_combined_61bp,0,0.5695312643270458
+Logistic GLM: no penalty,test,R2D2_U112_combined_61bp,0,0.1298179459079919
+Logistic GLM: no penalty,test,R2D2_U114_combined_61bp,0,0.06895644901196189
+Logistic GLM: no penalty,test,R2D2_U131_combined_61bp,0,0.06592724612022513
+Logistic GLM: no penalty,test,R2D2_U132_combined_61bp,0,0.7787864037240396
+Logistic GLM: no penalty,test,R2D2_U133_combined_61bp,0,0.7769077505265055
+Logistic GLM: no penalty,test,R2D2_U269_combined_61bp,1,0.9913391711892993
+Logistic GLM: no penalty,test,R2D2_U312_combined_61bp,1,0.6824348614013899
+Logistic GLM: no penalty,test,R2D2_U315_combined_61bp,1,0.9802859812003568
+Logistic GLM: no penalty,test,R2D2_U323_combined_61bp,1,0.9445351527973426
+Logistic GLM: no penalty,test,R2D2_U329_combined_61bp,1,0.9540394066610487
+Logistic GLM: no penalty,test,R2D2_U332_combined_61bp,1,0.9948767513194766
+Logistic GLM: no penalty,test,R2D2_V130_combined_61bp,1,0.7460437945994643
+Logistic GLM: no penalty,test,R2D2_V139_combined_61bp,0,0.31273872952893816
+Logistic GLM: no penalty,test,R2D2_V143_combined_61bp,0,0.16186008058893567
+Logistic GLM: no penalty,test,R2D2_V151_combined_61bp,0,0.25916580620011914
+Logistic GLM: no penalty,test,R2D2_V157_combined_61bp,1,0.7264580145913923
+Logistic GLM: no penalty,test,R2D2_V167_combined_61bp,1,0.9548815935206738
+Logistic GLM: no penalty,test,R2D2_V190_combined_61bp,1,0.939052526730791
+Logistic GLM: no penalty,test,R2D2_V218_combined_61bp,1,0.8984860789811362
+Logistic GLM: no penalty,test,R2D2_V242_combined_61bp,1,0.9871378215932965
+Logistic GLM: no penalty,test,R2D2_V273_combined_61bp,1,0.93445632251182
+Logistic GLM: no penalty,val,TBSQUARE_553_combined_61bp,1,0.7885160488252309
+Logistic GLM: no penalty,val,TBSQUARE_554_combined_61bp,0,0.10166116786064586
+Logistic GLM: no penalty,val,TBSQUARE_555_combined_61bp,1,0.985377227857597
+Logistic GLM: no penalty,val,TBSQUARE_557_combined_61bp,0,0.07569850710013108
+Logistic GLM: no penalty,val,TBSQUARE_561_combined_61bp,1,0.4620284313441082
+Logistic GLM: no penalty,val,TBSQUARE_564_combined_61bp,0,0.1881311064890109
+Logistic GLM: no penalty,val,TBSQUARE_568_combined_61bp,0,0.5728173275452068
+Logistic GLM: no penalty,val,TBSQUARE_569_combined_61bp,1,0.9823644099375459
+Logistic GLM: no penalty,val,TBSQUARE_570_combined_61bp,1,0.8488862741684824
+Logistic GLM: no penalty,val,TBSQUARE_572_combined_61bp,0,0.035954363017374785
+Logistic GLM: no penalty,val,TBSQUARE_573_combined_61bp,1,0.5451546919847459
+Logistic GLM: no penalty,val,TBSQUARE_577_combined_61bp,0,0.016397470654966835
+Logistic GLM: no penalty,val,TBSQUARE_578_combined_61bp,1,0.41526722457827003
+Logistic GLM: no penalty,val,TBSQUARE_583_combined_61bp,0,0.47791258876114684
+Logistic GLM: no penalty,val,TBSQUARE_584_combined_61bp,1,0.9212792287830582
+Logistic GLM: no penalty,val,TBSQUARE_589_combined_61bp,0,0.0062075448026795545
+Logistic GLM: no penalty,val,TBSQUARE_591_combined_61bp,1,0.7006873407480096
+Logistic GLM: no penalty,val,TBSQUARE_596_combined_61bp,0,0.01761926336828865
+Logistic GLM: no penalty,val,TBSQUARE_597_combined_61bp,1,0.6775260382398804
+Logistic GLM: no penalty,val,TBSQUARE_598_combined_61bp,1,0.9569429008904502
+Logistic GLM: no penalty,val,TBSQUARE_599_combined_61bp,0,0.24975911931578867
+Logistic GLM: no penalty,val,TBSQUARE_601_combined_61bp,1,0.8249898245279876
+Logistic GLM: no penalty,val,TBSQUARE_602_combined_61bp,1,0.8207508388758015
+Logistic GLM: no penalty,val,TBSQUARE_603_combined_61bp,0,0.015077460702631202
+Logistic GLM: no penalty,val,TBSQUARE_608_combined_61bp,0,0.04170556122779912
+Logistic GLM: no penalty,val,TBSQUARE_609_combined_61bp,1,0.921930579951081
+Logistic GLM: no penalty,val,TBSQUARE_610_combined_61bp,0,0.1788265779633385
+Logistic GLM: no penalty,val,TBSQUARE_611_combined_61bp,1,0.08971168994021879
+Logistic GLM: no penalty,val,TBSQUARE_612_combined_61bp,1,0.972073384810563
+Logistic GLM: no penalty,val,TBSQUARE_613_combined_61bp,0,0.4972614859121496
+Logistic GLM: no penalty,val,TBSQUARE_614_combined_61bp,1,0.44740568848098333
+Logistic GLM: no penalty,val,TBSQUARE_616_combined_61bp,0,0.7105697046381914
+Logistic GLM: no penalty,val,TBSQUARE_617_combined_61bp,1,0.8474139950096814
+Logistic GLM: no penalty,val,TBSQUARE_618_combined_61bp,1,0.7516009116158217
+Logistic GLM: no penalty,val,TBSQUARE_619_combined_61bp,0,0.20726542978809814
+Logistic GLM: no penalty,val,TBSQUARE_620_combined_61bp,1,0.9517888442644054
+Logistic GLM: no penalty,val,TBSQUARE_623_combined_61bp,1,0.81662901108129
+Logistic GLM: no penalty,val,TBSQUARE_628_combined_61bp,1,0.9257901207661686
+Logistic GLM: no penalty,val,TBSQUARE_630_combined_61bp,1,0.7041369751179744
+Logistic GLM: no penalty,val,TBSQUARE_631_combined_61bp,0,0.5048582911613624
+Logistic GLM: no penalty,val,TBSQUARE_634_combined_61bp,0,0.10573628062161354
+Logistic GLM: no penalty,val,TBSQUARE_635_combined_61bp,1,0.9960366031113337
+Logistic GLM: no penalty,val,TBSQUARE_636_combined_61bp,1,0.958902424389764
+Logistic GLM: no penalty,val,TBSQUARE_637_combined_61bp,0,0.07731385228164418
+Logistic GLM: no penalty,val,TBSQUARE_638_combined_61bp,0,0.060649004840528174
+Logistic GLM: no penalty,val,TBSQUARE_640_combined_61bp,1,0.795823015749913
+Logistic GLM: no penalty,val,TBSQUARE_648_combined_61bp,1,0.8085942063055201
+Logistic GLM: no penalty,val,TBSQUARE_649_combined_61bp,1,0.9514634463234848
+Logistic GLM: no penalty,val,TBSQUARE_661_combined_61bp,1,0.7924644446213881
+Logistic GLM: no penalty,val,TBSQUARE_693_combined_61bp,1,0.9108254997029754
+Logistic GLM: no penalty,val,TBSQUARE_694_combined_61bp,0,0.19283268383113816
+Logistic GLM: no penalty,val,TBSQUARE_695_combined_61bp,0,0.009166286946745535
+Logistic GLM: no penalty,val,TBSQUARE_696_combined_61bp,0,0.10964320796249166
+Logistic GLM: no penalty,val,TBSQUARE_697_combined_61bp,1,0.7575606355206302
+Logistic GLM: no penalty,val,TBSQUARE_698_combined_61bp,0,0.06279922581858088
+Logistic GLM: no penalty,val,TBSQUARE_699_combined_61bp,1,0.5035856373699246
+Logistic GLM: no penalty,val,TBSQUARE_702_combined_61bp,0,0.15100332459869933
+Logistic GLM: no penalty,val,TBSQUARE_703_combined_61bp,1,0.18492354556890403
+Logistic GLM: no penalty,val,TBSQUARE_708_combined_61bp,1,0.914788063652666
+Logistic GLM: no penalty,val,TBSQUARE_711_combined_61bp,1,0.2252268716705315
+Logistic GLM: L2 (Ridge),train,GHL1_combined_61bp,0,0.20990622507307627
+Logistic GLM: L2 (Ridge),train,GHL103_combined_61bp,1,0.9381045837575391
+Logistic GLM: L2 (Ridge),train,GHL105_combined_61bp,1,0.9662059883733098
+Logistic GLM: L2 (Ridge),train,GHL107_combined_61bp,0,0.11502450646778259
+Logistic GLM: L2 (Ridge),train,GHL108_combined_61bp,1,0.9905353890690543
+Logistic GLM: L2 (Ridge),train,GHL112_combined_61bp,1,0.8033424896411734
+Logistic GLM: L2 (Ridge),train,GHL121_combined_61bp,0,0.9406954661760555
+Logistic GLM: L2 (Ridge),train,GHL124_combined_61bp,1,0.44787416945218045
+Logistic GLM: L2 (Ridge),train,GHL126_combined_61bp,1,0.9146755628975671
+Logistic GLM: L2 (Ridge),train,GHL13_combined_61bp,1,0.8850570820331745
+Logistic GLM: L2 (Ridge),train,GHL133_combined_61bp,1,0.9615554616536751
+Logistic GLM: L2 (Ridge),train,GHL134_combined_61bp,0,0.2501892161710028
+Logistic GLM: L2 (Ridge),train,GHL136_combined_61bp,1,0.6438466258322905
+Logistic GLM: L2 (Ridge),train,GHL141_combined_61bp,1,0.792345466334742
+Logistic GLM: L2 (Ridge),train,GHL158_combined_61bp,0,0.1912922554216996
+Logistic GLM: L2 (Ridge),train,GHL16_combined_61bp,1,0.9270175140225604
+Logistic GLM: L2 (Ridge),train,GHL169_combined_61bp,1,0.1355444779327068
+Logistic GLM: L2 (Ridge),train,GHL17_combined_61bp,1,0.6170771196098253
+Logistic GLM: L2 (Ridge),train,GHL170_combined_61bp,1,0.7483311179372337
+Logistic GLM: L2 (Ridge),train,GHL186_combined_61bp,0,0.7161086061105464
+Logistic GLM: L2 (Ridge),train,GHL19_combined_61bp,1,0.762489047865818
+Logistic GLM: L2 (Ridge),train,GHL192_combined_61bp,1,0.9746827744553902
+Logistic GLM: L2 (Ridge),train,GHL199_combined_61bp,0,0.3142454764774121
+Logistic GLM: L2 (Ridge),train,GHL201_combined_61bp,0,0.012932620016013488
+Logistic GLM: L2 (Ridge),train,GHL204_combined_61bp,1,0.9828670882588078
+Logistic GLM: L2 (Ridge),train,GHL217_combined_61bp,1,0.8530189401743307
+Logistic GLM: L2 (Ridge),train,GHL22_combined_61bp,0,0.0949370707958593
+Logistic GLM: L2 (Ridge),train,GHL223_combined_61bp,0,0.937801527434262
+Logistic GLM: L2 (Ridge),train,GHL230_combined_61bp,1,0.5789121706461545
+Logistic GLM: L2 (Ridge),train,GHL252_combined_61bp,1,0.3330420268840284
+Logistic GLM: L2 (Ridge),train,GHL274_combined_61bp,1,0.9640345843805761
+Logistic GLM: L2 (Ridge),train,GHL276_combined_61bp,1,0.9865415381030033
+Logistic GLM: L2 (Ridge),train,GHL277_combined_61bp,0,0.37541791309714334
+Logistic GLM: L2 (Ridge),train,GHL284_combined_61bp,1,0.4766632291023423
+Logistic GLM: L2 (Ridge),train,GHL286_combined_61bp,1,0.8879830408850102
+Logistic GLM: L2 (Ridge),train,GHL288_combined_61bp,0,0.8938498361910078
+Logistic GLM: L2 (Ridge),train,GHL30_combined_61bp,0,0.028674327158879926
+Logistic GLM: L2 (Ridge),train,GHL308_combined_61bp,1,0.3680062431754326
+Logistic GLM: L2 (Ridge),train,GHL35_combined_61bp,1,0.9655828402264648
+Logistic GLM: L2 (Ridge),train,GHL36_combined_61bp,1,0.9823709933943493
+Logistic GLM: L2 (Ridge),train,GHL37_combined_61bp,1,0.5180066300098352
+Logistic GLM: L2 (Ridge),train,GHL40_combined_61bp,0,0.41917579221398504
+Logistic GLM: L2 (Ridge),train,GHL46_combined_61bp,1,0.7851742533962731
+Logistic GLM: L2 (Ridge),train,GHL47_combined_61bp,1,0.7140165563517452
+Logistic GLM: L2 (Ridge),train,GHL52_combined_61bp,0,0.24959720894738197
+Logistic GLM: L2 (Ridge),train,GHL53_combined_61bp,1,0.5443194064149588
+Logistic GLM: L2 (Ridge),train,GHL57_combined_61bp,1,0.8762160014524539
+Logistic GLM: L2 (Ridge),train,GHL59_combined_61bp,1,0.9134506399561955
+Logistic GLM: L2 (Ridge),train,GHL61_combined_61bp,1,0.9665068865462381
+Logistic GLM: L2 (Ridge),train,GHL62_combined_61bp,1,0.9886964661226423
+Logistic GLM: L2 (Ridge),train,GHL63_combined_61bp,0,0.2492006041401288
+Logistic GLM: L2 (Ridge),train,GHL65_combined_61bp,1,0.713273951327659
+Logistic GLM: L2 (Ridge),train,GHL69_combined_61bp,0,0.08543001593428039
+Logistic GLM: L2 (Ridge),train,GHL7_combined_61bp,0,0.030628282670312364
+Logistic GLM: L2 (Ridge),train,GHL70_combined_61bp,0,0.6071154220662098
+Logistic GLM: L2 (Ridge),train,GHL71_combined_61bp,1,0.9613343298631135
+Logistic GLM: L2 (Ridge),train,GHL75_combined_61bp,0,0.041306765978532674
+Logistic GLM: L2 (Ridge),train,GHL76_combined_61bp,0,0.626333306734307
+Logistic GLM: L2 (Ridge),train,GHL84_combined_61bp,1,0.9906559872599362
+Logistic GLM: L2 (Ridge),train,GHL88_combined_61bp,1,0.783838538087125
+Logistic GLM: L2 (Ridge),train,GHL9_combined_61bp,0,0.3634140667972733
+Logistic GLM: L2 (Ridge),train,GHL94_combined_61bp,0,0.060465040951202045
+Logistic GLM: L2 (Ridge),train,GHL99_combined_61bp,0,0.07245535624579563
+Logistic GLM: L2 (Ridge),train,R2D2_P1_combined_61bp,0,0.20018849649909304
+Logistic GLM: L2 (Ridge),train,R2D2_P104_combined_61bp,0,0.3630485046595559
+Logistic GLM: L2 (Ridge),train,R2D2_P105_combined_61bp,0,0.05992149441709822
+Logistic GLM: L2 (Ridge),train,R2D2_P108_combined_61bp,0,0.3111254196666203
+Logistic GLM: L2 (Ridge),train,R2D2_P110_combined_61bp,0,0.06627018285110435
+Logistic GLM: L2 (Ridge),train,R2D2_P113_combined_61bp,0,0.05681606725041045
+Logistic GLM: L2 (Ridge),train,R2D2_P126_combined_61bp,0,0.13464708389779928
+Logistic GLM: L2 (Ridge),train,R2D2_P129_combined_61bp,0,0.6563730529858498
+Logistic GLM: L2 (Ridge),train,R2D2_P130_combined_61bp,0,0.18076692426468774
+Logistic GLM: L2 (Ridge),train,R2D2_P133_combined_61bp,0,0.23274096373181197
+Logistic GLM: L2 (Ridge),train,R2D2_P152_combined_61bp,1,0.9396425659581599
+Logistic GLM: L2 (Ridge),train,R2D2_P18_combined_61bp,1,0.4408250783860423
+Logistic GLM: L2 (Ridge),train,R2D2_P202_combined_61bp,1,0.5982648789698912
+Logistic GLM: L2 (Ridge),train,R2D2_P214_combined_61bp,1,0.9419471391616018
+Logistic GLM: L2 (Ridge),train,R2D2_P22_combined_61bp,1,0.5621711823807677
+Logistic GLM: L2 (Ridge),train,R2D2_P241_combined_61bp,1,0.6268612067458996
+Logistic GLM: L2 (Ridge),train,R2D2_P245_combined_61bp,1,0.6101089717506931
+Logistic GLM: L2 (Ridge),train,R2D2_P96_combined_61bp,1,0.8604684534016864
+Logistic GLM: L2 (Ridge),train,R2D2_U100_combined_61bp,0,0.30482618047198873
+Logistic GLM: L2 (Ridge),train,R2D2_U105_combined_61bp,0,0.18689410960883202
+Logistic GLM: L2 (Ridge),train,R2D2_U106_combined_61bp,0,0.03200184758301295
+Logistic GLM: L2 (Ridge),train,R2D2_U110_combined_61bp,0,0.09092430427544107
+Logistic GLM: L2 (Ridge),train,R2D2_U111_combined_61bp,0,0.04110972652814482
+Logistic GLM: L2 (Ridge),train,R2D2_U118_combined_61bp,0,0.4409048546452036
+Logistic GLM: L2 (Ridge),train,R2D2_U122_combined_61bp,0,0.039516798645731384
+Logistic GLM: L2 (Ridge),train,R2D2_U124_combined_61bp,0,0.24044417535801924
+Logistic GLM: L2 (Ridge),train,R2D2_U129_combined_61bp,0,0.15679308603475775
+Logistic GLM: L2 (Ridge),train,R2D2_U130_combined_61bp,0,0.21029570338386455
+Logistic GLM: L2 (Ridge),train,R2D2_U273_combined_61bp,1,0.9575785793627444
+Logistic GLM: L2 (Ridge),train,R2D2_U287_combined_61bp,1,0.9962769534277693
+Logistic GLM: L2 (Ridge),train,R2D2_U298_combined_61bp,1,0.9825172177210316
+Logistic GLM: L2 (Ridge),train,R2D2_U314_combined_61bp,1,0.9402459237875668
+Logistic GLM: L2 (Ridge),train,R2D2_U316_combined_61bp,1,0.9406663104152954
+Logistic GLM: L2 (Ridge),train,R2D2_U337_combined_61bp,1,0.8428892987105379
+Logistic GLM: L2 (Ridge),train,R2D2_U341_combined_61bp,1,0.9563961709256437
+Logistic GLM: L2 (Ridge),train,R2D2_U343_combined_61bp,1,0.9238985165098733
+Logistic GLM: L2 (Ridge),train,R2D2_U355_combined_61bp,1,0.550341848426815
+Logistic GLM: L2 (Ridge),train,R2D2_U357_combined_61bp,1,0.9930626251830085
+Logistic GLM: L2 (Ridge),train,R2D2_U362_combined_61bp,1,0.9791904722361341
+Logistic GLM: L2 (Ridge),train,R2D2_U363_combined_61bp,1,0.9397273708504438
+Logistic GLM: L2 (Ridge),train,R2D2_U371_combined_61bp,1,0.9929841148975923
+Logistic GLM: L2 (Ridge),train,R2D2_V104_combined_61bp,1,0.9943504214885206
+Logistic GLM: L2 (Ridge),train,R2D2_V108_combined_61bp,0,0.02865682459219789
+Logistic GLM: L2 (Ridge),train,R2D2_V118_combined_61bp,1,0.5153979009296457
+Logistic GLM: L2 (Ridge),train,R2D2_V119_combined_61bp,0,0.18919379695872293
+Logistic GLM: L2 (Ridge),train,R2D2_V120_combined_61bp,0,0.06338476151665402
+Logistic GLM: L2 (Ridge),train,R2D2_V121_combined_61bp,0,0.7435446622395141
+Logistic GLM: L2 (Ridge),train,R2D2_V124_combined_61bp,0,0.04972085449506542
+Logistic GLM: L2 (Ridge),train,R2D2_V126_combined_61bp,0,0.21972709459659817
+Logistic GLM: L2 (Ridge),train,R2D2_V127_combined_61bp,1,0.34640277970278943
+Logistic GLM: L2 (Ridge),train,R2D2_V128_combined_61bp,1,0.15073743335777268
+Logistic GLM: L2 (Ridge),train,R2D2_V129_combined_61bp,1,0.696249054895989
+Logistic GLM: L2 (Ridge),train,R2D2_V132_combined_61bp,0,0.9148747293335175
+Logistic GLM: L2 (Ridge),train,R2D2_V137_combined_61bp,0,0.006101883390416369
+Logistic GLM: L2 (Ridge),train,R2D2_V146_combined_61bp,1,0.982899873821498
+Logistic GLM: L2 (Ridge),train,R2D2_V147_combined_61bp,1,0.8637587486446339
+Logistic GLM: L2 (Ridge),train,R2D2_V152_combined_61bp,0,0.32193304113556714
+Logistic GLM: L2 (Ridge),train,R2D2_V153_combined_61bp,0,0.2541182634468367
+Logistic GLM: L2 (Ridge),train,R2D2_V159_combined_61bp,0,0.16363702732721994
+Logistic GLM: L2 (Ridge),train,R2D2_V16_combined_61bp,0,0.1454055818165455
+Logistic GLM: L2 (Ridge),train,R2D2_V160_combined_61bp,1,0.9914966998776269
+Logistic GLM: L2 (Ridge),train,R2D2_V162_combined_61bp,0,0.16190945397130824
+Logistic GLM: L2 (Ridge),train,R2D2_V165_combined_61bp,1,0.9651923471119492
+Logistic GLM: L2 (Ridge),train,R2D2_V166_combined_61bp,1,0.7998867748390015
+Logistic GLM: L2 (Ridge),train,R2D2_V172_combined_61bp,1,0.8022676318711135
+Logistic GLM: L2 (Ridge),train,R2D2_V20_combined_61bp,1,0.9542654296724913
+Logistic GLM: L2 (Ridge),train,R2D2_V286_combined_61bp,1,0.5638189496624187
+Logistic GLM: L2 (Ridge),test,GHL109_combined_61bp,1,0.9797505865516737
+Logistic GLM: L2 (Ridge),test,GHL114_combined_61bp,1,0.9886405634346985
+Logistic GLM: L2 (Ridge),test,GHL119_combined_61bp,1,0.6314079672609866
+Logistic GLM: L2 (Ridge),test,GHL123_combined_61bp,1,0.8430350749755663
+Logistic GLM: L2 (Ridge),test,GHL128_combined_61bp,0,0.43205120988328233
+Logistic GLM: L2 (Ridge),test,GHL131_combined_61bp,1,0.9340930394495761
+Logistic GLM: L2 (Ridge),test,GHL132_combined_61bp,0,0.2579217398878245
+Logistic GLM: L2 (Ridge),test,GHL138_combined_61bp,0,0.28976919061057826
+Logistic GLM: L2 (Ridge),test,GHL144_combined_61bp,1,0.8996253486375166
+Logistic GLM: L2 (Ridge),test,GHL161_combined_61bp,0,0.524439341135479
+Logistic GLM: L2 (Ridge),test,GHL166_combined_61bp,0,0.5057685626279044
+Logistic GLM: L2 (Ridge),test,GHL172_combined_61bp,0,0.06931851651459096
+Logistic GLM: L2 (Ridge),test,GHL188_combined_61bp,0,0.0960586984435631
+Logistic GLM: L2 (Ridge),test,GHL206_combined_61bp,1,0.9949979075465127
+Logistic GLM: L2 (Ridge),test,GHL208_combined_61bp,1,0.8820803713017734
+Logistic GLM: L2 (Ridge),test,GHL210_combined_61bp,0,0.17710510020180784
+Logistic GLM: L2 (Ridge),test,GHL229_combined_61bp,1,0.9388172821552333
+Logistic GLM: L2 (Ridge),test,GHL235_combined_61bp,1,0.9954020128880984
+Logistic GLM: L2 (Ridge),test,GHL248_combined_61bp,1,0.9881755108249789
+Logistic GLM: L2 (Ridge),test,GHL264_combined_61bp,1,0.6579999778377581
+Logistic GLM: L2 (Ridge),test,GHL269_combined_61bp,0,0.40899069644732006
+Logistic GLM: L2 (Ridge),test,GHL27_combined_61bp,1,0.7952128696379113
+Logistic GLM: L2 (Ridge),test,GHL3_combined_61bp,0,0.5474182610433553
+Logistic GLM: L2 (Ridge),test,GHL34_combined_61bp,1,0.9912971938390918
+Logistic GLM: L2 (Ridge),test,GHL45_combined_61bp,1,0.9219934919790843
+Logistic GLM: L2 (Ridge),test,GHL56_combined_61bp,1,0.9818785295969641
+Logistic GLM: L2 (Ridge),test,GHL58_combined_61bp,0,0.3935891229950682
+Logistic GLM: L2 (Ridge),test,GHL72_combined_61bp,1,0.15366362153074664
+Logistic GLM: L2 (Ridge),test,GHL89_combined_61bp,0,0.08934548093979251
+Logistic GLM: L2 (Ridge),test,GHL93_combined_61bp,1,0.9482215475667125
+Logistic GLM: L2 (Ridge),test,R2D2_P114_combined_61bp,0,0.36531371055296474
+Logistic GLM: L2 (Ridge),test,R2D2_P118_combined_61bp,0,0.1953717849664938
+Logistic GLM: L2 (Ridge),test,R2D2_P119_combined_61bp,0,0.11447976705007135
+Logistic GLM: L2 (Ridge),test,R2D2_P124_combined_61bp,1,0.5413504288827634
+Logistic GLM: L2 (Ridge),test,R2D2_P127_combined_61bp,0,0.36758671687139227
+Logistic GLM: L2 (Ridge),test,R2D2_P131_combined_61bp,0,0.2630911959481294
+Logistic GLM: L2 (Ridge),test,R2D2_P232_combined_61bp,1,0.567367668616354
+Logistic GLM: L2 (Ridge),test,R2D2_P33_combined_61bp,1,0.8872837787430855
+Logistic GLM: L2 (Ridge),test,R2D2_U102_combined_61bp,0,0.4224421905172195
+Logistic GLM: L2 (Ridge),test,R2D2_U103_combined_61bp,0,0.568906370931547
+Logistic GLM: L2 (Ridge),test,R2D2_U112_combined_61bp,0,0.13024473907478273
+Logistic GLM: L2 (Ridge),test,R2D2_U114_combined_61bp,0,0.09228016938905194
+Logistic GLM: L2 (Ridge),test,R2D2_U131_combined_61bp,0,0.07804945106585007
+Logistic GLM: L2 (Ridge),test,R2D2_U132_combined_61bp,0,0.7579107412513876
+Logistic GLM: L2 (Ridge),test,R2D2_U133_combined_61bp,0,0.7191794763733017
+Logistic GLM: L2 (Ridge),test,R2D2_U269_combined_61bp,1,0.9861851533790467
+Logistic GLM: L2 (Ridge),test,R2D2_U312_combined_61bp,1,0.6704969907328735
+Logistic GLM: L2 (Ridge),test,R2D2_U315_combined_61bp,1,0.9737917674731812
+Logistic GLM: L2 (Ridge),test,R2D2_U323_combined_61bp,1,0.9300621562093199
+Logistic GLM: L2 (Ridge),test,R2D2_U329_combined_61bp,1,0.9332226127568715
+Logistic GLM: L2 (Ridge),test,R2D2_U332_combined_61bp,1,0.9896682811573843
+Logistic GLM: L2 (Ridge),test,R2D2_V130_combined_61bp,1,0.7385922417018287
+Logistic GLM: L2 (Ridge),test,R2D2_V139_combined_61bp,0,0.3612981740829071
+Logistic GLM: L2 (Ridge),test,R2D2_V143_combined_61bp,0,0.1861511499358988
+Logistic GLM: L2 (Ridge),test,R2D2_V151_combined_61bp,0,0.2768802435821925
+Logistic GLM: L2 (Ridge),test,R2D2_V157_combined_61bp,1,0.6861757407280347
+Logistic GLM: L2 (Ridge),test,R2D2_V167_combined_61bp,1,0.9424684091243473
+Logistic GLM: L2 (Ridge),test,R2D2_V190_combined_61bp,1,0.918176315239932
+Logistic GLM: L2 (Ridge),test,R2D2_V218_combined_61bp,1,0.8726002197739018
+Logistic GLM: L2 (Ridge),test,R2D2_V242_combined_61bp,1,0.9802663875198923
+Logistic GLM: L2 (Ridge),test,R2D2_V273_combined_61bp,1,0.9195835488910012
+Logistic GLM: L2 (Ridge),val,TBSQUARE_553_combined_61bp,1,0.7761074958698706
+Logistic GLM: L2 (Ridge),val,TBSQUARE_554_combined_61bp,0,0.11696286754770233
+Logistic GLM: L2 (Ridge),val,TBSQUARE_555_combined_61bp,1,0.9759470409840456
+Logistic GLM: L2 (Ridge),val,TBSQUARE_557_combined_61bp,0,0.0811797229011161
+Logistic GLM: L2 (Ridge),val,TBSQUARE_561_combined_61bp,1,0.4474288489954758
+Logistic GLM: L2 (Ridge),val,TBSQUARE_564_combined_61bp,0,0.21154214285484366
+Logistic GLM: L2 (Ridge),val,TBSQUARE_568_combined_61bp,0,0.5826715670997334
+Logistic GLM: L2 (Ridge),val,TBSQUARE_569_combined_61bp,1,0.9691478611268247
+Logistic GLM: L2 (Ridge),val,TBSQUARE_570_combined_61bp,1,0.8265857357042642
+Logistic GLM: L2 (Ridge),val,TBSQUARE_572_combined_61bp,0,0.042186909211494546
+Logistic GLM: L2 (Ridge),val,TBSQUARE_573_combined_61bp,1,0.5090174314186255
+Logistic GLM: L2 (Ridge),val,TBSQUARE_577_combined_61bp,0,0.02350719322841562
+Logistic GLM: L2 (Ridge),val,TBSQUARE_578_combined_61bp,1,0.4241329621734634
+Logistic GLM: L2 (Ridge),val,TBSQUARE_583_combined_61bp,0,0.4536851739400251
+Logistic GLM: L2 (Ridge),val,TBSQUARE_584_combined_61bp,1,0.8956151102169566
+Logistic GLM: L2 (Ridge),val,TBSQUARE_589_combined_61bp,0,0.010323759379540958
+Logistic GLM: L2 (Ridge),val,TBSQUARE_591_combined_61bp,1,0.6553553858053294
+Logistic GLM: L2 (Ridge),val,TBSQUARE_596_combined_61bp,0,0.0271558995910013
+Logistic GLM: L2 (Ridge),val,TBSQUARE_597_combined_61bp,1,0.6316408038557182
+Logistic GLM: L2 (Ridge),val,TBSQUARE_598_combined_61bp,1,0.9349711379789651
+Logistic GLM: L2 (Ridge),val,TBSQUARE_599_combined_61bp,0,0.19764916299205335
+Logistic GLM: L2 (Ridge),val,TBSQUARE_601_combined_61bp,1,0.7660068661432854
+Logistic GLM: L2 (Ridge),val,TBSQUARE_602_combined_61bp,1,0.7596570862160852
+Logistic GLM: L2 (Ridge),val,TBSQUARE_603_combined_61bp,0,0.025639271345172458
+Logistic GLM: L2 (Ridge),val,TBSQUARE_608_combined_61bp,0,0.05683805753118273
+Logistic GLM: L2 (Ridge),val,TBSQUARE_609_combined_61bp,1,0.8950633105487888
+Logistic GLM: L2 (Ridge),val,TBSQUARE_610_combined_61bp,0,0.19333213169895602
+Logistic GLM: L2 (Ridge),val,TBSQUARE_611_combined_61bp,1,0.12126252019177866
+Logistic GLM: L2 (Ridge),val,TBSQUARE_612_combined_61bp,1,0.9460017427134115
+Logistic GLM: L2 (Ridge),val,TBSQUARE_613_combined_61bp,0,0.5057258526595484
+Logistic GLM: L2 (Ridge),val,TBSQUARE_614_combined_61bp,1,0.4204706281096867
+Logistic GLM: L2 (Ridge),val,TBSQUARE_616_combined_61bp,0,0.6646809599204501
+Logistic GLM: L2 (Ridge),val,TBSQUARE_617_combined_61bp,1,0.8109335215871203
+Logistic GLM: L2 (Ridge),val,TBSQUARE_618_combined_61bp,1,0.7068764858491047
+Logistic GLM: L2 (Ridge),val,TBSQUARE_619_combined_61bp,0,0.22368694115712925
+Logistic GLM: L2 (Ridge),val,TBSQUARE_620_combined_61bp,1,0.9340258638832626
+Logistic GLM: L2 (Ridge),val,TBSQUARE_623_combined_61bp,1,0.7674393972251334
+Logistic GLM: L2 (Ridge),val,TBSQUARE_628_combined_61bp,1,0.8939306120898523
+Logistic GLM: L2 (Ridge),val,TBSQUARE_630_combined_61bp,1,0.6584037895675936
+Logistic GLM: L2 (Ridge),val,TBSQUARE_631_combined_61bp,0,0.5231281837922315
+Logistic GLM: L2 (Ridge),val,TBSQUARE_634_combined_61bp,0,0.08996998530712734
+Logistic GLM: L2 (Ridge),val,TBSQUARE_635_combined_61bp,1,0.9913972155718558
+Logistic GLM: L2 (Ridge),val,TBSQUARE_636_combined_61bp,1,0.9327053254894198
+Logistic GLM: L2 (Ridge),val,TBSQUARE_637_combined_61bp,0,0.09012394469483131
+Logistic GLM: L2 (Ridge),val,TBSQUARE_638_combined_61bp,0,0.07199670555193304
+Logistic GLM: L2 (Ridge),val,TBSQUARE_640_combined_61bp,1,0.7684685834090486
+Logistic GLM: L2 (Ridge),val,TBSQUARE_648_combined_61bp,1,0.7627089545289562
+Logistic GLM: L2 (Ridge),val,TBSQUARE_649_combined_61bp,1,0.9321326930606442
+Logistic GLM: L2 (Ridge),val,TBSQUARE_661_combined_61bp,1,0.7541849589505987
+Logistic GLM: L2 (Ridge),val,TBSQUARE_693_combined_61bp,1,0.8767033681175149
+Logistic GLM: L2 (Ridge),val,TBSQUARE_694_combined_61bp,0,0.19708788085540652
+Logistic GLM: L2 (Ridge),val,TBSQUARE_695_combined_61bp,0,0.014056270513470288
+Logistic GLM: L2 (Ridge),val,TBSQUARE_696_combined_61bp,0,0.14180286310927043
+Logistic GLM: L2 (Ridge),val,TBSQUARE_697_combined_61bp,1,0.7063957851593001
+Logistic GLM: L2 (Ridge),val,TBSQUARE_698_combined_61bp,0,0.07257740965866993
+Logistic GLM: L2 (Ridge),val,TBSQUARE_699_combined_61bp,1,0.5208195651996576
+Logistic GLM: L2 (Ridge),val,TBSQUARE_702_combined_61bp,0,0.18206452307370266
+Logistic GLM: L2 (Ridge),val,TBSQUARE_703_combined_61bp,1,0.18663420910138548
+Logistic GLM: L2 (Ridge),val,TBSQUARE_708_combined_61bp,1,0.8868778369082204
+Logistic GLM: L2 (Ridge),val,TBSQUARE_711_combined_61bp,1,0.23130487676763747
+Logistic GLM: L1 (Lasso),train,GHL1_combined_61bp,0,0.23778683927338987
+Logistic GLM: L1 (Lasso),train,GHL103_combined_61bp,1,0.9433051467261518
+Logistic GLM: L1 (Lasso),train,GHL105_combined_61bp,1,0.9716458556344841
+Logistic GLM: L1 (Lasso),train,GHL107_combined_61bp,0,0.13448386889066585
+Logistic GLM: L1 (Lasso),train,GHL108_combined_61bp,1,0.9898605417596648
+Logistic GLM: L1 (Lasso),train,GHL112_combined_61bp,1,0.8256105264635193
+Logistic GLM: L1 (Lasso),train,GHL121_combined_61bp,0,0.945241230783848
+Logistic GLM: L1 (Lasso),train,GHL124_combined_61bp,1,0.3854215695518533
+Logistic GLM: L1 (Lasso),train,GHL126_combined_61bp,1,0.9235424810287604
+Logistic GLM: L1 (Lasso),train,GHL13_combined_61bp,1,0.8968746869713953
+Logistic GLM: L1 (Lasso),train,GHL133_combined_61bp,1,0.9635544217119221
+Logistic GLM: L1 (Lasso),train,GHL134_combined_61bp,0,0.2771523206519117
+Logistic GLM: L1 (Lasso),train,GHL136_combined_61bp,1,0.6897141063616976
+Logistic GLM: L1 (Lasso),train,GHL141_combined_61bp,1,0.7911358308592036
+Logistic GLM: L1 (Lasso),train,GHL158_combined_61bp,0,0.20055571197898217
+Logistic GLM: L1 (Lasso),train,GHL16_combined_61bp,1,0.9333793060357403
+Logistic GLM: L1 (Lasso),train,GHL169_combined_61bp,1,0.1334727687917256
+Logistic GLM: L1 (Lasso),train,GHL17_combined_61bp,1,0.6485236261798094
+Logistic GLM: L1 (Lasso),train,GHL170_combined_61bp,1,0.7589866614619858
+Logistic GLM: L1 (Lasso),train,GHL186_combined_61bp,0,0.6764548852773622
+Logistic GLM: L1 (Lasso),train,GHL19_combined_61bp,1,0.7916083633334807
+Logistic GLM: L1 (Lasso),train,GHL192_combined_61bp,1,0.9758252330943903
+Logistic GLM: L1 (Lasso),train,GHL199_combined_61bp,0,0.3222858885902775
+Logistic GLM: L1 (Lasso),train,GHL201_combined_61bp,0,0.01641133128146845
+Logistic GLM: L1 (Lasso),train,GHL204_combined_61bp,1,0.9829150656180203
+Logistic GLM: L1 (Lasso),train,GHL217_combined_61bp,1,0.8458510594204176
+Logistic GLM: L1 (Lasso),train,GHL22_combined_61bp,0,0.11801738651418758
+Logistic GLM: L1 (Lasso),train,GHL223_combined_61bp,0,0.926685500705679
+Logistic GLM: L1 (Lasso),train,GHL230_combined_61bp,1,0.5360131432709797
+Logistic GLM: L1 (Lasso),train,GHL252_combined_61bp,1,0.3604437278814618
+Logistic GLM: L1 (Lasso),train,GHL274_combined_61bp,1,0.9584809757047019
+Logistic GLM: L1 (Lasso),train,GHL276_combined_61bp,1,0.9857442838738065
+Logistic GLM: L1 (Lasso),train,GHL277_combined_61bp,0,0.325309351997972
+Logistic GLM: L1 (Lasso),train,GHL284_combined_61bp,1,0.47170598011517256
+Logistic GLM: L1 (Lasso),train,GHL286_combined_61bp,1,0.8710433124918227
+Logistic GLM: L1 (Lasso),train,GHL288_combined_61bp,0,0.8982938830731076
+Logistic GLM: L1 (Lasso),train,GHL30_combined_61bp,0,0.03323608831986564
+Logistic GLM: L1 (Lasso),train,GHL308_combined_61bp,1,0.3394260152921799
+Logistic GLM: L1 (Lasso),train,GHL35_combined_61bp,1,0.9684702983656013
+Logistic GLM: L1 (Lasso),train,GHL36_combined_61bp,1,0.9853241869708435
+Logistic GLM: L1 (Lasso),train,GHL37_combined_61bp,1,0.5182874584667168
+Logistic GLM: L1 (Lasso),train,GHL40_combined_61bp,0,0.397197324534313
+Logistic GLM: L1 (Lasso),train,GHL46_combined_61bp,1,0.8040266357904916
+Logistic GLM: L1 (Lasso),train,GHL47_combined_61bp,1,0.7477930226725179
+Logistic GLM: L1 (Lasso),train,GHL52_combined_61bp,0,0.2872122903080208
+Logistic GLM: L1 (Lasso),train,GHL53_combined_61bp,1,0.5769268416521836
+Logistic GLM: L1 (Lasso),train,GHL57_combined_61bp,1,0.8803671272027113
+Logistic GLM: L1 (Lasso),train,GHL59_combined_61bp,1,0.9067526688706715
+Logistic GLM: L1 (Lasso),train,GHL61_combined_61bp,1,0.963170015015746
+Logistic GLM: L1 (Lasso),train,GHL62_combined_61bp,1,0.9875345197916424
+Logistic GLM: L1 (Lasso),train,GHL63_combined_61bp,0,0.254153068583998
+Logistic GLM: L1 (Lasso),train,GHL65_combined_61bp,1,0.7185147056459225
+Logistic GLM: L1 (Lasso),train,GHL69_combined_61bp,0,0.09236600794614316
+Logistic GLM: L1 (Lasso),train,GHL7_combined_61bp,0,0.0324791471218625
+Logistic GLM: L1 (Lasso),train,GHL70_combined_61bp,0,0.6381658716207544
+Logistic GLM: L1 (Lasso),train,GHL71_combined_61bp,1,0.9652799184062147
+Logistic GLM: L1 (Lasso),train,GHL75_combined_61bp,0,0.05928302254908918
+Logistic GLM: L1 (Lasso),train,GHL76_combined_61bp,0,0.6452972746560172
+Logistic GLM: L1 (Lasso),train,GHL84_combined_61bp,1,0.9897643016922089
+Logistic GLM: L1 (Lasso),train,GHL88_combined_61bp,1,0.7953772230803439
+Logistic GLM: L1 (Lasso),train,GHL9_combined_61bp,0,0.3626545544657728
+Logistic GLM: L1 (Lasso),train,GHL94_combined_61bp,0,0.06286700037162903
+Logistic GLM: L1 (Lasso),train,GHL99_combined_61bp,0,0.07205960356140853
+Logistic GLM: L1 (Lasso),train,R2D2_P1_combined_61bp,0,0.19495517518266323
+Logistic GLM: L1 (Lasso),train,R2D2_P104_combined_61bp,0,0.38288234523309184
+Logistic GLM: L1 (Lasso),train,R2D2_P105_combined_61bp,0,0.05782525053507784
+Logistic GLM: L1 (Lasso),train,R2D2_P108_combined_61bp,0,0.2755670942897042
+Logistic GLM: L1 (Lasso),train,R2D2_P110_combined_61bp,0,0.06861046384820828
+Logistic GLM: L1 (Lasso),train,R2D2_P113_combined_61bp,0,0.054017578220812004
+Logistic GLM: L1 (Lasso),train,R2D2_P126_combined_61bp,0,0.11926823677000596
+Logistic GLM: L1 (Lasso),train,R2D2_P129_combined_61bp,0,0.6620165013645051
+Logistic GLM: L1 (Lasso),train,R2D2_P130_combined_61bp,0,0.17893774204177212
+Logistic GLM: L1 (Lasso),train,R2D2_P133_combined_61bp,0,0.253636088450403
+Logistic GLM: L1 (Lasso),train,R2D2_P152_combined_61bp,1,0.9383300661535589
+Logistic GLM: L1 (Lasso),train,R2D2_P18_combined_61bp,1,0.41905320832281073
+Logistic GLM: L1 (Lasso),train,R2D2_P202_combined_61bp,1,0.5634427536780005
+Logistic GLM: L1 (Lasso),train,R2D2_P214_combined_61bp,1,0.9446590892316136
+Logistic GLM: L1 (Lasso),train,R2D2_P22_combined_61bp,1,0.5461411426356405
+Logistic GLM: L1 (Lasso),train,R2D2_P241_combined_61bp,1,0.6225135654346224
+Logistic GLM: L1 (Lasso),train,R2D2_P245_combined_61bp,1,0.6416339016063574
+Logistic GLM: L1 (Lasso),train,R2D2_P96_combined_61bp,1,0.8675363577008528
+Logistic GLM: L1 (Lasso),train,R2D2_U100_combined_61bp,0,0.2863008933915888
+Logistic GLM: L1 (Lasso),train,R2D2_U105_combined_61bp,0,0.18532126612720942
+Logistic GLM: L1 (Lasso),train,R2D2_U106_combined_61bp,0,0.026828165406076472
+Logistic GLM: L1 (Lasso),train,R2D2_U110_combined_61bp,0,0.09739447448143754
+Logistic GLM: L1 (Lasso),train,R2D2_U111_combined_61bp,0,0.04198798718589231
+Logistic GLM: L1 (Lasso),train,R2D2_U118_combined_61bp,0,0.43186625328933903
+Logistic GLM: L1 (Lasso),train,R2D2_U122_combined_61bp,0,0.03663918094202927
+Logistic GLM: L1 (Lasso),train,R2D2_U124_combined_61bp,0,0.2124744806087386
+Logistic GLM: L1 (Lasso),train,R2D2_U129_combined_61bp,0,0.1495573735281266
+Logistic GLM: L1 (Lasso),train,R2D2_U130_combined_61bp,0,0.2440948928953193
+Logistic GLM: L1 (Lasso),train,R2D2_U273_combined_61bp,1,0.9552713549031743
+Logistic GLM: L1 (Lasso),train,R2D2_U287_combined_61bp,1,0.9958969866406359
+Logistic GLM: L1 (Lasso),train,R2D2_U298_combined_61bp,1,0.9823471833143856
+Logistic GLM: L1 (Lasso),train,R2D2_U314_combined_61bp,1,0.9333170273170983
+Logistic GLM: L1 (Lasso),train,R2D2_U316_combined_61bp,1,0.9318747260758529
+Logistic GLM: L1 (Lasso),train,R2D2_U337_combined_61bp,1,0.8426669102239501
+Logistic GLM: L1 (Lasso),train,R2D2_U341_combined_61bp,1,0.9544945131446609
+Logistic GLM: L1 (Lasso),train,R2D2_U343_combined_61bp,1,0.8905044927211546
+Logistic GLM: L1 (Lasso),train,R2D2_U355_combined_61bp,1,0.5216283377306793
+Logistic GLM: L1 (Lasso),train,R2D2_U357_combined_61bp,1,0.9919704639998601
+Logistic GLM: L1 (Lasso),train,R2D2_U362_combined_61bp,1,0.9774810748094517
+Logistic GLM: L1 (Lasso),train,R2D2_U363_combined_61bp,1,0.9359989055748704
+Logistic GLM: L1 (Lasso),train,R2D2_U371_combined_61bp,1,0.9926951822304342
+Logistic GLM: L1 (Lasso),train,R2D2_V104_combined_61bp,1,0.9935070151203765
+Logistic GLM: L1 (Lasso),train,R2D2_V108_combined_61bp,0,0.034319474387756156
+Logistic GLM: L1 (Lasso),train,R2D2_V118_combined_61bp,1,0.516864400414613
+Logistic GLM: L1 (Lasso),train,R2D2_V119_combined_61bp,0,0.18492780567985792
+Logistic GLM: L1 (Lasso),train,R2D2_V120_combined_61bp,0,0.06627738261836334
+Logistic GLM: L1 (Lasso),train,R2D2_V121_combined_61bp,0,0.7138491949756585
+Logistic GLM: L1 (Lasso),train,R2D2_V124_combined_61bp,0,0.053209202358234176
+Logistic GLM: L1 (Lasso),train,R2D2_V126_combined_61bp,0,0.217488629631166
+Logistic GLM: L1 (Lasso),train,R2D2_V127_combined_61bp,1,0.34504102742916687
+Logistic GLM: L1 (Lasso),train,R2D2_V128_combined_61bp,1,0.1415869373639417
+Logistic GLM: L1 (Lasso),train,R2D2_V129_combined_61bp,1,0.701270958340141
+Logistic GLM: L1 (Lasso),train,R2D2_V132_combined_61bp,0,0.917900819680717
+Logistic GLM: L1 (Lasso),train,R2D2_V137_combined_61bp,0,0.007171426558164741
+Logistic GLM: L1 (Lasso),train,R2D2_V146_combined_61bp,1,0.979964306393737
+Logistic GLM: L1 (Lasso),train,R2D2_V147_combined_61bp,1,0.859864797568489
+Logistic GLM: L1 (Lasso),train,R2D2_V152_combined_61bp,0,0.310011459946157
+Logistic GLM: L1 (Lasso),train,R2D2_V153_combined_61bp,0,0.25946211018605486
+Logistic GLM: L1 (Lasso),train,R2D2_V159_combined_61bp,0,0.1561768971604585
+Logistic GLM: L1 (Lasso),train,R2D2_V16_combined_61bp,0,0.13526506377074665
+Logistic GLM: L1 (Lasso),train,R2D2_V160_combined_61bp,1,0.9923242044588023
+Logistic GLM: L1 (Lasso),train,R2D2_V162_combined_61bp,0,0.15819491915699893
+Logistic GLM: L1 (Lasso),train,R2D2_V165_combined_61bp,1,0.9674150697433253
+Logistic GLM: L1 (Lasso),train,R2D2_V166_combined_61bp,1,0.7767867238609983
+Logistic GLM: L1 (Lasso),train,R2D2_V172_combined_61bp,1,0.8130525147750975
+Logistic GLM: L1 (Lasso),train,R2D2_V20_combined_61bp,1,0.9534132696165978
+Logistic GLM: L1 (Lasso),train,R2D2_V286_combined_61bp,1,0.5376926343218906
+Logistic GLM: L1 (Lasso),test,GHL109_combined_61bp,1,0.9800399783338898
+Logistic GLM: L1 (Lasso),test,GHL114_combined_61bp,1,0.9889477545066487
+Logistic GLM: L1 (Lasso),test,GHL119_combined_61bp,1,0.6596072865833178
+Logistic GLM: L1 (Lasso),test,GHL123_combined_61bp,1,0.8641384531210187
+Logistic GLM: L1 (Lasso),test,GHL128_combined_61bp,0,0.4269623662558092
+Logistic GLM: L1 (Lasso),test,GHL131_combined_61bp,1,0.9293780027585632
+Logistic GLM: L1 (Lasso),test,GHL132_combined_61bp,0,0.31011890379995694
+Logistic GLM: L1 (Lasso),test,GHL138_combined_61bp,0,0.3027062977240433
+Logistic GLM: L1 (Lasso),test,GHL144_combined_61bp,1,0.9112699365490449
+Logistic GLM: L1 (Lasso),test,GHL161_combined_61bp,0,0.5691558271736998
+Logistic GLM: L1 (Lasso),test,GHL166_combined_61bp,0,0.47549221932933394
+Logistic GLM: L1 (Lasso),test,GHL172_combined_61bp,0,0.07580203910142795
+Logistic GLM: L1 (Lasso),test,GHL188_combined_61bp,0,0.10003569398842775
+Logistic GLM: L1 (Lasso),test,GHL206_combined_61bp,1,0.9949962704539309
+Logistic GLM: L1 (Lasso),test,GHL208_combined_61bp,1,0.9068400113358734
+Logistic GLM: L1 (Lasso),test,GHL210_combined_61bp,0,0.18178691783617315
+Logistic GLM: L1 (Lasso),test,GHL229_combined_61bp,1,0.9428225689793999
+Logistic GLM: L1 (Lasso),test,GHL235_combined_61bp,1,0.9956669355118672
+Logistic GLM: L1 (Lasso),test,GHL248_combined_61bp,1,0.988215126570162
+Logistic GLM: L1 (Lasso),test,GHL264_combined_61bp,1,0.6678163814809673
+Logistic GLM: L1 (Lasso),test,GHL269_combined_61bp,0,0.4200907730435277
+Logistic GLM: L1 (Lasso),test,GHL27_combined_61bp,1,0.8354674428789186
+Logistic GLM: L1 (Lasso),test,GHL3_combined_61bp,0,0.6118706464904714
+Logistic GLM: L1 (Lasso),test,GHL34_combined_61bp,1,0.9922159057494855
+Logistic GLM: L1 (Lasso),test,GHL45_combined_61bp,1,0.9320379007655321
+Logistic GLM: L1 (Lasso),test,GHL56_combined_61bp,1,0.9747650842189391
+Logistic GLM: L1 (Lasso),test,GHL58_combined_61bp,0,0.42910879152951226
+Logistic GLM: L1 (Lasso),test,GHL72_combined_61bp,1,0.1801430201858839
+Logistic GLM: L1 (Lasso),test,GHL89_combined_61bp,0,0.093969493390822
+Logistic GLM: L1 (Lasso),test,GHL93_combined_61bp,1,0.9525820885279727
+Logistic GLM: L1 (Lasso),test,R2D2_P114_combined_61bp,0,0.35409605198235683
+Logistic GLM: L1 (Lasso),test,R2D2_P118_combined_61bp,0,0.1911684310388173
+Logistic GLM: L1 (Lasso),test,R2D2_P119_combined_61bp,0,0.11280596054760472
+Logistic GLM: L1 (Lasso),test,R2D2_P124_combined_61bp,1,0.550797977226724
+Logistic GLM: L1 (Lasso),test,R2D2_P127_combined_61bp,0,0.37005462992229043
+Logistic GLM: L1 (Lasso),test,R2D2_P131_combined_61bp,0,0.25407458103463476
+Logistic GLM: L1 (Lasso),test,R2D2_P232_combined_61bp,1,0.5785056199975983
+Logistic GLM: L1 (Lasso),test,R2D2_P33_combined_61bp,1,0.883307103117735
+Logistic GLM: L1 (Lasso),test,R2D2_U102_combined_61bp,0,0.3588799398667516
+Logistic GLM: L1 (Lasso),test,R2D2_U103_combined_61bp,0,0.5905842198109712
+Logistic GLM: L1 (Lasso),test,R2D2_U112_combined_61bp,0,0.09600354645451324
+Logistic GLM: L1 (Lasso),test,R2D2_U114_combined_61bp,0,0.1078024386233023
+Logistic GLM: L1 (Lasso),test,R2D2_U131_combined_61bp,0,0.061192859931105986
+Logistic GLM: L1 (Lasso),test,R2D2_U132_combined_61bp,0,0.7569029812654902
+Logistic GLM: L1 (Lasso),test,R2D2_U133_combined_61bp,0,0.7261885422403943
+Logistic GLM: L1 (Lasso),test,R2D2_U269_combined_61bp,1,0.9873345133218998
+Logistic GLM: L1 (Lasso),test,R2D2_U312_combined_61bp,1,0.6478835095070372
+Logistic GLM: L1 (Lasso),test,R2D2_U315_combined_61bp,1,0.9744694602374301
+Logistic GLM: L1 (Lasso),test,R2D2_U323_combined_61bp,1,0.937446427654544
+Logistic GLM: L1 (Lasso),test,R2D2_U329_combined_61bp,1,0.931260581413848
+Logistic GLM: L1 (Lasso),test,R2D2_U332_combined_61bp,1,0.9888595352029329
+Logistic GLM: L1 (Lasso),test,R2D2_V130_combined_61bp,1,0.7681354582074272
+Logistic GLM: L1 (Lasso),test,R2D2_V139_combined_61bp,0,0.3484378582816043
+Logistic GLM: L1 (Lasso),test,R2D2_V143_combined_61bp,0,0.1915862089746651
+Logistic GLM: L1 (Lasso),test,R2D2_V151_combined_61bp,0,0.2773562819499252
+Logistic GLM: L1 (Lasso),test,R2D2_V157_combined_61bp,1,0.6610236628976631
+Logistic GLM: L1 (Lasso),test,R2D2_V167_combined_61bp,1,0.9335872679207439
+Logistic GLM: L1 (Lasso),test,R2D2_V190_combined_61bp,1,0.9186213218659883
+Logistic GLM: L1 (Lasso),test,R2D2_V218_combined_61bp,1,0.8701733518829926
+Logistic GLM: L1 (Lasso),test,R2D2_V242_combined_61bp,1,0.9797794160396798
+Logistic GLM: L1 (Lasso),test,R2D2_V273_combined_61bp,1,0.9229050605600149
+Logistic GLM: L1 (Lasso),val,TBSQUARE_553_combined_61bp,1,0.754682122184419
+Logistic GLM: L1 (Lasso),val,TBSQUARE_554_combined_61bp,0,0.08747277402942286
+Logistic GLM: L1 (Lasso),val,TBSQUARE_555_combined_61bp,1,0.9723658640096843
+Logistic GLM: L1 (Lasso),val,TBSQUARE_557_combined_61bp,0,0.05537950797178233
+Logistic GLM: L1 (Lasso),val,TBSQUARE_561_combined_61bp,1,0.3575074343372429
+Logistic GLM: L1 (Lasso),val,TBSQUARE_564_combined_61bp,0,0.19445213002174272
+Logistic GLM: L1 (Lasso),val,TBSQUARE_568_combined_61bp,0,0.5241075567930559
+Logistic GLM: L1 (Lasso),val,TBSQUARE_569_combined_61bp,1,0.9668830241540907
+Logistic GLM: L1 (Lasso),val,TBSQUARE_570_combined_61bp,1,0.8168177089441745
+Logistic GLM: L1 (Lasso),val,TBSQUARE_572_combined_61bp,0,0.025614888621063005
+Logistic GLM: L1 (Lasso),val,TBSQUARE_573_combined_61bp,1,0.43377705940975364
+Logistic GLM: L1 (Lasso),val,TBSQUARE_577_combined_61bp,0,0.019987684983369836
+Logistic GLM: L1 (Lasso),val,TBSQUARE_578_combined_61bp,1,0.39166587752224646
+Logistic GLM: L1 (Lasso),val,TBSQUARE_583_combined_61bp,0,0.39287491021224574
+Logistic GLM: L1 (Lasso),val,TBSQUARE_584_combined_61bp,1,0.8760620674695416
+Logistic GLM: L1 (Lasso),val,TBSQUARE_589_combined_61bp,0,0.008393473294039855
+Logistic GLM: L1 (Lasso),val,TBSQUARE_591_combined_61bp,1,0.649325230596772
+Logistic GLM: L1 (Lasso),val,TBSQUARE_596_combined_61bp,0,0.023869769811852966
+Logistic GLM: L1 (Lasso),val,TBSQUARE_597_combined_61bp,1,0.5492796673334482
+Logistic GLM: L1 (Lasso),val,TBSQUARE_598_combined_61bp,1,0.9219299585357089
+Logistic GLM: L1 (Lasso),val,TBSQUARE_599_combined_61bp,0,0.1090472536381499
+Logistic GLM: L1 (Lasso),val,TBSQUARE_601_combined_61bp,1,0.6913210565884094
+Logistic GLM: L1 (Lasso),val,TBSQUARE_602_combined_61bp,1,0.7206435399765863
+Logistic GLM: L1 (Lasso),val,TBSQUARE_603_combined_61bp,0,0.025083826394819965
+Logistic GLM: L1 (Lasso),val,TBSQUARE_608_combined_61bp,0,0.05352275776123869
+Logistic GLM: L1 (Lasso),val,TBSQUARE_609_combined_61bp,1,0.8752840750518583
+Logistic GLM: L1 (Lasso),val,TBSQUARE_610_combined_61bp,0,0.16710519160908435
+Logistic GLM: L1 (Lasso),val,TBSQUARE_611_combined_61bp,1,0.11210641458374339
+Logistic GLM: L1 (Lasso),val,TBSQUARE_612_combined_61bp,1,0.9407283893656045
+Logistic GLM: L1 (Lasso),val,TBSQUARE_613_combined_61bp,0,0.38795436858263893
+Logistic GLM: L1 (Lasso),val,TBSQUARE_614_combined_61bp,1,0.40247900422058586
+Logistic GLM: L1 (Lasso),val,TBSQUARE_616_combined_61bp,0,0.6626855743444896
+Logistic GLM: L1 (Lasso),val,TBSQUARE_617_combined_61bp,1,0.7422976603701955
+Logistic GLM: L1 (Lasso),val,TBSQUARE_618_combined_61bp,1,0.644144154539221
+Logistic GLM: L1 (Lasso),val,TBSQUARE_619_combined_61bp,0,0.19519672799091944
+Logistic GLM: L1 (Lasso),val,TBSQUARE_620_combined_61bp,1,0.9180941848644147
+Logistic GLM: L1 (Lasso),val,TBSQUARE_623_combined_61bp,1,0.6978399989538422
+Logistic GLM: L1 (Lasso),val,TBSQUARE_628_combined_61bp,1,0.891084184095714
+Logistic GLM: L1 (Lasso),val,TBSQUARE_630_combined_61bp,1,0.5837361442860596
+Logistic GLM: L1 (Lasso),val,TBSQUARE_631_combined_61bp,0,0.42742382563260684
+Logistic GLM: L1 (Lasso),val,TBSQUARE_634_combined_61bp,0,0.06577970898747929
+Logistic GLM: L1 (Lasso),val,TBSQUARE_635_combined_61bp,1,0.9883244089439731
+Logistic GLM: L1 (Lasso),val,TBSQUARE_636_combined_61bp,1,0.9228400533257411
+Logistic GLM: L1 (Lasso),val,TBSQUARE_637_combined_61bp,0,0.07806849744243535
+Logistic GLM: L1 (Lasso),val,TBSQUARE_638_combined_61bp,0,0.059452863563663735
+Logistic GLM: L1 (Lasso),val,TBSQUARE_640_combined_61bp,1,0.7078512918404289
+Logistic GLM: L1 (Lasso),val,TBSQUARE_648_combined_61bp,1,0.7597918417165785
+Logistic GLM: L1 (Lasso),val,TBSQUARE_649_combined_61bp,1,0.918656207309459
+Logistic GLM: L1 (Lasso),val,TBSQUARE_661_combined_61bp,1,0.6985837109333418
+Logistic GLM: L1 (Lasso),val,TBSQUARE_693_combined_61bp,1,0.8336847395648956
+Logistic GLM: L1 (Lasso),val,TBSQUARE_694_combined_61bp,0,0.1645474685143812
+Logistic GLM: L1 (Lasso),val,TBSQUARE_695_combined_61bp,0,0.013023661250576857
+Logistic GLM: L1 (Lasso),val,TBSQUARE_696_combined_61bp,0,0.10858187912188154
+Logistic GLM: L1 (Lasso),val,TBSQUARE_697_combined_61bp,1,0.6715348381481925
+Logistic GLM: L1 (Lasso),val,TBSQUARE_698_combined_61bp,0,0.06129291477992357
+Logistic GLM: L1 (Lasso),val,TBSQUARE_699_combined_61bp,1,0.5087770800144131
+Logistic GLM: L1 (Lasso),val,TBSQUARE_702_combined_61bp,0,0.1836008932101146
+Logistic GLM: L1 (Lasso),val,TBSQUARE_703_combined_61bp,1,0.15541382884800045
+Logistic GLM: L1 (Lasso),val,TBSQUARE_708_combined_61bp,1,0.838019218917285
+Logistic GLM: L1 (Lasso),val,TBSQUARE_711_combined_61bp,1,0.18810601295495677
+Logistic GLM: elastic net,train,GHL1_combined_61bp,0,0.22279057121019494
+Logistic GLM: elastic net,train,GHL103_combined_61bp,1,0.9405236880921125
+Logistic GLM: elastic net,train,GHL105_combined_61bp,1,0.9688881399179493
+Logistic GLM: elastic net,train,GHL107_combined_61bp,0,0.12403211014769797
+Logistic GLM: elastic net,train,GHL108_combined_61bp,1,0.9902053950969365
+Logistic GLM: elastic net,train,GHL112_combined_61bp,1,0.8140941770402036
+Logistic GLM: elastic net,train,GHL121_combined_61bp,0,0.9427860381723001
+Logistic GLM: elastic net,train,GHL124_combined_61bp,1,0.41787667551607
+Logistic GLM: elastic net,train,GHL126_combined_61bp,1,0.9189281582804619
+Logistic GLM: elastic net,train,GHL13_combined_61bp,1,0.8907690307746425
+Logistic GLM: elastic net,train,GHL133_combined_61bp,1,0.962474417249912
+Logistic GLM: elastic net,train,GHL134_combined_61bp,0,0.2628912696347433
+Logistic GLM: elastic net,train,GHL136_combined_61bp,1,0.6659498427217
+Logistic GLM: elastic net,train,GHL141_combined_61bp,1,0.7916611668409741
+Logistic GLM: elastic net,train,GHL158_combined_61bp,0,0.19565501054607956
+Logistic GLM: elastic net,train,GHL16_combined_61bp,1,0.9300224195739877
+Logistic GLM: elastic net,train,GHL169_combined_61bp,1,0.13456317168268556
+Logistic GLM: elastic net,train,GHL17_combined_61bp,1,0.6319627241119953
+Logistic GLM: elastic net,train,GHL170_combined_61bp,1,0.7532904320007102
+Logistic GLM: elastic net,train,GHL186_combined_61bp,0,0.6973306221917375
+Logistic GLM: elastic net,train,GHL19_combined_61bp,1,0.7765311630560744
+Logistic GLM: elastic net,train,GHL192_combined_61bp,1,0.975206155120874
+Logistic GLM: elastic net,train,GHL199_combined_61bp,0,0.3181661645912147
+Logistic GLM: elastic net,train,GHL201_combined_61bp,0,0.014496118341046905
+Logistic GLM: elastic net,train,GHL204_combined_61bp,1,0.9828511106858819
+Logistic GLM: elastic net,train,GHL217_combined_61bp,1,0.8494768954596186
+Logistic GLM: elastic net,train,GHL22_combined_61bp,0,0.10550259194842429
+Logistic GLM: elastic net,train,GHL223_combined_61bp,0,0.9326120132714601
+Logistic GLM: elastic net,train,GHL230_combined_61bp,1,0.5585354759569622
+Logistic GLM: elastic net,train,GHL252_combined_61bp,1,0.34614821058714185
+Logistic GLM: elastic net,train,GHL274_combined_61bp,1,0.9614439817000818
+Logistic GLM: elastic net,train,GHL276_combined_61bp,1,0.9861357574987707
+Logistic GLM: elastic net,train,GHL277_combined_61bp,0,0.3514614488780021
+Logistic GLM: elastic net,train,GHL284_combined_61bp,1,0.4741696184639427
+Logistic GLM: elastic net,train,GHL286_combined_61bp,1,0.8800176063350951
+Logistic GLM: elastic net,train,GHL288_combined_61bp,0,0.8958546502111435
+Logistic GLM: elastic net,train,GHL30_combined_61bp,0,0.03078999257262259
+Logistic GLM: elastic net,train,GHL308_combined_61bp,1,0.3542512685546347
+Logistic GLM: elastic net,train,GHL35_combined_61bp,1,0.9669001449180115
+Logistic GLM: elastic net,train,GHL36_combined_61bp,1,0.9838204646655397
+Logistic GLM: elastic net,train,GHL37_combined_61bp,1,0.5179249279803833
+Logistic GLM: elastic net,train,GHL40_combined_61bp,0,0.4088815220350339
+Logistic GLM: elastic net,train,GHL46_combined_61bp,1,0.7943447266709331
+Logistic GLM: elastic net,train,GHL47_combined_61bp,1,0.7303784359895937
+Logistic GLM: elastic net,train,GHL52_combined_61bp,0,0.2671047029707197
+Logistic GLM: elastic net,train,GHL53_combined_61bp,1,0.5599219649621149
+Logistic GLM: elastic net,train,GHL57_combined_61bp,1,0.8780681702374982
+Logistic GLM: elastic net,train,GHL59_combined_61bp,1,0.9102765306501428
+Logistic GLM: elastic net,train,GHL61_combined_61bp,1,0.9649088595991142
+Logistic GLM: elastic net,train,GHL62_combined_61bp,1,0.9881404101861445
+Logistic GLM: elastic net,train,GHL63_combined_61bp,0,0.25192891556072206
+Logistic GLM: elastic net,train,GHL65_combined_61bp,1,0.7158359928516834
+Logistic GLM: elastic net,train,GHL69_combined_61bp,0,0.08876290303596168
+Logistic GLM: elastic net,train,GHL7_combined_61bp,0,0.031559001221553216
+Logistic GLM: elastic net,train,GHL70_combined_61bp,0,0.621979980290329
+Logistic GLM: elastic net,train,GHL71_combined_61bp,1,0.9632131205231238
+Logistic GLM: elastic net,train,GHL75_combined_61bp,0,0.04913341861217298
+Logistic GLM: elastic net,train,GHL76_combined_61bp,0,0.6355720958722191
+Logistic GLM: elastic net,train,GHL84_combined_61bp,1,0.9902194212579892
+Logistic GLM: elastic net,train,GHL88_combined_61bp,1,0.7893070959895899
+Logistic GLM: elastic net,train,GHL9_combined_61bp,0,0.3633531231291841
+Logistic GLM: elastic net,train,GHL94_combined_61bp,0,0.06166185171557535
+Logistic GLM: elastic net,train,GHL99_combined_61bp,0,0.07232839360591455
+Logistic GLM: elastic net,train,R2D2_P1_combined_61bp,0,0.19776328013236602
+Logistic GLM: elastic net,train,R2D2_P104_combined_61bp,0,0.37231703341228906
+Logistic GLM: elastic net,train,R2D2_P105_combined_61bp,0,0.05894003832035812
+Logistic GLM: elastic net,train,R2D2_P108_combined_61bp,0,0.2938411203862086
+Logistic GLM: elastic net,train,R2D2_P110_combined_61bp,0,0.0673978950157429
+Logistic GLM: elastic net,train,R2D2_P113_combined_61bp,0,0.05548479499634523
+Logistic GLM: elastic net,train,R2D2_P126_combined_61bp,0,0.12723561389542803
+Logistic GLM: elastic net,train,R2D2_P129_combined_61bp,0,0.6589177621677621
+Logistic GLM: elastic net,train,R2D2_P130_combined_61bp,0,0.17988934184390343
+Logistic GLM: elastic net,train,R2D2_P133_combined_61bp,0,0.2426140546784225
+Logistic GLM: elastic net,train,R2D2_P152_combined_61bp,1,0.9389445324256797
+Logistic GLM: elastic net,train,R2D2_P18_combined_61bp,1,0.4302671605079764
+Logistic GLM: elastic net,train,R2D2_P202_combined_61bp,1,0.5817752772899062
+Logistic GLM: elastic net,train,R2D2_P214_combined_61bp,1,0.9431778646365276
+Logistic GLM: elastic net,train,R2D2_P22_combined_61bp,1,0.5544578180395905
+Logistic GLM: elastic net,train,R2D2_P241_combined_61bp,1,0.6248111610865208
+Logistic GLM: elastic net,train,R2D2_P245_combined_61bp,1,0.625178994302826
+Logistic GLM: elastic net,train,R2D2_P96_combined_61bp,1,0.8637972567497878
+Logistic GLM: elastic net,train,R2D2_U100_combined_61bp,0,0.2959747131803283
+Logistic GLM: elastic net,train,R2D2_U105_combined_61bp,0,0.18641113795178998
+Logistic GLM: elastic net,train,R2D2_U106_combined_61bp,0,0.029488539250368227
+Logistic GLM: elastic net,train,R2D2_U110_combined_61bp,0,0.09401116597134707
+Logistic GLM: elastic net,train,R2D2_U111_combined_61bp,0,0.04156502530959615
+Logistic GLM: elastic net,train,R2D2_U118_combined_61bp,0,0.4367430606410311
+Logistic GLM: elastic net,train,R2D2_U122_combined_61bp,0,0.03817212968757344
+Logistic GLM: elastic net,train,R2D2_U124_combined_61bp,0,0.2269734045688268
+Logistic GLM: elastic net,train,R2D2_U129_combined_61bp,0,0.15339978430116735
+Logistic GLM: elastic net,train,R2D2_U130_combined_61bp,0,0.22584157226217627
+Logistic GLM: elastic net,train,R2D2_U273_combined_61bp,1,0.9564630961866349
+Logistic GLM: elastic net,train,R2D2_U287_combined_61bp,1,0.9960953442594623
+Logistic GLM: elastic net,train,R2D2_U298_combined_61bp,1,0.9824218302343452
+Logistic GLM: elastic net,train,R2D2_U314_combined_61bp,1,0.9370207945296495
+Logistic GLM: elastic net,train,R2D2_U316_combined_61bp,1,0.9365764804586686
+Logistic GLM: elastic net,train,R2D2_U337_combined_61bp,1,0.842780242972313
+Logistic GLM: elastic net,train,R2D2_U341_combined_61bp,1,0.9554596529087608
+Logistic GLM: elastic net,train,R2D2_U343_combined_61bp,1,0.9092549579142875
+Logistic GLM: elastic net,train,R2D2_U355_combined_61bp,1,0.5366813184115066
+Logistic GLM: elastic net,train,R2D2_U357_combined_61bp,1,0.9925521119170696
+Logistic GLM: elastic net,train,R2D2_U362_combined_61bp,1,0.9783806533843676
+Logistic GLM: elastic net,train,R2D2_U363_combined_61bp,1,0.9379806912411623
+Logistic GLM: elastic net,train,R2D2_U371_combined_61bp,1,0.9928385903689425
+Logistic GLM: elastic net,train,R2D2_V104_combined_61bp,1,0.9939568308483758
+Logistic GLM: elastic net,train,R2D2_V108_combined_61bp,0,0.03125480671164591
+Logistic GLM: elastic net,train,R2D2_V118_combined_61bp,1,0.5161699234345573
+Logistic GLM: elastic net,train,R2D2_V119_combined_61bp,0,0.18722616673938589
+Logistic GLM: elastic net,train,R2D2_V120_combined_61bp,0,0.06480625914154517
+Logistic GLM: elastic net,train,R2D2_V121_combined_61bp,0,0.7297604339425469
+Logistic GLM: elastic net,train,R2D2_V124_combined_61bp,0,0.051414776169005964
+Logistic GLM: elastic net,train,R2D2_V126_combined_61bp,0,0.21880071514834323
+Logistic GLM: elastic net,train,R2D2_V127_combined_61bp,1,0.34599377033908135
+Logistic GLM: elastic net,train,R2D2_V128_combined_61bp,1,0.1465025163235718
+Logistic GLM: elastic net,train,R2D2_V129_combined_61bp,1,0.6986439899323806
+Logistic GLM: elastic net,train,R2D2_V132_combined_61bp,0,0.9163047969736182
+Logistic GLM: elastic net,train,R2D2_V137_combined_61bp,0,0.006612296498587107
+Logistic GLM: elastic net,train,R2D2_V146_combined_61bp,1,0.9815327049585416
+Logistic GLM: elastic net,train,R2D2_V147_combined_61bp,1,0.861808805924298
+Logistic GLM: elastic net,train,R2D2_V152_combined_61bp,0,0.3160373741988076
+Logistic GLM: elastic net,train,R2D2_V153_combined_61bp,0,0.2566803807329812
+Logistic GLM: elastic net,train,R2D2_V159_combined_61bp,0,0.16013995469379333
+Logistic GLM: elastic net,train,R2D2_V16_combined_61bp,0,0.14060283854436093
+Logistic GLM: elastic net,train,R2D2_V160_combined_61bp,1,0.9918888459581889
+Logistic GLM: elastic net,train,R2D2_V162_combined_61bp,0,0.1602401803219393
+Logistic GLM: elastic net,train,R2D2_V165_combined_61bp,1,0.9662237928672427
+Logistic GLM: elastic net,train,R2D2_V166_combined_61bp,1,0.789100341628668
+Logistic GLM: elastic net,train,R2D2_V172_combined_61bp,1,0.8073319188462316
+Logistic GLM: elastic net,train,R2D2_V20_combined_61bp,1,0.953795789488683
+Logistic GLM: elastic net,train,R2D2_V286_combined_61bp,1,0.551401032252064
+Logistic GLM: elastic net,test,GHL109_combined_61bp,1,0.9798526444375979
+Logistic GLM: elastic net,test,GHL114_combined_61bp,1,0.9887683738219578
+Logistic GLM: elastic net,test,GHL119_combined_61bp,1,0.6450284418485729
+Logistic GLM: elastic net,test,GHL123_combined_61bp,1,0.8533114400165865
+Logistic GLM: elastic net,test,GHL128_combined_61bp,0,0.429348805205811
+Logistic GLM: elastic net,test,GHL131_combined_61bp,1,0.9317919258541791
+Logistic GLM: elastic net,test,GHL132_combined_61bp,0,0.28197339736306914
+Logistic GLM: elastic net,test,GHL138_combined_61bp,0,0.29598704342298393
+Logistic GLM: elastic net,test,GHL144_combined_61bp,1,0.9053182857627927
+Logistic GLM: elastic net,test,GHL161_combined_61bp,0,0.5458667706682582
+Logistic GLM: elastic net,test,GHL166_combined_61bp,0,0.4912815804385621
+Logistic GLM: elastic net,test,GHL172_combined_61bp,0,0.07241110581785096
+Logistic GLM: elastic net,test,GHL188_combined_61bp,0,0.0980564834006647
+Logistic GLM: elastic net,test,GHL206_combined_61bp,1,0.9949830359586616
+Logistic GLM: elastic net,test,GHL208_combined_61bp,1,0.8943818462925115
+Logistic GLM: elastic net,test,GHL210_combined_61bp,0,0.17945097251787323
+Logistic GLM: elastic net,test,GHL229_combined_61bp,1,0.9406696899302389
+Logistic GLM: elastic net,test,GHL235_combined_61bp,1,0.9955206404224026
+Logistic GLM: elastic net,test,GHL248_combined_61bp,1,0.9881727874252648
+Logistic GLM: elastic net,test,GHL264_combined_61bp,1,0.6626398817161634
+Logistic GLM: elastic net,test,GHL269_combined_61bp,0,0.4140738085541201
+Logistic GLM: elastic net,test,GHL27_combined_61bp,1,0.8151862553466831
+Logistic GLM: elastic net,test,GHL3_combined_61bp,0,0.5783577413222222
+Logistic GLM: elastic net,test,GHL34_combined_61bp,1,0.9917335962361549
+Logistic GLM: elastic net,test,GHL45_combined_61bp,1,0.9268694297313232
+Logistic GLM: elastic net,test,GHL56_combined_61bp,1,0.9787543958021225
+Logistic GLM: elastic net,test,GHL58_combined_61bp,0,0.4104075632618722
+Logistic GLM: elastic net,test,GHL72_combined_61bp,1,0.1659478033187758
+Logistic GLM: elastic net,test,GHL89_combined_61bp,0,0.09159878639210652
+Logistic GLM: elastic net,test,GHL93_combined_61bp,1,0.9502952721858671
+Logistic GLM: elastic net,test,R2D2_P114_combined_61bp,0,0.36010845641378414
+Logistic GLM: elastic net,test,R2D2_P118_combined_61bp,0,0.19339775419343316
+Logistic GLM: elastic net,test,R2D2_P119_combined_61bp,0,0.11377957835475341
+Logistic GLM: elastic net,test,R2D2_P124_combined_61bp,1,0.5457667999966174
+Logistic GLM: elastic net,test,R2D2_P127_combined_61bp,0,0.3687863981975375
+Logistic GLM: elastic net,test,R2D2_P131_combined_61bp,0,0.25873815852306514
+Logistic GLM: elastic net,test,R2D2_P232_combined_61bp,1,0.5727572650078047
+Logistic GLM: elastic net,test,R2D2_P33_combined_61bp,1,0.8853068379393485
+Logistic GLM: elastic net,test,R2D2_U102_combined_61bp,0,0.3917719521111862
+Logistic GLM: elastic net,test,R2D2_U103_combined_61bp,0,0.5793436871196441
+Logistic GLM: elastic net,test,R2D2_U112_combined_61bp,0,0.11287543922872159
+Logistic GLM: elastic net,test,R2D2_U114_combined_61bp,0,0.0994124883431105
+Logistic GLM: elastic net,test,R2D2_U131_combined_61bp,0,0.06967668815692815
+Logistic GLM: elastic net,test,R2D2_U132_combined_61bp,0,0.7572370115992046
+Logistic GLM: elastic net,test,R2D2_U133_combined_61bp,0,0.72241781969236
+Logistic GLM: elastic net,test,R2D2_U269_combined_61bp,1,0.9867253560542595
+Logistic GLM: elastic net,test,R2D2_U312_combined_61bp,1,0.6599002425382363
+Logistic GLM: elastic net,test,R2D2_U315_combined_61bp,1,0.9740849248213671
+Logistic GLM: elastic net,test,R2D2_U323_combined_61bp,1,0.9336428366014894
+Logistic GLM: elastic net,test,R2D2_U329_combined_61bp,1,0.93228376212041
+Logistic GLM: elastic net,test,R2D2_U332_combined_61bp,1,0.9892809533149945
+Logistic GLM: elastic net,test,R2D2_V130_combined_61bp,1,0.7529319710377245
+Logistic GLM: elastic net,test,R2D2_V139_combined_61bp,0,0.3553225081227344
+Logistic GLM: elastic net,test,R2D2_V143_combined_61bp,0,0.1887430281115406
+Logistic GLM: elastic net,test,R2D2_V151_combined_61bp,0,0.27714642366329506
+Logistic GLM: elastic net,test,R2D2_V157_combined_61bp,1,0.6741738112563804
+Logistic GLM: elastic net,test,R2D2_V167_combined_61bp,1,0.9382726954318189
+Logistic GLM: elastic net,test,R2D2_V190_combined_61bp,1,0.9183146408073303
+Logistic GLM: elastic net,test,R2D2_V218_combined_61bp,1,0.8713495996457137
+Logistic GLM: elastic net,test,R2D2_V242_combined_61bp,1,0.9800173395592888
+Logistic GLM: elastic net,test,R2D2_V273_combined_61bp,1,0.9210531432969946
+Logistic GLM: elastic net,val,TBSQUARE_553_combined_61bp,1,0.7657767834782786
+Logistic GLM: elastic net,val,TBSQUARE_554_combined_61bp,0,0.10199558929617768
+Logistic GLM: elastic net,val,TBSQUARE_555_combined_61bp,1,0.9742629359705481
+Logistic GLM: elastic net,val,TBSQUARE_557_combined_61bp,0,0.06788429658915235
+Logistic GLM: elastic net,val,TBSQUARE_561_combined_61bp,1,0.4035085509584724
+Logistic GLM: elastic net,val,TBSQUARE_564_combined_61bp,0,0.20316332151530261
+Logistic GLM: elastic net,val,TBSQUARE_568_combined_61bp,0,0.5549119373367472
+Logistic GLM: elastic net,val,TBSQUARE_569_combined_61bp,1,0.9680261181743202
+Logistic GLM: elastic net,val,TBSQUARE_570_combined_61bp,1,0.8217610997909538
+Logistic GLM: elastic net,val,TBSQUARE_572_combined_61bp,0,0.03331715952212494
+Logistic GLM: elastic net,val,TBSQUARE_573_combined_61bp,1,0.47288483058708636
+Logistic GLM: elastic net,val,TBSQUARE_577_combined_61bp,0,0.021783408693529103
+Logistic GLM: elastic net,val,TBSQUARE_578_combined_61bp,1,0.40811656777248706
+Logistic GLM: elastic net,val,TBSQUARE_583_combined_61bp,0,0.42418585365225736
+Logistic GLM: elastic net,val,TBSQUARE_584_combined_61bp,1,0.8865310437862483
+Logistic GLM: elastic net,val,TBSQUARE_589_combined_61bp,0,0.009351758416628806
+Logistic GLM: elastic net,val,TBSQUARE_591_combined_61bp,1,0.6521511960563255
+Logistic GLM: elastic net,val,TBSQUARE_596_combined_61bp,0,0.025527466377452956
+Logistic GLM: elastic net,val,TBSQUARE_597_combined_61bp,1,0.5928043592995962
+Logistic GLM: elastic net,val,TBSQUARE_598_combined_61bp,1,0.928917756802968
+Logistic GLM: elastic net,val,TBSQUARE_599_combined_61bp,0,0.150183551544267
+Logistic GLM: elastic net,val,TBSQUARE_601_combined_61bp,1,0.731888715116609
+Logistic GLM: elastic net,val,TBSQUARE_602_combined_61bp,1,0.7413514735677804
+Logistic GLM: elastic net,val,TBSQUARE_603_combined_61bp,0,0.025370643340313297
+Logistic GLM: elastic net,val,TBSQUARE_608_combined_61bp,0,0.055218953731134356
+Logistic GLM: elastic net,val,TBSQUARE_609_combined_61bp,1,0.8858296888520926
+Logistic GLM: elastic net,val,TBSQUARE_610_combined_61bp,0,0.18042827920287627
+Logistic GLM: elastic net,val,TBSQUARE_611_combined_61bp,1,0.11677508847437855
+Logistic GLM: elastic net,val,TBSQUARE_612_combined_61bp,1,0.9434573351775493
+Logistic GLM: elastic net,val,TBSQUARE_613_combined_61bp,0,0.4488450474298597
+Logistic GLM: elastic net,val,TBSQUARE_614_combined_61bp,1,0.4117498496748825
+Logistic GLM: elastic net,val,TBSQUARE_616_combined_61bp,0,0.6634135363397504
+Logistic GLM: elastic net,val,TBSQUARE_617_combined_61bp,1,0.7798287901476437
+Logistic GLM: elastic net,val,TBSQUARE_618_combined_61bp,1,0.6775708952267038
+Logistic GLM: elastic net,val,TBSQUARE_619_combined_61bp,0,0.2097357557322922
+Logistic GLM: elastic net,val,TBSQUARE_620_combined_61bp,1,0.9266366036977964
+Logistic GLM: elastic net,val,TBSQUARE_623_combined_61bp,1,0.7356020906722075
+Logistic GLM: elastic net,val,TBSQUARE_628_combined_61bp,1,0.8925021289673556
+Logistic GLM: elastic net,val,TBSQUARE_630_combined_61bp,1,0.623361589093016
+Logistic GLM: elastic net,val,TBSQUARE_631_combined_61bp,0,0.47707575632454935
+Logistic GLM: elastic net,val,TBSQUARE_634_combined_61bp,0,0.07770809201787289
+Logistic GLM: elastic net,val,TBSQUARE_635_combined_61bp,1,0.9900346113526176
+Logistic GLM: elastic net,val,TBSQUARE_636_combined_61bp,1,0.9280603597189655
+Logistic GLM: elastic net,val,TBSQUARE_637_combined_61bp,0,0.08416533967878922
+Logistic GLM: elastic net,val,TBSQUARE_638_combined_61bp,0,0.06576348127538528
+Logistic GLM: elastic net,val,TBSQUARE_640_combined_61bp,1,0.7404503766147108
+Logistic GLM: elastic net,val,TBSQUARE_648_combined_61bp,1,0.7612075942962968
+Logistic GLM: elastic net,val,TBSQUARE_649_combined_61bp,1,0.9258154967638894
+Logistic GLM: elastic net,val,TBSQUARE_661_combined_61bp,1,0.7283524064583511
+Logistic GLM: elastic net,val,TBSQUARE_693_combined_61bp,1,0.8574798784686483
+Logistic GLM: elastic net,val,TBSQUARE_694_combined_61bp,0,0.18101772455481394
+Logistic GLM: elastic net,val,TBSQUARE_695_combined_61bp,0,0.013567236445184807
+Logistic GLM: elastic net,val,TBSQUARE_696_combined_61bp,0,0.12496863951744207
+Logistic GLM: elastic net,val,TBSQUARE_697_combined_61bp,1,0.6896915986386496
+Logistic GLM: elastic net,val,TBSQUARE_698_combined_61bp,0,0.06698024165940943
+Logistic GLM: elastic net,val,TBSQUARE_699_combined_61bp,1,0.5148579288905307
+Logistic GLM: elastic net,val,TBSQUARE_702_combined_61bp,0,0.1826384524272822
+Logistic GLM: elastic net,val,TBSQUARE_703_combined_61bp,1,0.17117120556649945
+Logistic GLM: elastic net,val,TBSQUARE_708_combined_61bp,1,0.8653503497235545
+Logistic GLM: elastic net,val,TBSQUARE_711_combined_61bp,1,0.2098497984439239

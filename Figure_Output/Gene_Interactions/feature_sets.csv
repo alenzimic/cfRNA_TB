@@ -1,0 +1,3 @@
+Feature set,Genes,Training samples,Test samples
+DESeq2 genes,142,130,61
+All variable genes,52990,130,61

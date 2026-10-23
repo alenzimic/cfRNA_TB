@@ -1,0 +1,12 @@
+rank,feature_arm,model,n_features,capacity,train_auc,test_auc,status,error,run_warnings,is_reference,protocol,source
+1,Paper six genes,LinearSVC,6,additive linear,0.9202114876231675,0.9607843137254902,ok,,,False,,
+2,Paper six genes,LogisticRegression,6,additive linear,0.9199711607786589,0.9607843137254901,ok,,,False,,
+3,Paper six genes,RidgeClassifier,6,additive linear,0.9216534486902187,0.9596949891067538,ok,,,False,,
+4,Paper six genes,SVC,6,nonlinear; interaction capable,0.9641913001682287,0.9477124183006536,ok,,,False,,
+5,,GFS,6,,0.9211727950012016,0.9466230936819172,,,,True,Original split VST,Reconstructed original six-gene fit
+6,Paper six genes,ExtraTreesClassifier,6,nonlinear; interaction capable,1.0,0.931917211328976,ok,,,False,,
+7,Paper six genes,RandomForestClassifier,6,nonlinear; interaction capable,1.0,0.9259259259259259,ok,,,False,,
+8,Paper six genes,GaussianNB,6,nonlinear additive log odds,0.9072338380197068,0.9226579520697167,ok,,,False,,
+9,Paper six genes,KNeighborsClassifier,6,nonlinear proximity,0.9401586157173757,0.9166666666666666,ok,,,False,,
+10,Paper six genes,DecisionTreeClassifier,6,nonlinear; interaction capable,1.0,0.778322440087146,ok,,,False,,
+11,Paper six genes,DummyClassifier,6,no expression signal,0.5,0.5,ok,,,False,,

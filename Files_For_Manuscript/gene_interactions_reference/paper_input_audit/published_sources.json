@@ -1,0 +1,277 @@
+{
+  "audit_timestamp_utc": "2026-10-20T17:03:17.054733+00:00",
+  "scope": "Recover the exact 113 training candidate gene IDs claimed by the original publication from inspected primary publication, GEO, upstream repository, and archive sources.",
+  "result": {
+    "status": "exact_113_gene_list_not_found_in_inspected_sources",
+    "candidate_gene_ids_recovered": false,
+    "conclusion": "No exact 113-gene training candidate list was found in the sources enumerated here. This bounded search result does not prove that no such list exists elsewhere or that the published count is a typographical error. It does not justify selecting an arbitrary 113-gene subset."
+  },
+  "article": {
+    "doi": "10.1038/s41467-024-49245-6",
+    "url": "https://www.nature.com/articles/s41467-024-49245-6",
+    "pmc_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11164910/",
+    "fulltext_xml_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11164910/fullTextXML",
+    "fulltext_xml": {
+      "size_bytes": 96334,
+      "sha256": "b84b1eb4a3a5f525984347ed35e8bb0cdcb898ea5e540e2a87ddd377639b4bc0"
+    },
+    "reported_training_gene_count": 113,
+    "reported_selection_criteria": "Differential abundance analysis; base mean threshold 100 and Benjamini-Hochberg adjusted p-value threshold 0.05.",
+    "supplement_inventory_source": "The full-text XML enumerates MOESM1 through MOESM10. Each artifact is inventoried below."
+  },
+  "publication_artifacts": [
+    {
+      "number": 1,
+      "label": "Supplementary Information",
+      "filename": "41467_2024_49245_MOESM1_ESM.pdf",
+      "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-024-49245-6/MediaObjects/41467_2024_49245_MOESM1_ESM.pdf",
+      "size_bytes": 544126,
+      "sha256": "293a599f735f37ad7dcde5559cab878564956cc91050a4f2808ef76490788167",
+      "inspected_contents": "Tables 1-6: model performance; the six selected GFS genes and stepwise performance; cohort, score, and pathway comparisons. No 113-gene training candidate list found.",
+      "inspection_method": "PDF text extraction and inspection"
+    },
+    {
+      "number": 2,
+      "label": "Peer Review File",
+      "filename": "41467_2024_49245_MOESM2_ESM.pdf",
+      "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-024-49245-6/MediaObjects/41467_2024_49245_MOESM2_ESM.pdf",
+      "size_bytes": 3759244,
+      "sha256": "051e62149b3f6046d033f2203483fdc60e5d2aecf0def31515fdc31c5fe2fc1c",
+      "inspected_contents": "Reviewer correspondence. Text searched for 113, 142, candidate genes, base mean, and gene/feature selection; no 113-gene list or additional candidate filter found.",
+      "inspection_method": "PDF text extraction and inspection"
+    },
+    {
+      "number": 3,
+      "label": "Description of Additional Supplementary Files",
+      "filename": "41467_2024_49245_MOESM3_ESM.pdf",
+      "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-024-49245-6/MediaObjects/41467_2024_49245_MOESM3_ESM.pdf",
+      "size_bytes": 91517,
+      "sha256": "2d223411e3c0a4e1dc23588ffa7d9e2978d56b43cf8a0dd283f71d1150d8310c",
+      "inspected_contents": "Descriptions of Supplementary Data 1-5: plasma DE, IPA, pathway enrichment, signature comparison, and whole-blood DE.",
+      "inspection_method": "PDF text extraction and inspection"
+    },
+    {
+      "number": 4,
+      "label": "Supplementary Data 1",
+      "filename": "41467_2024_49245_MOESM4_ESM.xls",
+      "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-024-49245-6/MediaObjects/41467_2024_49245_MOESM4_ESM.xls",
+      "size_bytes": 11478528,
+      "sha256": "725cf6fe8e85f8aeaf7dd807524b8b48e796240444f0d4b2eb9a295ea4f8b6bf",
+      "inspected_contents": "Pooled plasma cfRNA differential-expression results, not the training-only candidate list. 56,634 gene rows; 1,956 adjusted p-values below 0.05; 304 genes with adjusted p-value below 0.05 and baseMean above 100. Numerically matches repository deseq_results.tsv to floating-point precision.",
+      "sheets": [
+        {
+          "name": "SuppData1",
+          "rows_including_headers_and_title_rows": 56635,
+          "columns": 9
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "label": "Supplementary Data 2",
+      "filename": "41467_2024_49245_MOESM5_ESM.xls",
+      "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-024-49245-6/MediaObjects/41467_2024_49245_MOESM5_ESM.xls",
+      "size_bytes": 163840,
+      "sha256": "b031bb1eaffb1d8bce1d8285615d4498c55b5c0e55c463f01b60433a11668627",
+      "inspected_contents": "IPA canonical pathway enrichment, with pathway significance, ratio, z-score, and molecules; not a training candidate list.",
+      "sheets": [
+        {
+          "name": "SuppData2",
+          "rows_including_headers_and_title_rows": 826,
+          "columns": 5
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "label": "Supplementary Data 3",
+      "filename": "41467_2024_49245_MOESM6_ESM.xlsx",
+      "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-024-49245-6/MediaObjects/41467_2024_49245_MOESM6_ESM.xlsx",
+      "size_bytes": 180395,
+      "sha256": "06e51eb3978ad86b6a55a1c60f2cd85ad6d9502297f75fc799702fbeb2a9911c",
+      "inspected_contents": "KEGG, GO, and Hallmark enrichment tables; not a training candidate list.",
+      "sheets": [
+        {
+          "name": "KEGG",
+          "rows_including_headers_and_title_rows": 355,
+          "columns": 8
+        },
+        {
+          "name": "GO",
+          "rows_including_headers_and_title_rows": 569,
+          "columns": 15
+        },
+        {
+          "name": "Hallmark",
+          "rows_including_headers_and_title_rows": 33,
+          "columns": 14
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "label": "Supplementary Data 4",
+      "filename": "41467_2024_49245_MOESM7_ESM.xls",
+      "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-024-49245-6/MediaObjects/41467_2024_49245_MOESM7_ESM.xls",
+      "size_bytes": 45568,
+      "sha256": "b5b626d4ae0a09a55622de5e145f5ef69cdba2ec0b135c6f34172865c0de6ec4",
+      "inspected_contents": "Comparison of previously published signatures with the final six-gene cfRNA signature. The cfRNA column marks BNIP3L, DYSF, GBP5, KLF6, LASP1, and PCBP1; not the 113-gene candidate pool.",
+      "sheets": [
+        {
+          "name": "SuppData4",
+          "rows_including_headers_and_title_rows": 180,
+          "columns": 10
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "label": "Supplementary Data 5",
+      "filename": "41467_2024_49245_MOESM8_ESM.xls",
+      "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-024-49245-6/MediaObjects/41467_2024_49245_MOESM8_ESM.xls",
+      "size_bytes": 371712,
+      "sha256": "73cbb8f2fe57d9a75efe9b81f528a9ac1209a1eb5a55d96e2f105429ee856b67",
+      "inspected_contents": "Whole-blood RNA differential-expression results (2,018 gene rows); not plasma training candidates.",
+      "sheets": [
+        {
+          "name": "SuppData5",
+          "rows_including_headers_and_title_rows": 2019,
+          "columns": 7
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "label": "Reporting Summary",
+      "filename": "41467_2024_49245_MOESM9_ESM.pdf",
+      "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-024-49245-6/MediaObjects/41467_2024_49245_MOESM9_ESM.pdf",
+      "size_bytes": 2161830,
+      "sha256": "80b9301b66524c3b6f5b808d4f67dc7295b8cbfb855c4718ca9ee76e9584114f",
+      "inspected_contents": "Study reporting checklist. No 113-gene candidate list or additional candidate-selection rule found.",
+      "inspection_method": "PDF text extraction and inspection"
+    },
+    {
+      "number": 10,
+      "label": "Source Data",
+      "filename": "41467_2024_49245_MOESM10_ESM.xlsx",
+      "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-024-49245-6/MediaObjects/41467_2024_49245_MOESM10_ESM.xlsx",
+      "size_bytes": 57383,
+      "sha256": "d399d5b97db434f8a43e02051449ba89c6c1a34b1352226d7732559258164bd8",
+      "inspected_contents": "Figure-level numerical values: RNA fractions, reported model AUCs, six-gene GFS steps/scores, GBP5 abundance, clinical comparisons, signature comparisons, and solid-organ fractions. No training gene matrix or candidate-gene sheet found.",
+      "sheets": [
+        {
+          "name": "Figure 1B",
+          "rows_including_headers_and_title_rows": 125,
+          "columns": 4
+        },
+        {
+          "name": "Figure 1F",
+          "rows_including_headers_and_title_rows": 32,
+          "columns": 4
+        },
+        {
+          "name": "Figure 2A",
+          "rows_including_headers_and_title_rows": 8,
+          "columns": 4
+        },
+        {
+          "name": "Figure 2C",
+          "rows_including_headers_and_title_rows": 253,
+          "columns": 4
+        },
+        {
+          "name": "Figure 2D",
+          "rows_including_headers_and_title_rows": 246,
+          "columns": 4
+        },
+        {
+          "name": "Figure 2G",
+          "rows_including_headers_and_title_rows": 14,
+          "columns": 8
+        },
+        {
+          "name": "Figure 2H",
+          "rows_including_headers_and_title_rows": 152,
+          "columns": 12
+        },
+        {
+          "name": "Figure 3B",
+          "rows_including_headers_and_title_rows": 10,
+          "columns": 6
+        },
+        {
+          "name": "Figure 3C",
+          "rows_including_headers_and_title_rows": 313,
+          "columns": 3
+        }
+      ]
+    }
+  ],
+  "geo": {
+    "accession": "GSE255071",
+    "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE255071",
+    "soft_metadata_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE255071&targ=self&form=text&view=full",
+    "soft_metadata": {
+      "size_bytes": 8506,
+      "sha256": "b66f4fd7cceac6f5f0acbb64856f39558e8ad60b05702fdf4b38d31f1a2e5c32"
+    },
+    "series_supplementary_files_listed": [
+      "GSE255071_counts.train.tsv.gz"
+    ],
+    "download_url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE255nnn/GSE255071/suppl/GSE255071_counts.train.tsv.gz",
+    "compressed_download": {
+      "size_bytes": 3311297,
+      "sha256": "ff6688fe9602cb4878cd2b6cc22a4c74c061b5c541028d52630539ee6b1b546f"
+    },
+    "decompressed_size_bytes": 16949377,
+    "decompressed_sha256": "a0ab4a4aad94971d461af4f497e54b5c44edee4da9b92e4f66a20d9be9510e50",
+    "repository_comparison_path": "Files_For_Manuscript/counts.train.tsv",
+    "byte_identical_after_decompression": true,
+    "candidate_list_present_in_series_supplement_inventory": false
+  },
+  "upstream_github": {
+    "url": "https://github.com/DanielEweisLaBolle/cfRNA_TB",
+    "inspected_main_commit": "3488ff444c9d6931fad22f6e504fb42ac13d7f75",
+    "main_history_commit_count": 7,
+    "releases_query_url": "https://github.com/DanielEweisLaBolle/cfRNA_TB/releases",
+    "releases_observed": [],
+    "refs_query_url": "https://api.github.com/repos/DanielEweisLaBolle/cfRNA_TB/git/refs",
+    "refs_observed": [
+      "refs/heads/main"
+    ],
+    "tags_observed": [],
+    "issues_query_url": "https://api.github.com/repos/DanielEweisLaBolle/cfRNA_TB/issues?state=all&per_page=100",
+    "issues_observed": [],
+    "file_history": {
+      "Files_For_Manuscript/counts.train.tsv": {
+        "commits_changing_file": [
+          "c1dd4c3634ae41fb8dbcd54adc86c1bb4a213138"
+        ],
+        "distinct_content_versions": 1
+      },
+      "Files_For_Manuscript/metadata.train.tsv": {
+        "commits_changing_file": [
+          "c1dd4c3634ae41fb8dbcd54adc86c1bb4a213138"
+        ],
+        "distinct_content_versions": 1
+      },
+      "Files_For_Manuscript/gencode.biotype.name.key.tsv": {
+        "commits_changing_file": [
+          "c1dd4c3634ae41fb8dbcd54adc86c1bb4a213138"
+        ],
+        "distinct_content_versions": 1
+      }
+    },
+    "history_method": "Local git log and blob IDs across the complete seven-commit upstream/main history; public GitHub refs, releases, and issues were also inspected."
+  },
+  "zenodo": {
+    "successful_query_url": "https://zenodo.org/api/records?q=%22cfRNA_TB%22",
+    "successful_query_result": {
+      "size_bytes": 440,
+      "sha256": "bed62ef6b2af34974d20d2c84a15aaaae16e327ea3cf5c1ea24a8ebf1caf873e"
+    },
+    "hit_count": 0,
+    "scope_limit": "Only the exact repository-name query succeeded and returned zero records. Follow-up queries with additional parameters, DOI, and article title failed with HTTP 400; those failures are not evidence of zero matching records.",
+    "article_or_upstream_readme_link_to_original_zenodo_archive_found": false
+  }
+}

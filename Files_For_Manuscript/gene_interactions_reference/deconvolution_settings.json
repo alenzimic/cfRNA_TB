@@ -1,0 +1,52 @@
+{
+  "input_sha256": {
+    "/workdir/cjl332/archives/clust1_old/cfrna/deconvolution/validation/simulation_testing/references/tabsap_subCells-allGenes_thresh-100000.COUNTS.csv": "265fecca1f26734a92e21c0d40b4a36ad41c53a9ffe36c0e3879f67e90ef4ee9",
+    "/workdir/cjl332/archives/clust1_old/cfrna/deconvolution/validation/simulation_testing/references/tabsap_subCells-allGenes_thresh-100000.META.csv": "b2426e464e43b300b8a09dde84ce5d1f7094f3f6b097aefea4fb0cb6563f491c",
+    "/local/workdir/amz63/cfRNA_TB/Files_For_Manuscript/counts.train.tsv": "a0ab4a4aad94971d461af4f497e54b5c44edee4da9b92e4f66a20d9be9510e50",
+    "/local/workdir/amz63/cfRNA_TB/Files_For_Manuscript/counts.test.tsv": "f72ca78638c7cf5a9bdf8d6fa703fc4254b2957700e2552c5fabf13776c8b502",
+    "/local/workdir/amz63/cfRNA_TB/Files_For_Manuscript/counts.val.tsv": "f29ccb2bdcf9adf9826ae7a105ed0c3640a0dc7558ad6e56c9f943359b7a4044"
+  },
+  "BayesPrism": "2.2.3",
+  "upstream_commit": "19052052a6f30833b27e2148294459b0ba2f923e",
+  "excluded_gene_ids": [
+    "ENSG00000154451.14",
+    "ENSG00000124942.14",
+    "ENSG00000171988.19",
+    "ENSG00000163563.8",
+    "ENSG00000090382.7",
+    "ENSG00000066336.12"
+  ],
+  "excluded_gene_names": [
+    "GBP5",
+    "AHNAK",
+    "JMJD1C",
+    "MNDA",
+    "LYZ",
+    "SPI1"
+  ],
+  "seed": 123,
+  "chain_length": 1000,
+  "burn_in": 500,
+  "thinning": 2,
+  "reference_cleanup": [
+    "Rb",
+    "Mrp",
+    "other_Rb",
+    "chrM",
+    "MALAT1",
+    "chrX",
+    "chrY"
+  ],
+  "minimum_expressing_cells": 5,
+  "outlier_cut": 0.01,
+  "outlier_fraction": 0.1,
+  "gene_identifier_rule": "Remove trailing Ensembl version suffix; require unique stable IDs",
+  "fit_scope": "Each sample independently; all-gene branch; frozen baseline outlier filter",
+  "repository": "/local/workdir/amz63/cfRNA_TB",
+  "reference_counts": "/workdir/cjl332/archives/clust1_old/cfrna/deconvolution/validation/simulation_testing/references/tabsap_subCells-allGenes_thresh-100000.COUNTS.csv",
+  "reference_metadata": "/workdir/cjl332/archives/clust1_old/cfrna/deconvolution/validation/simulation_testing/references/tabsap_subCells-allGenes_thresh-100000.META.csv",
+  "r_library": "/home/amz63/.local/lib/R/cfrna-bayesprism-4.3",
+  "workers": 8,
+  "r_code_sha256": "590112eb3a67998cd43e2a80a08fa45e8c55a4a9b5f8223b9875947f262b521f",
+  "fingerprint": "1c882814ba2ae49c026ac99831aeb73a214c592c5f4b215f204f0bdac3f3386c"
+}

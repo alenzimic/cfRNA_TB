@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "source": {
+    "notebook": "Scripts_For_Manuscript/Figure_2.ipynb",
+    "cell_zero_based": 9,
+    "method": "Same candidate loop, R glm, pROC defaults, composite score, correlation tie breaker, and stopping rule"
+  },
+  "candidate_file": "../training_candidates.tsv",
+  "candidate_count": 142,
+  "candidate_deseq2_version": "1.34.0",
+  "vst": {
+    "method": "Original blind parametric training VST reconstructed from saved training trend and raw training counts",
+    "reference_file": "../../reference.json",
+    "reference_deseq2_version": "1.30.1",
+    "size_factor_method": "DESeq2 ratio: exp(median(log(count)-mean(log(reference counts)))) over genes positive in every training sample",
+    "n_size_factor_reference_genes": 4957,
+    "coefficients": {
+      "asymptDisp": 0.182104491913332,
+      "extraPois": 3.29320822603579
+    },
+    "original_cached_matrix": {
+      "file": "training_blind_vst.tsv.gz",
+      "included": false,
+      "sha256": "c6c8261c1f30c589e39592ebb8e2b565a6a4a4ffadde158d8aadee5d511d756c",
+      "deseq2_version": "1.30.1",
+      "note": "Original audit used this cached matrix; the portable script reconstructs its training transformation without copying the large matrix."
+    }
+  },
+  "r_version": "R version 4.1.3 (2022-03-10)",
+  "pROC_version": "1.18.0",
+  "dplyr_version": "1.0.10",
+  "jsonlite_version": "1.8.2",
+  "n_training_samples": 130,
+  "seed": 87,
+  "glm": {
+    "family": "binomial",
+    "link": "logit",
+    "intercept": false,
+    "penalty": "none",
+    "scaling": "none",
+    "epsilon": 1e-08,
+    "maxit": 25
+  },
+  "score": "Training ROC AUC plus sensitivity plus specificity at the first maximum Youden threshold",
+  "tie_breaker": "Lowest absolute mean Pearson correlation with already selected genes",
+  "accept_rule": "Score gain strictly greater than 0.01",
+  "candidate_fits": 994,
+  "selected_genes": ["ENSG00000154451.14", "ENSG00000104765.16", "ENSG00000067082.15", "ENSG00000135636.15", "ENSG00000002834.18", "ENSG00000169564.7"],
+  "selected_gene_names": ["GBP5", "BNIP3L", "KLF6", "DYSF", "LASP1", "PCBP1"],
+  "same_set_as_published": true,
+  "same_order_as_published": true,
+  "rejected_next_gene": "JMJD1C",
+  "rejected_score_gain": 0.000720980533525317,
+  "max_abs_coefficient_difference_from_six_gene_refit": 5.10702591327572e-15,
+  "rescored_paper_features": {
+    "train": {
+      "auc": 0.921172795001202,
+      "max_abs_probability_difference": 2.25375273998907e-14
+    },
+    "test": {
+      "auc": 0.946623093681917,
+      "max_abs_probability_difference": 2.30926389122033e-14
+    },
+    "val": {
+      "auc": 0.946285714285714,
+      "max_abs_probability_difference": 2.1316282072803e-14
+    }
+  },
+  "warnings": [],
+  "input_sha256": {
+    "Files_For_Manuscript/gene_interactions_reference/paper_input_audit/training_candidates.tsv": "347d295e9568658c782cd4bf27db9753066af6a2282a269159ff6ae78a8f2ccc",
+    "Files_For_Manuscript/gene_interactions_reference/paper_input_audit/audit.json": "b9ef6efa1c1d9b56b5421676819c8f853758752d85d9baca47f9db5bec6de8dd",
+    "Files_For_Manuscript/counts.train.tsv": "a0ab4a4aad94971d461af4f497e54b5c44edee4da9b92e4f66a20d9be9510e50",
+    "Files_For_Manuscript/metadata.train.tsv": "94d32911a0a262170a1e4335edfd4f4361e3673419806ab9a0204a88a3747c73",
+    "Files_For_Manuscript/gene_interactions_reference/reference.json": "81e389c984905a46cca8a945738e9708c085df616093b22db8bd1dc83d0dd981",
+    "Scripts_For_Manuscript/Figure_2.ipynb": "265db89b5a796dd77773306da5881bef31efed07600e3077a1b60d033dfa3b05",
+    "Files_For_Manuscript/gene_cutoff_reference/paper_model/model.json": "9631307560ac37b246377ac21d5f2ba8eb05f3dd958fd775822211710f93d43f",
+    "Files_For_Manuscript/gene_cutoff_reference/paper_model/paper_features.tsv": "b5c4f0f8213b57a13628172aea02540ddf85378b14064820323baca96f85c8d5",
+    "Files_For_Manuscript/gene_interactions_reference/paper_input_audit/gfs_selection/export_audit.R": "872c22dc42331ddbeab38320df5bcd05b1f216fae93fd661a2c34b7b0d9887f5"
+  },
+  "output_sha256": {
+    "selection_steps.csv": "e5d6d529525e8bfe67283966f934415ca7993efadb7cc31251333d49fcb25126",
+    "all_candidate_scores.csv": "a0f5215cb5dfe4e883ae12f308e55efdf19bb11a145f1a1a15acd8e77e3e1aad",
+    "selected_genes.tsv": "34d711c6a80390f11f2bbe90e81aefacd22124d7610afb164de75d23f842e711",
+    "coefficients.csv": "0bd6fbe0e45849acbe24dac8ef7d612724951dcd6e90b52deaf45f5fa17359ec"
+  },
+  "conclusion": "The repository's 142-candidate GFS search recovers the published six final genes in their original order. This does not recover or certify the article's reported 113-gene input pool for other models."
+}

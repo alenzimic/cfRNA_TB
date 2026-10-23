@@ -1,0 +1,6 @@
+split,cohort,n,excluded,estimate,ci_lower,ci_upper,p_value,df_resid,formula
+train,GHL,63,0,0.08093709895856802,-0.1785120446033566,0.34038624252049265,0.534440462666095,55.0,three_gene_signal ~ tb_positive + rna_myeloid_vs_other + rna_lymphoid_vs_other + rna_erythroid_platelet_vs_other + age_decades + male + hiv_positive
+train,R2D2,67,0,0.4717815358084475,0.07948500780740453,0.8640780638094905,0.019259755989035433,59.0,three_gene_signal ~ tb_positive + rna_myeloid_vs_other + rna_lymphoid_vs_other + rna_erythroid_platelet_vs_other + age_decades + male + hiv_positive
+test,GHL,30,0,0.7024702656637922,0.1690690480950996,1.2358714832324849,0.012192144269585172,22.0,three_gene_signal ~ tb_positive + rna_myeloid_vs_other + rna_lymphoid_vs_other + rna_erythroid_platelet_vs_other + age_decades + male + hiv_positive
+test,R2D2,31,0,0.1868732370420394,-0.47632627836365593,0.8500727524477347,0.5656347357654281,23.0,three_gene_signal ~ tb_positive + rna_myeloid_vs_other + rna_lymphoid_vs_other + rna_erythroid_platelet_vs_other + age_decades + male + hiv_positive
+val,TBSQUARE,60,0,0.38934831184148694,0.08816052821381332,0.6905360954691606,0.012294815910782141,52.0,three_gene_signal ~ tb_positive + rna_myeloid_vs_other + rna_lymphoid_vs_other + rna_erythroid_platelet_vs_other + age_decades + male + hiv_positive

@@ -1,0 +1,10 @@
+split,adjustment,n,excluded,estimate,ci_lower,ci_upper,p_value,df_resid,formula,q_primary_family
+train,Cohort,130,0,0.49189979425141256,0.2571940560682483,0.7266055324345768,6.111663335428761e-05,127.0,three_gene_signal ~ tb_positive + C(cohort),
+train,Cohort + composition,130,0,0.3658756353198951,0.08154185438034056,0.6502094162594496,0.012091493779101747,124.0,three_gene_signal ~ tb_positive + C(cohort) + rna_myeloid_vs_other + rna_lymphoid_vs_other + rna_erythroid_platelet_vs_other,
+train,Cohort + composition + demographics,130,0,0.3098176598098441,0.05261966064700374,0.5670156589726845,0.018641582621421716,121.0,three_gene_signal ~ tb_positive + C(cohort) + rna_myeloid_vs_other + rna_lymphoid_vs_other + rna_erythroid_platelet_vs_other + age_decades + male + hiv_positive,0.018641582621421716
+test,Cohort,61,0,0.7975310392140323,0.4680819749490555,1.1269801034790092,9.791710030933857e-06,58.0,three_gene_signal ~ tb_positive + C(cohort),
+test,Cohort + composition,61,0,0.6423547415516857,0.24840009314530898,1.0363093899580624,0.0018716500237701001,55.0,three_gene_signal ~ tb_positive + C(cohort) + rna_myeloid_vs_other + rna_lymphoid_vs_other + rna_erythroid_platelet_vs_other,
+test,Cohort + composition + demographics,61,0,0.6519534010775949,0.28460362407681383,1.019303178078376,0.0007994639299931037,52.0,three_gene_signal ~ tb_positive + C(cohort) + rna_myeloid_vs_other + rna_lymphoid_vs_other + rna_erythroid_platelet_vs_other + age_decades + male + hiv_positive,0.0023983917899793113
+val,Cohort,60,0,0.2119390894663174,-0.12462911690086242,0.5485072958334972,0.21253875809856354,58.0,three_gene_signal ~ tb_positive,
+val,Cohort + composition,60,0,0.37771420991700777,0.08936360641849045,0.6660648134155251,0.011193333361818283,55.0,three_gene_signal ~ tb_positive + rna_myeloid_vs_other + rna_lymphoid_vs_other + rna_erythroid_platelet_vs_other,
+val,Cohort + composition + demographics,60,0,0.38934831184148694,0.08816052821381332,0.6905360954691606,0.012294815910782141,52.0,three_gene_signal ~ tb_positive + rna_myeloid_vs_other + rna_lymphoid_vs_other + rna_erythroid_platelet_vs_other + age_decades + male + hiv_positive,0.018442223866173214

@@ -1,0 +1,4 @@
+penalty,model,participants,median_absolute_change_pp,mean_absolute_change_pp,max_absolute_change_pp
+L2 (Ridge),Logistic GLM: L2 (Ridge),61,1.9211243556746096,1.86983611904469,5.77282741532038
+L1 (Lasso),Logistic GLM: L1 (Lasso),61,2.129432559992983,2.326381210073548,10.034723266228806
+Elastic net,Logistic GLM: elastic net,61,1.7980617463175919,1.9591907553959533,7.220172622540027

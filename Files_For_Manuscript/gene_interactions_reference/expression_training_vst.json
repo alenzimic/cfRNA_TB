@@ -1,0 +1,18 @@
+{
+  "inputs": {
+    "Files_For_Manuscript/gene_interactions_reference/reference.json": "81e389c984905a46cca8a945738e9708c085df616093b22db8bd1dc83d0dd981",
+    "Files_For_Manuscript/counts.train.tsv": "a0ab4a4aad94971d461af4f497e54b5c44edee4da9b92e4f66a20d9be9510e50",
+    "Files_For_Manuscript/counts.test.tsv": "f72ca78638c7cf5a9bdf8d6fa703fc4254b2957700e2552c5fabf13776c8b502",
+    "Files_For_Manuscript/counts.val.tsv": "f29ccb2bdcf9adf9826ae7a105ed0c3640a0dc7558ad6e56c9f943359b7a4044",
+    "Files_For_Manuscript/metadata.train.tsv": "94d32911a0a262170a1e4335edfd4f4361e3673419806ab9a0204a88a3747c73",
+    "Files_For_Manuscript/metadata.test.tsv": "8f8cb59eb154181ed98e619079821d924e724f0e4320b982360b7595354f5b7b",
+    "Files_For_Manuscript/metadata.val.tsv": "ca53eacbe8378b27f07e20ff9ef750f47e9663baad4993d975070c58d6f7a2e1"
+  },
+  "artifacts": {
+    "Files_For_Manuscript/gene_interactions_reference/expression_training_vst.npz": "aaaf2fe891d835b6944475322626516a1d939aa534f186beb0286268db20f905",
+    "Files_For_Manuscript/gene_interactions_reference/eligible_genes.csv": "b7962f71c438defd9156ac6c17abece5339f69f67ba91b10a3d19dce0ea518e9",
+    "Files_For_Manuscript/gene_interactions_reference/training_reference_size_factors.csv": "178838ebce81b95c08aff1e85403e33c7f6369ff9c23ba9b29d934a12faf214c"
+  },
+  "normalization": "training-reference parametric DESeq2 VST",
+  "version": 1
+}

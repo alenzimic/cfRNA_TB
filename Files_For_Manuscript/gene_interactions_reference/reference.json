@@ -1,0 +1,34 @@
+{
+  "r_version": "4.0.5",
+  "deseq2_version": "1.30.1",
+  "published_deseq2_version": "1.34.0",
+  "input_sha256": {
+    "Files_For_Manuscript/counts.train.tsv": "a0ab4a4aad94971d461af4f497e54b5c44edee4da9b92e4f66a20d9be9510e50",
+    "Files_For_Manuscript/counts.test.tsv": "f72ca78638c7cf5a9bdf8d6fa703fc4254b2957700e2552c5fabf13776c8b502",
+    "Files_For_Manuscript/counts.val.tsv": "f29ccb2bdcf9adf9826ae7a105ed0c3640a0dc7558ad6e56c9f943359b7a4044",
+    "Files_For_Manuscript/metadata.train.tsv": "94d32911a0a262170a1e4335edfd4f4361e3673419806ab9a0204a88a3747c73",
+    "Files_For_Manuscript/metadata.test.tsv": "8f8cb59eb154181ed98e619079821d924e724f0e4320b982360b7595354f5b7b",
+    "Files_For_Manuscript/metadata.val.tsv": "ca53eacbe8378b27f07e20ff9ef750f47e9663baad4993d975070c58d6f7a2e1",
+    "Files_For_Manuscript/gencode.biotype.name.key.tsv": "91f45261a64ab6e0730419c5a6c5751b733d8544960354d0e845bd3c32eca3a0"
+  },
+  "training_vst": {
+    "asymptDisp": 0.182104491913332,
+    "extraPois": 3.29320822603579
+  },
+  "pooled_vst": {
+    "asymptDisp": 0.168204553549662,
+    "extraPois": 3.37955696722028
+  },
+  "paper_reported_candidates": 113,
+  "reproduced_candidates": 142,
+  "candidate_filter": "Training only: padj < 0.05 and baseMean > 100, as in Figure_2.ipynb.",
+  "discrepancy_note": "The 2024 article reports 113 candidates, but its repository's exact training filter reproduces 142 with the audited inputs; the six saved marker statistics match. An exact 113-gene list was not found in the inspected article supplements. This reference reproduces the repository filter and does not certify the reported 113-gene set.",
+  "inputsource": {
+    "article": "https://www.nature.com/articles/s41467-024-49245-6",
+    "training_analysis": "Scripts_For_Manuscript/Figure_2.ipynb: training DESeq2 and candidate_genes cells",
+    "pooled_analysis": "Scripts_For_Manuscript/Figure_1.ipynb and Files_For_Manuscript/DAA_scripts.R: blind VST",
+    "regeneration": "Files_For_Manuscript/gene_interactions_reference/export_reference.R"
+  },
+  "size_factor_method": "Default DESeq2 ratio: exp(median(log(count) - rowMean(log(reference counts)))) over genes positive in every reference sample; do not geometrically center size factors.",
+  "normalization_scope": "Pooled coefficients are for descriptive Figure 1C only. New ML comparisons freeze training geometric means and training coefficients for test/validation. The original Figure 2 notebook instead independently fitted VST for each split."
+}

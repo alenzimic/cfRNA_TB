@@ -1,0 +1,86 @@
+{
+  "label": "Paper six-gene GLM: reconstructed original configuration",
+  "provenance": "No serialized fitted model or full-precision coefficients were found in the repository or inspected supplements. These coefficients are a training-only refit using the exact final six genes and GLM specification in Figure_2.ipynb. The saved paper AUCs and threshold are reproduced to published precision.",
+  "article": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11164910/",
+  "source_notebook": "Scripts_For_Manuscript/Figure_2.ipynb",
+  "source_cells_zero_based": {
+    "normalization": 7,
+    "selection": 9,
+    "gene_order": 11,
+    "model": 13
+  },
+  "r_version": "4.0.5",
+  "deseq2_version": "1.30.1",
+  "published_r_version": "4.1.3",
+  "published_deseq2_version": "1.34.0",
+  "input_sha256": {
+    "Files_For_Manuscript/counts.train.tsv": "a0ab4a4aad94971d461af4f497e54b5c44edee4da9b92e4f66a20d9be9510e50",
+    "Files_For_Manuscript/counts.test.tsv": "f72ca78638c7cf5a9bdf8d6fa703fc4254b2957700e2552c5fabf13776c8b502",
+    "Files_For_Manuscript/counts.val.tsv": "f29ccb2bdcf9adf9826ae7a105ed0c3640a0dc7558ad6e56c9f943359b7a4044",
+    "Files_For_Manuscript/metadata.train.tsv": "94d32911a0a262170a1e4335edfd4f4361e3673419806ab9a0204a88a3747c73",
+    "Files_For_Manuscript/metadata.test.tsv": "8f8cb59eb154181ed98e619079821d924e724f0e4320b982360b7595354f5b7b",
+    "Files_For_Manuscript/metadata.val.tsv": "ca53eacbe8378b27f07e20ff9ef750f47e9663baad4993d975070c58d6f7a2e1",
+    "Scripts_For_Manuscript/Figure_2.ipynb": "265db89b5a796dd77773306da5881bef31efed07600e3077a1b60d033dfa3b05"
+  },
+  "output_sha256": {
+    "Files_For_Manuscript/gene_cutoff_reference/paper_model/paper_features.tsv": "b5c4f0f8213b57a13628172aea02540ddf85378b14064820323baca96f85c8d5",
+    "Files_For_Manuscript/gene_cutoff_reference/paper_model/r_predictions.csv": "031588dd76ca9490028b99a4c9a20ae76f8eb5dac446b4868feba4f97c68a751",
+    "Files_For_Manuscript/gene_cutoff_reference/paper_model/r_metrics.csv": "3d6f58001b7c9f6030ce05f20dbb0ec4ee15e07b3d87aa084a247835417f698e"
+  },
+  "genes": ["ENSG00000154451.14", "ENSG00000104765.16", "ENSG00000067082.15", "ENSG00000135636.15", "ENSG00000002834.18", "ENSG00000169564.7"],
+  "gene_names": ["GBP5", "BNIP3L", "KLF6", "DYSF", "LASP1", "PCBP1"],
+  "coefficients": {
+    "ENSG00000154451.14": 1.61428156662214,
+    "ENSG00000104765.16": -0.554564092363894,
+    "ENSG00000067082.15": -1.67314068016328,
+    "ENSG00000135636.15": 0.986680310358062,
+    "ENSG00000002834.18": -1.56793944828165,
+    "ENSG00000169564.7": 1.20882161400102
+  },
+  "intercept": 0,
+  "formula": "tb ~ ENSG00000154451.14 + ENSG00000104765.16 + ENSG00000067082.15 +      ENSG00000135636.15 + ENSG00000002834.18 + ENSG00000169564.7 -      1",
+  "family": "binomial",
+  "link": "logit",
+  "penalty": "none",
+  "scaling": "none",
+  "fit_intercept": false,
+  "method": "glm.fit",
+  "solver": "IRLS",
+  "glm_control": {
+    "epsilon": 1e-08,
+    "maxit": 25,
+    "trace": false
+  },
+  "iterations": 6,
+  "converged": true,
+  "threshold": 0.497594075975128,
+  "threshold_rule": "P(TB positive) > training Youden threshold",
+  "published_threshold_rounded": 0.498,
+  "published_auc_rounded": {
+    "train": 0.921,
+    "test": 0.947,
+    "val": 0.946
+  },
+  "split_vst": {
+    "train": {
+      "asymptDisp": 0.182104491913332,
+      "extraPois": 3.29320822603579
+    },
+    "test": {
+      "asymptDisp": 0.169882953145794,
+      "extraPois": 3.09435352158404
+    },
+    "val": {
+      "asymptDisp": 0.153962452088355,
+      "extraPois": 3.38438461756034
+    }
+  },
+  "preprocessing": "Original Figure_2.ipynb: independent blind DESeq2 VST in each split, including separate size-factor geometric means and dispersion fits. This reproduces the paper's batch-dependent preprocessing and differs from the cutoff study's frozen training preprocessing.",
+  "selection_note": "The six genes were selected by GFS on the full original training set. The paper selected GFS among fifteen families using test ROC-AUC. Treat this fixed benchmark as a historical comparator, not a candidate in the new cross-validation selection procedure.",
+  "gfs_settings": {
+    "candidate_filter": "padj < 0.05 and baseMean > 100",
+    "score": "training ROC-AUC + sensitivity + specificity at Youden threshold",
+    "minimum_score_gain": 0.01,
+    "tie_breaker": "lowest absolute mean correlation with previously selected genes"
+  }
+}

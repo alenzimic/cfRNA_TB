@@ -1,0 +1,50 @@
+{
+  "inputs_sha256": {
+    "Figure_Output/Gene_Interactions/focused/myeloid_analysis_inputs.csv": "a93e7c679749c57187eb14e4632252fdfe4477304a3da3e61f70c4912272273d",
+    "Figure_Output/Gene_Interactions/focused/myeloid_rna_groups.csv": "1a09aa27b92b391cba9d2c44af8931a17645eb994644cad995d79de5b6a9b035",
+    "Figure_Output/Gene_Interactions/focused/myeloid_group_definitions.json": "64e29cde16e6226124d8fbd59622316d04ed90a3f59c77606d04700983494ff5",
+    "Files_For_Manuscript/discovery_cell_types.tsv": "6933c1a4f4dd16a8054d7e47a8cefa4dda3ab41a185ae4091de663c34f236c6f",
+    "Files_For_Manuscript/metadata.train.tsv": "94d32911a0a262170a1e4335edfd4f4361e3673419806ab9a0204a88a3747c73",
+    "Files_For_Manuscript/metadata.test.tsv": "8f8cb59eb154181ed98e619079821d924e724f0e4320b982360b7595354f5b7b",
+    "Files_For_Manuscript/metadata.val.tsv": "ca53eacbe8378b27f07e20ff9ef750f47e9663baad4993d975070c58d6f7a2e1"
+  },
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "scipy": "1.13.1",
+    "statsmodels": "0.14.6",
+    "matplotlib": "3.9.4"
+  },
+  "signal": "Existing mean training z score of SPI1, MNDA and LYZ",
+  "tb_primary_covariates": [
+    "cohort",
+    "rna_myeloid_vs_other",
+    "rna_lymphoid_vs_other",
+    "rna_erythroid_platelet_vs_other",
+    "age_decades",
+    "male",
+    "hiv_positive"
+  ],
+  "burden_primary_covariates": [
+    "cohort",
+    "age_decades",
+    "male",
+    "hiv_positive",
+    "rna_myeloid_vs_other",
+    "rna_lymphoid_vs_other",
+    "rna_erythroid_platelet_vs_other"
+  ],
+  "intervals": "95% HC3 covariance, residual-df t",
+  "burden_source": "Figure_2.ipynb Fig2G axis and PMC11164910 Figure 2 caption: Xpert Ultra semiquantitative result",
+  "burden_encoding": {
+    "Low": 0,
+    "Medium": 1,
+    "High": 2
+  },
+  "multiple_testing": "BH separately for 3 primary fully adjusted TB tests and 3 primary burden trends",
+  "limitations": [
+    "TB-selected genes and previously inspected datasets: exploratory inference",
+    "Same-RNA source estimates do not establish cell-intrinsic responses",
+    "Ordinal categories are not calibrated bacterial counts"
+  ]
+}

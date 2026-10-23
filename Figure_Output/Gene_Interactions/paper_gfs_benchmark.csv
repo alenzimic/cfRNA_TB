@@ -1,0 +1,3 @@
+model,protocol,n_features,train_auc,test_auc,source
+GFS,Original split VST,6,0.9211727950012016,0.9466230936819172,Reconstructed original six-gene fit
+GFS,Frozen training VST,6,0.9211727950012016,0.9466230936819172,Reconstructed original six-gene fit

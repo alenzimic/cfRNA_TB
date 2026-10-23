@@ -1,0 +1,7 @@
+split,cluster,GHL,R2D2,TBSQUARE
+test,1,18,3,0
+test,2,0,13,0
+train,1,39,1,0
+train,2,0,33,0
+val,1,0,0,20
+val,2,0,0,15

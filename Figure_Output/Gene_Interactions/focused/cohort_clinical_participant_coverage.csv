@@ -1,0 +1,6 @@
+split,cohort,n,tb_positive,hiv_positive,male,median_age,min_age,max_age,tb_negative
+train,GHL,63,39,10,39,30.0,18,62,24
+train,R2D2,67,34,7,37,40.0,18,83,33
+test,GHL,30,18,6,19,29.0,18,50,12
+test,R2D2,31,16,4,20,40.0,18,85,15
+val,TBSQUARE,60,35,10,41,31.0,18,65,25

@@ -1,0 +1,29 @@
+feature_arm,model,capacity,n_features,train_auc,test_auc,status,error,warnings,runtime_seconds
+DESeq2 genes,GLM,additive linear,142,1.0,0.8594771241830065,ok,,,0.013421030715107918
+DESeq2 genes,Ridge,additive linear,142,1.0,0.8736383442265795,ok,,,0.011006895452737808
+DESeq2 genes,Lasso,additive linear,142,0.9975967315549147,0.8747276688453159,ok,,,0.010215600952506065
+DESeq2 genes,KNN,nonlinear proximity,142,0.9405191059841385,0.89760348583878,ok,,,0.019612353295087814
+DESeq2 genes,LDA,additive linear,142,1.0,0.5969498910675382,ok,,,0.012012051418423653
+DESeq2 genes,NB,nonlinear additive log odds,142,0.9062725306416727,0.9084967320261438,ok,,,0.008504234254360199
+DESeq2 genes,NNET,nonlinear; interaction capable,142,0.8719057918769526,0.9248366013071895,ok,,,0.049317141994833946
+DESeq2 genes,RF,nonlinear; interaction capable,142,0.9985580389329487,0.9270152505446623,ok,,,0.27274410612881184
+DESeq2 genes,ExtraTrees,nonlinear; interaction capable,142,0.9995193463109829,0.9411764705882353,ok,,,0.22948519699275494
+DESeq2 genes,RPART,nonlinear; interaction capable,142,0.9884643114635905,0.877995642701525,ok,,,0.015371713787317276
+DESeq2 genes,SVMLIN,additive linear,142,1.0,0.7952069716775599,ok,,,0.013483772054314613
+DESeq2 genes,SVMRAD,nonlinear; interaction capable,142,0.9884643114635905,0.9281045751633986,ok,,,0.013202840462327003
+DESeq2 genes,PAM,additive centroid distance,142,0.8947368421052632,0.9095860566448801,ok,,,0.010429468005895615
+DESeq2 genes,Dummy,no expression signal,142,0.5,0.5,ok,,,0.006380166858434677
+All variable genes,GLM,additive linear,52990,1.0,0.8997821350762527,ok,,,0.5207202155143023
+All variable genes,Ridge,additive linear,52990,1.0,0.8986928104575164,ok,,,1.8316785003989935
+All variable genes,Lasso,additive linear,52990,1.0,0.8703703703703705,ok,,,0.9000709373503923
+All variable genes,KNN,nonlinear proximity,52990,0.9110790675318433,0.7973856209150327,ok,,,0.5823544040322304
+All variable genes,LDA,additive linear,52990,0.8495553953376593,0.8758169934640523,ok,,,1.5391167812049389
+All variable genes,NB,nonlinear additive log odds,52990,1.0,0.49673202614379086,ok,,,0.4509011022746563
+All variable genes,NNET,nonlinear; interaction capable,52990,0.9488103821196827,0.7984749455337691,ok,,,0.8016249462962151
+All variable genes,RF,nonlinear; interaction capable,52990,1.0,0.8845315904139432,ok,,,0.5210638102144003
+All variable genes,ExtraTrees,nonlinear; interaction capable,52990,1.0,0.8997821350762527,ok,,,0.4825569149106741
+All variable genes,RPART,nonlinear; interaction capable,52990,0.9882239846190819,0.8055555555555556,ok,,,1.2024398855865002
+All variable genes,SVMLIN,additive linear,52990,1.0,0.8943355119825708,ok,,,0.8383579831570387
+All variable genes,SVMRAD,nonlinear; interaction capable,52990,1.0,0.8191721132897604,ok,,,3.142158916220069
+All variable genes,PAM,additive centroid distance,52990,0.9391973083393415,0.8758169934640523,ok,,,0.5936021003872156
+All variable genes,Dummy,no expression signal,52990,0.5,0.5,ok,,,0.20838790945708752

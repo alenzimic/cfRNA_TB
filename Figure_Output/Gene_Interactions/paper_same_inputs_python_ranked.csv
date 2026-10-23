@@ -1,0 +1,16 @@
+rank,feature_arm,model,capacity,n_features,train_auc,test_auc,status,error,warnings,runtime_seconds,is_reference,protocol,source
+1,Paper six genes,Ridge,additive linear,6,0.9202114876231675,0.9618736383442266,ok,,,0.008405638858675957,False,,
+2,Paper six genes,LDA,additive linear,6,0.9226147560682528,0.9607843137254902,ok,,,0.009310547262430191,False,,
+3,Paper six genes,SVMLIN,additive linear,6,0.9202114876231675,0.9607843137254902,ok,,,0.009198527783155441,False,,
+4,Paper six genes,GLM,additive linear,6,0.9206921413121846,0.9596949891067539,ok,,,0.01163443922996521,False,,
+5,Paper six genes,Lasso,additive linear,6,0.9206921413121847,0.9596949891067538,ok,,,0.007560530677437782,False,,
+6,Paper six genes,SVMRAD,nonlinear; interaction capable,6,0.9641913001682287,0.9477124183006536,ok,,,0.009051728993654251,False,,
+7,,GFS,,6,0.9211727950012016,0.9466230936819172,,,,,True,Original split VST,Reconstructed original six-gene fit
+8,Paper six genes,RF,nonlinear; interaction capable,6,0.9913482335976929,0.9324618736383443,ok,,,0.2724944595247507,False,,
+9,Paper six genes,ExtraTrees,nonlinear; interaction capable,6,0.9663542417688056,0.9324618736383442,ok,,,0.2136676162481308,False,,
+10,Paper six genes,PAM,additive centroid distance,6,0.9045902427301129,0.9281045751633987,ok,,,0.009463079273700714,False,,
+11,Paper six genes,NB,nonlinear additive log odds,6,0.9072338380197068,0.9226579520697167,ok,,,0.0082163717597723,False,,
+12,Paper six genes,KNN,nonlinear proximity,6,0.9401586157173757,0.9166666666666666,ok,,,0.08013967983424664,False,,
+13,Paper six genes,RPART,nonlinear; interaction capable,6,0.9626291756789234,0.7276688453159041,ok,,,0.008228451013565063,False,,
+14,Paper six genes,Dummy,no expression signal,6,0.5,0.5,ok,,,0.005781751126050949,False,,
+15,Paper six genes,NNET,nonlinear; interaction capable,6,0.3431867339581831,0.3235294117647059,ok,,,0.03088872879743576,False,,

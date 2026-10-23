@@ -1,0 +1,43 @@
+{
+  "input_sha256": {
+    "Files_For_Manuscript/gene_interactions_reference/pathways_hallmark_2026.1.gmt": "eecaf6dad908334ae885406ec72bdc0646d8917588ed7c219fac92fc5363f596",
+    "Files_For_Manuscript/gene_interactions_reference/pathways_reactome_2026.1.gmt": "5d61f289a2400cddfbb3a3353829fd2284a360bbe50f2093b566c4b7bea93341",
+    "Figure_Output/Gene_Interactions/focused/myeloid_analysis_inputs.csv": "a93e7c679749c57187eb14e4632252fdfe4477304a3da3e61f70c4912272273d",
+    "Files_For_Manuscript/gene_interactions_reference/reference.json": "81e389c984905a46cca8a945738e9708c085df616093b22db8bd1dc83d0dd981",
+    "Files_For_Manuscript/deseq_results.tsv": "332c87fea28f579868fd3c299ff8a7202de6bc4502c5606bf9beb046f734c82d",
+    "Files_For_Manuscript/gene_interactions_reference/expression_training_vst.npz": "aaaf2fe891d835b6944475322626516a1d939aa534f186beb0286268db20f905",
+    "Files_For_Manuscript/gene_interactions_reference/expression_training_vst.json": "a727253844dc75699edec1d7de0aabf6c0ca99bcd292c64db820b9312178279b",
+    "Files_For_Manuscript/gene_interactions_reference/eligible_genes.csv": "b7962f71c438defd9156ac6c17abece5339f69f67ba91b10a3d19dce0ea518e9",
+    "Files_For_Manuscript/gene_interactions_reference/pathway_gene_set_sources.json": "93aa24ccedc08afed9cd6391f3ef0403fac7844089f14f5352eeb9a01e50e693",
+    "Files_For_Manuscript/metadata.train.tsv": "94d32911a0a262170a1e4335edfd4f4361e3673419806ab9a0204a88a3747c73",
+    "Files_For_Manuscript/metadata.test.tsv": "8f8cb59eb154181ed98e619079821d924e724f0e4320b982360b7595354f5b7b",
+    "Files_For_Manuscript/metadata.val.tsv": "ca53eacbe8378b27f07e20ff9ef750f47e9663baad4993d975070c58d6f7a2e1",
+    "Files_For_Manuscript/counts.train.tsv": "a0ab4a4aad94971d461af4f497e54b5c44edee4da9b92e4f66a20d9be9510e50",
+    "Files_For_Manuscript/counts.test.tsv": "f72ca78638c7cf5a9bdf8d6fa703fc4254b2957700e2552c5fabf13776c8b502",
+    "Files_For_Manuscript/counts.val.tsv": "f29ccb2bdcf9adf9826ae7a105ed0c3640a0dc7558ad6e56c9f943359b7a4044"
+  },
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "scipy": "1.13.1",
+    "statsmodels": "0.14.6",
+    "gseapy": "1.1.13"
+  },
+  "eligible_ensembl_genes": 11279,
+  "ranked_symbols": 11264,
+  "gsea_tests": 600,
+  "pathway_score_tests": 30,
+  "permutations": 1000,
+  "seed": 87,
+  "excluded_genes": [
+    "GBP5",
+    "AHNAK",
+    "JMJD1C",
+    "MNDA",
+    "LYZ",
+    "SPI1"
+  ],
+  "composition_source": "Original manuscript estimates from discovery_cell_types.tsv, via checked interpretation inputs",
+  "gsea_fdr_scope": "50 eligible pathways per split, adjustment and exclusion analysis",
+  "score_fdr_scope": "BH across all 30 participant-level pathway score associations"
+}

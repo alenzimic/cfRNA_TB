@@ -1,0 +1,24 @@
+{
+  "source_url": "https://raw.githubusercontent.com/saezlab/dorothea/1461fb75e23e110c2281860526d4333920925282/data/dorothea_hs.rda",
+  "commit": "1461fb75e23e110c2281860526d4333920925282",
+  "download_date": "2026-10-21",
+  "sha256": "fd7512dd18f0efcf01be210b652472bf750d70da5c91af12dab455919033f9b0",
+  "bytes": 894668,
+  "subset_sha256": "cc6e0fd0c2d2943320879b5f2b2dcc26177d13d90df3e787ae36708418af8baf",
+  "all_targets": 102,
+  "eligible_targets": 82,
+  "selected_overlap": [
+    "MNDA"
+  ],
+  "score_targets": 81,
+  "positive_score_targets": 76,
+  "negative_score_targets": 5,
+  "resource": "DoRothEA human v1.7.4",
+  "confidence_rule": [
+    "A",
+    "B"
+  ],
+  "extraction": "Load dorothea_hs.rda in R; retain tf == SPI1; write columns tf, confidence, target, mor to TSV with no row names or quoting.",
+  "method_reference": "https://pubmed.ncbi.nlm.nih.gov/31340985/",
+  "sign_definition": "+1 annotated activation; -1 annotated repression; not fitted effect size"
+}
