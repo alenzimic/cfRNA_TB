@@ -1,0 +1,50 @@
+{
+  "review_date": "2026-10-25",
+  "purpose": "Readable panel biology figures from pinned literature, memberships and saved adult associations",
+  "source_notebook": "Scripts_For_Manuscript/gene_interactions_pathways.ipynb",
+  "literature_review_date": "2026-10-21",
+  "input_sha256": {
+    "Files_For_Manuscript/gene_interactions_reference/gene_function_evidence.json": "a5ef7a6d7fc1293b147947401eeeb9aa53747a922f8781f17bf1d1b2aaf89702",
+    "Files_For_Manuscript/gene_interactions_reference/pathways_hallmark_2026.1.gmt": "eecaf6dad908334ae885406ec72bdc0646d8917588ed7c219fac92fc5363f596",
+    "Files_For_Manuscript/gene_interactions_reference/pathways_reactome_2026.1.gmt": "5d61f289a2400cddfbb3a3353829fd2284a360bbe50f2093b566c4b7bea93341",
+    "Figure_Output/Gene_Interactions/focused/pathway_gene_membership.csv": "a24287a11802ca953037db7eb61a7a36f263a9637107c2a82190c347a7e2307d",
+    "Figure_Output/Gene_Interactions/focused/pathway_selected_gene_tb_associations.csv": "0ce63de5fc53adb466cba2f6392210d0ba65c568f8c6e0d54f8e65f267be7be9",
+    "Figure_Output/Gene_Interactions/focused/six_gene_panel_genes.csv": "64b223f88d0e05599db084bb9c7587b25980228c1758e5f4851051452b1696a3"
+  },
+  "panels": {
+    "published": [
+      "GBP5",
+      "BNIP3L",
+      "KLF6",
+      "DYSF",
+      "LASP1",
+      "PCBP1"
+    ],
+    "xgboost": [
+      "GBP5",
+      "AHNAK",
+      "JMJD1C",
+      "MNDA",
+      "LYZ",
+      "SPI1"
+    ]
+  },
+  "membership_release": "MSigDB 2026.1.Hs",
+  "analysis_status": "No model or association refits; prior aggregate estimates reused",
+  "evidence_types": [
+    "experimental function",
+    "curated membership",
+    "observed adult RNA association"
+  ],
+  "figures": [
+    "two_panel_functions",
+    "two_panel_pathway_membership",
+    "two_panel_tb_associations"
+  ],
+  "runtime": {
+    "python": "3.9.25",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "matplotlib": "3.9.4"
+  }
+}
