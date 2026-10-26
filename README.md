@@ -24,6 +24,13 @@ Each panel combines its models, shows train/test/validation score distributions,
 and marks HIV-positive participants. `[HIV+]` means recorded positive;
 `[HIV?]` means unknown status, not negative.
 
+The original violin/dot plots and every ranked patient bar are retained. Wider
+ranked panels place errors and HIV status in separate rows below the bars, in the
+same patient order: black marks an incorrect prediction; purple marks HIV positive
+and gold marks unknown status. Blank cells mean correct prediction or HIV negative
+in their respective rows. Score units, patient order and decision boundaries are
+unchanged; the main legend explains both point markers and annotation-row colors.
+
 Open the [paper-GLM panel](Figure_Output/Model_Evaluation/paper.pdf),
 [all six-gene classifiers](Figure_Output/Model_Evaluation/six_genes.pdf), or
 [two gene-panel comparison](Figure_Output/Model_Evaluation/six_gene_panels.pdf).

@@ -10,6 +10,7 @@ import textwrap
 
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_pdf import PdfPages
+from matplotlib.colors import to_rgba
 from matplotlib.lines import Line2D
 from matplotlib.ticker import PercentFormatter
 import numpy as np
@@ -176,18 +177,37 @@ def _ranked_rows(group):
     return rows.sort_values(["value", "sample_id"], ascending=[False, True]), repeated
 
 
-def _ranked(axis, group, show_ids=False):
+def _ranked(axis, group, show_ids=False, aligned_annotations=False):
     rows, repeated = _ranked_rows(group)
-    _draw_ranked(axis, rows, group, repeated, show_ids)
+    _draw_ranked(axis, rows, group, repeated, show_ids, aligned_annotations)
 
 
-def _draw_ranked(axis, rows, group, repeated, show_ids):
+def _annotation_rows(axis, rows):
+    """Align one annotation cell to each unchanged patient bar; no aggregation."""
+    error_colors = [to_rgba("#242424" if value == 0 else "#dddddd" if pd.isna(value) else "white")
+                    for value in rows.correct]
+    hiv_colors = {"Positive": "#8056a3", "Negative": "white", "Unknown": "#c58c23", "Conflict": "#b32f3b"}
+    tracks = [("Error", error_colors),
+              ("HIV", [to_rgba(hiv_colors[status]) for status in rows.hiv_status])]
+    for index, (label, colors) in enumerate(tracks):
+        bottom = -.13 - index * .075
+        track = axis.inset_axes([0, bottom, 1, .045])
+        track.imshow(np.asarray(colors)[None, :, :], aspect="auto", interpolation="nearest",
+                     extent=(-.5, len(rows) - .5, 0, 1))
+        track.set_xlim(axis.get_xlim())
+        track.set_axis_off()
+        axis.text(-.015, bottom + .0225, label, transform=axis.transAxes,
+                  ha="right", va="center", fontsize=9)
+
+
+def _draw_ranked(axis, rows, group, repeated, show_ids, aligned_annotations=False):
     positions = np.arange(len(rows))
     axis.bar(positions, rows.value, color=[COLORS[int(v)] for v in rows.y_true], width=0.92, alpha=0.7)
-    for status in ["Positive", "Unknown", "Conflict"]:
-        selected = rows.hiv_status.eq(status).to_numpy()
-        axis.scatter(positions[selected], rows.value.to_numpy()[selected], marker=HIV_MARKERS[status],
-                     s=23, facecolors="white", edgecolors="black", linewidths=0.7, zorder=4)
+    if not aligned_annotations:
+        for status in ["Positive", "Unknown", "Conflict"]:
+            selected = rows.hiv_status.eq(status).to_numpy()
+            axis.scatter(positions[selected], rows.value.to_numpy()[selected], marker=HIV_MARKERS[status],
+                         s=23, facecolors="white", edgecolors="black", linewidths=0.7, zorder=4)
     if repeated:
         axis.set_ylim(-0.035, 1.04)
         axis.set_ylabel("Correct test predictions (%)")
@@ -198,11 +218,16 @@ def _draw_ranked(axis, rows, group, repeated, show_ids):
         counts_axis.set_ylim(0, max(1, rows.appearances.max()) * 1.2)
     else:
         incorrect = rows.correct.eq(0).to_numpy()
-        axis.scatter(positions[incorrect], rows.value.to_numpy()[incorrect], marker="x", color="black", s=18, zorder=5)
+        if not aligned_annotations:
+            axis.scatter(positions[incorrect], rows.value.to_numpy()[incorrect], marker="x", color="black", s=18, zorder=5)
         _score_axis(axis, group)
         _threshold(axis, group)
     axis.spines[["top", "right"]].set_visible(False)
     axis.set_xlim(-1, max(1, len(rows)))
+    if aligned_annotations:
+        if repeated:
+            raise ValueError("Aligned annotation rows require one prediction per person")
+        _annotation_rows(axis, rows)
     if show_ids:
         axis.set_xticks(positions, rows.sample_label, rotation=75, ha="right", fontsize=7.5)
         for tick, status in zip(axis.get_xticklabels(), rows.hiv_status):
@@ -212,6 +237,8 @@ def _draw_ranked(axis, rows, group, repeated, show_ids):
         axis.set_xticks([])
     axis.set_xlabel("Sample ID; [HIV+] positive, [HIV?] unknown" if show_ids else
                     "Samples ranked by score; full IDs in the sample pages / table")
+    if aligned_annotations:
+        axis.set_xlabel("One bar per patient, ordered from highest to lowest score", labelpad=48)
 
 
 def _focus(splits, requested):
@@ -261,7 +288,8 @@ def _save_details(frame, prefix, focus_split, title):
     Path(str(prefix) + "_samples.html").write_text(content)
 
 
-def evaluation_panel(frame, *, title, output_prefix=None, split_order=None, focus_split=None):
+def evaluation_panel(frame, *, title, output_prefix=None, split_order=None, focus_split=None,
+                     aligned_annotations=False):
     """One combined figure per evaluated model set, with exact-value companions.
 
     Each model has split-specific score violins and one ranked evaluation panel.
@@ -276,8 +304,9 @@ def evaluation_panel(frame, *, title, output_prefix=None, split_order=None, focu
     focused = _focus(splits, focus_split)
     with plt.rc_context({"font.size": 9, "svg.fonttype": "none", "pdf.fonttype": 42}):
         figure, axes = plt.subplots(len(models), len(splits) + 1, squeeze=False,
-                                   figsize=(4.0 * len(splits) + 10, 4.1 * len(models) + 1.4),
-                                   gridspec_kw={"width_ratios": [1] * len(splits) + [2.4]})
+                                   figsize=(4.0 * len(splits) + (14 if aligned_annotations else 10),
+                                            (4.5 if aligned_annotations else 4.1) * len(models) + 1.4),
+                                   gridspec_kw={"width_ratios": [1] * len(splits) + [3.7 if aligned_annotations else 2.4]})
         for row, model in enumerate(models):
             subset = data.loc[data.model.eq(model)]
             for col, split in enumerate(splits):
@@ -285,7 +314,7 @@ def evaluation_panel(frame, *, title, output_prefix=None, split_order=None, focu
                 _violin(axes[row, col], group, split)
             group = subset.loc[subset.split.eq(focused)]
             if len(group):
-                _ranked(axes[row, -1], group, show_ids=False)
+                _ranked(axes[row, -1], group, show_ids=False, aligned_annotations=aligned_annotations)
                 repeat = group.duplicated("sample_id").any()
                 axes[row, -1].set_title(f"{focused}: " + ("correct / repeated evaluations" if repeat else "one prediction per person"), fontsize=10)
             else:
@@ -297,21 +326,32 @@ def evaluation_panel(frame, *, title, output_prefix=None, split_order=None, focu
                     axis.set_ylim(limits.min() - padding, limits.max() + padding)
         legend = [Line2D([], [], marker="o", linestyle="", color=COLORS[0], label="TB negative"),
                   Line2D([], [], marker="o", linestyle="", color=COLORS[1], label="TB positive"),
-                  Line2D([], [], marker="D", linestyle="", color="black", markerfacecolor="white", label="HIV positive"),
-                  Line2D([], [], marker="^", linestyle="", color="black", markerfacecolor="white", label="HIV unknown"),
-                  Line2D([], [], marker="x", linestyle="", color="black", label="Wrong decision (single run)"),
+                  Line2D([], [], marker="D", linestyle="", color="black", markerfacecolor="white",
+                         label="HIV positive (points)" if aligned_annotations else "HIV positive"),
+                  Line2D([], [], marker="^", linestyle="", color="black", markerfacecolor="white",
+                         label="HIV unknown (points)" if aligned_annotations else "HIV unknown"),
+                  Line2D([], [], marker="|" if aligned_annotations else "x", linestyle="", color="black",
+                         label="Wrong decision (error row)" if aligned_annotations else "Wrong decision (single run)"),
                   Line2D([], [], linestyle="--", color="black", label="Decision boundary (if fixed)")]
+        if aligned_annotations:
+            legend[4:4] = [Line2D([], [], marker="s", linestyle="", color="#8056a3", label="HIV row: positive"),
+                           Line2D([], [], marker="s", linestyle="", color="#c58c23", label="HIV row: unknown")]
         figure.suptitle(title, fontsize=13, y=1 - 0.10 / figure.get_figheight())
-        figure.legend(handles=legend, loc="upper center", bbox_to_anchor=(0.5, 1 - 0.38 / figure.get_figheight()), ncol=3, frameon=False)
-        figure.subplots_adjust(top=1 - 1.8 / figure.get_figheight(), bottom=1.0 / figure.get_figheight(),
+        figure.legend(handles=legend, loc="upper center", bbox_to_anchor=(0.5, 1 - 0.38 / figure.get_figheight()),
+                      ncol=4 if aligned_annotations else 3, frameon=False)
+        figure.subplots_adjust(top=1 - 1.8 / figure.get_figheight(),
+                               bottom=(1.35 if aligned_annotations else 1.0) / figure.get_figheight(),
                                left=3.2 / figure.get_figwidth(), right=0.98, wspace=0.45, hspace=0.85)
         for row, model in enumerate(models):
             position = axes[row, 0].get_position()
             figure.text(position.x0 - 1.0 / figure.get_figwidth(), (position.y0 + position.y1) / 2,
                         textwrap.fill(model, 22), fontsize=10, weight="bold", va="center", ha="right")
-        figure.text(0.065, 0.12 / figure.get_figheight(),
-                    "Recorded scores/labels are unchanged. Decisions use the documented boundary and split roles.\n"
-                    "HIV comparisons are descriptive, not adjusted effects. Full IDs and denominators are exported.", fontsize=8.5)
+        note = ("Below bars: Error black = wrong; HIV purple = positive, gold = unknown; blank = correct / HIV negative.\n"
+                "Every patient and score is retained. Full sample IDs and HIV labels are in the linked details."
+                if aligned_annotations else
+                "Recorded scores/labels are unchanged. Decisions use the documented boundary and split roles.\n"
+                "HIV comparisons are descriptive, not adjusted effects. Full IDs and denominators are exported.")
+        figure.text(0.065, 0.12 / figure.get_figheight(), note, fontsize=8.5)
         if output_prefix is not None:
             prefix = Path(output_prefix)
             prefix.parent.mkdir(parents=True, exist_ok=True)

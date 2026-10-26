@@ -140,4 +140,5 @@ def plot_comparison(root, section, predictions=None):
         frame, title=titles[section], output_prefix=destination / section,
         split_order=[label for label in SPLIT_LABELS.values() if label in set(frame.split)],
         focus_split="Test",
+        aligned_annotations=True,
     )
