@@ -13,3 +13,23 @@ Platform: x86_64-conda-linux-gnu
 Open the executed [gene-panel biology notebook](Scripts_For_Manuscript/gene_panel_biology.ipynb) for gene functions, curated pathway membership and observed adult TB associations. It reuses saved results without refitting models.
 
 The notebook exports the [function diagram](Figure_Output/Gene_Interactions/focused/two_panel_functions.png), [pathway-membership map](Figure_Output/Gene_Interactions/focused/two_panel_pathway_membership.png) and [adult-association plot](Figure_Output/Gene_Interactions/focused/two_panel_tb_associations.png). Each figure is also available as a PDF in the same folder.
+
+## Inspect model scores and HIV-positive samples
+
+The active [model comparison](Scripts_For_Manuscript/gene_interactions.ipynb),
+[cutoff interpretation](Scripts_For_Manuscript/gene_cutoff_interpretation.ipynb), and
+[XGBoost interpretation](Scripts_For_Manuscript/gene_interactions_interpretation.ipynb)
+notebooks place patient-level panels after the relevant evaluation cells.
+Each panel combines its models, shows train/test/validation score distributions,
+and marks HIV-positive participants. `[HIV+]` means recorded positive;
+`[HIV?]` means unknown status, not negative.
+
+Open the [paper-GLM panel](Figure_Output/Model_Evaluation/paper.pdf),
+[all six-gene classifiers](Figure_Output/Model_Evaluation/six_genes.pdf), or
+[two gene-panel comparison](Figure_Output/Model_Evaluation/six_gene_panels.pdf).
+These are local generated outputs; `Figure_Output/Model_Evaluation/` is excluded
+from Git. The notebooks retain their embedded summary figures. Rerun the plotting
+cells to regenerate the local files. Every panel has `_samples.pdf` pages with readable IDs and a searchable
+`_samples.html` table; `_metrics.tsv` provides HIV subgroup counts and metrics.
+One stored model fit gives one score per patient, not a repeated-test success rate.
+See [decisions and validation scope](docs/DECISIONS.md).

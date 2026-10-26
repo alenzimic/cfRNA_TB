@@ -1,3 +1,6 @@
 .venv/
 __pycache__/
 .ipynb_checkpoints/
+
+# Regenerated patient-level evaluation details, including HIV annotations.
+/Figure_Output/Model_Evaluation/
