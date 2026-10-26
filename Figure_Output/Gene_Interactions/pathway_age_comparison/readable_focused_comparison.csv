@@ -1,0 +1,6 @@
+Pathway,"Earlier TB difference, train / test / validation (training SD)","Earlier adjusted P, same order","Age analysis: studies with general TB evidence, FDR<0.05",New age-dependent TB evidence
+Interferon Alpha Response,+0.96 / +0.71 / +1.07,2.01e-05 / 0.0983 / 0.00286,None,0 discoveries; minimum q=0.986
+Interferon Gamma Response,+0.95 / +0.76 / +1.02,2.81e-06 / 0.0407 / 0.000676,R2D2,0 discoveries; minimum q=0.986
+Tnfa Signaling Via Nfkb,+0.53 / +0.58 / +0.25,0.00642 / 0.0294 / 0.49,None,0 discoveries; minimum q=0.986
+Inflammatory Response,+0.68 / +0.85 / +0.54,0.000237 / 0.0032 / 0.0983,GHL,0 discoveries; minimum q=0.986
+Neutrophil Degranulation,+0.52 / +0.80 / +0.36,0.00286 / 0.00966 / 0.212,Not tested,Not tested

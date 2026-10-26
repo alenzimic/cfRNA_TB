@@ -10,6 +10,23 @@ Platform: x86_64-conda-linux-gnu
 
 ## Compare the biology of the two six-gene panels
 
+The [pathway interpretation notebook](Scripts_For_Manuscript/gene_interactions_pathways.ipynb)
+explains its statistical adjustments, score units, colors and uncertainty in plain
+language. “Adjusted for study + estimated RNA sources” means accounting for the
+recruiting study and estimated plasma RNA shares from different cell groups;
+those shares are not cell counts. Its two colored estimates are alternative
+adjustments of the same TB–nonTB difference.
+
+Section 12 compares the earlier pathway results with the continuous-age analysis.
+Interferon-gamma and some inflammatory signals agree, but all 251 earlier
+participants occur in the 812-person age analysis. This provides a cross-check
+on the same participants, not independent replication or evidence that TB
+pathway differences change with age. The primary age analysis has no discoveries
+after correction across 250 pathway–study interaction tests.
+The [aggregate comparison and age results](Figure_Output/Gene_Interactions/pathway_age_comparison/README.md)
+include an archived HTML report, tables, figures and provenance. The original
+age-analysis notebook remains in the local `cfRNA_TB_overview` workspace.
+
 Open the executed [gene-panel biology notebook](Scripts_For_Manuscript/gene_panel_biology.ipynb) for gene functions, curated pathway membership and observed adult TB associations. It reuses saved results without refitting models.
 
 The notebook exports the [function diagram](Figure_Output/Gene_Interactions/focused/two_panel_functions.png), [pathway-membership map](Figure_Output/Gene_Interactions/focused/two_panel_pathway_membership.png) and [adult-association plot](Figure_Output/Gene_Interactions/focused/two_panel_tb_associations.png). Each figure is also available as a PDF in the same folder.

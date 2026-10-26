@@ -1,0 +1,5 @@
+**812 patients, 50 pathways, 5 independent study models.** The primary analysis found **0 of 250 pathway–study interactions at FDR < 0.05** (smallest age-interaction q = 0.986). The separate any-TB-difference test identified 6 pathway–study associations at FDR < 0.05.
+
+The data do **not currently provide FDR-controlled evidence that the TB–nonTB enrichment difference changes with age** under this model. The curves are exploratory estimates with uncertainty; visible bends should not be called established age dynamics.
+
+No model identifies a continuous childhood-to-old-age trajectory. Children and adults were recruited in different studies, adolescence is unsampled, and the oldest ages have too few TB cases for reliable contrasts. More age-overlapping cohorts and longitudinal sampling would distinguish age from study effects.

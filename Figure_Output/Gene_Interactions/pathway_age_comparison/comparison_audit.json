@@ -1,0 +1,37 @@
+{
+  "inputs": {
+    "/local/workdir/amz63/cfRNA_TB/Figure_Output/Gene_Interactions/focused/pathway_score_tb_associations.csv": "ee33ad5cc48818c3999be173c7415e79e7bad174248971b7dc57e931330b11d6",
+    "/local/workdir/amz63/cfRNA_TB/Figure_Output/Gene_Interactions/focused/pathway_enrichment.csv": "536e77574e2a58d83e6d703ffcd0b27ce2b53281e47468092e6dee6c7b7ab923",
+    "/local/workdir/amz63/cfRNA_TB/Figure_Output/Gene_Interactions/focused/pathway_gene_program_tb_associations.csv": "091c7294ecded2bfd5eeab1929ab8b45ade3127672c56c7d4457977260c93693",
+    "/local/workdir/amz63/cfRNA_TB_overview/results/pathway_age/primary_tests.tsv": "69189828de6b4009d865d62f33acf06fa89c4f86ea4673c086dc9bc0b058a95c",
+    "/local/workdir/amz63/cfRNA_TB_overview/results/pathway_age/primary_curves.tsv": "445800c2670c57c00e5660513800ce2b2432c6a7ec36a979ba59f2d67d561fca",
+    "/local/workdir/amz63/cfRNA_TB_overview/results/pathway_age/participants.tsv": "bacc70e8128d2ed9365946b599be7c4677ebf4aed02dd0a68735b395e1f51145",
+    "/local/workdir/amz63/cfRNA_TB/Files_For_Manuscript/metadata.train.tsv": "94d32911a0a262170a1e4335edfd4f4361e3673419806ab9a0204a88a3747c73",
+    "/local/workdir/amz63/cfRNA_TB/Files_For_Manuscript/metadata.test.tsv": "8f8cb59eb154181ed98e619079821d924e724f0e4320b982360b7595354f5b7b",
+    "/local/workdir/amz63/cfRNA_TB/Files_For_Manuscript/metadata.val.tsv": "ca53eacbe8378b27f07e20ff9ef750f47e9663baad4993d975070c58d6f7a2e1"
+  },
+  "overlap": {
+    "old_participants": 251,
+    "new_participants": 812,
+    "old_in_new": 251,
+    "new_not_old": 561,
+    "one_to_one_matching": "Trim whitespace from old sample_id and new original_sample_id; exact join",
+    "all_split_labels_match": true,
+    "all_binary_labels_match": true,
+    "new_GHL_R2D2_TBSQUARE_exactly_old": true
+  },
+  "comparison": {
+    "old_focused_pathways": 5,
+    "shared_eligible_Hallmarks": 49,
+    "old_Reactome_neutrophil_absent_new": true,
+    "new_pancreas_beta_cells_absent_old_eligible_GSEA": true,
+    "age_interaction_tests": 250,
+    "age_interaction_discoveries_FDR05": 0,
+    "age_interaction_min_q": 0.9857439543988912,
+    "any_TB_discoveries_FDR05": 6,
+    "new_nonoverlap_studies_any_TB_discoveries": 0,
+    "age_omnibus_tests_do_not_have_a_single_signed_coefficient": true,
+    "supported_curve_extrema_are_descriptive_not_tested": true
+  },
+  "scope": "No new model fitting, p values, gene-set permutations or participant-level public outputs were generated. Tables compare previously saved estimates and multiplicity results. Old and new scores and tests have different definitions; no effect-size equivalence or replication claim."
+}

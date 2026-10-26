@@ -1,5 +1,48 @@
 # Analysis decisions
 
+## 2026-10-26 — Explain pathway labels and compare continuous-age results
+
+Replace the shorthand “Study” and “Study + RNA mix” in
+[the pathway notebook](../Scripts_For_Manuscript/gene_interactions_pathways.ipynb)
+with “Adjusted for study” and “Adjusted for study + estimated RNA sources.”
+Explain that these are two estimates of the same TB–nonTB difference, not
+diagnosis-group means. Define the recruiting-study adjustment, estimated plasma
+RNA shares, training-reference SD, normalized enrichment score, regression slopes,
+residual correlation, confidence intervals and multiple-testing corrections.
+Validation-specific titles correctly omit a study term because validation has one
+study. Preserve the machine-readable adjustment keys and statistical definitions.
+
+Section 12 compares all five original focused programs and all 49 shared eligible
+Hallmark sets with the continuous-age analysis. Interferon-gamma provides the
+clearest general TB-associated expression agreement; inflammatory support is more
+qualified. Complement and IL6–JAK–STAT3 also agree under the earlier GSEA analysis.
+These findings do not establish age modulation. All 251 earlier participants are
+reused among the 812 age-analysis participants, and all six new any-TB discoveries
+occur in overlapping GHL/R2D2. The additional ADTB/PROTECT cohorts have no primary
+any-TB or age-interaction FDR discoveries under the current specification. The
+score definitions, processing, covariates, scaling and testing families differ;
+neither effect-size equivalence nor independent replication is claimed.
+
+Publish the [aggregate result snapshot](../Figure_Output/Gene_Interactions/pathway_age_comparison/README.md)
+through this repository's existing `origin` fork. The separate overview checkout
+has no remote and remains local. The snapshot includes full tests, masked age-grid
+curves, six sensitivity analyses, figures, an archived HTML report, comparison
+tables and checksums. It excludes new participant metadata and individual pathway
+scores. The [exporter](../Scripts_For_Manuscript/export_pathway_age_comparison.py)
+rebuilds the snapshot from the already executed local analyses and verifies overlap
+without exporting participant identities.
+
+**Validation:** Restore this repository's missing `.venv` with the original
+scientific package versions and execute all 20 code cells under `cfrna-tb`; the
+55-cell notebook finishes without errors and retains eight embedded figures.
+The full rerun reproduces all 111 pre-existing numerical/provenance files:
+101 are byte-identical and ten differ only at floating-point precision (largest
+absolute difference 9.01e-14). Preserve the original exports byte-for-byte to avoid
+roundoff-only publication changes. Statistical decisions and all 15 complete gene
+pairs remain unchanged. Seven modified figures and the rendered notebook are
+visually checked; Ruff and snapshot hashes pass. Details are recorded in
+`Figure_Output/Gene_Interactions/focused/pathway_clarity_validation.json`.
+
 ## 2026-10-26 — Patient-level model evaluation and HIV markers
 
 Add score-distribution and ranked-patient panels after each active model-evaluation group in `gene_interactions.ipynb`, after both saved-prediction comparisons in `gene_cutoff_interpretation.ipynb`, and after the prediction check for the SHAP model in `gene_interactions_interpretation.ipynb`. Each cell shows its models together in one figure. The adapter in `Scripts_For_Manuscript/evaluation_panels.py` connects the predictions to the recorded metadata; `model_evaluation_plots.py` renders the same design used by the related repositories.

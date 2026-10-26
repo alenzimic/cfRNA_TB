@@ -1,0 +1,7 @@
+sensitivity	tested_pairs	age_FDR05_within_variant	age_FDR05_all_variants	minimum_age_q	participants
+complete_covariates	250	0	0	0.9036756328439527	781
+count_reads_61x61	250	0	0	0.9857439543988913	781
+prep_batch	250	0	0	0.612287049293831	811
+spline_df2	250	0	0	0.6922694188724727	812
+spline_df4	200	0	0	0.9977075488930418	812
+supported_ages_only	250	0	0	0.9690813218321678	720

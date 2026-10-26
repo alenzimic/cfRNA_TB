@@ -1,0 +1,64 @@
+{
+  "baseline_commit": "9727c3e6f65be0dc6b6f953c4bfcf4063e5a001d",
+  "baseline_files": 111,
+  "rerun_byte_identical_files": 101,
+  "rerun_roundoff_only_files": [
+    {
+      "file": "Figure_Output/Gene_Interactions/focused/pathway_association_designs.csv",
+      "max_abs_difference": 4.440892098500626e-15
+    },
+    {
+      "file": "Figure_Output/Gene_Interactions/focused/pathway_enrichment.csv",
+      "max_abs_difference": 4.6629367034256575e-14
+    },
+    {
+      "file": "Figure_Output/Gene_Interactions/focused/pathway_focused_enrichment.csv",
+      "max_abs_difference": 4.6629367034256575e-14
+    },
+    {
+      "file": "Figure_Output/Gene_Interactions/focused/pathway_gene_pair_evidence.csv",
+      "max_abs_difference": 3.3306690738754696e-16
+    },
+    {
+      "file": "Figure_Output/Gene_Interactions/focused/pathway_gene_program_associations.csv",
+      "max_abs_difference": 5.329070518200751e-15
+    },
+    {
+      "file": "Figure_Output/Gene_Interactions/focused/pathway_gene_program_tb_associations.csv",
+      "max_abs_difference": 3.3306690738754696e-15
+    },
+    {
+      "file": "Figure_Output/Gene_Interactions/focused/pathway_gene_tb_associations.csv.gz",
+      "max_abs_difference": 9.009459844833145e-14
+    },
+    {
+      "file": "Figure_Output/Gene_Interactions/focused/pathway_score_tb_associations.csv",
+      "max_abs_difference": 3.3306690738754696e-15
+    },
+    {
+      "file": "Figure_Output/Gene_Interactions/focused/pathway_selected_gene_coexpression.csv",
+      "max_abs_difference": 3.3306690738754696e-16
+    },
+    {
+      "file": "Figure_Output/Gene_Interactions/focused/pathway_selected_gene_tb_associations.csv",
+      "max_abs_difference": 5.595524044110789e-14
+    }
+  ],
+  "maximum_absolute_numeric_difference": 9.009459844833145e-14,
+  "numeric_tolerance": {
+    "rtol": 1e-10,
+    "atol": 1e-12
+  },
+  "multiple_testing_decisions_unchanged": true,
+  "baseline_exports_preserved_byte_for_byte": true,
+  "code_cells_executed": 20,
+  "notebook_cells": 55,
+  "execution_errors": 0,
+  "embedded_figures": 8,
+  "complete_gene_pair_rows": 15,
+  "kernel": "cfrna-tb",
+  "runtime": "Restored repository .venv; exact original numpy/pandas/scipy/statsmodels/gseapy versions",
+  "visual_review": "All seven modified figures visually inspected; no clipping or overlap. Full regenerated notebook HTML also checked.",
+  "scope": "Presentation changes and comparison of saved age-analysis results; scientific definitions and original export schemas retained.",
+  "post_execution_presentation_edit": "Clarified comparison table heading as age-analysis studies to avoid implying that overlapping GHL/R2D2 are new cohorts; source and saved table display updated together, no numerical changes."
+}
