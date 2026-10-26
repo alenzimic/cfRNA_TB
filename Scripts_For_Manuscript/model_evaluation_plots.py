@@ -21,6 +21,8 @@ from sklearn.metrics import roc_auc_score
 COLORS = {0: "#4C78A8", 1: "#C94B50"}
 HIV_MARKERS = {"Negative": "o", "Positive": "D", "Unknown": "^", "Conflict": "X"}
 HIV_SUFFIX = {"Negative": "", "Positive": " [HIV+]", "Unknown": " [HIV?]", "Conflict": " [HIV conflict]"}
+PEDIATRIC_COLOR = "#178F89"
+AGE_UNKNOWN_COLOR = "#a0a0a0"
 REFERENCE = "https://pmc.ncbi.nlm.nih.gov/articles/PMC12377778/"
 
 
@@ -182,6 +184,18 @@ def _ranked(axis, group, show_ids=False, aligned_annotations=False):
     _draw_ranked(axis, rows, group, repeated, show_ids, aligned_annotations)
 
 
+def _age_groups(rows):
+    """Read the recorded age group; absent or missing age never means adult."""
+    if "age_group" not in rows:
+        return pd.Series("unknown", index=rows.index)
+    groups = rows.age_group.astype("string").str.strip().str.lower().fillna("unknown")
+    groups = groups.replace({"": "unknown", "na": "unknown", "nan": "unknown", "none": "unknown"})
+    unexpected = set(groups) - {"adult", "pediatric", "unknown"}
+    if unexpected:
+        raise ValueError(f"Unrecognized recorded age groups: {sorted(unexpected)}")
+    return groups
+
+
 def _annotation_rows(axis, rows):
     """Align one annotation cell to each unchanged patient bar; no aggregation."""
     error_colors = [to_rgba("#242424" if value == 0 else "#dddddd" if pd.isna(value) else "white")
@@ -189,6 +203,10 @@ def _annotation_rows(axis, rows):
     hiv_colors = {"Positive": "#8056a3", "Negative": "white", "Unknown": "#c58c23", "Conflict": "#b32f3b"}
     tracks = [("Error", error_colors),
               ("HIV", [to_rgba(hiv_colors[status]) for status in rows.hiv_status])]
+    age_groups = _age_groups(rows)
+    if age_groups.eq("pediatric").any():
+        age_colors = {"pediatric": PEDIATRIC_COLOR, "adult": "white", "unknown": AGE_UNKNOWN_COLOR}
+        tracks.append(("Pediatric", [to_rgba(age_colors[group]) for group in age_groups]))
     for index, (label, colors) in enumerate(tracks):
         bottom = -.13 - index * .075
         track = axis.inset_axes([0, bottom, 1, .045])
@@ -198,6 +216,7 @@ def _annotation_rows(axis, rows):
         track.set_axis_off()
         axis.text(-.015, bottom + .0225, label, transform=axis.transAxes,
                   ha="right", va="center", fontsize=9)
+    return len(tracks)
 
 
 def _draw_ranked(axis, rows, group, repeated, show_ids, aligned_annotations=False):
@@ -227,7 +246,7 @@ def _draw_ranked(axis, rows, group, repeated, show_ids, aligned_annotations=Fals
     if aligned_annotations:
         if repeated:
             raise ValueError("Aligned annotation rows require one prediction per person")
-        _annotation_rows(axis, rows)
+        annotation_count = _annotation_rows(axis, rows)
     if show_ids:
         axis.set_xticks(positions, rows.sample_label, rotation=75, ha="right", fontsize=7.5)
         for tick, status in zip(axis.get_xticklabels(), rows.hiv_status):
@@ -238,7 +257,8 @@ def _draw_ranked(axis, rows, group, repeated, show_ids, aligned_annotations=Fals
     axis.set_xlabel("Sample ID; [HIV+] positive, [HIV?] unknown" if show_ids else
                     "Samples ranked by score; full IDs in the sample pages / table")
     if aligned_annotations:
-        axis.set_xlabel("One bar per patient, ordered from highest to lowest score", labelpad=48)
+        axis.set_xlabel("One bar per patient, ordered from highest to lowest score",
+                        labelpad=48 + 16 * (annotation_count - 2))
 
 
 def _focus(splits, requested):
@@ -302,10 +322,12 @@ def evaluation_panel(frame, *, title, output_prefix=None, split_order=None, focu
     if set(splits) != set(data.split.unique()):
         raise ValueError("split_order must contain every available split exactly once")
     focused = _focus(splits, focus_split)
+    focused_ages = _age_groups(data.loc[data.split.eq(focused)]) if aligned_annotations else pd.Series(dtype=str)
+    has_pediatric = focused_ages.eq("pediatric").any()
     with plt.rc_context({"font.size": 9, "svg.fonttype": "none", "pdf.fonttype": 42}):
         figure, axes = plt.subplots(len(models), len(splits) + 1, squeeze=False,
                                    figsize=(4.0 * len(splits) + (14 if aligned_annotations else 10),
-                                            (4.5 if aligned_annotations else 4.1) * len(models) + 1.4),
+                                            (4.7 if has_pediatric else 4.5 if aligned_annotations else 4.1) * len(models) + 1.4),
                                    gridspec_kw={"width_ratios": [1] * len(splits) + [3.7 if aligned_annotations else 2.4]})
         for row, model in enumerate(models):
             subset = data.loc[data.model.eq(model)]
@@ -336,11 +358,17 @@ def evaluation_panel(frame, *, title, output_prefix=None, split_order=None, focu
         if aligned_annotations:
             legend[4:4] = [Line2D([], [], marker="s", linestyle="", color="#8056a3", label="HIV row: positive"),
                            Line2D([], [], marker="s", linestyle="", color="#c58c23", label="HIV row: unknown")]
+        if has_pediatric:
+            legend.append(Line2D([], [], marker="s", linestyle="", color=PEDIATRIC_COLOR,
+                                 label="Pediatric participant"))
+            if focused_ages.eq("unknown").any():
+                legend.append(Line2D([], [], marker="s", linestyle="", color=AGE_UNKNOWN_COLOR,
+                                     label="Age group unknown"))
         figure.suptitle(title, fontsize=13, y=1 - 0.10 / figure.get_figheight())
         figure.legend(handles=legend, loc="upper center", bbox_to_anchor=(0.5, 1 - 0.38 / figure.get_figheight()),
-                      ncol=4 if aligned_annotations else 3, frameon=False)
+                      ncol=5 if has_pediatric else 4 if aligned_annotations else 3, frameon=False)
         figure.subplots_adjust(top=1 - 1.8 / figure.get_figheight(),
-                               bottom=(1.35 if aligned_annotations else 1.0) / figure.get_figheight(),
+                               bottom=(1.6 if has_pediatric else 1.35 if aligned_annotations else 1.0) / figure.get_figheight(),
                                left=3.2 / figure.get_figwidth(), right=0.98, wspace=0.45, hspace=0.85)
         for row, model in enumerate(models):
             position = axes[row, 0].get_position()
@@ -351,6 +379,8 @@ def evaluation_panel(frame, *, title, output_prefix=None, split_order=None, focu
                 if aligned_annotations else
                 "Recorded scores/labels are unchanged. Decisions use the documented boundary and split roles.\n"
                 "HIV comparisons are descriptive, not adjusted effects. Full IDs and denominators are exported.")
+        if has_pediatric:
+            note += "\nPediatric row: teal = recorded pediatric participant; blank = adult; grey = age group unknown."
         figure.text(0.065, 0.12 / figure.get_figheight(), note, fontsize=8.5)
         if output_prefix is not None:
             prefix = Path(output_prefix)

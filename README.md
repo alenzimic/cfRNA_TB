@@ -30,6 +30,9 @@ same patient order: black marks an incorrect prediction; purple marks HIV positi
 and gold marks unknown status. Blank cells mean correct prediction or HIV negative
 in their respective rows. Score units, patient order and decision boundaries are
 unchanged; the main legend explains both point markers and annotation-row colors.
+The participants in these panels all have recorded ages of at least 18 years,
+so no pediatric row is shown here. The shared renderer adds that row when a
+plotted cohort contains participants recorded as pediatric; missing age stays unknown.
 
 Open the [paper-GLM panel](Figure_Output/Model_Evaluation/paper.pdf),
 [all six-gene classifiers](Figure_Output/Model_Evaluation/six_genes.pdf), or
