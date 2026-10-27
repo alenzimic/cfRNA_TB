@@ -39,6 +39,10 @@ AGGREGATE_FILES = [
     "age_contrast_summary.tsv",
     "age_contrast_examples.tsv",
     "age_contrast_diagnostics.json",
+    "age_bins.tsv",
+    "age_bin_counts.tsv",
+    "age_bin_summary.tsv",
+    "age_bin_diagnostics.json",
 ]
 FIGURES = [
     "age_support",
@@ -68,10 +72,11 @@ def timeline_figure_names(source):
     )
     if shown.isna().any():
         raise ValueError("Unexpected shown_in_notebook flag in timeline index")
-    return [
+    timelines = [
         "timeline_" + pathway.removeprefix("HALLMARK_").lower()
         for pathway in index.loc[shown, "pathway"]
     ]
+    return timelines + ["binned_" + name for name in timelines]
 
 
 def compare_saved_results(ROOT, OVERVIEW, OUT):
@@ -312,6 +317,10 @@ def write_readme(out, audit):
     age_tests = int(age_contrasts.age_contrast_p.notna().sum())
     age_hits = int(age_contrasts.age_contrast_q.lt(0.05).sum())
     age_labels = ", ".join(f"{age:g}" for age in sorted(age_contrasts.age_years.unique()))
+    age_bins = pd.read_csv(out / "age_bins.tsv", sep="\t")
+    bin_tests = int(age_bins.bin_p.notna().sum())
+    bin_hits = int(age_bins.bin_q.lt(0.05).sum())
+    bin_labels = ", ".join(age_bins.sort_values("bin_left").age_bin.drop_duplicates())
     (out / "README.md").write_text(f"""# Pathway analysis and continuous-age comparison
 
 This is an archived **aggregate result snapshot** from the executed local
@@ -357,6 +366,16 @@ sample-level QC records.
   ages for an exploratory follow-up, not fitting bins or preregistered cutoffs.
   The age-specific tests, global age interaction and any-TB omnibus tests answer
   different questions. No continuous significant age interval is claimed.
+- The supplementary age-bin analysis uses declared ranges **{bin_labels} years**
+  and fits each study/bin independently, adjusting for linear age and clinical/
+  protocol covariates. **{bin_hits}/{bin_tests} tested comparisons pass bin FDR
+  <0.05** (minimum q={age_bins.bin_q.min():.6f}). One separate BH family includes
+  all estimable pathway/study/bin comparisons. Sparse or unreliable fits remain
+  unavailable. These are age-range associations under a constant TB difference
+  within each bin, not exact-age effects or evidence of an age interaction.
+  The bin model, population and number of tests differ from the exact-age
+  analysis; discoveries do not establish that binning is preferable. Cutoffs
+  were declared before these tests and were not optimized for significance.
 
 ## Different scores and questions
 
@@ -419,6 +438,8 @@ probability. Neither analysis establishes biochemical activity or causation.
   Its vertical-scale selector switches between Focus on curves and All patient
   scores. Original-study views include exact-age effect/CI/q tables; these tests
   are not assigned to the exploratory adult-summary or omission curves.
+  A separate age-bin evidence strip and table show each original study's
+  independent within-bin tests, with counts and unavailable reasons.
   Dots follow the study/omission selection and are embedded as transparent raster
   images, without patient identifiers or machine-readable patient rows. Numerical
   model estimates are aggregate results. The file requires no external scripts.
@@ -440,6 +461,20 @@ probability. Neither analysis establishes biochemical activity or causation.
   are pointwise, so a CI can exclude zero without an FDR discovery.
   `age_contrast_examples.*` compares group levels and direct difference curves
   for four pairs selected by minimum age-specific q; the TSV records that choice.
+- `age_bins.tsv`: all planned study/pathway/bin comparisons, adjusted effects,
+  pointwise HC3/t intervals, raw p-values and globally corrected bin q-values.
+  `age_bin_counts.tsv`, `age_bin_summary.tsv` and `age_bin_diagnostics.json`
+  retain group counts, complete availability reasons and design assumptions.
+  Tests require at least 10 patients per diagnosis, overlapping observed ages,
+  at least 15 residual degrees of freedom, leverage below 0.95 and an identifiable
+  TB effect after nuisance adjustment. Confidence intervals are not adjusted
+  for multiplicity; a CI excluding zero is not equivalent to a bin FDR discovery.
+- `pathway_age_bins_all.pdf`: original two-curve timelines with separate study
+  evidence rows underneath, using the same 50-pathway page order. Horizontal
+  spans identify bins, not significant continuous-age windows. Filled markers
+  identify bin q<0.05 (blue higher TB, orange higher nonTB), open markers mean
+  no FDR discovery and crosses mean unavailable. `binned_timeline_*.png` and
+  `.pdf` are the same focus pathways shown in the original timeline figures.
 - `age_pathway_analysis.html`: archived HTML report with embedded figures and
   aggregate outputs. It loads MathJax/RequireJS from a CDN for rendering and is
   not an independently rerunnable analysis package.
@@ -492,6 +527,7 @@ def main():
             "provenance.json": "age_analysis_provenance.json",
             "pathway_timelines_all.pdf": "pathway_timelines_all.pdf",
             "pathway_patient_distributions_all.pdf": "pathway_patient_distributions_all.pdf",
+            "pathway_age_bins_all.pdf": "pathway_age_bins_all.pdf",
             "pathway_age_explorer.html": "pathway_age_explorer.html",
         }
     )

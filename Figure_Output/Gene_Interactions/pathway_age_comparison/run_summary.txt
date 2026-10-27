@@ -2,4 +2,6 @@
 
 The data do **not currently provide FDR-controlled evidence that the TB–nonTB enrichment difference changes with age** under this model. The curves are exploratory estimates with uncertainty; visible bends should not be called established age dynamics.
 
+The supplementary fixed-bin analysis found **7 of 550 tested study–pathway–bin comparisons at FDR < 0.05** (minimum q = 0.024). These are within-age-range associations under separate linear-age models. Their significance cannot be assigned to every exact age in the bin or used to claim an age-dependent TB difference. The original exact-age analysis and all continuous curves remain unchanged.
+
 No model identifies a continuous childhood-to-old-age trajectory. Children and adults were recruited in different studies, adolescence is unsampled, and the oldest ages have too few TB cases for reliable contrasts. More age-overlapping cohorts and longitudinal sampling would distinguish age from study effects.

@@ -1,0 +1,36 @@
+cohort	bin_left	age_bin	n_TB	n_nonTB	supported	support_reason
+ADTB	0.0	0–<5	0	0	False	Fewer than 10 TB patients in bin; Fewer than 10 nonTB patients in bin
+ADTB	5.0	5–<10	0	0	False	Fewer than 10 TB patients in bin; Fewer than 10 nonTB patients in bin
+ADTB	10.0	10–<18	0	0	False	Fewer than 10 TB patients in bin; Fewer than 10 nonTB patients in bin
+ADTB	18.0	18–<30	34	84	True	Supported
+ADTB	30.0	30–<45	20	75	True	Supported
+ADTB	45.0	45–<60	18	77	True	Supported
+ADTB	60.0	60+	9	42	False	Fewer than 10 TB patients in bin
+GHL	0.0	0–<5	0	0	False	Fewer than 10 TB patients in bin; Fewer than 10 nonTB patients in bin
+GHL	5.0	5–<10	0	0	False	Fewer than 10 TB patients in bin; Fewer than 10 nonTB patients in bin
+GHL	10.0	10–<18	0	0	False	Fewer than 10 TB patients in bin; Fewer than 10 nonTB patients in bin
+GHL	18.0	18–<30	31	17	True	Supported
+GHL	30.0	30–<45	22	13	True	Supported
+GHL	45.0	45–<60	4	5	False	Fewer than 10 TB patients in bin; Fewer than 10 nonTB patients in bin
+GHL	60.0	60+	0	1	False	Fewer than 10 TB patients in bin; Fewer than 10 nonTB patients in bin
+PROTECT	0.0	0–<5	59	51	True	Supported
+PROTECT	5.0	5–<10	28	26	True	Supported
+PROTECT	10.0	10–<18	17	21	False	Maximum leverage is at least 0.95
+PROTECT	18.0	18–<30	0	0	False	Fewer than 10 TB patients in bin; Fewer than 10 nonTB patients in bin
+PROTECT	30.0	30–<45	0	0	False	Fewer than 10 TB patients in bin; Fewer than 10 nonTB patients in bin
+PROTECT	45.0	45–<60	0	0	False	Fewer than 10 TB patients in bin; Fewer than 10 nonTB patients in bin
+PROTECT	60.0	60+	0	0	False	Fewer than 10 TB patients in bin; Fewer than 10 nonTB patients in bin
+R2D2	0.0	0–<5	0	0	False	Fewer than 10 TB patients in bin; Fewer than 10 nonTB patients in bin
+R2D2	5.0	5–<10	0	0	False	Fewer than 10 TB patients in bin; Fewer than 10 nonTB patients in bin
+R2D2	10.0	10–<18	0	0	False	Fewer than 10 TB patients in bin; Fewer than 10 nonTB patients in bin
+R2D2	18.0	18–<30	18	10	True	Supported
+R2D2	30.0	30–<45	11	12	True	Supported
+R2D2	45.0	45–<60	18	16	True	Supported
+R2D2	60.0	60+	3	10	False	Fewer than 10 TB patients in bin
+TBSQUARE	0.0	0–<5	0	0	False	Fewer than 10 TB patients in bin; Fewer than 10 nonTB patients in bin
+TBSQUARE	5.0	5–<10	0	0	False	Fewer than 10 TB patients in bin; Fewer than 10 nonTB patients in bin
+TBSQUARE	10.0	10–<18	0	0	False	Fewer than 10 TB patients in bin; Fewer than 10 nonTB patients in bin
+TBSQUARE	18.0	18–<30	15	6	False	Fewer than 10 nonTB patients in bin
+TBSQUARE	30.0	30–<45	16	15	True	Supported
+TBSQUARE	45.0	45–<60	3	4	False	Fewer than 10 TB patients in bin; Fewer than 10 nonTB patients in bin
+TBSQUARE	60.0	60+	1	0	False	Fewer than 10 TB patients in bin; Fewer than 10 nonTB patients in bin
