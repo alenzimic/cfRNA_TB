@@ -1,5 +1,23 @@
 # Analysis decisions
 
+## 2026-10-26 — Replace overlapping pathway bands with aligned study rows
+
+Revise the shared-age snapshot after the overlaid study curves were difficult to
+read. Each pathway now occupies one compact figure with five directly labeled
+study rows, common age and score limits, and consistent blue TB/orange nonTB
+colors. Pointwise 95% intervals appear as thin whiskers at selected exact model
+ages; the complete intervals remain in saved curves and detailed figures.
+Diagnosis counts and small patient-age ticks provide context within each row.
+This replaces the previous study-color overlay and separate coverage panel.
+
+Independent review checked all 500 plotted group curves and 2,000 interval
+whiskers against saved predictions, retaining unsupported gaps and identical
+score limits within each pathway. No filled confidence polygons remain in the
+summary figure. The underlying analysis and participant-overlap interpretation
+are unchanged; publication continues to contain aggregate results only.
+The overview notebook completed all 13 code cells with 12 embedded figures, and
+all 21 pre-existing tabular/result files match the pre-redesign baseline exactly.
+
 ## 2026-10-26 — Show study curves on a shared age timeline
 
 Refresh the aggregate age snapshot with a 50-page pathway timeline PDF, a page

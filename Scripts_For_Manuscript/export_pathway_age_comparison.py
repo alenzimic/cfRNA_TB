@@ -367,10 +367,11 @@ probability. Neither analysis establishes biochemical activity or causation.
 - `sensitivity_*`, `model_diagnostics.json`: robustness variants and explicit
   reasons for any skipped model fits.
 - `pathway_timelines_all.pdf`: all eligible pathways, one pathway per page, with
-  all studies on the same age axis. Color identifies study; solid lines are TB
-  and dashed lines are nonTB. Pale ribbons are pointwise 95% confidence intervals.
-  The support strip below each plot shows observed ages and supported comparisons
-  separately for each study, preserving internal gaps and sparse tails. These are
+  five compact study rows sharing identical age and score limits. Blue solid
+  curves show TB and orange dashed curves show nonTB. Thin whiskers are pointwise
+  95% confidence intervals at selected prediction ages; complete interval curves
+  remain in the saved TSV files and study-specific closeups. Patient-age ticks
+  below each row show coverage, preserving internal gaps and sparse tails. These are
   separate study fits, not a pooled lifespan model; study differences are not
   isolated age effects.
 - `pathway_timeline_index.tsv`: pathway-to-page lookup, with a flag identifying
