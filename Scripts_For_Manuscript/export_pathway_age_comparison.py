@@ -43,6 +43,11 @@ AGGREGATE_FILES = [
     "age_bin_counts.tsv",
     "age_bin_summary.tsv",
     "age_bin_diagnostics.json",
+    "study_age_coverage.tsv",
+    "pooled_age_bins.tsv",
+    "pooled_age_bin_summary.tsv",
+    "pooled_age_bin_diagnostics.json",
+    "pooled_age_bin_leave_one_study_out.tsv",
 ]
 FIGURES = [
     "age_support",
@@ -321,6 +326,10 @@ def write_readme(out, audit):
     bin_tests = int(age_bins.bin_p.notna().sum())
     bin_hits = int(age_bins.bin_q.lt(0.05).sum())
     bin_labels = ", ".join(age_bins.sort_values("bin_left").age_bin.drop_duplicates())
+    pooled = pd.read_csv(out / "pooled_age_bins.tsv", sep="\t")
+    pooled_tests = int(pooled.pooled_p.notna().sum())
+    pooled_hits = int(pooled.pooled_q.lt(0.05).sum())
+    pooled_ages = ", ".join(pooled.loc[pooled.pooled_p.notna()].sort_values("bin_left").age_bin.drop_duplicates())
     (out / "README.md").write_text(f"""# Pathway analysis and continuous-age comparison
 
 This is an archived **aggregate result snapshot** from the executed local
@@ -376,6 +385,18 @@ sample-level QC records.
   The bin model, population and number of tests differ from the exact-age
   analysis; discoveries do not establish that binning is preferable. Cutoffs
   were declared before these tests and were not optimized for significance.
+- Combining studies in each declared bin with fixed study, linear age and
+  clinical/protocol adjustment gives **{pooled_hits}/{pooled_tests} pooled FDR
+  discoveries** (minimum q={pooled.pooled_q.min():.6f}), across ages **{pooled_ages}**.
+  This assumes a common TB difference and common age/nuisance slopes within each
+  bin. The separate TB-by-study diagnostic has
+  {int(pooled.heterogeneity_q.lt(0.05).sum())}/{int(pooled.heterogeneity_p.notna().sum())}
+  FDR discoveries; absence of heterogeneity discoveries does not validate pooling.
+  Omission effects and failures remain available. The patient-level HC3 intervals
+  condition on these studies/model assumptions and are not study-cluster robust.
+  Childhood bins have only PROTECT and receive no duplicate pooled test; older
+  models failing the existing leverage safeguards remain unavailable. A different
+  model and testing family mean discovery counts cannot establish improved power.
 
 ## Different scores and questions
 
@@ -426,6 +447,9 @@ probability. Neither analysis establishes biochemical activity or causation.
   dots outside the displayed limits are printed explicitly. All observations remain
   in the models. `pathway_patient_distributions_all.pdf` shows the full patient
   score range, using the same pathway-to-page index.
+  A compact study coverage panel now sits immediately below the curve, sharing
+  its age axis. Neutral bars mark one-year intervals containing observed patients;
+  empty years remain blank. Coverage means observation, not model support.
 - `summary_*`: separate summary-model tests, complete predictions, diagnostics,
   and leave-one-adult-study-out checks. Its FDR families differ from the original
   study-specific primary analysis, which remains the basis of the manuscript
@@ -440,6 +464,9 @@ probability. Neither analysis establishes biochemical activity or causation.
   are not assigned to the exploratory adult-summary or omission curves.
   A separate age-bin evidence strip and table show each original study's
   independent within-bin tests, with counts and unavailable reasons.
+  The combined view also shows pooled bin evidence, explicitly separate from the
+  continuous summary model. Study-omission curve views do not inherit full-sample
+  pooled tests. Coverage rows follow the selected studies and omission setting.
   Dots follow the study/omission selection and are embedded as transparent raster
   images, without patient identifiers or machine-readable patient rows. Numerical
   model estimates are aggregate results. The file requires no external scripts.
@@ -469,12 +496,23 @@ probability. Neither analysis establishes biochemical activity or causation.
   at least 15 residual degrees of freedom, leverage below 0.95 and an identifiable
   TB effect after nuisance adjustment. Confidence intervals are not adjusted
   for multiplicity; a CI excluding zero is not equivalent to a bin FDR discovery.
-- `pathway_age_bins_all.pdf`: original two-curve timelines with separate study
-  evidence rows underneath, using the same 50-pathway page order. Horizontal
+- `pathway_age_bins_all.pdf`: the original continuous estimates, study coverage
+  and separate study/pooled evidence in three panels with a shared age axis,
+  using the same 50-pathway page order. Horizontal
   spans identify bins, not significant continuous-age windows. Filled markers
   identify bin q<0.05 (blue higher TB, orange higher nonTB), open markers mean
   no FDR discovery and crosses mean unavailable. `binned_timeline_*.png` and
   `.pdf` are the same focus pathways shown in the original timeline figures.
+- `study_age_coverage.tsv`: complete study/year grid with observed counts by
+  diagnosis, including empty cells. Intervals include their lower edge; the final
+  interval also includes age 85. Bars do not fill unsampled years between ages.
+- `pooled_age_bins.tsv`: all planned pathway/bin combined-study comparisons,
+  effects/intervals, separate pooled BH q-values, model availability and separate
+  TB-by-study heterogeneity diagnostics. `pooled_age_bin_summary.tsv` summarizes
+  this family and `pooled_age_bin_diagnostics.json` records designs and assumptions.
+  `pooled_age_bin_leave_one_study_out.tsv` contains descriptive omission results;
+  no omission replaces the primary fit. Pooled group reference composition changes
+  between bins, so the group means are not connected as an age trajectory.
 - `age_pathway_analysis.html`: archived HTML report with embedded figures and
   aggregate outputs. It loads MathJax/RequireJS from a CDN for rendering and is
   not an independently rerunnable analysis package.

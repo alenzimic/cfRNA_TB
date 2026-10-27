@@ -1,0 +1,888 @@
+{
+  "bin_edges_years": [
+    0.0,
+    5.0,
+    10.0,
+    18.0,
+    30.0,
+    45.0,
+    60.0,
+    null
+  ],
+  "bin_labels": [
+    "0\u2013<5",
+    "5\u2013<10",
+    "10\u2013<18",
+    "18\u2013<30",
+    "30\u2013<45",
+    "45\u2013<60",
+    "60+"
+  ],
+  "bin_boundary_rule": "Lower-inclusive, upper-exclusive; null final upper edge means no upper limit",
+  "planned_comparisons": 350,
+  "estimable_comparisons": 100,
+  "unsupported_comparisons": 250,
+  "multiple_testing": "One separate BH family across all estimable pooled pathway x declared-bin contrasts",
+  "heterogeneity_tests": 100,
+  "heterogeneity_multiple_testing": "Separate BH family over all estimable joint TB-by-study diagnostics; not evidence of homogeneity when nonsignificant or unavailable",
+  "minimum_total_per_diagnosis": 10,
+  "model": "Within-bin OLS: score ~ TB + centered linear age + study + sex + HIV + country + count-read-length",
+  "estimand": "Common adjusted TB minus nonTB difference within an age bin, conditional on fixed study effects",
+  "group_reference": "Same observed pooled within-bin age, study and clinical reference for both diagnoses; reference changes across bins",
+  "assumptions": "Common TB effect, linear age slope and nuisance slopes within each bin; study-specific intercepts; independent patients conditional on the design",
+  "uncertainty": "Individual-patient HC3 covariance, two-sided t tests and pointwise 95% t intervals; not study-cluster robust or simultaneous",
+  "pooling_limit": "Single-study bins receive no pooled test. FDR controls only this declared pooled family, not all exploratory analyses.",
+  "sensitivity": "Leave one contributing study out only for an estimable primary bin; refit the same model with the same safeguards. Effect shifts and unadjusted p-values are descriptive; no alternative fit replaces the primary result.",
+  "interpretation": "Conditional cross-sectional age-range associations; pooling can improve precision but does not guarantee power or validate common effects",
+  "models": [
+    {
+      "age_bin": "0\u2013<5",
+      "n": 110,
+      "n_TB": 59,
+      "n_nonTB": 51,
+      "studies": [
+        {
+          "cohort": "PROTECT",
+          "n_TB": 59,
+          "n_nonTB": 51,
+          "both_diagnoses_with_age_overlap": true
+        }
+      ],
+      "overlap_studies": [
+        "PROTECT"
+      ],
+      "supported": false,
+      "reason": "Single-study only (PROTECT); no pooled test",
+      "residual_df": null,
+      "max_leverage": null,
+      "design_columns": [],
+      "redundant_nuisance_columns_removed": [],
+      "reference_age": 1.955504327272727,
+      "reference_study_weights": {
+        "PROTECT": 1.0
+      },
+      "study_heterogeneity": {
+        "tested": false,
+        "reason": "Primary pooled model unavailable"
+      }
+    },
+    {
+      "age_bin": "5\u2013<10",
+      "n": 54,
+      "n_TB": 28,
+      "n_nonTB": 26,
+      "studies": [
+        {
+          "cohort": "PROTECT",
+          "n_TB": 28,
+          "n_nonTB": 26,
+          "both_diagnoses_with_age_overlap": true
+        }
+      ],
+      "overlap_studies": [
+        "PROTECT"
+      ],
+      "supported": false,
+      "reason": "Single-study only (PROTECT); no pooled test",
+      "residual_df": null,
+      "max_leverage": null,
+      "design_columns": [],
+      "redundant_nuisance_columns_removed": [],
+      "reference_age": 7.296296296296297,
+      "reference_study_weights": {
+        "PROTECT": 1.0
+      },
+      "study_heterogeneity": {
+        "tested": false,
+        "reason": "Primary pooled model unavailable"
+      }
+    },
+    {
+      "age_bin": "10\u2013<18",
+      "n": 38,
+      "n_TB": 17,
+      "n_nonTB": 21,
+      "studies": [
+        {
+          "cohort": "PROTECT",
+          "n_TB": 17,
+          "n_nonTB": 21,
+          "both_diagnoses_with_age_overlap": true
+        }
+      ],
+      "overlap_studies": [
+        "PROTECT"
+      ],
+      "supported": false,
+      "reason": "Single-study only (PROTECT); no pooled test",
+      "residual_df": null,
+      "max_leverage": null,
+      "design_columns": [],
+      "redundant_nuisance_columns_removed": [],
+      "reference_age": 11.947368421052634,
+      "reference_study_weights": {
+        "PROTECT": 1.0
+      },
+      "study_heterogeneity": {
+        "tested": false,
+        "reason": "Primary pooled model unavailable"
+      }
+    },
+    {
+      "age_bin": "18\u2013<30",
+      "n": 215,
+      "n_TB": 98,
+      "n_nonTB": 117,
+      "studies": [
+        {
+          "cohort": "ADTB",
+          "n_TB": 34,
+          "n_nonTB": 84,
+          "both_diagnoses_with_age_overlap": true
+        },
+        {
+          "cohort": "GHL",
+          "n_TB": 31,
+          "n_nonTB": 17,
+          "both_diagnoses_with_age_overlap": true
+        },
+        {
+          "cohort": "R2D2",
+          "n_TB": 18,
+          "n_nonTB": 10,
+          "both_diagnoses_with_age_overlap": true
+        },
+        {
+          "cohort": "TBSQUARE",
+          "n_TB": 15,
+          "n_nonTB": 6,
+          "both_diagnoses_with_age_overlap": true
+        }
+      ],
+      "overlap_studies": [
+        "ADTB",
+        "GHL",
+        "R2D2",
+        "TBSQUARE"
+      ],
+      "supported": true,
+      "reason": "Supported",
+      "residual_df": 202,
+      "max_leverage": 0.5098196632613907,
+      "design_columns": [
+        "Intercept",
+        "tb",
+        "age_centered",
+        "cohort_GHL",
+        "cohort_R2D2",
+        "cohort_TBSQUARE",
+        "sex_Male",
+        "sex_Unknown",
+        "hiv_Positive",
+        "country_South Africa",
+        "country_Uganda",
+        "country_Vietnam",
+        "count_read_length_61x61"
+      ],
+      "redundant_nuisance_columns_removed": [
+        "hiv_Unknown"
+      ],
+      "reference_age": 23.632558139534883,
+      "reference_study_weights": {
+        "ADTB": 0.5488372093023256,
+        "GHL": 0.22325581395348837,
+        "R2D2": 0.13023255813953488,
+        "TBSQUARE": 0.09767441860465116
+      },
+      "study_heterogeneity": {
+        "tested": true,
+        "residual_df": 199,
+        "max_leverage": 0.5621111588494924,
+        "interaction_studies": [
+          "tb_study_GHL",
+          "tb_study_R2D2",
+          "tb_study_TBSQUARE"
+        ],
+        "reason": "Supported"
+      }
+    },
+    {
+      "age_bin": "30\u2013<45",
+      "n": 184,
+      "n_TB": 69,
+      "n_nonTB": 115,
+      "studies": [
+        {
+          "cohort": "ADTB",
+          "n_TB": 20,
+          "n_nonTB": 75,
+          "both_diagnoses_with_age_overlap": true
+        },
+        {
+          "cohort": "GHL",
+          "n_TB": 22,
+          "n_nonTB": 13,
+          "both_diagnoses_with_age_overlap": true
+        },
+        {
+          "cohort": "R2D2",
+          "n_TB": 11,
+          "n_nonTB": 12,
+          "both_diagnoses_with_age_overlap": true
+        },
+        {
+          "cohort": "TBSQUARE",
+          "n_TB": 16,
+          "n_nonTB": 15,
+          "both_diagnoses_with_age_overlap": true
+        }
+      ],
+      "overlap_studies": [
+        "ADTB",
+        "GHL",
+        "R2D2",
+        "TBSQUARE"
+      ],
+      "supported": true,
+      "reason": "Supported",
+      "residual_df": 171,
+      "max_leverage": 0.35210834689866133,
+      "design_columns": [
+        "Intercept",
+        "tb",
+        "age_centered",
+        "cohort_GHL",
+        "cohort_R2D2",
+        "cohort_TBSQUARE",
+        "sex_Male",
+        "sex_Unknown",
+        "hiv_Positive",
+        "country_South Africa",
+        "country_Uganda",
+        "country_Vietnam",
+        "count_read_length_61x61"
+      ],
+      "redundant_nuisance_columns_removed": [
+        "hiv_Unknown"
+      ],
+      "reference_age": 35.95652173913044,
+      "reference_study_weights": {
+        "ADTB": 0.5163043478260869,
+        "GHL": 0.19021739130434784,
+        "R2D2": 0.125,
+        "TBSQUARE": 0.16847826086956522
+      },
+      "study_heterogeneity": {
+        "tested": true,
+        "residual_df": 168,
+        "max_leverage": 0.3984532169228092,
+        "interaction_studies": [
+          "tb_study_GHL",
+          "tb_study_R2D2",
+          "tb_study_TBSQUARE"
+        ],
+        "reason": "Supported"
+      }
+    },
+    {
+      "age_bin": "45\u2013<60",
+      "n": 145,
+      "n_TB": 43,
+      "n_nonTB": 102,
+      "studies": [
+        {
+          "cohort": "ADTB",
+          "n_TB": 18,
+          "n_nonTB": 77,
+          "both_diagnoses_with_age_overlap": true
+        },
+        {
+          "cohort": "GHL",
+          "n_TB": 4,
+          "n_nonTB": 5,
+          "both_diagnoses_with_age_overlap": true
+        },
+        {
+          "cohort": "R2D2",
+          "n_TB": 18,
+          "n_nonTB": 16,
+          "both_diagnoses_with_age_overlap": true
+        },
+        {
+          "cohort": "TBSQUARE",
+          "n_TB": 3,
+          "n_nonTB": 4,
+          "both_diagnoses_with_age_overlap": true
+        }
+      ],
+      "overlap_studies": [
+        "ADTB",
+        "GHL",
+        "R2D2",
+        "TBSQUARE"
+      ],
+      "supported": false,
+      "reason": "Maximum leverage is at least 0.95",
+      "residual_df": 132,
+      "max_leverage": 1.0000000000000002,
+      "design_columns": [
+        "Intercept",
+        "tb",
+        "age_centered",
+        "cohort_GHL",
+        "cohort_R2D2",
+        "cohort_TBSQUARE",
+        "sex_Male",
+        "sex_Unknown",
+        "hiv_Positive",
+        "country_South Africa",
+        "country_Uganda",
+        "country_Vietnam",
+        "count_read_length_61x61"
+      ],
+      "redundant_nuisance_columns_removed": [
+        "hiv_Unknown"
+      ],
+      "reference_age": 51.52413793103448,
+      "reference_study_weights": {
+        "ADTB": 0.6551724137931034,
+        "GHL": 0.06206896551724138,
+        "R2D2": 0.23448275862068965,
+        "TBSQUARE": 0.04827586206896552
+      },
+      "study_heterogeneity": {
+        "tested": false,
+        "reason": "Primary pooled model unavailable"
+      }
+    },
+    {
+      "age_bin": "60+",
+      "n": 66,
+      "n_TB": 13,
+      "n_nonTB": 53,
+      "studies": [
+        {
+          "cohort": "ADTB",
+          "n_TB": 9,
+          "n_nonTB": 42,
+          "both_diagnoses_with_age_overlap": true
+        },
+        {
+          "cohort": "GHL",
+          "n_TB": 0,
+          "n_nonTB": 1,
+          "both_diagnoses_with_age_overlap": false
+        },
+        {
+          "cohort": "R2D2",
+          "n_TB": 3,
+          "n_nonTB": 10,
+          "both_diagnoses_with_age_overlap": true
+        },
+        {
+          "cohort": "TBSQUARE",
+          "n_TB": 1,
+          "n_nonTB": 0,
+          "both_diagnoses_with_age_overlap": false
+        }
+      ],
+      "overlap_studies": [
+        "ADTB",
+        "R2D2"
+      ],
+      "supported": false,
+      "reason": "Maximum leverage is at least 0.95",
+      "residual_df": 55,
+      "max_leverage": 1.0000000000000007,
+      "design_columns": [
+        "Intercept",
+        "tb",
+        "age_centered",
+        "cohort_GHL",
+        "cohort_R2D2",
+        "cohort_TBSQUARE",
+        "sex_Male",
+        "country_South Africa",
+        "country_Uganda",
+        "country_Vietnam",
+        "count_read_length_61x61"
+      ],
+      "redundant_nuisance_columns_removed": [],
+      "reference_age": 66.83333333333333,
+      "reference_study_weights": {
+        "ADTB": 0.7727272727272727,
+        "GHL": 0.015151515151515152,
+        "R2D2": 0.19696969696969696,
+        "TBSQUARE": 0.015151515151515152
+      },
+      "study_heterogeneity": {
+        "tested": false,
+        "reason": "Primary pooled model unavailable"
+      }
+    }
+  ],
+  "leave_one_study_out_models": [
+    {
+      "age_bin": "18\u2013<30",
+      "n": 97,
+      "n_TB": 64,
+      "n_nonTB": 33,
+      "studies": [
+        {
+          "cohort": "GHL",
+          "n_TB": 31,
+          "n_nonTB": 17,
+          "both_diagnoses_with_age_overlap": true
+        },
+        {
+          "cohort": "R2D2",
+          "n_TB": 18,
+          "n_nonTB": 10,
+          "both_diagnoses_with_age_overlap": true
+        },
+        {
+          "cohort": "TBSQUARE",
+          "n_TB": 15,
+          "n_nonTB": 6,
+          "both_diagnoses_with_age_overlap": true
+        }
+      ],
+      "overlap_studies": [
+        "GHL",
+        "R2D2",
+        "TBSQUARE"
+      ],
+      "supported": true,
+      "reason": "Supported",
+      "residual_df": 87,
+      "max_leverage": 0.5197758950905679,
+      "design_columns": [
+        "Intercept",
+        "tb",
+        "age_centered",
+        "cohort_R2D2",
+        "cohort_TBSQUARE",
+        "sex_Male",
+        "sex_Unknown",
+        "hiv_Positive",
+        "country_Uganda",
+        "country_Vietnam"
+      ],
+      "redundant_nuisance_columns_removed": [
+        "hiv_Unknown"
+      ],
+      "reference_age": 24.103092783505154,
+      "reference_study_weights": {
+        "GHL": 0.4948453608247423,
+        "R2D2": 0.28865979381443296,
+        "TBSQUARE": 0.21649484536082475
+      },
+      "omitted_study": "ADTB"
+    },
+    {
+      "age_bin": "18\u2013<30",
+      "n": 167,
+      "n_TB": 67,
+      "n_nonTB": 100,
+      "studies": [
+        {
+          "cohort": "ADTB",
+          "n_TB": 34,
+          "n_nonTB": 84,
+          "both_diagnoses_with_age_overlap": true
+        },
+        {
+          "cohort": "R2D2",
+          "n_TB": 18,
+          "n_nonTB": 10,
+          "both_diagnoses_with_age_overlap": true
+        },
+        {
+          "cohort": "TBSQUARE",
+          "n_TB": 15,
+          "n_nonTB": 6,
+          "both_diagnoses_with_age_overlap": true
+        }
+      ],
+      "overlap_studies": [
+        "ADTB",
+        "R2D2",
+        "TBSQUARE"
+      ],
+      "supported": true,
+      "reason": "Supported",
+      "residual_df": 155,
+      "max_leverage": 0.5133930569223882,
+      "design_columns": [
+        "Intercept",
+        "tb",
+        "age_centered",
+        "cohort_R2D2",
+        "cohort_TBSQUARE",
+        "sex_Male",
+        "sex_Unknown",
+        "hiv_Positive",
+        "country_South Africa",
+        "country_Uganda",
+        "country_Vietnam",
+        "count_read_length_61x61"
+      ],
+      "redundant_nuisance_columns_removed": [
+        "hiv_Unknown"
+      ],
+      "reference_age": 23.550898203592816,
+      "reference_study_weights": {
+        "ADTB": 0.7065868263473054,
+        "R2D2": 0.16766467065868262,
+        "TBSQUARE": 0.12574850299401197
+      },
+      "omitted_study": "GHL"
+    },
+    {
+      "age_bin": "18\u2013<30",
+      "n": 187,
+      "n_TB": 80,
+      "n_nonTB": 107,
+      "studies": [
+        {
+          "cohort": "ADTB",
+          "n_TB": 34,
+          "n_nonTB": 84,
+          "both_diagnoses_with_age_overlap": true
+        },
+        {
+          "cohort": "GHL",
+          "n_TB": 31,
+          "n_nonTB": 17,
+          "both_diagnoses_with_age_overlap": true
+        },
+        {
+          "cohort": "TBSQUARE",
+          "n_TB": 15,
+          "n_nonTB": 6,
+          "both_diagnoses_with_age_overlap": true
+        }
+      ],
+      "overlap_studies": [
+        "ADTB",
+        "GHL",
+        "TBSQUARE"
+      ],
+      "supported": true,
+      "reason": "Supported",
+      "residual_df": 175,
+      "max_leverage": 0.5110166028366522,
+      "design_columns": [
+        "Intercept",
+        "tb",
+        "age_centered",
+        "cohort_GHL",
+        "cohort_TBSQUARE",
+        "sex_Male",
+        "sex_Unknown",
+        "hiv_Positive",
+        "country_South Africa",
+        "country_Uganda",
+        "country_Vietnam",
+        "count_read_length_61x61"
+      ],
+      "redundant_nuisance_columns_removed": [
+        "hiv_Unknown"
+      ],
+      "reference_age": 23.529411764705884,
+      "reference_study_weights": {
+        "ADTB": 0.6310160427807486,
+        "GHL": 0.25668449197860965,
+        "TBSQUARE": 0.11229946524064172
+      },
+      "omitted_study": "R2D2"
+    },
+    {
+      "age_bin": "18\u2013<30",
+      "n": 194,
+      "n_TB": 83,
+      "n_nonTB": 111,
+      "studies": [
+        {
+          "cohort": "ADTB",
+          "n_TB": 34,
+          "n_nonTB": 84,
+          "both_diagnoses_with_age_overlap": true
+        },
+        {
+          "cohort": "GHL",
+          "n_TB": 31,
+          "n_nonTB": 17,
+          "both_diagnoses_with_age_overlap": true
+        },
+        {
+          "cohort": "R2D2",
+          "n_TB": 18,
+          "n_nonTB": 10,
+          "both_diagnoses_with_age_overlap": true
+        }
+      ],
+      "overlap_studies": [
+        "ADTB",
+        "GHL",
+        "R2D2"
+      ],
+      "supported": true,
+      "reason": "Supported",
+      "residual_df": 183,
+      "max_leverage": 0.2283518146309468,
+      "design_columns": [
+        "Intercept",
+        "tb",
+        "age_centered",
+        "cohort_GHL",
+        "cohort_R2D2",
+        "sex_Male",
+        "hiv_Positive",
+        "country_South Africa",
+        "country_Uganda",
+        "country_Vietnam",
+        "count_read_length_61x61"
+      ],
+      "redundant_nuisance_columns_removed": [],
+      "reference_age": 23.567010309278352,
+      "reference_study_weights": {
+        "ADTB": 0.6082474226804123,
+        "GHL": 0.24742268041237114,
+        "R2D2": 0.14432989690721648
+      },
+      "omitted_study": "TBSQUARE"
+    },
+    {
+      "age_bin": "30\u2013<45",
+      "n": 89,
+      "n_TB": 49,
+      "n_nonTB": 40,
+      "studies": [
+        {
+          "cohort": "GHL",
+          "n_TB": 22,
+          "n_nonTB": 13,
+          "both_diagnoses_with_age_overlap": true
+        },
+        {
+          "cohort": "R2D2",
+          "n_TB": 11,
+          "n_nonTB": 12,
+          "both_diagnoses_with_age_overlap": true
+        },
+        {
+          "cohort": "TBSQUARE",
+          "n_TB": 16,
+          "n_nonTB": 15,
+          "both_diagnoses_with_age_overlap": true
+        }
+      ],
+      "overlap_studies": [
+        "GHL",
+        "R2D2",
+        "TBSQUARE"
+      ],
+      "supported": true,
+      "reason": "Supported",
+      "residual_df": 79,
+      "max_leverage": 0.3717699199401585,
+      "design_columns": [
+        "Intercept",
+        "tb",
+        "age_centered",
+        "cohort_R2D2",
+        "cohort_TBSQUARE",
+        "sex_Male",
+        "sex_Unknown",
+        "hiv_Positive",
+        "country_Uganda",
+        "country_Vietnam"
+      ],
+      "redundant_nuisance_columns_removed": [
+        "hiv_Unknown"
+      ],
+      "reference_age": 35.07865168539326,
+      "reference_study_weights": {
+        "GHL": 0.39325842696629215,
+        "R2D2": 0.25842696629213485,
+        "TBSQUARE": 0.34831460674157305
+      },
+      "omitted_study": "ADTB"
+    },
+    {
+      "age_bin": "30\u2013<45",
+      "n": 149,
+      "n_TB": 47,
+      "n_nonTB": 102,
+      "studies": [
+        {
+          "cohort": "ADTB",
+          "n_TB": 20,
+          "n_nonTB": 75,
+          "both_diagnoses_with_age_overlap": true
+        },
+        {
+          "cohort": "R2D2",
+          "n_TB": 11,
+          "n_nonTB": 12,
+          "both_diagnoses_with_age_overlap": true
+        },
+        {
+          "cohort": "TBSQUARE",
+          "n_TB": 16,
+          "n_nonTB": 15,
+          "both_diagnoses_with_age_overlap": true
+        }
+      ],
+      "overlap_studies": [
+        "ADTB",
+        "R2D2",
+        "TBSQUARE"
+      ],
+      "supported": true,
+      "reason": "Supported",
+      "residual_df": 137,
+      "max_leverage": 0.3568779752358418,
+      "design_columns": [
+        "Intercept",
+        "tb",
+        "age_centered",
+        "cohort_R2D2",
+        "cohort_TBSQUARE",
+        "sex_Male",
+        "sex_Unknown",
+        "hiv_Positive",
+        "country_South Africa",
+        "country_Uganda",
+        "country_Vietnam",
+        "count_read_length_61x61"
+      ],
+      "redundant_nuisance_columns_removed": [
+        "hiv_Unknown"
+      ],
+      "reference_age": 36.07382550335571,
+      "reference_study_weights": {
+        "ADTB": 0.6375838926174496,
+        "R2D2": 0.15436241610738255,
+        "TBSQUARE": 0.2080536912751678
+      },
+      "omitted_study": "GHL"
+    },
+    {
+      "age_bin": "30\u2013<45",
+      "n": 161,
+      "n_TB": 58,
+      "n_nonTB": 103,
+      "studies": [
+        {
+          "cohort": "ADTB",
+          "n_TB": 20,
+          "n_nonTB": 75,
+          "both_diagnoses_with_age_overlap": true
+        },
+        {
+          "cohort": "GHL",
+          "n_TB": 22,
+          "n_nonTB": 13,
+          "both_diagnoses_with_age_overlap": true
+        },
+        {
+          "cohort": "TBSQUARE",
+          "n_TB": 16,
+          "n_nonTB": 15,
+          "both_diagnoses_with_age_overlap": true
+        }
+      ],
+      "overlap_studies": [
+        "ADTB",
+        "GHL",
+        "TBSQUARE"
+      ],
+      "supported": true,
+      "reason": "Supported",
+      "residual_df": 149,
+      "max_leverage": 0.35438614958299364,
+      "design_columns": [
+        "Intercept",
+        "tb",
+        "age_centered",
+        "cohort_GHL",
+        "cohort_TBSQUARE",
+        "sex_Male",
+        "sex_Unknown",
+        "hiv_Positive",
+        "country_South Africa",
+        "country_Uganda",
+        "country_Vietnam",
+        "count_read_length_61x61"
+      ],
+      "redundant_nuisance_columns_removed": [
+        "hiv_Unknown"
+      ],
+      "reference_age": 36.13664596273292,
+      "reference_study_weights": {
+        "ADTB": 0.5900621118012422,
+        "GHL": 0.21739130434782608,
+        "TBSQUARE": 0.19254658385093168
+      },
+      "omitted_study": "R2D2"
+    },
+    {
+      "age_bin": "30\u2013<45",
+      "n": 153,
+      "n_TB": 53,
+      "n_nonTB": 100,
+      "studies": [
+        {
+          "cohort": "ADTB",
+          "n_TB": 20,
+          "n_nonTB": 75,
+          "both_diagnoses_with_age_overlap": true
+        },
+        {
+          "cohort": "GHL",
+          "n_TB": 22,
+          "n_nonTB": 13,
+          "both_diagnoses_with_age_overlap": true
+        },
+        {
+          "cohort": "R2D2",
+          "n_TB": 11,
+          "n_nonTB": 12,
+          "both_diagnoses_with_age_overlap": true
+        }
+      ],
+      "overlap_studies": [
+        "ADTB",
+        "GHL",
+        "R2D2"
+      ],
+      "supported": true,
+      "reason": "Supported",
+      "residual_df": 142,
+      "max_leverage": 0.2799581647129934,
+      "design_columns": [
+        "Intercept",
+        "tb",
+        "age_centered",
+        "cohort_GHL",
+        "cohort_R2D2",
+        "sex_Male",
+        "hiv_Positive",
+        "country_South Africa",
+        "country_Uganda",
+        "country_Vietnam",
+        "count_read_length_61x61"
+      ],
+      "redundant_nuisance_columns_removed": [],
+      "reference_age": 36.16339869281046,
+      "reference_study_weights": {
+        "ADTB": 0.6209150326797386,
+        "GHL": 0.22875816993464052,
+        "R2D2": 0.1503267973856209
+      },
+      "omitted_study": "TBSQUARE"
+    }
+  ]
+}

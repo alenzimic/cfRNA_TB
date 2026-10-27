@@ -1,0 +1,8 @@
+bin_left	age_bin	n_TB	n_nonTB	studies	tested	discoveries_FDR05	minimum_q	status
+0.0	0–<5	59	51	1	0	0		Single-study only (PROTECT); no pooled test
+5.0	5–<10	28	26	1	0	0		Single-study only (PROTECT); no pooled test
+10.0	10–<18	17	21	1	0	0		Single-study only (PROTECT); no pooled test
+18.0	18–<30	98	117	4	50	9	0.0012640243684166345	Supported
+30.0	30–<45	69	115	4	50	7	0.0012640243684166345	Supported
+45.0	45–<60	43	102	4	0	0		Maximum leverage is at least 0.95
+60.0	60+	13	53	4	0	0		Maximum leverage is at least 0.95
