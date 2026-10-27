@@ -32,6 +32,8 @@ The [interactive explorer](Figure_Output/Gene_Interactions/pathway_age_compariso
 switches pathways and source studies without splitting the plot. Adult curves
 are exploratory summaries with fixed study composition and a shared-age-shape
 assumption; the original study-specific analyses remain the primary evidence.
+Faint patient dots show observed scores behind the adjusted curves. The explorer
+filters these dots with the study selection and includes a show/hide control.
 
 Open the executed [gene-panel biology notebook](Scripts_For_Manuscript/gene_panel_biology.ipynb) for gene functions, curated pathway membership and observed adult TB associations. It reuses saved results without refitting models.
 

@@ -1,13 +1,13 @@
 {
-  "created_utc": "2026-10-27T13:45:12.458572+00:00",
-  "description": "Aggregate outputs and archived HTML; no participant-level metadata or scores",
+  "created_utc": "2026-10-27T15:59:19.208765+00:00",
+  "description": "Aggregate model outputs and rendered patient distributions; no participant-level data tables or identifiers",
   "source_roots": {
     "manuscript": "/local/workdir/amz63/cfRNA_TB",
     "overview": "/local/workdir/amz63/cfRNA_TB_overview"
   },
   "exporter": {
     "path": "/local/workdir/amz63/cfRNA_TB/Scripts_For_Manuscript/export_pathway_age_comparison.py",
-    "sha256": "f31a16e8622bd78f8dc1a3dd0ccce5100f090b91cedb6c9ad011974247137c35"
+    "sha256": "a0eda2f711d12bb369d921fe8578444450d9c2d4bb2533e4abf485c5ffb5af44"
   },
   "copied_sources": {
     "primary_tests.tsv": {
@@ -92,7 +92,7 @@
     },
     "age_support.pdf": {
       "source_path": "/local/workdir/amz63/cfRNA_TB_overview/results/pathway_age/age_support.pdf",
-      "sha256": "ea5b5d3c2bd341fd8c9617c649f78cc17f6acace11b60f45ab18adf9be859b93"
+      "sha256": "b98858a061846a7cfcdcd5cff8a8c8ebec84b2a99a5f4131e8b91e05a0aab6af"
     },
     "age_support.png": {
       "source_path": "/local/workdir/amz63/cfRNA_TB_overview/results/pathway_age/age_support.png",
@@ -100,31 +100,31 @@
     },
     "main_difference_curves.pdf": {
       "source_path": "/local/workdir/amz63/cfRNA_TB_overview/results/pathway_age/main_difference_curves.pdf",
-      "sha256": "1ca9f33a94fff50c05115181e58ac72bf5f482334ddd941871fac335e0de2a5a"
+      "sha256": "02fdfcc5663ecbf988c02645c886218df7721ffb801387b72ff811cd79a46995"
     },
     "main_difference_curves.png": {
       "source_path": "/local/workdir/amz63/cfRNA_TB_overview/results/pathway_age/main_difference_curves.png",
-      "sha256": "7f1b28225e24ee8a189d0faa5d199d6c561c090d4ce2514490bb2cafc7879178"
+      "sha256": "358c3c15d6ce1de878a86d494adfb271bfde740911c7eb91ba8724f1d3c1ea21"
     },
     "main_group_curves.pdf": {
       "source_path": "/local/workdir/amz63/cfRNA_TB_overview/results/pathway_age/main_group_curves.pdf",
-      "sha256": "59fe31c4e29ba89a383ebafc6103899e845a65a947a61a2dc221400c526d7d61"
+      "sha256": "fdbc328a36bb5611fb4ef48d26cc06402fbe17d94628840128aaac82955c7985"
     },
     "main_group_curves.png": {
       "source_path": "/local/workdir/amz63/cfRNA_TB_overview/results/pathway_age/main_group_curves.png",
-      "sha256": "f94670f40ddde47abac864cb6da1c6cf0408e5c99b5b2e56c246c848f712abef"
+      "sha256": "49cdc8a96d225f0147e203d540d6c53c9be8a58ff4d7c47cbc499feb7a67dfaa"
     },
     "other_study_difference_curves.pdf": {
       "source_path": "/local/workdir/amz63/cfRNA_TB_overview/results/pathway_age/other_study_difference_curves.pdf",
-      "sha256": "3d057c1ea6391240a2d6221a196f709db364b8db52419bec37f064a1a1c38eb1"
+      "sha256": "e79eb6d4d78ef2ce8d017a5a79cc8b7ac2b727c5274a79905d3e6e5d66aaa8e4"
     },
     "other_study_difference_curves.png": {
       "source_path": "/local/workdir/amz63/cfRNA_TB_overview/results/pathway_age/other_study_difference_curves.png",
-      "sha256": "51cc09ea797754c0747039d689167713fcd971a1c7838761db6072af03dcd75c"
+      "sha256": "09f2c0071ec77374bfc9506eecfdbd40471b1ec46d38f405af6eb8a849be0ecd"
     },
     "pathway_age_atlas.pdf": {
       "source_path": "/local/workdir/amz63/cfRNA_TB_overview/results/pathway_age/pathway_age_atlas.pdf",
-      "sha256": "68863b0dd46c0d299f76a2cf5dc55a2e1a4ef998310677c3b19492bae2dea0a8"
+      "sha256": "e8fafc40989ddfef17e3c5d688c1810b838fd985177700a19b68282d6abd2b31"
     },
     "pathway_age_atlas.png": {
       "source_path": "/local/workdir/amz63/cfRNA_TB_overview/results/pathway_age/pathway_age_atlas.png",
@@ -132,7 +132,7 @@
     },
     "pathway_coverage.pdf": {
       "source_path": "/local/workdir/amz63/cfRNA_TB_overview/results/pathway_age/pathway_coverage.pdf",
-      "sha256": "ab4c950480f18b79616ee38a4a7d433ba233b20360db2693b2d79cc3e2c1ea0e"
+      "sha256": "295e9b5b32684e1aa8e40ef8d338ea4989ed3aa64f6a50fe00e7401931ed7489"
     },
     "pathway_coverage.png": {
       "source_path": "/local/workdir/amz63/cfRNA_TB_overview/results/pathway_age/pathway_coverage.png",
@@ -140,67 +140,67 @@
     },
     "timeline_complement.pdf": {
       "source_path": "/local/workdir/amz63/cfRNA_TB_overview/results/pathway_age/timeline_complement.pdf",
-      "sha256": "df89c6bacb1b6f008d01a01de69b556e3735aad30d1cfdd92cedf7f86e40e02a"
+      "sha256": "e0d2042d41244adf5847d2c0dc8d161bba4c14a13d8237ff6c4babbd5f47a474"
     },
     "timeline_complement.png": {
       "source_path": "/local/workdir/amz63/cfRNA_TB_overview/results/pathway_age/timeline_complement.png",
-      "sha256": "e51efe43d7a469673675f9bc4afce238826d3844749ab2c9274a57dabcff6a48"
+      "sha256": "803ee0342820c412881ce4d6753aad1c8363f3247dad24455edd549859c0b477"
     },
     "timeline_hypoxia.pdf": {
       "source_path": "/local/workdir/amz63/cfRNA_TB_overview/results/pathway_age/timeline_hypoxia.pdf",
-      "sha256": "faa0bb4bfadbca73bc55798722117e5dc3d79b2504272e807a3f1ffd785957b4"
+      "sha256": "af01e6ee23aff7cf2332905b3603d05e9f0b2ec5de3e5888368b03913a34e669"
     },
     "timeline_hypoxia.png": {
       "source_path": "/local/workdir/amz63/cfRNA_TB_overview/results/pathway_age/timeline_hypoxia.png",
-      "sha256": "963f7af0328e4d2047a7adcfeddb28dd8c2e62bae50a887679ba643672e8aed6"
+      "sha256": "f83d61a6643b5de732555373264ed5dbbcbe628bd07aefee7259c6eb3689593d"
     },
     "timeline_inflammatory_response.pdf": {
       "source_path": "/local/workdir/amz63/cfRNA_TB_overview/results/pathway_age/timeline_inflammatory_response.pdf",
-      "sha256": "9527b5116f1570b96d0a7c3bca073ab144844ef07e38eef056b31aa492511582"
+      "sha256": "0c1a37b9d716fbc45d368ad83674e1affcdc53bd6ab42ef7691c689c508c038a"
     },
     "timeline_inflammatory_response.png": {
       "source_path": "/local/workdir/amz63/cfRNA_TB_overview/results/pathway_age/timeline_inflammatory_response.png",
-      "sha256": "614ba4ecdece71b6a5e264695810330cb1f04f6a17f5a8a98bca10ab39479bd6"
+      "sha256": "fe54bae261c2e25ecbc3babecafa1825e236162876dcf79c8ece202b9cce66a3"
     },
     "timeline_interferon_alpha_response.pdf": {
       "source_path": "/local/workdir/amz63/cfRNA_TB_overview/results/pathway_age/timeline_interferon_alpha_response.pdf",
-      "sha256": "4b670d8af0929683b42261ae936b563543198171cab40f18c70e0dbc8355604e"
+      "sha256": "b507a6471253ad35124d61c1fb6585fa564c301565d1468c10a9eab1d5931bb9"
     },
     "timeline_interferon_alpha_response.png": {
       "source_path": "/local/workdir/amz63/cfRNA_TB_overview/results/pathway_age/timeline_interferon_alpha_response.png",
-      "sha256": "c51de9a9aadfe6fd1d3d3b3254185744696280e3a2237daa78184574a1511293"
+      "sha256": "b55d5e7d7c4c6baddfcdaa715b712f0e26912bb94ffc48e29dfa81da5c0c9b8d"
     },
     "timeline_interferon_gamma_response.pdf": {
       "source_path": "/local/workdir/amz63/cfRNA_TB_overview/results/pathway_age/timeline_interferon_gamma_response.pdf",
-      "sha256": "0e12233b02521da0abae232fe163e3fb60ec268539f6ba3d7e9f6961be5b6f64"
+      "sha256": "d2a782d1d71a47038ce0c57bafd2232ed1584125c086a22f73f140dd4776416f"
     },
     "timeline_interferon_gamma_response.png": {
       "source_path": "/local/workdir/amz63/cfRNA_TB_overview/results/pathway_age/timeline_interferon_gamma_response.png",
-      "sha256": "e9422e0c027f0b1409d02ba90d57aee4ed44e27b740dfea8b6f81b74393e9e6f"
+      "sha256": "7c86589d52b2d7dbc37333342d4178b3cc7c7af35f1e0ddbbc8b3c0a44074655"
     },
     "timeline_oxidative_phosphorylation.pdf": {
       "source_path": "/local/workdir/amz63/cfRNA_TB_overview/results/pathway_age/timeline_oxidative_phosphorylation.pdf",
-      "sha256": "69f2ccd2b1f4262ad82b505986654284740ee721d5f9c707c759e070f8e91c39"
+      "sha256": "e8241baac885e81ccb89d3e9d45f9f10ce8a429e3016e16ba5c1a6ac8fec1466"
     },
     "timeline_oxidative_phosphorylation.png": {
       "source_path": "/local/workdir/amz63/cfRNA_TB_overview/results/pathway_age/timeline_oxidative_phosphorylation.png",
-      "sha256": "ddbb77ebcb7003cb52c016eed2ec0e0005f68c865c2b2a6cc93708b1c2ff22e7"
+      "sha256": "ce2f959c2ed2a637d886b0896a338b51b8631ef4304147144b4a5dea72b8bea2"
     },
     "age_pathway_analysis.html": {
       "source_path": "/local/workdir/amz63/cfRNA_TB_overview/results/pathway_age/02_pathway_enrichment_by_age.html",
-      "sha256": "a22086431f32f87aaed7046fbd4b99bb025a2740186fbb0449e2a7e857fd833a"
+      "sha256": "468451f8f906aea7fc433d3f5e42f5aca2e9132fd92b415608b3ca0b1befa65c"
     },
     "age_analysis_provenance.json": {
       "source_path": "/local/workdir/amz63/cfRNA_TB_overview/results/pathway_age/provenance.json",
-      "sha256": "60971ba3b420b08500a3ed5bd994cedc68942c07a6532af81f65aa9ed26af0ba"
+      "sha256": "4af7fbc8233bab71af8a3097bea227e97282aaf792751820b748ebe438975355"
     },
     "pathway_timelines_all.pdf": {
       "source_path": "/local/workdir/amz63/cfRNA_TB_overview/results/pathway_age/pathway_timelines_all.pdf",
-      "sha256": "e85faf853de32a35874c51163686859d0f7fc30d6014c1ee2cf93033aa5651a9"
+      "sha256": "5bec277342c7bce05f7d297b5cf88feb360972ff2c32121106a3fc975d7f8901"
     },
     "pathway_age_explorer.html": {
       "source_path": "/local/workdir/amz63/cfRNA_TB_overview/results/pathway_age/pathway_age_explorer.html",
-      "sha256": "1abde45c8b513bde8aaeb803bbf17e78f00d2e64976ec95997a8cd8a093dea51"
+      "sha256": "eddf72d2667681211bb72233007aab8bca17b816ae39230d1dc8a21d47a028a7"
     }
   },
   "comparison_inputs": {
@@ -215,12 +215,12 @@
     "/local/workdir/amz63/cfRNA_TB/Files_For_Manuscript/metadata.val.tsv": "ca53eacbe8378b27f07e20ff9ef750f47e9663baad4993d975070c58d6f7a2e1"
   },
   "files": {
-    "README.md": "69b944c97ff66c1be522bb2745e34216aceaa9bef8b00408f9f2c37c505e0387",
+    "README.md": "44e800aa1d0417e93ff3ff42ed92e9dd12c2ef0163d3b6512aae676fdff80a49",
     "age_analysis_any_TB_hits.csv": "626a87c1d76f89a130cc3bfd34f632790d76f30653ce0a3f9d2d4decddfe7150",
-    "age_analysis_provenance.json": "60971ba3b420b08500a3ed5bd994cedc68942c07a6532af81f65aa9ed26af0ba",
-    "age_pathway_analysis.html": "a22086431f32f87aaed7046fbd4b99bb025a2740186fbb0449e2a7e857fd833a",
+    "age_analysis_provenance.json": "4af7fbc8233bab71af8a3097bea227e97282aaf792751820b748ebe438975355",
+    "age_pathway_analysis.html": "468451f8f906aea7fc433d3f5e42f5aca2e9132fd92b415608b3ca0b1befa65c",
     "age_summary.tsv": "b7b01fe1228124201b0fcc3c2810dae1c9392fde5ea6ae3e4d76a6abf7851aa2",
-    "age_support.pdf": "ea5b5d3c2bd341fd8c9617c649f78cc17f6acace11b60f45ab18adf9be859b93",
+    "age_support.pdf": "b98858a061846a7cfcdcd5cff8a8c8ebec84b2a99a5f4131e8b91e05a0aab6af",
     "age_support.png": "fb801d558e18956bf123539a00043e9e27f2b111dead552b11b586958f8c0e0d",
     "age_support.tsv": "8b496588cb3452c679779de8bd6142de80eab84bda44900d9a1e7a6116e89200",
     "all_shared_hallmark_comparison.csv": "8a78c225931898d3d41fab0402aa043a3894d63e72ce38c994578a366974cde2",
@@ -228,22 +228,22 @@
     "comparison_audit.json": "1868b0b24de348c1c004324bd0224470dad8d116ba0fd4f4ef5b5d21a62f3189",
     "coverage.tsv": "08fbab05a6b25d98e319437f2dc3ed3da75d5f9726963ed3407e1539b54951ce",
     "focused_pathway_comparison.csv": "484f725fa20e47229a4664283c401a0b908eed63313dc906cc63a1de5aed6e38",
-    "main_difference_curves.pdf": "1ca9f33a94fff50c05115181e58ac72bf5f482334ddd941871fac335e0de2a5a",
-    "main_difference_curves.png": "7f1b28225e24ee8a189d0faa5d199d6c561c090d4ce2514490bb2cafc7879178",
-    "main_group_curves.pdf": "59fe31c4e29ba89a383ebafc6103899e845a65a947a61a2dc221400c526d7d61",
-    "main_group_curves.png": "f94670f40ddde47abac864cb6da1c6cf0408e5c99b5b2e56c246c848f712abef",
+    "main_difference_curves.pdf": "02fdfcc5663ecbf988c02645c886218df7721ffb801387b72ff811cd79a46995",
+    "main_difference_curves.png": "358c3c15d6ce1de878a86d494adfb271bfde740911c7eb91ba8724f1d3c1ea21",
+    "main_group_curves.pdf": "fdbc328a36bb5611fb4ef48d26cc06402fbe17d94628840128aaac82955c7985",
+    "main_group_curves.png": "49cdc8a96d225f0147e203d540d6c53c9be8a58ff4d7c47cbc499feb7a67dfaa",
     "model_diagnostics.json": "19c9be01e15e3de99ad0906e84395c1b02486840d030ae37d9e0a4425f599cbd",
-    "other_study_difference_curves.pdf": "3d057c1ea6391240a2d6221a196f709db364b8db52419bec37f064a1a1c38eb1",
-    "other_study_difference_curves.png": "51cc09ea797754c0747039d689167713fcd971a1c7838761db6072af03dcd75c",
+    "other_study_difference_curves.pdf": "e79eb6d4d78ef2ce8d017a5a79cc8b7ac2b727c5274a79905d3e6e5d66aaa8e4",
+    "other_study_difference_curves.png": "09f2c0071ec77374bfc9506eecfdbd40471b1ec46d38f405af6eb8a849be0ecd",
     "participant_flow.tsv": "5a15c75091a634de08f467930099f8e89ec4da1f716de28dc9a2d1fcbd0419eb",
     "participant_overlap_summary.csv": "279ffaf9a1960eb0694d780ffb9b24d14fde2224eea436e77190478518053d8c",
-    "pathway_age_atlas.pdf": "68863b0dd46c0d299f76a2cf5dc55a2e1a4ef998310677c3b19492bae2dea0a8",
+    "pathway_age_atlas.pdf": "e8fafc40989ddfef17e3c5d688c1810b838fd985177700a19b68282d6abd2b31",
     "pathway_age_atlas.png": "041df974a417ab26fe6e43ec379b6626647c0dfe8cd3db6629e1dd8ed83eb5bf",
-    "pathway_age_explorer.html": "1abde45c8b513bde8aaeb803bbf17e78f00d2e64976ec95997a8cd8a093dea51",
-    "pathway_coverage.pdf": "ab4c950480f18b79616ee38a4a7d433ba233b20360db2693b2d79cc3e2c1ea0e",
+    "pathway_age_explorer.html": "eddf72d2667681211bb72233007aab8bca17b816ae39230d1dc8a21d47a028a7",
+    "pathway_coverage.pdf": "295e9b5b32684e1aa8e40ef8d338ea4989ed3aa64f6a50fe00e7401931ed7489",
     "pathway_coverage.png": "ba35c0d9c1a8ccf021b58de9141b66b4ebbbbaa55abde86b4d55f63414ee90f3",
     "pathway_timeline_index.tsv": "e11dee59eee3ca3a28890e5feac4f04336602c47b785e4fd9c336ce20fd1e57f",
-    "pathway_timelines_all.pdf": "e85faf853de32a35874c51163686859d0f7fc30d6014c1ee2cf93033aa5651a9",
+    "pathway_timelines_all.pdf": "5bec277342c7bce05f7d297b5cf88feb360972ff2c32121106a3fc975d7f8901",
     "primary_curves.tsv": "445800c2670c57c00e5660513800ce2b2432c6a7ec36a979ba59f2d67d561fca",
     "primary_tests.tsv": "69189828de6b4009d865d62f33acf06fa89c4f86ea4673c086dc9bc0b058a95c",
     "readable_focused_comparison.csv": "4e4a14fe7ad631cf1cddf04b451605eebbd0ce79f3ebea6eb8e8ba8138068092",
@@ -258,17 +258,17 @@
     "summary_study_sensitivity.tsv": "0ffc42facb561a6313e71d0cc0b2df4679df219e7fa4d2b6bf933a2d521297b7",
     "summary_tests.tsv": "1bd772c11aeed707d813d4479946ca6e574b17dc8863411d6ade5e78520b4397",
     "test_summary.tsv": "5cf461f33161c2745c09891cf0310374cdc66f2f8cfe5df41ea0388b9cf64b3c",
-    "timeline_complement.pdf": "df89c6bacb1b6f008d01a01de69b556e3735aad30d1cfdd92cedf7f86e40e02a",
-    "timeline_complement.png": "e51efe43d7a469673675f9bc4afce238826d3844749ab2c9274a57dabcff6a48",
-    "timeline_hypoxia.pdf": "faa0bb4bfadbca73bc55798722117e5dc3d79b2504272e807a3f1ffd785957b4",
-    "timeline_hypoxia.png": "963f7af0328e4d2047a7adcfeddb28dd8c2e62bae50a887679ba643672e8aed6",
-    "timeline_inflammatory_response.pdf": "9527b5116f1570b96d0a7c3bca073ab144844ef07e38eef056b31aa492511582",
-    "timeline_inflammatory_response.png": "614ba4ecdece71b6a5e264695810330cb1f04f6a17f5a8a98bca10ab39479bd6",
-    "timeline_interferon_alpha_response.pdf": "4b670d8af0929683b42261ae936b563543198171cab40f18c70e0dbc8355604e",
-    "timeline_interferon_alpha_response.png": "c51de9a9aadfe6fd1d3d3b3254185744696280e3a2237daa78184574a1511293",
-    "timeline_interferon_gamma_response.pdf": "0e12233b02521da0abae232fe163e3fb60ec268539f6ba3d7e9f6961be5b6f64",
-    "timeline_interferon_gamma_response.png": "e9422e0c027f0b1409d02ba90d57aee4ed44e27b740dfea8b6f81b74393e9e6f",
-    "timeline_oxidative_phosphorylation.pdf": "69f2ccd2b1f4262ad82b505986654284740ee721d5f9c707c759e070f8e91c39",
-    "timeline_oxidative_phosphorylation.png": "ddbb77ebcb7003cb52c016eed2ec0e0005f68c865c2b2a6cc93708b1c2ff22e7"
+    "timeline_complement.pdf": "e0d2042d41244adf5847d2c0dc8d161bba4c14a13d8237ff6c4babbd5f47a474",
+    "timeline_complement.png": "803ee0342820c412881ce4d6753aad1c8363f3247dad24455edd549859c0b477",
+    "timeline_hypoxia.pdf": "af01e6ee23aff7cf2332905b3603d05e9f0b2ec5de3e5888368b03913a34e669",
+    "timeline_hypoxia.png": "f83d61a6643b5de732555373264ed5dbbcbe628bd07aefee7259c6eb3689593d",
+    "timeline_inflammatory_response.pdf": "0c1a37b9d716fbc45d368ad83674e1affcdc53bd6ab42ef7691c689c508c038a",
+    "timeline_inflammatory_response.png": "fe54bae261c2e25ecbc3babecafa1825e236162876dcf79c8ece202b9cce66a3",
+    "timeline_interferon_alpha_response.pdf": "b507a6471253ad35124d61c1fb6585fa564c301565d1468c10a9eab1d5931bb9",
+    "timeline_interferon_alpha_response.png": "b55d5e7d7c4c6baddfcdaa715b712f0e26912bb94ffc48e29dfa81da5c0c9b8d",
+    "timeline_interferon_gamma_response.pdf": "d2a782d1d71a47038ce0c57bafd2232ed1584125c086a22f73f140dd4776416f",
+    "timeline_interferon_gamma_response.png": "7c86589d52b2d7dbc37333342d4178b3cc7c7af35f1e0ddbbc8b3c0a44074655",
+    "timeline_oxidative_phosphorylation.pdf": "e8241baac885e81ccb89d3e9d45f9f10ce8a429e3016e16ba5c1a6ac8fec1466",
+    "timeline_oxidative_phosphorylation.png": "ce2f959c2ed2a637d886b0896a338b51b8631ef4304147144b4a5dea72b8bea2"
   }
 }

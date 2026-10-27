@@ -1,5 +1,23 @@
 # Analysis decisions
 
+## 2026-10-27 — Add faint observed patient dots to pathway figures
+
+Refresh the pathway-age snapshot with low-opacity patient dots behind the
+adjusted group curves. The main figures retain all 812 observed patients,
+including sparse tails; study views and omission views select the corresponding
+participants. Dots show unadjusted observed scores on the same pooled SD scale,
+while lines remain model-adjusted means. No model or test definition changes.
+
+The explorer defaults to dots visible and provides a show/hide control. Its
+patient layers are raster images; the snapshot still excludes patient identifiers
+and machine-readable patient records. Numerical exports remain model summaries.
+
+The overview notebook executes all 14 code cells with 12 figures; all 26 result
+tables/diagnostic files are byte-identical to the prior run. Static and interactive
+checks verify all 40,600 patient positions across 50 pathways, correct study and
+omission filtering, preserved curve gaps and working dot toggles. The final
+50-page PDF and desktop/mobile HTML views were checked.
+
 ## 2026-10-27 — Publish two-curve pathway age summaries and study inspection
 
 Supersede the aligned study rows with two diagnosis curves on one age axis,

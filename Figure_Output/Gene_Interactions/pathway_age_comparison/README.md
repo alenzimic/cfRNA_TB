@@ -4,8 +4,10 @@ This is an archived **aggregate result snapshot** from the executed local
 `cfRNA_TB_overview/notebooks/02_pathway_enrichment_by_age.ipynb`, together with a
 comparison against `Scripts_For_Manuscript/gene_interactions_pathways.ipynb`.
 The snapshot contains model estimates, tests, coverage, aggregate counts,
-figures and provenance. It does not include participant metadata, individual
-pathway scores, raw counts or sample-level QC records.
+figures and provenance. Faint patient dots show observed distributions in the
+figures; the interactive explorer embeds them as raster images. It does not
+include participant identifiers, individual score tables, raw counts or
+sample-level QC records.
 
 ## Findings and interpretation
 
@@ -76,6 +78,8 @@ probability. Neither analysis establishes biochemical activity or causation.
   Whiskers show pointwise model intervals conditional on the model assumptions;
   study-omission sensitivity is reported. At ages covered by fewer studies, the
   summary relies on the shared-shape assumption to represent the other studies.
+  Faint dots show actual patient ages and observed standardized scores, before
+  covariate adjustment. They remain visible where sparse support withholds curves.
 - `summary_*`: separate summary-model tests, complete predictions, diagnostics,
   and leave-one-adult-study-out checks. Its FDR families differ from the original
   study-specific primary analysis, which remains the basis of the manuscript
@@ -84,8 +88,11 @@ probability. Neither analysis establishes biochemical activity or causation.
   safeguards and are explicitly unavailable. Omission checks include changes in
   the reference population and do not constitute independent validation.
 - `pathway_age_explorer.html`: self-contained interactive view with one age axis,
-  pathway/source selectors and optional confidence bands. It contains aggregate
-  model estimates only and requires no external scripts. The primary figure
+  pathway/source selectors, optional confidence bands and a patient-dot toggle.
+  Dots follow the study/omission selection and are embedded as transparent raster
+  images, without patient identifiers or machine-readable patient rows. Numerical
+  model estimates are aggregate results. The file requires no external scripts.
+  The primary figure
   design follows two-group lifespan displays such as
   [Bethlehem et al., 2022](https://www.nature.com/articles/s41586-022-04554-y),
   while preserving the limitations of the much smaller, disjoint-age TB cohorts.
