@@ -30,6 +30,11 @@ AGGREGATE_FILES = [
     "clinical_missingness.tsv",
     "run_summary.txt",
     "pathway_timeline_index.tsv",
+    "summary_tests.tsv",
+    "summary_curves.tsv",
+    "summary_model_diagnostics.json",
+    "summary_leave_one_study_out_curves.tsv",
+    "summary_study_sensitivity.tsv",
 ]
 FIGURES = [
     "age_support",
@@ -328,7 +333,7 @@ pathway scores, raw counts or sample-level QC records.
   {comparison["new_nonoverlap_studies_any_TB_discoveries"]} occur in ADTB or PROTECT.
   Agreement is **same-participant analytical
   concordance**, not independent replication or confirmed transfer.
-- Children and adults were sampled in different studies. The age curves are
+- Children and adults were sampled in different studies. The primary age curves are
   fitted separately by study and do not infer a continuous biological transition
   across unsampled adolescence. Sparse ages are masked, including internal gaps.
 
@@ -366,14 +371,28 @@ probability. Neither analysis establishes biochemical activity or causation.
   supported age-grid estimates. Missing curves are unsupported, not zero.
 - `sensitivity_*`, `model_diagnostics.json`: robustness variants and explicit
   reasons for any skipped model fits.
-- `pathway_timelines_all.pdf`: all eligible pathways, one pathway per page, with
-  five compact study rows sharing identical age and score limits. Blue solid
-  curves show TB and orange dashed curves show nonTB. Thin whiskers are pointwise
-  95% confidence intervals at selected prediction ages; complete interval curves
-  remain in the saved TSV files and study-specific closeups. Patient-age ticks
-  below each row show coverage, preserving internal gaps and sparse tails. These are
-  separate study fits, not a pooled lifespan model; study differences are not
-  isolated age effects.
+- `pathway_timelines_all.pdf`: all eligible pathways, one per page, with two
+  group curves on one age axis. Blue solid shows TB; orange dashed shows nonTB.
+  Children retain the original PROTECT model. Adults use an exploratory summary
+  with fixed study/clinical composition, study-specific baseline and TB levels,
+  and shared smooth age shapes. These are new summary estimates, not averages of
+  whichever studies happen to cover an age. The adolescent gap stays unconnected.
+  Whiskers show pointwise model intervals conditional on the model assumptions;
+  study-omission sensitivity is reported. At ages covered by fewer studies, the
+  summary relies on the shared-shape assumption to represent the other studies.
+- `summary_*`: separate summary-model tests, complete predictions, diagnostics,
+  and leave-one-adult-study-out checks. Its FDR families differ from the original
+  study-specific primary analysis, which remains the basis of the manuscript
+  comparison tables. The shared-age-shape assumption is not validated: both
+  full-range and supported-age formal heterogeneity checks fail the leverage
+  safeguards and are explicitly unavailable. Omission checks include changes in
+  the reference population and do not constitute independent validation.
+- `pathway_age_explorer.html`: self-contained interactive view with one age axis,
+  pathway/source selectors and optional confidence bands. It contains aggregate
+  model estimates only and requires no external scripts. The primary figure
+  design follows two-group lifespan displays such as
+  [Bethlehem et al., 2022](https://www.nature.com/articles/s41586-022-04554-y),
+  while preserving the limitations of the much smaller, disjoint-age TB cohorts.
 - `pathway_timeline_index.tsv`: pathway-to-page lookup, with a flag identifying
   the focus pathways shown in the notebook. Their `timeline_*.png` and `.pdf`
   figures are included individually.
@@ -428,6 +447,7 @@ def main():
             "02_pathway_enrichment_by_age.html": "age_pathway_analysis.html",
             "provenance.json": "age_analysis_provenance.json",
             "pathway_timelines_all.pdf": "pathway_timelines_all.pdf",
+            "pathway_age_explorer.html": "pathway_age_explorer.html",
         }
     )
     copied_sources = {}

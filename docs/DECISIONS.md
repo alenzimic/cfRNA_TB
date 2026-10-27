@@ -1,5 +1,36 @@
 # Analysis decisions
 
+## 2026-10-27 — Publish two-curve pathway age summaries and study inspection
+
+Supersede the aligned study rows with two diagnosis curves on one age axis,
+following the user's explicit preference and the published displays reviewed
+in the overview notebook. Blue solid identifies TB and orange dashed nonTB.
+The original PROTECT fit remains separate from a new exploratory adult summary;
+the unsampled adolescent interval and unsupported tails stay unconnected.
+
+Adult estimates use fixed study/clinical composition with study-specific baseline,
+TB and clinical effects plus common age shapes. This is a new model with separate
+100-test FDR families, not an average of the original curves. Original primary
+study-specific results remain the basis of the manuscript comparison. Formal
+study-shape diagnostics fail leverage safeguards and cannot establish agreement;
+omission checks show material changes and also change the reference mix. Model
+intervals do not include uncertainty about the shared-shape assumption.
+
+The aggregate snapshot adds complete summary estimates/tests/diagnostics and an
+offline interactive explorer with pathway, study and omission selectors. A single
+plot shows two curves; optional bands and exact-value inspection expose uncertainty
+without crowding the default view. The notebook cites Bethlehem (2022), Lehallier
+(2019), Javed (2010), Altman and Royston (2006), and Riley (2020), and explains why
+age binning does not solve study-age confounding. Participant metadata and
+individual scores remain outside the published snapshot.
+
+Validation: 14 statistical tests pass, all 14 overview code cells execute, and
+all 21 original result tables/files remain byte-identical. All 200 main plotted
+phase/diagnosis curves and 1,000 interval whiskers match the saved predictions.
+The 50-page PDF, notebook HTML and desktop/mobile explorer were visually checked;
+all 50 pathway selections and ten source views work, including unsupported gaps
+and omission views without inappropriate main-model q-values.
+
 ## 2026-10-26 — Replace overlapping pathway bands with aligned study rows
 
 Revise the shared-age snapshot after the overlaid study curves were difficult to

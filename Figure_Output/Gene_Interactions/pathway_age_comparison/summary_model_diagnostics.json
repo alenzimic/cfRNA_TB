@@ -1,0 +1,3147 @@
+{
+  "PROTECT": {
+    "n": 202,
+    "spline_df": 3,
+    "batch_adjustment": false,
+    "covariate_columns": [
+      "Intercept",
+      "tb",
+      "age_0",
+      "tb_age_0",
+      "age_1",
+      "tb_age_1",
+      "age_2",
+      "tb_age_2",
+      "sex_Male",
+      "hiv_Positive",
+      "hiv_Unknown",
+      "country_The Gambia",
+      "country_Uganda"
+    ],
+    "redundant_columns_removed": [],
+    "residual_df": 189,
+    "max_leverage": 0.23344709352639395,
+    "supported_grid_points": 143,
+    "grid_points": 161,
+    "support_half_width_years": 2.0,
+    "support_minimum_per_diagnosis": 10,
+    "age_min": 0.2,
+    "age_max": 14.8,
+    "model": "Unchanged original PROTECT model"
+  },
+  "Adult summary": {
+    "n": 610,
+    "parameters": 29,
+    "residual_df": 581,
+    "max_leverage": 0.5361281018175142,
+    "design_condition_number": 28.333610337961634,
+    "studies": [
+      "ADTB",
+      "GHL",
+      "R2D2",
+      "TBSQUARE"
+    ],
+    "clinical_categories": {
+      "ADTB": {
+        "sex": {
+          "reference": "Female",
+          "levels": [
+            "Female",
+            "Male"
+          ]
+        },
+        "hiv": {
+          "reference": "Negative",
+          "levels": [
+            "Negative",
+            "Positive"
+          ]
+        },
+        "country": {
+          "reference": "Philippines",
+          "levels": [
+            "Philippines",
+            "South Africa",
+            "Uganda",
+            "Vietnam"
+          ]
+        },
+        "count_read_length": {
+          "reference": "150x150",
+          "levels": [
+            "150x150",
+            "61x61"
+          ]
+        }
+      },
+      "GHL": {
+        "sex": {
+          "reference": "Female",
+          "levels": [
+            "Female",
+            "Male"
+          ]
+        },
+        "hiv": {
+          "reference": "Negative",
+          "levels": [
+            "Negative",
+            "Positive"
+          ]
+        },
+        "country": {
+          "reference": "Uganda",
+          "levels": [
+            "Uganda"
+          ]
+        },
+        "count_read_length": {
+          "reference": "61x61",
+          "levels": [
+            "61x61"
+          ]
+        }
+      },
+      "R2D2": {
+        "sex": {
+          "reference": "Female",
+          "levels": [
+            "Female",
+            "Male"
+          ]
+        },
+        "hiv": {
+          "reference": "Negative",
+          "levels": [
+            "Negative",
+            "Positive"
+          ]
+        },
+        "country": {
+          "reference": "Philippines",
+          "levels": [
+            "Philippines",
+            "Uganda",
+            "Vietnam"
+          ]
+        },
+        "count_read_length": {
+          "reference": "61x61",
+          "levels": [
+            "61x61"
+          ]
+        }
+      },
+      "TBSQUARE": {
+        "sex": {
+          "reference": "Female",
+          "levels": [
+            "Female",
+            "Male",
+            "Unknown"
+          ]
+        },
+        "hiv": {
+          "reference": "Negative",
+          "levels": [
+            "Negative",
+            "Positive",
+            "Unknown"
+          ]
+        },
+        "country": {
+          "reference": "Uganda",
+          "levels": [
+            "Uganda"
+          ]
+        },
+        "count_read_length": {
+          "reference": "61x61",
+          "levels": [
+            "61x61"
+          ]
+        }
+      }
+    },
+    "redundant_columns_removed": [
+      "TBSQUARE:hiv[Unknown]"
+    ],
+    "basis": {
+      "columns": [
+        "cr(age_years, df=3, constraints='center')[0]",
+        "cr(age_years, df=3, constraints='center')[1]",
+        "cr(age_years, df=3, constraints='center')[2]"
+      ],
+      "knots_years": [
+        18.0,
+        38.333333333333336,
+        58.66666666666667,
+        85.0
+      ],
+      "centering_constraints": [
+        [
+          0.25246962430768644,
+          0.5051654751081034,
+          0.22238156857029706,
+          0.019983332013914026
+        ]
+      ]
+    },
+    "cohort": "Adult summary",
+    "model": "Study-specific intercept, TB level and clinical coefficients; shared age and TB-by-age shapes",
+    "covariate_columns": [
+      "study[ADTB]",
+      "tb[ADTB]",
+      "study[GHL]",
+      "tb[GHL]",
+      "study[R2D2]",
+      "tb[R2D2]",
+      "study[TBSQUARE]",
+      "tb[TBSQUARE]",
+      "age_0",
+      "tb_age_0",
+      "age_1",
+      "tb_age_1",
+      "age_2",
+      "tb_age_2",
+      "ADTB:sex[Male]",
+      "ADTB:hiv[Positive]",
+      "ADTB:country[South Africa]",
+      "ADTB:country[Uganda]",
+      "ADTB:country[Vietnam]",
+      "ADTB:count_read_length[61x61]",
+      "GHL:sex[Male]",
+      "GHL:hiv[Positive]",
+      "R2D2:sex[Male]",
+      "R2D2:hiv[Positive]",
+      "R2D2:country[Uganda]",
+      "R2D2:country[Vietnam]",
+      "TBSQUARE:sex[Male]",
+      "TBSQUARE:sex[Unknown]",
+      "TBSQUARE:hiv[Positive]"
+    ],
+    "fixed_study_weights": {
+      "ADTB": 0.5885245901639344,
+      "GHL": 0.15245901639344261,
+      "R2D2": 0.16065573770491803,
+      "TBSQUARE": 0.09836065573770492
+    },
+    "clinical_reference": "All included adults pooled across diagnoses; study-specific clinical columns averaged once",
+    "reference_design_means": {
+      "study[ADTB]": 0.5885245901639344,
+      "tb[ADTB]": 0.13278688524590163,
+      "study[GHL]": 0.15245901639344261,
+      "tb[GHL]": 0.09344262295081968,
+      "study[R2D2]": 0.16065573770491803,
+      "tb[R2D2]": 0.08196721311475409,
+      "study[TBSQUARE]": 0.09836065573770492,
+      "tb[TBSQUARE]": 0.05737704918032787,
+      "age_0": 6.988944941902625e-17,
+      "tb_age_0": -0.00016770145731757094,
+      "age_1": -3.145025223856181e-16,
+      "tb_age_1": -0.0412191431861341,
+      "age_2": 8.881784197001253e-17,
+      "tb_age_2": -0.0032257141069950653,
+      "ADTB:sex[Male]": 0.31311475409836065,
+      "ADTB:hiv[Positive]": 0.09016393442622951,
+      "ADTB:country[South Africa]": 0.1557377049180328,
+      "ADTB:country[Uganda]": 0.11311475409836065,
+      "ADTB:country[Vietnam]": 0.12295081967213115,
+      "ADTB:count_read_length[61x61]": 0.5377049180327869,
+      "GHL:sex[Male]": 0.09508196721311475,
+      "GHL:hiv[Positive]": 0.02622950819672131,
+      "R2D2:sex[Male]": 0.09344262295081968,
+      "R2D2:hiv[Positive]": 0.018032786885245903,
+      "R2D2:country[Uganda]": 0.05901639344262295,
+      "R2D2:country[Vietnam]": 0.05901639344262295,
+      "TBSQUARE:sex[Male]": 0.05901639344262295,
+      "TBSQUARE:sex[Unknown]": 0.009836065573770493,
+      "TBSQUARE:hiv[Positive]": 0.01639344262295082
+    },
+    "prediction_rule": "Both diagnoses use identical fixed study and clinical reference values at every age",
+    "any_TB_test_target": "Fixed-weight adult TB level plus shared TB-by-age terms",
+    "support_rule": "Pooled adult local counts in both diagnoses and overlap of observed diagnosis age ranges",
+    "support_minimum_per_diagnosis": 10,
+    "support_half_width_years": 7.5,
+    "supported_grid_points": 119,
+    "grid_points": 161,
+    "age_min": 18.0,
+    "age_max": 85.0,
+    "prediction_grid_age_min": 18.0,
+    "prediction_grid_age_max": 85.0,
+    "shape_heterogeneity": {
+      "tested": false,
+      "reason": "Insufficient residual information: df=563, max leverage=0.980",
+      "n": 610,
+      "parameters": 47,
+      "residual_df": 563,
+      "max_leverage": 0.9798885347109527,
+      "design_condition_number": 2084.0635531418197
+    },
+    "supported_shape_heterogeneity": {
+      "tested": false,
+      "scope": "Participants whose own ages satisfy the original study-specific support rule",
+      "support_minimum_per_diagnosis": 10,
+      "support_half_width_years": 7.5,
+      "original_participants": 610,
+      "retained_participants": 525,
+      "excluded_participants": 85,
+      "study_coverage": [
+        {
+          "cohort": "ADTB",
+          "n": 331,
+          "age_min": 18.0,
+          "age_max": 65.0
+        },
+        {
+          "cohort": "GHL",
+          "n": 80,
+          "age_min": 18.0,
+          "age_max": 40.0
+        },
+        {
+          "cohort": "R2D2",
+          "n": 76,
+          "age_min": 22.0,
+          "age_max": 60.0
+        },
+        {
+          "cohort": "TBSQUARE",
+          "n": 38,
+          "age_min": 24.0,
+          "age_max": 40.0
+        }
+      ],
+      "basis": {
+        "columns": [
+          "cr(age_years, df=3, constraints='center')[0]",
+          "cr(age_years, df=3, constraints='center')[1]",
+          "cr(age_years, df=3, constraints='center')[2]"
+        ],
+        "knots_years": [
+          18.0,
+          38.333333333333336,
+          58.66666666666667,
+          85.0
+        ],
+        "centering_constraints": [
+          [
+            0.25246962430768644,
+            0.5051654751081034,
+            0.22238156857029706,
+            0.019983332013914026
+          ]
+        ]
+      },
+      "reduced_model": {
+        "n": 525,
+        "parameters": 29,
+        "residual_df": 496,
+        "max_leverage": 0.39967503245741365,
+        "design_condition_number": 132.24146920297503,
+        "studies": [
+          "ADTB",
+          "GHL",
+          "R2D2",
+          "TBSQUARE"
+        ],
+        "clinical_categories": {
+          "ADTB": {
+            "sex": {
+              "reference": "Female",
+              "levels": [
+                "Female",
+                "Male"
+              ]
+            },
+            "hiv": {
+              "reference": "Negative",
+              "levels": [
+                "Negative",
+                "Positive"
+              ]
+            },
+            "country": {
+              "reference": "Philippines",
+              "levels": [
+                "Philippines",
+                "South Africa",
+                "Uganda",
+                "Vietnam"
+              ]
+            },
+            "count_read_length": {
+              "reference": "150x150",
+              "levels": [
+                "150x150",
+                "61x61"
+              ]
+            }
+          },
+          "GHL": {
+            "sex": {
+              "reference": "Female",
+              "levels": [
+                "Female",
+                "Male"
+              ]
+            },
+            "hiv": {
+              "reference": "Negative",
+              "levels": [
+                "Negative",
+                "Positive"
+              ]
+            },
+            "country": {
+              "reference": "Uganda",
+              "levels": [
+                "Uganda"
+              ]
+            },
+            "count_read_length": {
+              "reference": "61x61",
+              "levels": [
+                "61x61"
+              ]
+            }
+          },
+          "R2D2": {
+            "sex": {
+              "reference": "Female",
+              "levels": [
+                "Female",
+                "Male"
+              ]
+            },
+            "hiv": {
+              "reference": "Negative",
+              "levels": [
+                "Negative",
+                "Positive"
+              ]
+            },
+            "country": {
+              "reference": "Philippines",
+              "levels": [
+                "Philippines",
+                "Uganda",
+                "Vietnam"
+              ]
+            },
+            "count_read_length": {
+              "reference": "61x61",
+              "levels": [
+                "61x61"
+              ]
+            }
+          },
+          "TBSQUARE": {
+            "sex": {
+              "reference": "Female",
+              "levels": [
+                "Female",
+                "Male",
+                "Unknown"
+              ]
+            },
+            "hiv": {
+              "reference": "Negative",
+              "levels": [
+                "Negative",
+                "Positive",
+                "Unknown"
+              ]
+            },
+            "country": {
+              "reference": "Uganda",
+              "levels": [
+                "Uganda"
+              ]
+            },
+            "count_read_length": {
+              "reference": "61x61",
+              "levels": [
+                "61x61"
+              ]
+            }
+          }
+        },
+        "redundant_columns_removed": [
+          "TBSQUARE:hiv[Unknown]"
+        ],
+        "basis": {
+          "columns": [
+            "cr(age_years, df=3, constraints='center')[0]",
+            "cr(age_years, df=3, constraints='center')[1]",
+            "cr(age_years, df=3, constraints='center')[2]"
+          ],
+          "knots_years": [
+            18.0,
+            38.333333333333336,
+            58.66666666666667,
+            85.0
+          ],
+          "centering_constraints": [
+            [
+              0.25246962430768644,
+              0.5051654751081034,
+              0.22238156857029706,
+              0.019983332013914026
+            ]
+          ]
+        }
+      },
+      "reason": "Insufficient residual information: df=478, max leverage=1.000",
+      "failed_stage": "full_model",
+      "full_model": {
+        "n": 525,
+        "parameters": 47,
+        "residual_df": 478,
+        "max_leverage": 1.0000000000100044,
+        "design_condition_number": 14116897.5688843
+      }
+    }
+  },
+  "multiple_testing": {
+    "age_interaction_family_size": 100,
+    "any_TB_family_size": 100,
+    "adult_shape_heterogeneity_family_size": 50,
+    "adult_shape_heterogeneity_tests_fitted": 0,
+    "supported_shape_heterogeneity_family_size": 50,
+    "supported_shape_heterogeneity_tests_fitted": 0,
+    "separate_from_original_study_specific_tests": true
+  },
+  "leave_one_study_out": {
+    "ADTB": {
+      "skipped": false,
+      "n": 251,
+      "parameters": 21,
+      "residual_df": 230,
+      "max_leverage": 0.9217244677848945,
+      "design_condition_number": 22.36861702378293,
+      "studies": [
+        "GHL",
+        "R2D2",
+        "TBSQUARE"
+      ],
+      "clinical_categories": {
+        "GHL": {
+          "sex": {
+            "reference": "Female",
+            "levels": [
+              "Female",
+              "Male"
+            ]
+          },
+          "hiv": {
+            "reference": "Negative",
+            "levels": [
+              "Negative",
+              "Positive"
+            ]
+          },
+          "country": {
+            "reference": "Uganda",
+            "levels": [
+              "Uganda"
+            ]
+          },
+          "count_read_length": {
+            "reference": "61x61",
+            "levels": [
+              "61x61"
+            ]
+          }
+        },
+        "R2D2": {
+          "sex": {
+            "reference": "Female",
+            "levels": [
+              "Female",
+              "Male"
+            ]
+          },
+          "hiv": {
+            "reference": "Negative",
+            "levels": [
+              "Negative",
+              "Positive"
+            ]
+          },
+          "country": {
+            "reference": "Philippines",
+            "levels": [
+              "Philippines",
+              "Uganda",
+              "Vietnam"
+            ]
+          },
+          "count_read_length": {
+            "reference": "61x61",
+            "levels": [
+              "61x61"
+            ]
+          }
+        },
+        "TBSQUARE": {
+          "sex": {
+            "reference": "Female",
+            "levels": [
+              "Female",
+              "Male",
+              "Unknown"
+            ]
+          },
+          "hiv": {
+            "reference": "Negative",
+            "levels": [
+              "Negative",
+              "Positive",
+              "Unknown"
+            ]
+          },
+          "country": {
+            "reference": "Uganda",
+            "levels": [
+              "Uganda"
+            ]
+          },
+          "count_read_length": {
+            "reference": "61x61",
+            "levels": [
+              "61x61"
+            ]
+          }
+        }
+      },
+      "redundant_columns_removed": [
+        "TBSQUARE:hiv[Unknown]"
+      ],
+      "basis": {
+        "columns": [
+          "cr(age_years, df=3, constraints='center')[0]",
+          "cr(age_years, df=3, constraints='center')[1]",
+          "cr(age_years, df=3, constraints='center')[2]"
+        ],
+        "knots_years": [
+          18.0,
+          38.333333333333336,
+          58.66666666666667,
+          85.0
+        ],
+        "centering_constraints": [
+          [
+            0.25246962430768644,
+            0.5051654751081034,
+            0.22238156857029706,
+            0.019983332013914026
+          ]
+        ]
+      },
+      "cohort": "Adult summary",
+      "model": "Study-specific intercept, TB level and clinical coefficients; shared age and TB-by-age shapes",
+      "covariate_columns": [
+        "study[GHL]",
+        "tb[GHL]",
+        "study[R2D2]",
+        "tb[R2D2]",
+        "study[TBSQUARE]",
+        "tb[TBSQUARE]",
+        "age_0",
+        "tb_age_0",
+        "age_1",
+        "tb_age_1",
+        "age_2",
+        "tb_age_2",
+        "GHL:sex[Male]",
+        "GHL:hiv[Positive]",
+        "R2D2:sex[Male]",
+        "R2D2:hiv[Positive]",
+        "R2D2:country[Uganda]",
+        "R2D2:country[Vietnam]",
+        "TBSQUARE:sex[Male]",
+        "TBSQUARE:sex[Unknown]",
+        "TBSQUARE:hiv[Positive]"
+      ],
+      "fixed_study_weights": {
+        "GHL": 0.3705179282868526,
+        "R2D2": 0.3904382470119522,
+        "TBSQUARE": 0.23904382470119523
+      },
+      "clinical_reference": "All included adults pooled across diagnoses; study-specific clinical columns averaged once",
+      "reference_design_means": {
+        "study[GHL]": 0.3705179282868526,
+        "tb[GHL]": 0.22709163346613545,
+        "study[R2D2]": 0.3904382470119522,
+        "tb[R2D2]": 0.199203187250996,
+        "study[TBSQUARE]": 0.23904382470119523,
+        "tb[TBSQUARE]": 0.1394422310756972,
+        "age_0": 0.03319094589571946,
+        "tb_age_0": 0.010716581428015307,
+        "age_1": -0.1048396358735126,
+        "tb_age_1": -0.09531256809722997,
+        "age_2": -0.009052773296758708,
+        "tb_age_2": -0.007579563422996849,
+        "GHL:sex[Male]": 0.23107569721115537,
+        "GHL:hiv[Positive]": 0.06374501992031872,
+        "R2D2:sex[Male]": 0.22709163346613545,
+        "R2D2:hiv[Positive]": 0.043824701195219126,
+        "R2D2:country[Uganda]": 0.14342629482071714,
+        "R2D2:country[Vietnam]": 0.14342629482071714,
+        "TBSQUARE:sex[Male]": 0.14342629482071714,
+        "TBSQUARE:sex[Unknown]": 0.02390438247011952,
+        "TBSQUARE:hiv[Positive]": 0.0398406374501992
+      },
+      "prediction_rule": "Both diagnoses use identical fixed study and clinical reference values at every age",
+      "any_TB_test_target": "Fixed-weight adult TB level plus shared TB-by-age terms",
+      "support_rule": "Pooled adult local counts in both diagnoses and overlap of observed diagnosis age ranges",
+      "support_minimum_per_diagnosis": 10,
+      "support_half_width_years": 7.5,
+      "supported_grid_points": 109,
+      "grid_points": 161,
+      "age_min": 18.0,
+      "age_max": 85.0,
+      "prediction_grid_age_min": 18.0,
+      "prediction_grid_age_max": 85.0,
+      "shape_heterogeneity": {
+        "tested": false,
+        "reason": "Not requested for sensitivity fit"
+      },
+      "supported_shape_heterogeneity": {
+        "tested": false,
+        "reason": "Not requested for sensitivity fit"
+      }
+    },
+    "GHL": {
+      "skipped": false,
+      "n": 517,
+      "parameters": 25,
+      "residual_df": 492,
+      "max_leverage": 0.54321451940373,
+      "design_condition_number": 28.58956821900924,
+      "studies": [
+        "ADTB",
+        "R2D2",
+        "TBSQUARE"
+      ],
+      "clinical_categories": {
+        "ADTB": {
+          "sex": {
+            "reference": "Female",
+            "levels": [
+              "Female",
+              "Male"
+            ]
+          },
+          "hiv": {
+            "reference": "Negative",
+            "levels": [
+              "Negative",
+              "Positive"
+            ]
+          },
+          "country": {
+            "reference": "Philippines",
+            "levels": [
+              "Philippines",
+              "South Africa",
+              "Uganda",
+              "Vietnam"
+            ]
+          },
+          "count_read_length": {
+            "reference": "150x150",
+            "levels": [
+              "150x150",
+              "61x61"
+            ]
+          }
+        },
+        "R2D2": {
+          "sex": {
+            "reference": "Female",
+            "levels": [
+              "Female",
+              "Male"
+            ]
+          },
+          "hiv": {
+            "reference": "Negative",
+            "levels": [
+              "Negative",
+              "Positive"
+            ]
+          },
+          "country": {
+            "reference": "Philippines",
+            "levels": [
+              "Philippines",
+              "Uganda",
+              "Vietnam"
+            ]
+          },
+          "count_read_length": {
+            "reference": "61x61",
+            "levels": [
+              "61x61"
+            ]
+          }
+        },
+        "TBSQUARE": {
+          "sex": {
+            "reference": "Female",
+            "levels": [
+              "Female",
+              "Male",
+              "Unknown"
+            ]
+          },
+          "hiv": {
+            "reference": "Negative",
+            "levels": [
+              "Negative",
+              "Positive",
+              "Unknown"
+            ]
+          },
+          "country": {
+            "reference": "Uganda",
+            "levels": [
+              "Uganda"
+            ]
+          },
+          "count_read_length": {
+            "reference": "61x61",
+            "levels": [
+              "61x61"
+            ]
+          }
+        }
+      },
+      "redundant_columns_removed": [
+        "TBSQUARE:hiv[Unknown]"
+      ],
+      "basis": {
+        "columns": [
+          "cr(age_years, df=3, constraints='center')[0]",
+          "cr(age_years, df=3, constraints='center')[1]",
+          "cr(age_years, df=3, constraints='center')[2]"
+        ],
+        "knots_years": [
+          18.0,
+          38.333333333333336,
+          58.66666666666667,
+          85.0
+        ],
+        "centering_constraints": [
+          [
+            0.25246962430768644,
+            0.5051654751081034,
+            0.22238156857029706,
+            0.019983332013914026
+          ]
+        ]
+      },
+      "cohort": "Adult summary",
+      "model": "Study-specific intercept, TB level and clinical coefficients; shared age and TB-by-age shapes",
+      "covariate_columns": [
+        "study[ADTB]",
+        "tb[ADTB]",
+        "study[R2D2]",
+        "tb[R2D2]",
+        "study[TBSQUARE]",
+        "tb[TBSQUARE]",
+        "age_0",
+        "tb_age_0",
+        "age_1",
+        "tb_age_1",
+        "age_2",
+        "tb_age_2",
+        "ADTB:sex[Male]",
+        "ADTB:hiv[Positive]",
+        "ADTB:country[South Africa]",
+        "ADTB:country[Uganda]",
+        "ADTB:country[Vietnam]",
+        "ADTB:count_read_length[61x61]",
+        "R2D2:sex[Male]",
+        "R2D2:hiv[Positive]",
+        "R2D2:country[Uganda]",
+        "R2D2:country[Vietnam]",
+        "TBSQUARE:sex[Male]",
+        "TBSQUARE:sex[Unknown]",
+        "TBSQUARE:hiv[Positive]"
+      ],
+      "fixed_study_weights": {
+        "ADTB": 0.6943907156673114,
+        "R2D2": 0.1895551257253385,
+        "TBSQUARE": 0.11605415860735009
+      },
+      "clinical_reference": "All included adults pooled across diagnoses; study-specific clinical columns averaged once",
+      "reference_design_means": {
+        "study[ADTB]": 0.6943907156673114,
+        "tb[ADTB]": 0.15667311411992263,
+        "study[R2D2]": 0.1895551257253385,
+        "tb[R2D2]": 0.09671179883945841,
+        "study[TBSQUARE]": 0.11605415860735009,
+        "tb[TBSQUARE]": 0.06769825918762089,
+        "age_0": -0.001198413100434086,
+        "tb_age_0": -0.0009184760016798802,
+        "age_1": 0.04627574037314029,
+        "tb_age_1": -0.016733413303998367,
+        "age_2": 0.003492322569029222,
+        "tb_age_2": -0.0017191888145918063,
+        "ADTB:sex[Male]": 0.3694390715667311,
+        "ADTB:hiv[Positive]": 0.10638297872340426,
+        "ADTB:country[South Africa]": 0.18375241779497098,
+        "ADTB:country[Uganda]": 0.13346228239845262,
+        "ADTB:country[Vietnam]": 0.1450676982591876,
+        "ADTB:count_read_length[61x61]": 0.6344294003868471,
+        "R2D2:sex[Male]": 0.1102514506769826,
+        "R2D2:hiv[Positive]": 0.02127659574468085,
+        "R2D2:country[Uganda]": 0.06963249516441006,
+        "R2D2:country[Vietnam]": 0.06963249516441006,
+        "TBSQUARE:sex[Male]": 0.06963249516441006,
+        "TBSQUARE:sex[Unknown]": 0.01160541586073501,
+        "TBSQUARE:hiv[Positive]": 0.019342359767891684
+      },
+      "prediction_rule": "Both diagnoses use identical fixed study and clinical reference values at every age",
+      "any_TB_test_target": "Fixed-weight adult TB level plus shared TB-by-age terms",
+      "support_rule": "Pooled adult local counts in both diagnoses and overlap of observed diagnosis age ranges",
+      "support_minimum_per_diagnosis": 10,
+      "support_half_width_years": 7.5,
+      "supported_grid_points": 119,
+      "grid_points": 161,
+      "age_min": 18.0,
+      "age_max": 85.0,
+      "prediction_grid_age_min": 18.0,
+      "prediction_grid_age_max": 85.0,
+      "shape_heterogeneity": {
+        "tested": false,
+        "reason": "Not requested for sensitivity fit"
+      },
+      "supported_shape_heterogeneity": {
+        "tested": false,
+        "reason": "Not requested for sensitivity fit"
+      }
+    },
+    "R2D2": {
+      "skipped": false,
+      "n": 512,
+      "parameters": 23,
+      "residual_df": 489,
+      "max_leverage": 0.5616436386995525,
+      "design_condition_number": 38.590078601483945,
+      "studies": [
+        "ADTB",
+        "GHL",
+        "TBSQUARE"
+      ],
+      "clinical_categories": {
+        "ADTB": {
+          "sex": {
+            "reference": "Female",
+            "levels": [
+              "Female",
+              "Male"
+            ]
+          },
+          "hiv": {
+            "reference": "Negative",
+            "levels": [
+              "Negative",
+              "Positive"
+            ]
+          },
+          "country": {
+            "reference": "Philippines",
+            "levels": [
+              "Philippines",
+              "South Africa",
+              "Uganda",
+              "Vietnam"
+            ]
+          },
+          "count_read_length": {
+            "reference": "150x150",
+            "levels": [
+              "150x150",
+              "61x61"
+            ]
+          }
+        },
+        "GHL": {
+          "sex": {
+            "reference": "Female",
+            "levels": [
+              "Female",
+              "Male"
+            ]
+          },
+          "hiv": {
+            "reference": "Negative",
+            "levels": [
+              "Negative",
+              "Positive"
+            ]
+          },
+          "country": {
+            "reference": "Uganda",
+            "levels": [
+              "Uganda"
+            ]
+          },
+          "count_read_length": {
+            "reference": "61x61",
+            "levels": [
+              "61x61"
+            ]
+          }
+        },
+        "TBSQUARE": {
+          "sex": {
+            "reference": "Female",
+            "levels": [
+              "Female",
+              "Male",
+              "Unknown"
+            ]
+          },
+          "hiv": {
+            "reference": "Negative",
+            "levels": [
+              "Negative",
+              "Positive",
+              "Unknown"
+            ]
+          },
+          "country": {
+            "reference": "Uganda",
+            "levels": [
+              "Uganda"
+            ]
+          },
+          "count_read_length": {
+            "reference": "61x61",
+            "levels": [
+              "61x61"
+            ]
+          }
+        }
+      },
+      "redundant_columns_removed": [
+        "TBSQUARE:hiv[Unknown]"
+      ],
+      "basis": {
+        "columns": [
+          "cr(age_years, df=3, constraints='center')[0]",
+          "cr(age_years, df=3, constraints='center')[1]",
+          "cr(age_years, df=3, constraints='center')[2]"
+        ],
+        "knots_years": [
+          18.0,
+          38.333333333333336,
+          58.66666666666667,
+          85.0
+        ],
+        "centering_constraints": [
+          [
+            0.25246962430768644,
+            0.5051654751081034,
+            0.22238156857029706,
+            0.019983332013914026
+          ]
+        ]
+      },
+      "cohort": "Adult summary",
+      "model": "Study-specific intercept, TB level and clinical coefficients; shared age and TB-by-age shapes",
+      "covariate_columns": [
+        "study[ADTB]",
+        "tb[ADTB]",
+        "study[GHL]",
+        "tb[GHL]",
+        "study[TBSQUARE]",
+        "tb[TBSQUARE]",
+        "age_0",
+        "tb_age_0",
+        "age_1",
+        "tb_age_1",
+        "age_2",
+        "tb_age_2",
+        "ADTB:sex[Male]",
+        "ADTB:hiv[Positive]",
+        "ADTB:country[South Africa]",
+        "ADTB:country[Uganda]",
+        "ADTB:country[Vietnam]",
+        "ADTB:count_read_length[61x61]",
+        "GHL:sex[Male]",
+        "GHL:hiv[Positive]",
+        "TBSQUARE:sex[Male]",
+        "TBSQUARE:sex[Unknown]",
+        "TBSQUARE:hiv[Positive]"
+      ],
+      "fixed_study_weights": {
+        "ADTB": 0.701171875,
+        "GHL": 0.181640625,
+        "TBSQUARE": 0.1171875
+      },
+      "clinical_reference": "All included adults pooled across diagnoses; study-specific clinical columns averaged once",
+      "reference_design_means": {
+        "study[ADTB]": 0.701171875,
+        "tb[ADTB]": 0.158203125,
+        "study[GHL]": 0.181640625,
+        "tb[GHL]": 0.111328125,
+        "study[TBSQUARE]": 0.1171875,
+        "tb[TBSQUARE]": 0.068359375,
+        "age_0": -0.0012891121257442087,
+        "tb_age_0": -0.0012841476179523371,
+        "age_1": -0.022653924351564284,
+        "tb_age_1": -0.051803712490297874,
+        "age_2": -0.0011267194361716266,
+        "tb_age_2": -0.003123641200415055,
+        "ADTB:sex[Male]": 0.373046875,
+        "ADTB:hiv[Positive]": 0.107421875,
+        "ADTB:country[South Africa]": 0.185546875,
+        "ADTB:country[Uganda]": 0.134765625,
+        "ADTB:country[Vietnam]": 0.146484375,
+        "ADTB:count_read_length[61x61]": 0.640625,
+        "GHL:sex[Male]": 0.11328125,
+        "GHL:hiv[Positive]": 0.03125,
+        "TBSQUARE:sex[Male]": 0.0703125,
+        "TBSQUARE:sex[Unknown]": 0.01171875,
+        "TBSQUARE:hiv[Positive]": 0.01953125
+      },
+      "prediction_rule": "Both diagnoses use identical fixed study and clinical reference values at every age",
+      "any_TB_test_target": "Fixed-weight adult TB level plus shared TB-by-age terms",
+      "support_rule": "Pooled adult local counts in both diagnoses and overlap of observed diagnosis age ranges",
+      "support_minimum_per_diagnosis": 10,
+      "support_half_width_years": 7.5,
+      "supported_grid_points": 116,
+      "grid_points": 161,
+      "age_min": 18.0,
+      "age_max": 83.0,
+      "prediction_grid_age_min": 18.0,
+      "prediction_grid_age_max": 85.0,
+      "shape_heterogeneity": {
+        "tested": false,
+        "reason": "Not requested for sensitivity fit"
+      },
+      "supported_shape_heterogeneity": {
+        "tested": false,
+        "reason": "Not requested for sensitivity fit"
+      }
+    },
+    "TBSQUARE": {
+      "skipped": false,
+      "n": 550,
+      "parameters": 24,
+      "residual_df": 526,
+      "max_leverage": 0.5437555629943179,
+      "design_condition_number": 28.513785528050803,
+      "studies": [
+        "ADTB",
+        "GHL",
+        "R2D2"
+      ],
+      "clinical_categories": {
+        "ADTB": {
+          "sex": {
+            "reference": "Female",
+            "levels": [
+              "Female",
+              "Male"
+            ]
+          },
+          "hiv": {
+            "reference": "Negative",
+            "levels": [
+              "Negative",
+              "Positive"
+            ]
+          },
+          "country": {
+            "reference": "Philippines",
+            "levels": [
+              "Philippines",
+              "South Africa",
+              "Uganda",
+              "Vietnam"
+            ]
+          },
+          "count_read_length": {
+            "reference": "150x150",
+            "levels": [
+              "150x150",
+              "61x61"
+            ]
+          }
+        },
+        "GHL": {
+          "sex": {
+            "reference": "Female",
+            "levels": [
+              "Female",
+              "Male"
+            ]
+          },
+          "hiv": {
+            "reference": "Negative",
+            "levels": [
+              "Negative",
+              "Positive"
+            ]
+          },
+          "country": {
+            "reference": "Uganda",
+            "levels": [
+              "Uganda"
+            ]
+          },
+          "count_read_length": {
+            "reference": "61x61",
+            "levels": [
+              "61x61"
+            ]
+          }
+        },
+        "R2D2": {
+          "sex": {
+            "reference": "Female",
+            "levels": [
+              "Female",
+              "Male"
+            ]
+          },
+          "hiv": {
+            "reference": "Negative",
+            "levels": [
+              "Negative",
+              "Positive"
+            ]
+          },
+          "country": {
+            "reference": "Philippines",
+            "levels": [
+              "Philippines",
+              "Uganda",
+              "Vietnam"
+            ]
+          },
+          "count_read_length": {
+            "reference": "61x61",
+            "levels": [
+              "61x61"
+            ]
+          }
+        }
+      },
+      "redundant_columns_removed": [],
+      "basis": {
+        "columns": [
+          "cr(age_years, df=3, constraints='center')[0]",
+          "cr(age_years, df=3, constraints='center')[1]",
+          "cr(age_years, df=3, constraints='center')[2]"
+        ],
+        "knots_years": [
+          18.0,
+          38.333333333333336,
+          58.66666666666667,
+          85.0
+        ],
+        "centering_constraints": [
+          [
+            0.25246962430768644,
+            0.5051654751081034,
+            0.22238156857029706,
+            0.019983332013914026
+          ]
+        ]
+      },
+      "cohort": "Adult summary",
+      "model": "Study-specific intercept, TB level and clinical coefficients; shared age and TB-by-age shapes",
+      "covariate_columns": [
+        "study[ADTB]",
+        "tb[ADTB]",
+        "study[GHL]",
+        "tb[GHL]",
+        "study[R2D2]",
+        "tb[R2D2]",
+        "age_0",
+        "tb_age_0",
+        "age_1",
+        "tb_age_1",
+        "age_2",
+        "tb_age_2",
+        "ADTB:sex[Male]",
+        "ADTB:hiv[Positive]",
+        "ADTB:country[South Africa]",
+        "ADTB:country[Uganda]",
+        "ADTB:country[Vietnam]",
+        "ADTB:count_read_length[61x61]",
+        "GHL:sex[Male]",
+        "GHL:hiv[Positive]",
+        "R2D2:sex[Male]",
+        "R2D2:hiv[Positive]",
+        "R2D2:country[Uganda]",
+        "R2D2:country[Vietnam]"
+      ],
+      "fixed_study_weights": {
+        "ADTB": 0.6527272727272727,
+        "GHL": 0.1690909090909091,
+        "R2D2": 0.1781818181818182
+      },
+      "clinical_reference": "All included adults pooled across diagnoses; study-specific clinical columns averaged once",
+      "reference_design_means": {
+        "study[ADTB]": 0.6527272727272727,
+        "tb[ADTB]": 0.14727272727272728,
+        "study[GHL]": 0.1690909090909091,
+        "tb[GHL]": 0.10363636363636364,
+        "study[R2D2]": 0.1781818181818182,
+        "tb[R2D2]": 0.09090909090909091,
+        "age_0": -0.012820586251854544,
+        "tb_age_0": -0.003389854421932546,
+        "age_1": 0.025434545635160892,
+        "tb_age_1": -0.029696185390947327,
+        "age_2": 0.001897446692033383,
+        "tb_age_2": -0.0027499299724950688,
+        "ADTB:sex[Male]": 0.3472727272727273,
+        "ADTB:hiv[Positive]": 0.1,
+        "ADTB:country[South Africa]": 0.17272727272727273,
+        "ADTB:country[Uganda]": 0.12545454545454546,
+        "ADTB:country[Vietnam]": 0.13636363636363635,
+        "ADTB:count_read_length[61x61]": 0.5963636363636363,
+        "GHL:sex[Male]": 0.10545454545454545,
+        "GHL:hiv[Positive]": 0.02909090909090909,
+        "R2D2:sex[Male]": 0.10363636363636364,
+        "R2D2:hiv[Positive]": 0.02,
+        "R2D2:country[Uganda]": 0.06545454545454546,
+        "R2D2:country[Vietnam]": 0.06545454545454546
+      },
+      "prediction_rule": "Both diagnoses use identical fixed study and clinical reference values at every age",
+      "any_TB_test_target": "Fixed-weight adult TB level plus shared TB-by-age terms",
+      "support_rule": "Pooled adult local counts in both diagnoses and overlap of observed diagnosis age ranges",
+      "support_minimum_per_diagnosis": 10,
+      "support_half_width_years": 7.5,
+      "supported_grid_points": 119,
+      "grid_points": 161,
+      "age_min": 18.0,
+      "age_max": 85.0,
+      "prediction_grid_age_min": 18.0,
+      "prediction_grid_age_max": 85.0,
+      "shape_heterogeneity": {
+        "tested": false,
+        "reason": "Not requested for sensitivity fit"
+      },
+      "supported_shape_heterogeneity": {
+        "tested": false,
+        "reason": "Not requested for sensitivity fit"
+      }
+    }
+  },
+  "leave_one_study_out_shifts": {
+    "interpretation": "Includes both model-fit changes and the changed fixed clinical/study reference after omission",
+    "comparison": "Exact matching grid ages supported in both the primary and sensitivity fit",
+    "pathway_results": [
+      {
+        "pathway": "HALLMARK_ADIPOGENESIS",
+        "variant": "omit_ADTB",
+        "omitted_study": "ADTB",
+        "shared_supported_grid_points": 109,
+        "max_abs_TB_shift": 0.40774095112475967,
+        "max_abs_nonTB_shift": 0.38805802291475394,
+        "max_abs_difference_shift": 0.31988471541962904
+      },
+      {
+        "pathway": "HALLMARK_ALLOGRAFT_REJECTION",
+        "variant": "omit_ADTB",
+        "omitted_study": "ADTB",
+        "shared_supported_grid_points": 109,
+        "max_abs_TB_shift": 0.3727051585762534,
+        "max_abs_nonTB_shift": 0.07948557259005545,
+        "max_abs_difference_shift": 0.30964947046925495
+      },
+      {
+        "pathway": "HALLMARK_ANDROGEN_RESPONSE",
+        "variant": "omit_ADTB",
+        "omitted_study": "ADTB",
+        "shared_supported_grid_points": 109,
+        "max_abs_TB_shift": 0.20314846164425912,
+        "max_abs_nonTB_shift": 0.3666679807044701,
+        "max_abs_difference_shift": 0.3712287737632546
+      },
+      {
+        "pathway": "HALLMARK_ANGIOGENESIS",
+        "variant": "omit_ADTB",
+        "omitted_study": "ADTB",
+        "shared_supported_grid_points": 109,
+        "max_abs_TB_shift": 0.7061103537863751,
+        "max_abs_nonTB_shift": 0.8572698372699967,
+        "max_abs_difference_shift": 0.36245894888581764
+      },
+      {
+        "pathway": "HALLMARK_APICAL_JUNCTION",
+        "variant": "omit_ADTB",
+        "omitted_study": "ADTB",
+        "shared_supported_grid_points": 109,
+        "max_abs_TB_shift": 0.8405834526865985,
+        "max_abs_nonTB_shift": 0.8634666804321293,
+        "max_abs_difference_shift": 0.3061787418983585
+      },
+      {
+        "pathway": "HALLMARK_APICAL_SURFACE",
+        "variant": "omit_ADTB",
+        "omitted_study": "ADTB",
+        "shared_supported_grid_points": 109,
+        "max_abs_TB_shift": 0.5982705729202806,
+        "max_abs_nonTB_shift": 0.7928283244219493,
+        "max_abs_difference_shift": 0.37875288095350507
+      },
+      {
+        "pathway": "HALLMARK_APOPTOSIS",
+        "variant": "omit_ADTB",
+        "omitted_study": "ADTB",
+        "shared_supported_grid_points": 109,
+        "max_abs_TB_shift": 0.4912166108954005,
+        "max_abs_nonTB_shift": 0.2024768933919694,
+        "max_abs_difference_shift": 0.6573060657731116
+      },
+      {
+        "pathway": "HALLMARK_BILE_ACID_METABOLISM",
+        "variant": "omit_ADTB",
+        "omitted_study": "ADTB",
+        "shared_supported_grid_points": 109,
+        "max_abs_TB_shift": 0.7782647682706115,
+        "max_abs_nonTB_shift": 0.9470984380413449,
+        "max_abs_difference_shift": 0.43125786884410433
+      },
+      {
+        "pathway": "HALLMARK_CHOLESTEROL_HOMEOSTASIS",
+        "variant": "omit_ADTB",
+        "omitted_study": "ADTB",
+        "shared_supported_grid_points": 109,
+        "max_abs_TB_shift": 0.07774574886888047,
+        "max_abs_nonTB_shift": 0.15408188294270303,
+        "max_abs_difference_shift": 0.21024843904300602
+      },
+      {
+        "pathway": "HALLMARK_COAGULATION",
+        "variant": "omit_ADTB",
+        "omitted_study": "ADTB",
+        "shared_supported_grid_points": 109,
+        "max_abs_TB_shift": 0.5699300770645812,
+        "max_abs_nonTB_shift": 0.6356588107434482,
+        "max_abs_difference_shift": 0.3271950910510638
+      },
+      {
+        "pathway": "HALLMARK_COMPLEMENT",
+        "variant": "omit_ADTB",
+        "omitted_study": "ADTB",
+        "shared_supported_grid_points": 109,
+        "max_abs_TB_shift": 0.6235901941320494,
+        "max_abs_nonTB_shift": 0.42551986704218353,
+        "max_abs_difference_shift": 0.6843248943002429
+      },
+      {
+        "pathway": "HALLMARK_DNA_REPAIR",
+        "variant": "omit_ADTB",
+        "omitted_study": "ADTB",
+        "shared_supported_grid_points": 109,
+        "max_abs_TB_shift": 0.36348243011549086,
+        "max_abs_nonTB_shift": 0.2067123734284617,
+        "max_abs_difference_shift": 0.45969631571321545
+      },
+      {
+        "pathway": "HALLMARK_E2F_TARGETS",
+        "variant": "omit_ADTB",
+        "omitted_study": "ADTB",
+        "shared_supported_grid_points": 109,
+        "max_abs_TB_shift": 0.4378255745813012,
+        "max_abs_nonTB_shift": 0.2573588752662493,
+        "max_abs_difference_shift": 0.3374078411606338
+      },
+      {
+        "pathway": "HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION",
+        "variant": "omit_ADTB",
+        "omitted_study": "ADTB",
+        "shared_supported_grid_points": 109,
+        "max_abs_TB_shift": 0.8318526900274913,
+        "max_abs_nonTB_shift": 0.7669655978318075,
+        "max_abs_difference_shift": 0.15308141987292112
+      },
+      {
+        "pathway": "HALLMARK_ESTROGEN_RESPONSE_EARLY",
+        "variant": "omit_ADTB",
+        "omitted_study": "ADTB",
+        "shared_supported_grid_points": 109,
+        "max_abs_TB_shift": 0.9294302014533561,
+        "max_abs_nonTB_shift": 0.940940961773531,
+        "max_abs_difference_shift": 0.2508055397369942
+      },
+      {
+        "pathway": "HALLMARK_ESTROGEN_RESPONSE_LATE",
+        "variant": "omit_ADTB",
+        "omitted_study": "ADTB",
+        "shared_supported_grid_points": 109,
+        "max_abs_TB_shift": 0.8087301869408146,
+        "max_abs_nonTB_shift": 0.9338175213550988,
+        "max_abs_difference_shift": 0.4463534137239697
+      },
+      {
+        "pathway": "HALLMARK_FATTY_ACID_METABOLISM",
+        "variant": "omit_ADTB",
+        "omitted_study": "ADTB",
+        "shared_supported_grid_points": 109,
+        "max_abs_TB_shift": 0.46657507167412093,
+        "max_abs_nonTB_shift": 0.5973599811910657,
+        "max_abs_difference_shift": 0.550052095710991
+      },
+      {
+        "pathway": "HALLMARK_G2M_CHECKPOINT",
+        "variant": "omit_ADTB",
+        "omitted_study": "ADTB",
+        "shared_supported_grid_points": 109,
+        "max_abs_TB_shift": 0.36043691145162293,
+        "max_abs_nonTB_shift": 0.17366037588846772,
+        "max_abs_difference_shift": 0.44622448130284
+      },
+      {
+        "pathway": "HALLMARK_GLYCOLYSIS",
+        "variant": "omit_ADTB",
+        "omitted_study": "ADTB",
+        "shared_supported_grid_points": 109,
+        "max_abs_TB_shift": 0.5808869249791444,
+        "max_abs_nonTB_shift": 0.6828151657733043,
+        "max_abs_difference_shift": 0.34876565129298626
+      },
+      {
+        "pathway": "HALLMARK_HEDGEHOG_SIGNALING",
+        "variant": "omit_ADTB",
+        "omitted_study": "ADTB",
+        "shared_supported_grid_points": 109,
+        "max_abs_TB_shift": 0.6642919291699318,
+        "max_abs_nonTB_shift": 0.6907362700661678,
+        "max_abs_difference_shift": 0.2927433507521599
+      },
+      {
+        "pathway": "HALLMARK_HEME_METABOLISM",
+        "variant": "omit_ADTB",
+        "omitted_study": "ADTB",
+        "shared_supported_grid_points": 109,
+        "max_abs_TB_shift": 0.33290047191583766,
+        "max_abs_nonTB_shift": 0.5034391580585555,
+        "max_abs_difference_shift": 0.42232032418384663
+      },
+      {
+        "pathway": "HALLMARK_HYPOXIA",
+        "variant": "omit_ADTB",
+        "omitted_study": "ADTB",
+        "shared_supported_grid_points": 109,
+        "max_abs_TB_shift": 0.8317149577278242,
+        "max_abs_nonTB_shift": 0.7973349896731333,
+        "max_abs_difference_shift": 0.3081409450823982
+      },
+      {
+        "pathway": "HALLMARK_IL2_STAT5_SIGNALING",
+        "variant": "omit_ADTB",
+        "omitted_study": "ADTB",
+        "shared_supported_grid_points": 109,
+        "max_abs_TB_shift": 0.6441861185648713,
+        "max_abs_nonTB_shift": 0.5000146468032347,
+        "max_abs_difference_shift": 0.3222827638167202
+      },
+      {
+        "pathway": "HALLMARK_IL6_JAK_STAT3_SIGNALING",
+        "variant": "omit_ADTB",
+        "omitted_study": "ADTB",
+        "shared_supported_grid_points": 109,
+        "max_abs_TB_shift": 0.5341707910640818,
+        "max_abs_nonTB_shift": 0.10022111159415864,
+        "max_abs_difference_shift": 0.6343919026582406
+      },
+      {
+        "pathway": "HALLMARK_INFLAMMATORY_RESPONSE",
+        "variant": "omit_ADTB",
+        "omitted_study": "ADTB",
+        "shared_supported_grid_points": 109,
+        "max_abs_TB_shift": 0.6097960189344523,
+        "max_abs_nonTB_shift": 0.3023107758086855,
+        "max_abs_difference_shift": 0.46144525176101053
+      },
+      {
+        "pathway": "HALLMARK_INTERFERON_ALPHA_RESPONSE",
+        "variant": "omit_ADTB",
+        "omitted_study": "ADTB",
+        "shared_supported_grid_points": 109,
+        "max_abs_TB_shift": 0.4477297145697006,
+        "max_abs_nonTB_shift": 0.28099530863528943,
+        "max_abs_difference_shift": 0.72872502320499
+      },
+      {
+        "pathway": "HALLMARK_INTERFERON_GAMMA_RESPONSE",
+        "variant": "omit_ADTB",
+        "omitted_study": "ADTB",
+        "shared_supported_grid_points": 109,
+        "max_abs_TB_shift": 0.5209248839367815,
+        "max_abs_nonTB_shift": 0.17524605686694023,
+        "max_abs_difference_shift": 0.6961709408037215
+      },
+      {
+        "pathway": "HALLMARK_KRAS_SIGNALING_DN",
+        "variant": "omit_ADTB",
+        "omitted_study": "ADTB",
+        "shared_supported_grid_points": 109,
+        "max_abs_TB_shift": 0.5271133945541362,
+        "max_abs_nonTB_shift": 0.7170583385351711,
+        "max_abs_difference_shift": 0.33518533349793617
+      },
+      {
+        "pathway": "HALLMARK_KRAS_SIGNALING_UP",
+        "variant": "omit_ADTB",
+        "omitted_study": "ADTB",
+        "shared_supported_grid_points": 109,
+        "max_abs_TB_shift": 0.9377689470002887,
+        "max_abs_nonTB_shift": 0.8447488279053442,
+        "max_abs_difference_shift": 0.4036336248749057
+      },
+      {
+        "pathway": "HALLMARK_MITOTIC_SPINDLE",
+        "variant": "omit_ADTB",
+        "omitted_study": "ADTB",
+        "shared_supported_grid_points": 109,
+        "max_abs_TB_shift": 0.4395817341173677,
+        "max_abs_nonTB_shift": 0.12152112633900249,
+        "max_abs_difference_shift": 0.4660848135567836
+      },
+      {
+        "pathway": "HALLMARK_MTORC1_SIGNALING",
+        "variant": "omit_ADTB",
+        "omitted_study": "ADTB",
+        "shared_supported_grid_points": 109,
+        "max_abs_TB_shift": 0.3293197419758221,
+        "max_abs_nonTB_shift": 0.33745367472682725,
+        "max_abs_difference_shift": 0.6667734167026496
+      },
+      {
+        "pathway": "HALLMARK_MYC_TARGETS_V1",
+        "variant": "omit_ADTB",
+        "omitted_study": "ADTB",
+        "shared_supported_grid_points": 109,
+        "max_abs_TB_shift": 0.49949278887298404,
+        "max_abs_nonTB_shift": 0.2668629922998975,
+        "max_abs_difference_shift": 0.5437647809172924
+      },
+      {
+        "pathway": "HALLMARK_MYC_TARGETS_V2",
+        "variant": "omit_ADTB",
+        "omitted_study": "ADTB",
+        "shared_supported_grid_points": 109,
+        "max_abs_TB_shift": 0.27695236041514715,
+        "max_abs_nonTB_shift": 0.10569144492630742,
+        "max_abs_difference_shift": 0.22231450238780393
+      },
+      {
+        "pathway": "HALLMARK_MYOGENESIS",
+        "variant": "omit_ADTB",
+        "omitted_study": "ADTB",
+        "shared_supported_grid_points": 109,
+        "max_abs_TB_shift": 0.8722431675209112,
+        "max_abs_nonTB_shift": 0.9070824554928502,
+        "max_abs_difference_shift": 0.5240444252215858
+      },
+      {
+        "pathway": "HALLMARK_NOTCH_SIGNALING",
+        "variant": "omit_ADTB",
+        "omitted_study": "ADTB",
+        "shared_supported_grid_points": 109,
+        "max_abs_TB_shift": 0.19903753577689523,
+        "max_abs_nonTB_shift": 0.21218263663388381,
+        "max_abs_difference_shift": 0.18983854631381702
+      },
+      {
+        "pathway": "HALLMARK_OXIDATIVE_PHOSPHORYLATION",
+        "variant": "omit_ADTB",
+        "omitted_study": "ADTB",
+        "shared_supported_grid_points": 109,
+        "max_abs_TB_shift": 0.44520659245878846,
+        "max_abs_nonTB_shift": 0.26496109020832326,
+        "max_abs_difference_shift": 0.4951217238528717
+      },
+      {
+        "pathway": "HALLMARK_P53_PATHWAY",
+        "variant": "omit_ADTB",
+        "omitted_study": "ADTB",
+        "shared_supported_grid_points": 109,
+        "max_abs_TB_shift": 0.4601595356711159,
+        "max_abs_nonTB_shift": 0.400388213620119,
+        "max_abs_difference_shift": 0.5022321326043601
+      },
+      {
+        "pathway": "HALLMARK_PANCREAS_BETA_CELLS",
+        "variant": "omit_ADTB",
+        "omitted_study": "ADTB",
+        "shared_supported_grid_points": 109,
+        "max_abs_TB_shift": 0.7115797318607509,
+        "max_abs_nonTB_shift": 1.0277643721753629,
+        "max_abs_difference_shift": 0.5315828888079086
+      },
+      {
+        "pathway": "HALLMARK_PEROXISOME",
+        "variant": "omit_ADTB",
+        "omitted_study": "ADTB",
+        "shared_supported_grid_points": 109,
+        "max_abs_TB_shift": 0.4264369797821516,
+        "max_abs_nonTB_shift": 0.4342264512852093,
+        "max_abs_difference_shift": 0.24177086977976703
+      },
+      {
+        "pathway": "HALLMARK_PI3K_AKT_MTOR_SIGNALING",
+        "variant": "omit_ADTB",
+        "omitted_study": "ADTB",
+        "shared_supported_grid_points": 109,
+        "max_abs_TB_shift": 0.3378977312290532,
+        "max_abs_nonTB_shift": 0.24442514162516127,
+        "max_abs_difference_shift": 0.5230860714656574
+      },
+      {
+        "pathway": "HALLMARK_PROTEIN_SECRETION",
+        "variant": "omit_ADTB",
+        "omitted_study": "ADTB",
+        "shared_supported_grid_points": 109,
+        "max_abs_TB_shift": 0.3645334669210357,
+        "max_abs_nonTB_shift": 0.310861700135099,
+        "max_abs_difference_shift": 0.11504542195204598
+      },
+      {
+        "pathway": "HALLMARK_REACTIVE_OXYGEN_SPECIES_PATHWAY",
+        "variant": "omit_ADTB",
+        "omitted_study": "ADTB",
+        "shared_supported_grid_points": 109,
+        "max_abs_TB_shift": 0.4416201540155769,
+        "max_abs_nonTB_shift": 0.1455696169201694,
+        "max_abs_difference_shift": 0.2960505370954074
+      },
+      {
+        "pathway": "HALLMARK_SPERMATOGENESIS",
+        "variant": "omit_ADTB",
+        "omitted_study": "ADTB",
+        "shared_supported_grid_points": 109,
+        "max_abs_TB_shift": 0.5545119880297446,
+        "max_abs_nonTB_shift": 0.5203070938874379,
+        "max_abs_difference_shift": 0.48295905144941775
+      },
+      {
+        "pathway": "HALLMARK_TGF_BETA_SIGNALING",
+        "variant": "omit_ADTB",
+        "omitted_study": "ADTB",
+        "shared_supported_grid_points": 109,
+        "max_abs_TB_shift": 0.4992098926047228,
+        "max_abs_nonTB_shift": 0.5751284136179147,
+        "max_abs_difference_shift": 0.44601058130914345
+      },
+      {
+        "pathway": "HALLMARK_TNFA_SIGNALING_VIA_NFKB",
+        "variant": "omit_ADTB",
+        "omitted_study": "ADTB",
+        "shared_supported_grid_points": 109,
+        "max_abs_TB_shift": 0.5729510177571542,
+        "max_abs_nonTB_shift": 0.2952887835739211,
+        "max_abs_difference_shift": 0.4796914591718464
+      },
+      {
+        "pathway": "HALLMARK_UNFOLDED_PROTEIN_RESPONSE",
+        "variant": "omit_ADTB",
+        "omitted_study": "ADTB",
+        "shared_supported_grid_points": 109,
+        "max_abs_TB_shift": 0.4290841727628161,
+        "max_abs_nonTB_shift": 0.15334393446860642,
+        "max_abs_difference_shift": 0.44858171667423363
+      },
+      {
+        "pathway": "HALLMARK_UV_RESPONSE_DN",
+        "variant": "omit_ADTB",
+        "omitted_study": "ADTB",
+        "shared_supported_grid_points": 109,
+        "max_abs_TB_shift": 0.5348872423023305,
+        "max_abs_nonTB_shift": 0.6371495615654543,
+        "max_abs_difference_shift": 0.367734119258849
+      },
+      {
+        "pathway": "HALLMARK_UV_RESPONSE_UP",
+        "variant": "omit_ADTB",
+        "omitted_study": "ADTB",
+        "shared_supported_grid_points": 109,
+        "max_abs_TB_shift": 0.6359908077385333,
+        "max_abs_nonTB_shift": 0.6578131151611931,
+        "max_abs_difference_shift": 0.4572738035424795
+      },
+      {
+        "pathway": "HALLMARK_WNT_BETA_CATENIN_SIGNALING",
+        "variant": "omit_ADTB",
+        "omitted_study": "ADTB",
+        "shared_supported_grid_points": 109,
+        "max_abs_TB_shift": 0.28226510307447866,
+        "max_abs_nonTB_shift": 0.3086796240491014,
+        "max_abs_difference_shift": 0.21447377193765138
+      },
+      {
+        "pathway": "HALLMARK_XENOBIOTIC_METABOLISM",
+        "variant": "omit_ADTB",
+        "omitted_study": "ADTB",
+        "shared_supported_grid_points": 109,
+        "max_abs_TB_shift": 0.7324274222755385,
+        "max_abs_nonTB_shift": 0.7925360969119752,
+        "max_abs_difference_shift": 0.695053538874453
+      },
+      {
+        "pathway": "HALLMARK_ADIPOGENESIS",
+        "variant": "omit_GHL",
+        "omitted_study": "GHL",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.194777365608504,
+        "max_abs_nonTB_shift": 0.1316472622116922,
+        "max_abs_difference_shift": 0.07071854694607424
+      },
+      {
+        "pathway": "HALLMARK_ALLOGRAFT_REJECTION",
+        "variant": "omit_GHL",
+        "omitted_study": "GHL",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.19467734398252154,
+        "max_abs_nonTB_shift": 0.13053375984434037,
+        "max_abs_difference_shift": 0.11574387836443056
+      },
+      {
+        "pathway": "HALLMARK_ANDROGEN_RESPONSE",
+        "variant": "omit_GHL",
+        "omitted_study": "GHL",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.189957775184118,
+        "max_abs_nonTB_shift": 0.05155243729500794,
+        "max_abs_difference_shift": 0.16033377477700456
+      },
+      {
+        "pathway": "HALLMARK_ANGIOGENESIS",
+        "variant": "omit_GHL",
+        "omitted_study": "GHL",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.20845121344538614,
+        "max_abs_nonTB_shift": 0.16331124371072267,
+        "max_abs_difference_shift": 0.08144866318644095
+      },
+      {
+        "pathway": "HALLMARK_APICAL_JUNCTION",
+        "variant": "omit_GHL",
+        "omitted_study": "GHL",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.223522102213041,
+        "max_abs_nonTB_shift": 0.15310815055122054,
+        "max_abs_difference_shift": 0.15259245134956614
+      },
+      {
+        "pathway": "HALLMARK_APICAL_SURFACE",
+        "variant": "omit_GHL",
+        "omitted_study": "GHL",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.1475005333851192,
+        "max_abs_nonTB_shift": 0.1855787332404766,
+        "max_abs_difference_shift": 0.0676898300792046
+      },
+      {
+        "pathway": "HALLMARK_APOPTOSIS",
+        "variant": "omit_GHL",
+        "omitted_study": "GHL",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.15424157762286367,
+        "max_abs_nonTB_shift": 0.06003625107466795,
+        "max_abs_difference_shift": 0.15417514744148322
+      },
+      {
+        "pathway": "HALLMARK_BILE_ACID_METABOLISM",
+        "variant": "omit_GHL",
+        "omitted_study": "GHL",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.2459424044754061,
+        "max_abs_nonTB_shift": 0.2477703405687201,
+        "max_abs_difference_shift": 0.04630231143115801
+      },
+      {
+        "pathway": "HALLMARK_CHOLESTEROL_HOMEOSTASIS",
+        "variant": "omit_GHL",
+        "omitted_study": "GHL",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.11910762951365328,
+        "max_abs_nonTB_shift": 0.08055987933523807,
+        "max_abs_difference_shift": 0.052357950615769755
+      },
+      {
+        "pathway": "HALLMARK_COAGULATION",
+        "variant": "omit_GHL",
+        "omitted_study": "GHL",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.13019167762947895,
+        "max_abs_nonTB_shift": 0.14417486813250366,
+        "max_abs_difference_shift": 0.08843369506546656
+      },
+      {
+        "pathway": "HALLMARK_COMPLEMENT",
+        "variant": "omit_GHL",
+        "omitted_study": "GHL",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.21718034437624784,
+        "max_abs_nonTB_shift": 0.06749274901050195,
+        "max_abs_difference_shift": 0.17920166669051976
+      },
+      {
+        "pathway": "HALLMARK_DNA_REPAIR",
+        "variant": "omit_GHL",
+        "omitted_study": "GHL",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.18588602688922373,
+        "max_abs_nonTB_shift": 0.11808274380678371,
+        "max_abs_difference_shift": 0.11791706894257299
+      },
+      {
+        "pathway": "HALLMARK_E2F_TARGETS",
+        "variant": "omit_GHL",
+        "omitted_study": "GHL",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.2188831438567948,
+        "max_abs_nonTB_shift": 0.11776490865017059,
+        "max_abs_difference_shift": 0.17601436163727405
+      },
+      {
+        "pathway": "HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION",
+        "variant": "omit_GHL",
+        "omitted_study": "GHL",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.11887809922982728,
+        "max_abs_nonTB_shift": 0.11849792317640899,
+        "max_abs_difference_shift": 0.005256391759322021
+      },
+      {
+        "pathway": "HALLMARK_ESTROGEN_RESPONSE_EARLY",
+        "variant": "omit_GHL",
+        "omitted_study": "GHL",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.18938349058190793,
+        "max_abs_nonTB_shift": 0.19761601471322088,
+        "max_abs_difference_shift": 0.036972754438881955
+      },
+      {
+        "pathway": "HALLMARK_ESTROGEN_RESPONSE_LATE",
+        "variant": "omit_GHL",
+        "omitted_study": "GHL",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.24280070158122685,
+        "max_abs_nonTB_shift": 0.22797546798296564,
+        "max_abs_difference_shift": 0.04937965974742821
+      },
+      {
+        "pathway": "HALLMARK_FATTY_ACID_METABOLISM",
+        "variant": "omit_GHL",
+        "omitted_study": "GHL",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.1769421123755032,
+        "max_abs_nonTB_shift": 0.14484880244836335,
+        "max_abs_difference_shift": 0.054704512226640634
+      },
+      {
+        "pathway": "HALLMARK_G2M_CHECKPOINT",
+        "variant": "omit_GHL",
+        "omitted_study": "GHL",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.16425731534738813,
+        "max_abs_nonTB_shift": 0.0841830123318843,
+        "max_abs_difference_shift": 0.1686748799432919
+      },
+      {
+        "pathway": "HALLMARK_GLYCOLYSIS",
+        "variant": "omit_GHL",
+        "omitted_study": "GHL",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.2233122038606833,
+        "max_abs_nonTB_shift": 0.17404062195052483,
+        "max_abs_difference_shift": 0.08103068975165989
+      },
+      {
+        "pathway": "HALLMARK_HEDGEHOG_SIGNALING",
+        "variant": "omit_GHL",
+        "omitted_study": "GHL",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.20760162504951113,
+        "max_abs_nonTB_shift": 0.17672746188293048,
+        "max_abs_difference_shift": 0.11511078253800508
+      },
+      {
+        "pathway": "HALLMARK_HEME_METABOLISM",
+        "variant": "omit_GHL",
+        "omitted_study": "GHL",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.11040995143892161,
+        "max_abs_nonTB_shift": 0.09947262879871138,
+        "max_abs_difference_shift": 0.0790803452303403
+      },
+      {
+        "pathway": "HALLMARK_HYPOXIA",
+        "variant": "omit_GHL",
+        "omitted_study": "GHL",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.24087721745835922,
+        "max_abs_nonTB_shift": 0.19243445655142088,
+        "max_abs_difference_shift": 0.04983929821284791
+      },
+      {
+        "pathway": "HALLMARK_IL2_STAT5_SIGNALING",
+        "variant": "omit_GHL",
+        "omitted_study": "GHL",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.1854111291694983,
+        "max_abs_nonTB_shift": 0.1617762390248346,
+        "max_abs_difference_shift": 0.07376515282893031
+      },
+      {
+        "pathway": "HALLMARK_IL6_JAK_STAT3_SIGNALING",
+        "variant": "omit_GHL",
+        "omitted_study": "GHL",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.2641970068559674,
+        "max_abs_nonTB_shift": 0.026735700664399245,
+        "max_abs_difference_shift": 0.2594489467212413
+      },
+      {
+        "pathway": "HALLMARK_INFLAMMATORY_RESPONSE",
+        "variant": "omit_GHL",
+        "omitted_study": "GHL",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.2684283550516211,
+        "max_abs_nonTB_shift": 0.08466945521583112,
+        "max_abs_difference_shift": 0.19865623199027097
+      },
+      {
+        "pathway": "HALLMARK_INTERFERON_ALPHA_RESPONSE",
+        "variant": "omit_GHL",
+        "omitted_study": "GHL",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.2387038857071606,
+        "max_abs_nonTB_shift": 0.025933926142955366,
+        "max_abs_difference_shift": 0.22340001268834256
+      },
+      {
+        "pathway": "HALLMARK_INTERFERON_GAMMA_RESPONSE",
+        "variant": "omit_GHL",
+        "omitted_study": "GHL",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.2830030952831657,
+        "max_abs_nonTB_shift": 0.06755565008264504,
+        "max_abs_difference_shift": 0.21544744520052073
+      },
+      {
+        "pathway": "HALLMARK_KRAS_SIGNALING_DN",
+        "variant": "omit_GHL",
+        "omitted_study": "GHL",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.1324880220430001,
+        "max_abs_nonTB_shift": 0.12518610830914295,
+        "max_abs_difference_shift": 0.08934402167819341
+      },
+      {
+        "pathway": "HALLMARK_KRAS_SIGNALING_UP",
+        "variant": "omit_GHL",
+        "omitted_study": "GHL",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.3035880816307793,
+        "max_abs_nonTB_shift": 0.21091302675887785,
+        "max_abs_difference_shift": 0.12726193960778395
+      },
+      {
+        "pathway": "HALLMARK_MITOTIC_SPINDLE",
+        "variant": "omit_GHL",
+        "omitted_study": "GHL",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.07969790419375561,
+        "max_abs_nonTB_shift": 0.09777797074100676,
+        "max_abs_difference_shift": 0.020119126198720763
+      },
+      {
+        "pathway": "HALLMARK_MTORC1_SIGNALING",
+        "variant": "omit_GHL",
+        "omitted_study": "GHL",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.08198474658779875,
+        "max_abs_nonTB_shift": 0.04613479357610391,
+        "max_abs_difference_shift": 0.03641731661084174
+      },
+      {
+        "pathway": "HALLMARK_MYC_TARGETS_V1",
+        "variant": "omit_GHL",
+        "omitted_study": "GHL",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.24118045265338506,
+        "max_abs_nonTB_shift": 0.16895228764074344,
+        "max_abs_difference_shift": 0.14008795074141508
+      },
+      {
+        "pathway": "HALLMARK_MYC_TARGETS_V2",
+        "variant": "omit_GHL",
+        "omitted_study": "GHL",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.18439549109612463,
+        "max_abs_nonTB_shift": 0.1376713437723062,
+        "max_abs_difference_shift": 0.12975918212635462
+      },
+      {
+        "pathway": "HALLMARK_MYOGENESIS",
+        "variant": "omit_GHL",
+        "omitted_study": "GHL",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.08320143212878081,
+        "max_abs_nonTB_shift": 0.17487905530101255,
+        "max_abs_difference_shift": 0.141423954771495
+      },
+      {
+        "pathway": "HALLMARK_NOTCH_SIGNALING",
+        "variant": "omit_GHL",
+        "omitted_study": "GHL",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.12062425963829154,
+        "max_abs_nonTB_shift": 0.05876846750442494,
+        "max_abs_difference_shift": 0.12158674814697486
+      },
+      {
+        "pathway": "HALLMARK_OXIDATIVE_PHOSPHORYLATION",
+        "variant": "omit_GHL",
+        "omitted_study": "GHL",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.20490449027302285,
+        "max_abs_nonTB_shift": 0.1527768556921325,
+        "max_abs_difference_shift": 0.058861942226109826
+      },
+      {
+        "pathway": "HALLMARK_P53_PATHWAY",
+        "variant": "omit_GHL",
+        "omitted_study": "GHL",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.1585251448379208,
+        "max_abs_nonTB_shift": 0.11293809423936632,
+        "max_abs_difference_shift": 0.05577046808076114
+      },
+      {
+        "pathway": "HALLMARK_PANCREAS_BETA_CELLS",
+        "variant": "omit_GHL",
+        "omitted_study": "GHL",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.23039659578503902,
+        "max_abs_nonTB_shift": 0.2382519108771184,
+        "max_abs_difference_shift": 0.09864220666763553
+      },
+      {
+        "pathway": "HALLMARK_PEROXISOME",
+        "variant": "omit_GHL",
+        "omitted_study": "GHL",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.1167269085421409,
+        "max_abs_nonTB_shift": 0.11167378408722534,
+        "max_abs_difference_shift": 0.08130597812015118
+      },
+      {
+        "pathway": "HALLMARK_PI3K_AKT_MTOR_SIGNALING",
+        "variant": "omit_GHL",
+        "omitted_study": "GHL",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.09182683144423942,
+        "max_abs_nonTB_shift": 0.11647078676198659,
+        "max_abs_difference_shift": 0.07494578251832011
+      },
+      {
+        "pathway": "HALLMARK_PROTEIN_SECRETION",
+        "variant": "omit_GHL",
+        "omitted_study": "GHL",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.28488839142989547,
+        "max_abs_nonTB_shift": 0.18391566454189182,
+        "max_abs_difference_shift": 0.11653966149939265
+      },
+      {
+        "pathway": "HALLMARK_REACTIVE_OXYGEN_SPECIES_PATHWAY",
+        "variant": "omit_GHL",
+        "omitted_study": "GHL",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.1870655999566984,
+        "max_abs_nonTB_shift": 0.06952442588213026,
+        "max_abs_difference_shift": 0.1260411943499979
+      },
+      {
+        "pathway": "HALLMARK_SPERMATOGENESIS",
+        "variant": "omit_GHL",
+        "omitted_study": "GHL",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.13268247526655338,
+        "max_abs_nonTB_shift": 0.08981775444563811,
+        "max_abs_difference_shift": 0.11764542590651325
+      },
+      {
+        "pathway": "HALLMARK_TGF_BETA_SIGNALING",
+        "variant": "omit_GHL",
+        "omitted_study": "GHL",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.248496893023852,
+        "max_abs_nonTB_shift": 0.1373786060734805,
+        "max_abs_difference_shift": 0.11111828695037146
+      },
+      {
+        "pathway": "HALLMARK_TNFA_SIGNALING_VIA_NFKB",
+        "variant": "omit_GHL",
+        "omitted_study": "GHL",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.26060367033721876,
+        "max_abs_nonTB_shift": 0.09441018407678983,
+        "max_abs_difference_shift": 0.1729199471300223
+      },
+      {
+        "pathway": "HALLMARK_UNFOLDED_PROTEIN_RESPONSE",
+        "variant": "omit_GHL",
+        "omitted_study": "GHL",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.14987202312626535,
+        "max_abs_nonTB_shift": 0.07637233115308305,
+        "max_abs_difference_shift": 0.09225740404866188
+      },
+      {
+        "pathway": "HALLMARK_UV_RESPONSE_DN",
+        "variant": "omit_GHL",
+        "omitted_study": "GHL",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.14291496948826848,
+        "max_abs_nonTB_shift": 0.03929563625416526,
+        "max_abs_difference_shift": 0.17251468329948383
+      },
+      {
+        "pathway": "HALLMARK_UV_RESPONSE_UP",
+        "variant": "omit_GHL",
+        "omitted_study": "GHL",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.26622658869033744,
+        "max_abs_nonTB_shift": 0.21747433387194062,
+        "max_abs_difference_shift": 0.048752254818396776
+      },
+      {
+        "pathway": "HALLMARK_WNT_BETA_CATENIN_SIGNALING",
+        "variant": "omit_GHL",
+        "omitted_study": "GHL",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.19615413632051298,
+        "max_abs_nonTB_shift": 0.14079555943028094,
+        "max_abs_difference_shift": 0.09373914039070486
+      },
+      {
+        "pathway": "HALLMARK_XENOBIOTIC_METABOLISM",
+        "variant": "omit_GHL",
+        "omitted_study": "GHL",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.21921642602551292,
+        "max_abs_nonTB_shift": 0.21841591688644063,
+        "max_abs_difference_shift": 0.06337878414917866
+      },
+      {
+        "pathway": "HALLMARK_ADIPOGENESIS",
+        "variant": "omit_R2D2",
+        "omitted_study": "R2D2",
+        "shared_supported_grid_points": 116,
+        "max_abs_TB_shift": 0.14080454095595946,
+        "max_abs_nonTB_shift": 0.055490768030341586,
+        "max_abs_difference_shift": 0.10577817325794134
+      },
+      {
+        "pathway": "HALLMARK_ALLOGRAFT_REJECTION",
+        "variant": "omit_R2D2",
+        "omitted_study": "R2D2",
+        "shared_supported_grid_points": 116,
+        "max_abs_TB_shift": 0.05192497070891309,
+        "max_abs_nonTB_shift": 0.1453097120580355,
+        "max_abs_difference_shift": 0.18932500118465928
+      },
+      {
+        "pathway": "HALLMARK_ANDROGEN_RESPONSE",
+        "variant": "omit_R2D2",
+        "omitted_study": "R2D2",
+        "shared_supported_grid_points": 116,
+        "max_abs_TB_shift": 0.19392881791001249,
+        "max_abs_nonTB_shift": 0.159495792705726,
+        "max_abs_difference_shift": 0.09345827921360787
+      },
+      {
+        "pathway": "HALLMARK_ANGIOGENESIS",
+        "variant": "omit_R2D2",
+        "omitted_study": "R2D2",
+        "shared_supported_grid_points": 116,
+        "max_abs_TB_shift": 0.11719475842844149,
+        "max_abs_nonTB_shift": 0.10948449884770423,
+        "max_abs_difference_shift": 0.20595246678530751
+      },
+      {
+        "pathway": "HALLMARK_APICAL_JUNCTION",
+        "variant": "omit_R2D2",
+        "omitted_study": "R2D2",
+        "shared_supported_grid_points": 116,
+        "max_abs_TB_shift": 0.09329514774174472,
+        "max_abs_nonTB_shift": 0.11148563512993578,
+        "max_abs_difference_shift": 0.08215563468482606
+      },
+      {
+        "pathway": "HALLMARK_APICAL_SURFACE",
+        "variant": "omit_R2D2",
+        "omitted_study": "R2D2",
+        "shared_supported_grid_points": 116,
+        "max_abs_TB_shift": 0.17534736541608675,
+        "max_abs_nonTB_shift": 0.10206353156239921,
+        "max_abs_difference_shift": 0.14113560147440934
+      },
+      {
+        "pathway": "HALLMARK_APOPTOSIS",
+        "variant": "omit_R2D2",
+        "omitted_study": "R2D2",
+        "shared_supported_grid_points": 116,
+        "max_abs_TB_shift": 0.138293235904774,
+        "max_abs_nonTB_shift": 0.06307619885181626,
+        "max_abs_difference_shift": 0.1625370502234677
+      },
+      {
+        "pathway": "HALLMARK_BILE_ACID_METABOLISM",
+        "variant": "omit_R2D2",
+        "omitted_study": "R2D2",
+        "shared_supported_grid_points": 116,
+        "max_abs_TB_shift": 0.13639225595765533,
+        "max_abs_nonTB_shift": 0.0833266156340549,
+        "max_abs_difference_shift": 0.14480406344961214
+      },
+      {
+        "pathway": "HALLMARK_CHOLESTEROL_HOMEOSTASIS",
+        "variant": "omit_R2D2",
+        "omitted_study": "R2D2",
+        "shared_supported_grid_points": 116,
+        "max_abs_TB_shift": 0.11559304383360852,
+        "max_abs_nonTB_shift": 0.020566733647578495,
+        "max_abs_difference_shift": 0.1057483341412913
+      },
+      {
+        "pathway": "HALLMARK_COAGULATION",
+        "variant": "omit_R2D2",
+        "omitted_study": "R2D2",
+        "shared_supported_grid_points": 116,
+        "max_abs_TB_shift": 0.08376384764574178,
+        "max_abs_nonTB_shift": 0.14600283694926489,
+        "max_abs_difference_shift": 0.22177162182366242
+      },
+      {
+        "pathway": "HALLMARK_COMPLEMENT",
+        "variant": "omit_R2D2",
+        "omitted_study": "R2D2",
+        "shared_supported_grid_points": 116,
+        "max_abs_TB_shift": 0.13991247079860264,
+        "max_abs_nonTB_shift": 0.051984739854267215,
+        "max_abs_difference_shift": 0.17070973479966758
+      },
+      {
+        "pathway": "HALLMARK_DNA_REPAIR",
+        "variant": "omit_R2D2",
+        "omitted_study": "R2D2",
+        "shared_supported_grid_points": 116,
+        "max_abs_TB_shift": 0.10147652418161102,
+        "max_abs_nonTB_shift": 0.052018344310133795,
+        "max_abs_difference_shift": 0.13944592819066354
+      },
+      {
+        "pathway": "HALLMARK_E2F_TARGETS",
+        "variant": "omit_R2D2",
+        "omitted_study": "R2D2",
+        "shared_supported_grid_points": 116,
+        "max_abs_TB_shift": 0.10806617270354063,
+        "max_abs_nonTB_shift": 0.07026872799158264,
+        "max_abs_difference_shift": 0.1144620627074745
+      },
+      {
+        "pathway": "HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION",
+        "variant": "omit_R2D2",
+        "omitted_study": "R2D2",
+        "shared_supported_grid_points": 116,
+        "max_abs_TB_shift": 0.10372918896987085,
+        "max_abs_nonTB_shift": 0.13729674951431092,
+        "max_abs_difference_shift": 0.130972995019703
+      },
+      {
+        "pathway": "HALLMARK_ESTROGEN_RESPONSE_EARLY",
+        "variant": "omit_R2D2",
+        "omitted_study": "R2D2",
+        "shared_supported_grid_points": 116,
+        "max_abs_TB_shift": 0.1428035524477955,
+        "max_abs_nonTB_shift": 0.099970718832569,
+        "max_abs_difference_shift": 0.09378641448371616
+      },
+      {
+        "pathway": "HALLMARK_ESTROGEN_RESPONSE_LATE",
+        "variant": "omit_R2D2",
+        "omitted_study": "R2D2",
+        "shared_supported_grid_points": 116,
+        "max_abs_TB_shift": 0.10033331279438255,
+        "max_abs_nonTB_shift": 0.123976083029223,
+        "max_abs_difference_shift": 0.06695956918926875
+      },
+      {
+        "pathway": "HALLMARK_FATTY_ACID_METABOLISM",
+        "variant": "omit_R2D2",
+        "omitted_study": "R2D2",
+        "shared_supported_grid_points": 116,
+        "max_abs_TB_shift": 0.15036740316369385,
+        "max_abs_nonTB_shift": 0.05799841074809248,
+        "max_abs_difference_shift": 0.18545009608593555
+      },
+      {
+        "pathway": "HALLMARK_G2M_CHECKPOINT",
+        "variant": "omit_R2D2",
+        "omitted_study": "R2D2",
+        "shared_supported_grid_points": 116,
+        "max_abs_TB_shift": 0.09445009339563354,
+        "max_abs_nonTB_shift": 0.08242592268672924,
+        "max_abs_difference_shift": 0.09475260546469189
+      },
+      {
+        "pathway": "HALLMARK_GLYCOLYSIS",
+        "variant": "omit_R2D2",
+        "omitted_study": "R2D2",
+        "shared_supported_grid_points": 116,
+        "max_abs_TB_shift": 0.1376499365600786,
+        "max_abs_nonTB_shift": 0.05795794973578277,
+        "max_abs_difference_shift": 0.10764982042626223
+      },
+      {
+        "pathway": "HALLMARK_HEDGEHOG_SIGNALING",
+        "variant": "omit_R2D2",
+        "omitted_study": "R2D2",
+        "shared_supported_grid_points": 116,
+        "max_abs_TB_shift": 0.05855240808263509,
+        "max_abs_nonTB_shift": 0.079694658052498,
+        "max_abs_difference_shift": 0.13188772241542215
+      },
+      {
+        "pathway": "HALLMARK_HEME_METABOLISM",
+        "variant": "omit_R2D2",
+        "omitted_study": "R2D2",
+        "shared_supported_grid_points": 116,
+        "max_abs_TB_shift": 0.11886392747155666,
+        "max_abs_nonTB_shift": 0.1242035042199037,
+        "max_abs_difference_shift": 0.2205427858258107
+      },
+      {
+        "pathway": "HALLMARK_HYPOXIA",
+        "variant": "omit_R2D2",
+        "omitted_study": "R2D2",
+        "shared_supported_grid_points": 116,
+        "max_abs_TB_shift": 0.11989686061602683,
+        "max_abs_nonTB_shift": 0.08032314189268258,
+        "max_abs_difference_shift": 0.11523359525703894
+      },
+      {
+        "pathway": "HALLMARK_IL2_STAT5_SIGNALING",
+        "variant": "omit_R2D2",
+        "omitted_study": "R2D2",
+        "shared_supported_grid_points": 116,
+        "max_abs_TB_shift": 0.08489785341511874,
+        "max_abs_nonTB_shift": 0.07650629908199547,
+        "max_abs_difference_shift": 0.13609053214852365
+      },
+      {
+        "pathway": "HALLMARK_IL6_JAK_STAT3_SIGNALING",
+        "variant": "omit_R2D2",
+        "omitted_study": "R2D2",
+        "shared_supported_grid_points": 116,
+        "max_abs_TB_shift": 0.17271119139159097,
+        "max_abs_nonTB_shift": 0.0431295248571697,
+        "max_abs_difference_shift": 0.16670830616494509
+      },
+      {
+        "pathway": "HALLMARK_INFLAMMATORY_RESPONSE",
+        "variant": "omit_R2D2",
+        "omitted_study": "R2D2",
+        "shared_supported_grid_points": 116,
+        "max_abs_TB_shift": 0.09722208871361052,
+        "max_abs_nonTB_shift": 0.03913121301531214,
+        "max_abs_difference_shift": 0.0985626358112701
+      },
+      {
+        "pathway": "HALLMARK_INTERFERON_ALPHA_RESPONSE",
+        "variant": "omit_R2D2",
+        "omitted_study": "R2D2",
+        "shared_supported_grid_points": 116,
+        "max_abs_TB_shift": 0.18748090447908541,
+        "max_abs_nonTB_shift": 0.1131252385794216,
+        "max_abs_difference_shift": 0.21608800631491712
+      },
+      {
+        "pathway": "HALLMARK_INTERFERON_GAMMA_RESPONSE",
+        "variant": "omit_R2D2",
+        "omitted_study": "R2D2",
+        "shared_supported_grid_points": 116,
+        "max_abs_TB_shift": 0.16209738889174474,
+        "max_abs_nonTB_shift": 0.14049432895003522,
+        "max_abs_difference_shift": 0.21987169816863572
+      },
+      {
+        "pathway": "HALLMARK_KRAS_SIGNALING_DN",
+        "variant": "omit_R2D2",
+        "omitted_study": "R2D2",
+        "shared_supported_grid_points": 116,
+        "max_abs_TB_shift": 0.04697396765848483,
+        "max_abs_nonTB_shift": 0.0850458404894458,
+        "max_abs_difference_shift": 0.09405299646384771
+      },
+      {
+        "pathway": "HALLMARK_KRAS_SIGNALING_UP",
+        "variant": "omit_R2D2",
+        "omitted_study": "R2D2",
+        "shared_supported_grid_points": 116,
+        "max_abs_TB_shift": 0.14662110319932264,
+        "max_abs_nonTB_shift": 0.07815185692512261,
+        "max_abs_difference_shift": 0.07830847329620186
+      },
+      {
+        "pathway": "HALLMARK_MITOTIC_SPINDLE",
+        "variant": "omit_R2D2",
+        "omitted_study": "R2D2",
+        "shared_supported_grid_points": 116,
+        "max_abs_TB_shift": 0.15642696502615683,
+        "max_abs_nonTB_shift": 0.10624621006505158,
+        "max_abs_difference_shift": 0.08262850520806997
+      },
+      {
+        "pathway": "HALLMARK_MTORC1_SIGNALING",
+        "variant": "omit_R2D2",
+        "omitted_study": "R2D2",
+        "shared_supported_grid_points": 116,
+        "max_abs_TB_shift": 0.10563334297064375,
+        "max_abs_nonTB_shift": 0.08319650963881087,
+        "max_abs_difference_shift": 0.11008228406181836
+      },
+      {
+        "pathway": "HALLMARK_MYC_TARGETS_V1",
+        "variant": "omit_R2D2",
+        "omitted_study": "R2D2",
+        "shared_supported_grid_points": 116,
+        "max_abs_TB_shift": 0.08201950001027619,
+        "max_abs_nonTB_shift": 0.09408597889577795,
+        "max_abs_difference_shift": 0.1761054789060541
+      },
+      {
+        "pathway": "HALLMARK_MYC_TARGETS_V2",
+        "variant": "omit_R2D2",
+        "omitted_study": "R2D2",
+        "shared_supported_grid_points": 116,
+        "max_abs_TB_shift": 0.0892565606246507,
+        "max_abs_nonTB_shift": 0.14144136782822164,
+        "max_abs_difference_shift": 0.1899785836596274
+      },
+      {
+        "pathway": "HALLMARK_MYOGENESIS",
+        "variant": "omit_R2D2",
+        "omitted_study": "R2D2",
+        "shared_supported_grid_points": 116,
+        "max_abs_TB_shift": 0.11732098277552305,
+        "max_abs_nonTB_shift": 0.14895098222379025,
+        "max_abs_difference_shift": 0.06720003533944288
+      },
+      {
+        "pathway": "HALLMARK_NOTCH_SIGNALING",
+        "variant": "omit_R2D2",
+        "omitted_study": "R2D2",
+        "shared_supported_grid_points": 116,
+        "max_abs_TB_shift": 0.1344449508163515,
+        "max_abs_nonTB_shift": 0.08100104331372862,
+        "max_abs_difference_shift": 0.05758246485465615
+      },
+      {
+        "pathway": "HALLMARK_OXIDATIVE_PHOSPHORYLATION",
+        "variant": "omit_R2D2",
+        "omitted_study": "R2D2",
+        "shared_supported_grid_points": 116,
+        "max_abs_TB_shift": 0.10685051725793948,
+        "max_abs_nonTB_shift": 0.07424851662039718,
+        "max_abs_difference_shift": 0.15141395886411319
+      },
+      {
+        "pathway": "HALLMARK_P53_PATHWAY",
+        "variant": "omit_R2D2",
+        "omitted_study": "R2D2",
+        "shared_supported_grid_points": 116,
+        "max_abs_TB_shift": 0.11546048894861582,
+        "max_abs_nonTB_shift": 0.06060303542573396,
+        "max_abs_difference_shift": 0.09980053864545305
+      },
+      {
+        "pathway": "HALLMARK_PANCREAS_BETA_CELLS",
+        "variant": "omit_R2D2",
+        "omitted_study": "R2D2",
+        "shared_supported_grid_points": 116,
+        "max_abs_TB_shift": 0.050841668679082824,
+        "max_abs_nonTB_shift": 0.11039723822330239,
+        "max_abs_difference_shift": 0.13423934036127833
+      },
+      {
+        "pathway": "HALLMARK_PEROXISOME",
+        "variant": "omit_R2D2",
+        "omitted_study": "R2D2",
+        "shared_supported_grid_points": 116,
+        "max_abs_TB_shift": 0.15522247378687293,
+        "max_abs_nonTB_shift": 0.033059151531814546,
+        "max_abs_difference_shift": 0.1656346723338927
+      },
+      {
+        "pathway": "HALLMARK_PI3K_AKT_MTOR_SIGNALING",
+        "variant": "omit_R2D2",
+        "omitted_study": "R2D2",
+        "shared_supported_grid_points": 116,
+        "max_abs_TB_shift": 0.15829814590418767,
+        "max_abs_nonTB_shift": 0.07811125939424557,
+        "max_abs_difference_shift": 0.1789774078550811
+      },
+      {
+        "pathway": "HALLMARK_PROTEIN_SECRETION",
+        "variant": "omit_R2D2",
+        "omitted_study": "R2D2",
+        "shared_supported_grid_points": 116,
+        "max_abs_TB_shift": 0.1686190451208691,
+        "max_abs_nonTB_shift": 0.11091194635866786,
+        "max_abs_difference_shift": 0.08950508900543491
+      },
+      {
+        "pathway": "HALLMARK_REACTIVE_OXYGEN_SPECIES_PATHWAY",
+        "variant": "omit_R2D2",
+        "omitted_study": "R2D2",
+        "shared_supported_grid_points": 116,
+        "max_abs_TB_shift": 0.08987760496356706,
+        "max_abs_nonTB_shift": 0.029091249321851892,
+        "max_abs_difference_shift": 0.08596511295161063
+      },
+      {
+        "pathway": "HALLMARK_SPERMATOGENESIS",
+        "variant": "omit_R2D2",
+        "omitted_study": "R2D2",
+        "shared_supported_grid_points": 116,
+        "max_abs_TB_shift": 0.23394300675983287,
+        "max_abs_nonTB_shift": 0.12930327319602813,
+        "max_abs_difference_shift": 0.16904388277672816
+      },
+      {
+        "pathway": "HALLMARK_TGF_BETA_SIGNALING",
+        "variant": "omit_R2D2",
+        "omitted_study": "R2D2",
+        "shared_supported_grid_points": 116,
+        "max_abs_TB_shift": 0.11024541285685911,
+        "max_abs_nonTB_shift": 0.14602080827735814,
+        "max_abs_difference_shift": 0.22908264366092965
+      },
+      {
+        "pathway": "HALLMARK_TNFA_SIGNALING_VIA_NFKB",
+        "variant": "omit_R2D2",
+        "omitted_study": "R2D2",
+        "shared_supported_grid_points": 116,
+        "max_abs_TB_shift": 0.16591431180434327,
+        "max_abs_nonTB_shift": 0.08141085064710918,
+        "max_abs_difference_shift": 0.1585189893642771
+      },
+      {
+        "pathway": "HALLMARK_UNFOLDED_PROTEIN_RESPONSE",
+        "variant": "omit_R2D2",
+        "omitted_study": "R2D2",
+        "shared_supported_grid_points": 116,
+        "max_abs_TB_shift": 0.13492665495852724,
+        "max_abs_nonTB_shift": 0.06104480449768207,
+        "max_abs_difference_shift": 0.12748871576325124
+      },
+      {
+        "pathway": "HALLMARK_UV_RESPONSE_DN",
+        "variant": "omit_R2D2",
+        "omitted_study": "R2D2",
+        "shared_supported_grid_points": 116,
+        "max_abs_TB_shift": 0.1645105309464247,
+        "max_abs_nonTB_shift": 0.20025346128893962,
+        "max_abs_difference_shift": 0.1102052959386795
+      },
+      {
+        "pathway": "HALLMARK_UV_RESPONSE_UP",
+        "variant": "omit_R2D2",
+        "omitted_study": "R2D2",
+        "shared_supported_grid_points": 116,
+        "max_abs_TB_shift": 0.17620690601761738,
+        "max_abs_nonTB_shift": 0.06659847144287036,
+        "max_abs_difference_shift": 0.141096684302901
+      },
+      {
+        "pathway": "HALLMARK_WNT_BETA_CATENIN_SIGNALING",
+        "variant": "omit_R2D2",
+        "omitted_study": "R2D2",
+        "shared_supported_grid_points": 116,
+        "max_abs_TB_shift": 0.10440271912236848,
+        "max_abs_nonTB_shift": 0.14602352768842894,
+        "max_abs_difference_shift": 0.14523719259277246
+      },
+      {
+        "pathway": "HALLMARK_XENOBIOTIC_METABOLISM",
+        "variant": "omit_R2D2",
+        "omitted_study": "R2D2",
+        "shared_supported_grid_points": 116,
+        "max_abs_TB_shift": 0.12474478889994613,
+        "max_abs_nonTB_shift": 0.06551585734885407,
+        "max_abs_difference_shift": 0.13628075280945978
+      },
+      {
+        "pathway": "HALLMARK_ADIPOGENESIS",
+        "variant": "omit_TBSQUARE",
+        "omitted_study": "TBSQUARE",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.04147713076088483,
+        "max_abs_nonTB_shift": 0.029250747751712103,
+        "max_abs_difference_shift": 0.05497967873524787
+      },
+      {
+        "pathway": "HALLMARK_ALLOGRAFT_REJECTION",
+        "variant": "omit_TBSQUARE",
+        "omitted_study": "TBSQUARE",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.02205902150227393,
+        "max_abs_nonTB_shift": 0.042305955075951376,
+        "max_abs_difference_shift": 0.032902708345462425
+      },
+      {
+        "pathway": "HALLMARK_ANDROGEN_RESPONSE",
+        "variant": "omit_TBSQUARE",
+        "omitted_study": "TBSQUARE",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.121348035157715,
+        "max_abs_nonTB_shift": 0.06353086091217745,
+        "max_abs_difference_shift": 0.18487889606989244
+      },
+      {
+        "pathway": "HALLMARK_ANGIOGENESIS",
+        "variant": "omit_TBSQUARE",
+        "omitted_study": "TBSQUARE",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.1837450501968314,
+        "max_abs_nonTB_shift": 0.09261986780191617,
+        "max_abs_difference_shift": 0.0951435178163116
+      },
+      {
+        "pathway": "HALLMARK_APICAL_JUNCTION",
+        "variant": "omit_TBSQUARE",
+        "omitted_study": "TBSQUARE",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.2000416961882886,
+        "max_abs_nonTB_shift": 0.1478269843195436,
+        "max_abs_difference_shift": 0.07660852985299305
+      },
+      {
+        "pathway": "HALLMARK_APICAL_SURFACE",
+        "variant": "omit_TBSQUARE",
+        "omitted_study": "TBSQUARE",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.15479439810495563,
+        "max_abs_nonTB_shift": 0.14118430046630212,
+        "max_abs_difference_shift": 0.12835105753183257
+      },
+      {
+        "pathway": "HALLMARK_APOPTOSIS",
+        "variant": "omit_TBSQUARE",
+        "omitted_study": "TBSQUARE",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.08673557291417566,
+        "max_abs_nonTB_shift": 0.04061465516311395,
+        "max_abs_difference_shift": 0.05974041867123686
+      },
+      {
+        "pathway": "HALLMARK_BILE_ACID_METABOLISM",
+        "variant": "omit_TBSQUARE",
+        "omitted_study": "TBSQUARE",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.16061317715474735,
+        "max_abs_nonTB_shift": 0.11340461299425195,
+        "max_abs_difference_shift": 0.06284588435385284
+      },
+      {
+        "pathway": "HALLMARK_CHOLESTEROL_HOMEOSTASIS",
+        "variant": "omit_TBSQUARE",
+        "omitted_study": "TBSQUARE",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.11575649869295179,
+        "max_abs_nonTB_shift": 0.03962620063321608,
+        "max_abs_difference_shift": 0.1398924465258457
+      },
+      {
+        "pathway": "HALLMARK_COAGULATION",
+        "variant": "omit_TBSQUARE",
+        "omitted_study": "TBSQUARE",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.09620677301427447,
+        "max_abs_nonTB_shift": 0.09898521638393298,
+        "max_abs_difference_shift": 0.07821065272531677
+      },
+      {
+        "pathway": "HALLMARK_COMPLEMENT",
+        "variant": "omit_TBSQUARE",
+        "omitted_study": "TBSQUARE",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.1268904260206853,
+        "max_abs_nonTB_shift": 0.07208321034471335,
+        "max_abs_difference_shift": 0.06286024493465567
+      },
+      {
+        "pathway": "HALLMARK_DNA_REPAIR",
+        "variant": "omit_TBSQUARE",
+        "omitted_study": "TBSQUARE",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.07955304302866947,
+        "max_abs_nonTB_shift": 0.06108586524411767,
+        "max_abs_difference_shift": 0.11757486838179237
+      },
+      {
+        "pathway": "HALLMARK_E2F_TARGETS",
+        "variant": "omit_TBSQUARE",
+        "omitted_study": "TBSQUARE",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.12873324433770283,
+        "max_abs_nonTB_shift": 0.046952495818565865,
+        "max_abs_difference_shift": 0.16389732211051783
+      },
+      {
+        "pathway": "HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION",
+        "variant": "omit_TBSQUARE",
+        "omitted_study": "TBSQUARE",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.31046244883532637,
+        "max_abs_nonTB_shift": 0.14933244965768722,
+        "max_abs_difference_shift": 0.16762377710505577
+      },
+      {
+        "pathway": "HALLMARK_ESTROGEN_RESPONSE_EARLY",
+        "variant": "omit_TBSQUARE",
+        "omitted_study": "TBSQUARE",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.21446976894463604,
+        "max_abs_nonTB_shift": 0.14572720596049252,
+        "max_abs_difference_shift": 0.07713249328218758
+      },
+      {
+        "pathway": "HALLMARK_ESTROGEN_RESPONSE_LATE",
+        "variant": "omit_TBSQUARE",
+        "omitted_study": "TBSQUARE",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.16500557040693098,
+        "max_abs_nonTB_shift": 0.11703329909942599,
+        "max_abs_difference_shift": 0.11946524582263784
+      },
+      {
+        "pathway": "HALLMARK_FATTY_ACID_METABOLISM",
+        "variant": "omit_TBSQUARE",
+        "omitted_study": "TBSQUARE",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.06644592421668355,
+        "max_abs_nonTB_shift": 0.06188604075865772,
+        "max_abs_difference_shift": 0.0864812571711375
+      },
+      {
+        "pathway": "HALLMARK_G2M_CHECKPOINT",
+        "variant": "omit_TBSQUARE",
+        "omitted_study": "TBSQUARE",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.1339701529754197,
+        "max_abs_nonTB_shift": 0.07592910156638702,
+        "max_abs_difference_shift": 0.2098992545418067
+      },
+      {
+        "pathway": "HALLMARK_GLYCOLYSIS",
+        "variant": "omit_TBSQUARE",
+        "omitted_study": "TBSQUARE",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.17155034250188922,
+        "max_abs_nonTB_shift": 0.12545165281916534,
+        "max_abs_difference_shift": 0.09018043101756512
+      },
+      {
+        "pathway": "HALLMARK_HEDGEHOG_SIGNALING",
+        "variant": "omit_TBSQUARE",
+        "omitted_study": "TBSQUARE",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.11863249333672597,
+        "max_abs_nonTB_shift": 0.1285867728120031,
+        "max_abs_difference_shift": 0.04122028930162659
+      },
+      {
+        "pathway": "HALLMARK_HEME_METABOLISM",
+        "variant": "omit_TBSQUARE",
+        "omitted_study": "TBSQUARE",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.06337531390859383,
+        "max_abs_nonTB_shift": 0.019730489347504765,
+        "max_abs_difference_shift": 0.06580079019370685
+      },
+      {
+        "pathway": "HALLMARK_HYPOXIA",
+        "variant": "omit_TBSQUARE",
+        "omitted_study": "TBSQUARE",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.15972008322331416,
+        "max_abs_nonTB_shift": 0.1131175361190431,
+        "max_abs_difference_shift": 0.047263542453462426
+      },
+      {
+        "pathway": "HALLMARK_IL2_STAT5_SIGNALING",
+        "variant": "omit_TBSQUARE",
+        "omitted_study": "TBSQUARE",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.10991095157394734,
+        "max_abs_nonTB_shift": 0.06692148907467127,
+        "max_abs_difference_shift": 0.04487435552843738
+      },
+      {
+        "pathway": "HALLMARK_IL6_JAK_STAT3_SIGNALING",
+        "variant": "omit_TBSQUARE",
+        "omitted_study": "TBSQUARE",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.038116927037687875,
+        "max_abs_nonTB_shift": 0.04198407812541052,
+        "max_abs_difference_shift": 0.02994397608790378
+      },
+      {
+        "pathway": "HALLMARK_INFLAMMATORY_RESPONSE",
+        "variant": "omit_TBSQUARE",
+        "omitted_study": "TBSQUARE",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.09035865803676721,
+        "max_abs_nonTB_shift": 0.07083883756956698,
+        "max_abs_difference_shift": 0.03429267430525218
+      },
+      {
+        "pathway": "HALLMARK_INTERFERON_ALPHA_RESPONSE",
+        "variant": "omit_TBSQUARE",
+        "omitted_study": "TBSQUARE",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.06895294436427792,
+        "max_abs_nonTB_shift": 0.009307749277903518,
+        "max_abs_difference_shift": 0.07149755843191868
+      },
+      {
+        "pathway": "HALLMARK_INTERFERON_GAMMA_RESPONSE",
+        "variant": "omit_TBSQUARE",
+        "omitted_study": "TBSQUARE",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.06836283360830958,
+        "max_abs_nonTB_shift": 0.02466609778577794,
+        "max_abs_difference_shift": 0.05561197195975642
+      },
+      {
+        "pathway": "HALLMARK_KRAS_SIGNALING_DN",
+        "variant": "omit_TBSQUARE",
+        "omitted_study": "TBSQUARE",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.14005139533356625,
+        "max_abs_nonTB_shift": 0.16105633156122778,
+        "max_abs_difference_shift": 0.04094011504257422
+      },
+      {
+        "pathway": "HALLMARK_KRAS_SIGNALING_UP",
+        "variant": "omit_TBSQUARE",
+        "omitted_study": "TBSQUARE",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.15846524883709912,
+        "max_abs_nonTB_shift": 0.12825250051512554,
+        "max_abs_difference_shift": 0.04059568416295478
+      },
+      {
+        "pathway": "HALLMARK_MITOTIC_SPINDLE",
+        "variant": "omit_TBSQUARE",
+        "omitted_study": "TBSQUARE",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.131937553170692,
+        "max_abs_nonTB_shift": 0.06393795925627808,
+        "max_abs_difference_shift": 0.19485047523960103
+      },
+      {
+        "pathway": "HALLMARK_MTORC1_SIGNALING",
+        "variant": "omit_TBSQUARE",
+        "omitted_study": "TBSQUARE",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.046176766129092106,
+        "max_abs_nonTB_shift": 0.05301703100437376,
+        "max_abs_difference_shift": 0.09919379713346588
+      },
+      {
+        "pathway": "HALLMARK_MYC_TARGETS_V1",
+        "variant": "omit_TBSQUARE",
+        "omitted_study": "TBSQUARE",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.05868707691057626,
+        "max_abs_nonTB_shift": 0.0435737058885774,
+        "max_abs_difference_shift": 0.10226078279915363
+      },
+      {
+        "pathway": "HALLMARK_MYC_TARGETS_V2",
+        "variant": "omit_TBSQUARE",
+        "omitted_study": "TBSQUARE",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.040497822139152685,
+        "max_abs_nonTB_shift": 0.025292574917653132,
+        "max_abs_difference_shift": 0.055626090383066415
+      },
+      {
+        "pathway": "HALLMARK_MYOGENESIS",
+        "variant": "omit_TBSQUARE",
+        "omitted_study": "TBSQUARE",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.2611658794613101,
+        "max_abs_nonTB_shift": 0.13704726800444766,
+        "max_abs_difference_shift": 0.1330699223837667
+      },
+      {
+        "pathway": "HALLMARK_NOTCH_SIGNALING",
+        "variant": "omit_TBSQUARE",
+        "omitted_study": "TBSQUARE",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.21126487303773275,
+        "max_abs_nonTB_shift": 0.06559124860285792,
+        "max_abs_difference_shift": 0.18436185377232286
+      },
+      {
+        "pathway": "HALLMARK_OXIDATIVE_PHOSPHORYLATION",
+        "variant": "omit_TBSQUARE",
+        "omitted_study": "TBSQUARE",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.05989409986096972,
+        "max_abs_nonTB_shift": 0.052884380041639575,
+        "max_abs_difference_shift": 0.05150575747803543
+      },
+      {
+        "pathway": "HALLMARK_P53_PATHWAY",
+        "variant": "omit_TBSQUARE",
+        "omitted_study": "TBSQUARE",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.09028418939654542,
+        "max_abs_nonTB_shift": 0.06851149699484876,
+        "max_abs_difference_shift": 0.08482998698459102
+      },
+      {
+        "pathway": "HALLMARK_PANCREAS_BETA_CELLS",
+        "variant": "omit_TBSQUARE",
+        "omitted_study": "TBSQUARE",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.12537153773777365,
+        "max_abs_nonTB_shift": 0.151683787775178,
+        "max_abs_difference_shift": 0.08240080865333935
+      },
+      {
+        "pathway": "HALLMARK_PEROXISOME",
+        "variant": "omit_TBSQUARE",
+        "omitted_study": "TBSQUARE",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.04518128685305994,
+        "max_abs_nonTB_shift": 0.05543014261793264,
+        "max_abs_difference_shift": 0.04200138951564103
+      },
+      {
+        "pathway": "HALLMARK_PI3K_AKT_MTOR_SIGNALING",
+        "variant": "omit_TBSQUARE",
+        "omitted_study": "TBSQUARE",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.02527469505454294,
+        "max_abs_nonTB_shift": 0.058166724825264415,
+        "max_abs_difference_shift": 0.08344141987980735
+      },
+      {
+        "pathway": "HALLMARK_PROTEIN_SECRETION",
+        "variant": "omit_TBSQUARE",
+        "omitted_study": "TBSQUARE",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.060653574201854965,
+        "max_abs_nonTB_shift": 0.11284323954488865,
+        "max_abs_difference_shift": 0.11057471922646828
+      },
+      {
+        "pathway": "HALLMARK_REACTIVE_OXYGEN_SPECIES_PATHWAY",
+        "variant": "omit_TBSQUARE",
+        "omitted_study": "TBSQUARE",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.05115494190987946,
+        "max_abs_nonTB_shift": 0.014497932951937909,
+        "max_abs_difference_shift": 0.04649888689341397
+      },
+      {
+        "pathway": "HALLMARK_SPERMATOGENESIS",
+        "variant": "omit_TBSQUARE",
+        "omitted_study": "TBSQUARE",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.13324067090150932,
+        "max_abs_nonTB_shift": 0.08336879323084977,
+        "max_abs_difference_shift": 0.17201227370062144
+      },
+      {
+        "pathway": "HALLMARK_TGF_BETA_SIGNALING",
+        "variant": "omit_TBSQUARE",
+        "omitted_study": "TBSQUARE",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.08014202462392081,
+        "max_abs_nonTB_shift": 0.02717358059061678,
+        "max_abs_difference_shift": 0.053058791313428166
+      },
+      {
+        "pathway": "HALLMARK_TNFA_SIGNALING_VIA_NFKB",
+        "variant": "omit_TBSQUARE",
+        "omitted_study": "TBSQUARE",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.06964005765786335,
+        "max_abs_nonTB_shift": 0.07336397933714053,
+        "max_abs_difference_shift": 0.012664553366734124
+      },
+      {
+        "pathway": "HALLMARK_UNFOLDED_PROTEIN_RESPONSE",
+        "variant": "omit_TBSQUARE",
+        "omitted_study": "TBSQUARE",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.04078055463594693,
+        "max_abs_nonTB_shift": 0.03800455175626141,
+        "max_abs_difference_shift": 0.0356180597932961
+      },
+      {
+        "pathway": "HALLMARK_UV_RESPONSE_DN",
+        "variant": "omit_TBSQUARE",
+        "omitted_study": "TBSQUARE",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.3090878609297565,
+        "max_abs_nonTB_shift": 0.08853000215488044,
+        "max_abs_difference_shift": 0.2231156822463636
+      },
+      {
+        "pathway": "HALLMARK_UV_RESPONSE_UP",
+        "variant": "omit_TBSQUARE",
+        "omitted_study": "TBSQUARE",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.07848350795525316,
+        "max_abs_nonTB_shift": 0.10966576869614764,
+        "max_abs_difference_shift": 0.09166204487982438
+      },
+      {
+        "pathway": "HALLMARK_WNT_BETA_CATENIN_SIGNALING",
+        "variant": "omit_TBSQUARE",
+        "omitted_study": "TBSQUARE",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.08881844679491002,
+        "max_abs_nonTB_shift": 0.09779630738951445,
+        "max_abs_difference_shift": 0.12307998967338474
+      },
+      {
+        "pathway": "HALLMARK_XENOBIOTIC_METABOLISM",
+        "variant": "omit_TBSQUARE",
+        "omitted_study": "TBSQUARE",
+        "shared_supported_grid_points": 119,
+        "max_abs_TB_shift": 0.11393803168574808,
+        "max_abs_nonTB_shift": 0.0875354824837668,
+        "max_abs_difference_shift": 0.06148065341767294
+      }
+    ]
+  }
+}

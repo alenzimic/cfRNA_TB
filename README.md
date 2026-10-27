@@ -27,9 +27,11 @@ The [aggregate comparison and age results](Figure_Output/Gene_Interactions/pathw
 include an archived HTML report, tables, figures and provenance. The original
 age-analysis notebook remains in the local `cfRNA_TB_overview` workspace.
 The [shared-age timeline PDF](Figure_Output/Gene_Interactions/pathway_age_comparison/pathway_timelines_all.pdf)
-shows all 50 pathways, one per page, with five compact study rows on the same age
-and score scales. Blue solid curves show TB, orange dashed curves show nonTB,
-and thin confidence-interval whiskers replace overlapping shaded bands.
+shows all 50 pathways, one per page, as two group curves on one age axis.
+The [interactive explorer](Figure_Output/Gene_Interactions/pathway_age_comparison/pathway_age_explorer.html)
+switches pathways and source studies without splitting the plot. Adult curves
+are exploratory summaries with fixed study composition and a shared-age-shape
+assumption; the original study-specific analyses remain the primary evidence.
 
 Open the executed [gene-panel biology notebook](Scripts_For_Manuscript/gene_panel_biology.ipynb) for gene functions, curated pathway membership and observed adult TB associations. It reuses saved results without refitting models.
 
