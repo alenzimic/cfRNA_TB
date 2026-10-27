@@ -29,6 +29,7 @@ AGGREGATE_FILES = [
     "participant_flow.tsv",
     "clinical_missingness.tsv",
     "run_summary.txt",
+    "pathway_timeline_index.tsv",
 ]
 FIGURES = [
     "age_support",
@@ -42,6 +43,24 @@ FIGURES = [
 
 def sha256(path):
     return hashlib.sha256(Path(path).read_bytes()).hexdigest()
+
+
+def timeline_figure_names(source):
+    """Select only the focus figures declared by the executed timeline index."""
+    index = pd.read_csv(source / "pathway_timeline_index.tsv", sep="\t")
+    if index.pathway.duplicated().any() or not index.pathway.str.fullmatch(
+        r"HALLMARK_[A-Z0-9_]+"
+    ).all():
+        raise ValueError("Unexpected or duplicate pathway in timeline index")
+    shown = index.shown_in_notebook.astype(str).str.lower().map(
+        {"true": True, "false": False}
+    )
+    if shown.isna().any():
+        raise ValueError("Unexpected shown_in_notebook flag in timeline index")
+    return [
+        "timeline_" + pathway.removeprefix("HALLMARK_").lower()
+        for pathway in index.loc[shown, "pathway"]
+    ]
 
 
 def compare_saved_results(ROOT, OVERVIEW, OUT):
@@ -347,6 +366,16 @@ probability. Neither analysis establishes biochemical activity or causation.
   supported age-grid estimates. Missing curves are unsupported, not zero.
 - `sensitivity_*`, `model_diagnostics.json`: robustness variants and explicit
   reasons for any skipped model fits.
+- `pathway_timelines_all.pdf`: all eligible pathways, one pathway per page, with
+  all studies on the same age axis. Color identifies study; solid lines are TB
+  and dashed lines are nonTB. Pale ribbons are pointwise 95% confidence intervals.
+  The support strip below each plot shows observed ages and supported comparisons
+  separately for each study, preserving internal gaps and sparse tails. These are
+  separate study fits, not a pooled lifespan model; study differences are not
+  isolated age effects.
+- `pathway_timeline_index.tsv`: pathway-to-page lookup, with a flag identifying
+  the focus pathways shown in the notebook. Their `timeline_*.png` and `.pdf`
+  figures are included individually.
 - `age_pathway_analysis.html`: archived HTML report with embedded figures and
   aggregate outputs. It loads MathJax/RequireJS from a CDN for rendering and is
   not an independently rerunnable analysis package.
@@ -389,7 +418,7 @@ def main():
     copies.update(
         {
             f"{name}.{suffix}": f"{name}.{suffix}"
-            for name in FIGURES
+            for name in FIGURES + timeline_figure_names(source)
             for suffix in ["pdf", "png"]
         }
     )
@@ -397,6 +426,7 @@ def main():
         {
             "02_pathway_enrichment_by_age.html": "age_pathway_analysis.html",
             "provenance.json": "age_analysis_provenance.json",
+            "pathway_timelines_all.pdf": "pathway_timelines_all.pdf",
         }
     )
     copied_sources = {}

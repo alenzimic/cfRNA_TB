@@ -67,6 +67,16 @@ probability. Neither analysis establishes biochemical activity or causation.
   supported age-grid estimates. Missing curves are unsupported, not zero.
 - `sensitivity_*`, `model_diagnostics.json`: robustness variants and explicit
   reasons for any skipped model fits.
+- `pathway_timelines_all.pdf`: all eligible pathways, one pathway per page, with
+  all studies on the same age axis. Color identifies study; solid lines are TB
+  and dashed lines are nonTB. Pale ribbons are pointwise 95% confidence intervals.
+  The support strip below each plot shows observed ages and supported comparisons
+  separately for each study, preserving internal gaps and sparse tails. These are
+  separate study fits, not a pooled lifespan model; study differences are not
+  isolated age effects.
+- `pathway_timeline_index.tsv`: pathway-to-page lookup, with a flag identifying
+  the focus pathways shown in the notebook. Their `timeline_*.png` and `.pdf`
+  figures are included individually.
 - `age_pathway_analysis.html`: archived HTML report with embedded figures and
   aggregate outputs. It loads MathJax/RequireJS from a CDN for rendering and is
   not an independently rerunnable analysis package.

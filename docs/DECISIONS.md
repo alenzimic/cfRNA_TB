@@ -1,5 +1,23 @@
 # Analysis decisions
 
+## 2026-10-26 — Show study curves on a shared age timeline
+
+Refresh the aggregate age snapshot with a 50-page pathway timeline PDF, a page
+index and six individually exported focus figures. Each pathway has one 0–85-year
+axis containing all five study fits. Color identifies study; solid and dashed
+lines identify TB and nonTB. Pointwise 95% intervals and study-specific coverage
+lanes preserve sparse tails, the childhood/adult gap and R2D2's internal gap.
+The studies are not joined, pooled or shifted to imply a lifespan trajectory.
+
+The local overview notebook completed all 13 code cells with 12 embedded figures.
+All 20 pre-existing numerical/result files remain byte-identical. Independent
+checks matched all 500 study/diagnosis lines to saved predictions, including their
+support masks and uncertainty bounds. PDF checks verified 50 pages without text
+outside page bounds; the HTML preview contains 12 working images and a working
+relative PDF link. The shared plots and notebook presentation were visually
+inspected. Existing conclusions and the participant-overlap interpretation are
+unchanged; the snapshot continues to omit participant metadata and individual scores.
+
 ## 2026-10-26 — Explain pathway labels and compare continuous-age results
 
 Replace the shorthand “Study” and “Study + RNA mix” in
