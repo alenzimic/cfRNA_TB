@@ -1,5 +1,31 @@
 # Analysis decisions
 
+## 2026-10-27 — Publish closer plots and declared-age pathway contrasts
+
+Refresh the overview snapshot with a curve-focused default vertical scale and
+explicit counts of patient dots outside the view. The explorer's full-score
+option and `pathway_patient_distributions_all.pdf` retain the complete observed
+distribution. Zoom changes presentation only.
+
+Add exact-age TB-minus-nonTB contrasts from the original study-specific HC3/t
+models at declared ages 5, 10, 20, 30, 40, 50 and 60. Keep all 1,750 planned rows,
+including unsupported rows with reasons and no inference. One global BH family
+covers 750 supported tests: 0 pass FDR <0.05, minimum q=0.151223. Original
+250-test interaction families and any-TB omnibus results remain separate.
+
+Publish full contrast tables/diagnostics, an all-pathway effect/significance
+heatmap and four clearly data-selected group/difference examples. Raw singscore
+units re-express the same contrasts, without changing their statistical evidence.
+No significant continuous age interval, pathway activation or stronger pediatric
+association is claimed. Individual-study explorer views show age-specific q-values;
+the exploratory adult summary does not inherit those tests.
+
+Validation: 19 statistical tests pass; the overview notebook executes 16 code
+cells with 14 figures. All 26 prior result files remain byte-identical. Independent
+checks verify all 750 heatmap values and 14 example contrasts/intervals. Both
+50-page PDFs and the notebook/explorer outputs were checked, including all
+500 interactive pathway/source views and correct attribution of age-specific tests.
+
 ## 2026-10-27 — Add faint observed patient dots to pathway figures
 
 Refresh the pathway-age snapshot with low-opacity patient dots behind the

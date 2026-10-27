@@ -1,0 +1,159 @@
+{
+  "report_ages_years": [
+    5.0,
+    10.0,
+    20.0,
+    30.0,
+    40.0,
+    50.0,
+    60.0
+  ],
+  "age_selection": "Declared evaluation ages; continuous model fitted to the full study data",
+  "planned_comparisons": 1750,
+  "estimable_comparisons": 750,
+  "unsupported_comparisons": 1000,
+  "multiple_testing": "One BH family across all supported pathway x study x declared-age contrasts",
+  "interaction_tests": "Original study-specific interaction p/q values retained; separate original family",
+  "uncertainty": "HC3 covariance; two-sided t tests and pointwise 95% t intervals",
+  "interval_scope": "Intervals are not simultaneous or multiplicity adjusted",
+  "raw_score_units": "Centered directional singscore; standardized contrasts multiplied by the pooled pathway SD",
+  "studies": {
+    "ADTB": {
+      "patients": 359,
+      "residual_df": 345,
+      "max_leverage": 0.5730728191440552,
+      "support_half_width_years": 7.5,
+      "minimum_per_diagnosis": 10,
+      "supported_report_ages": [
+        20.0,
+        30.0,
+        40.0,
+        50.0,
+        60.0
+      ],
+      "design_columns": [
+        "Intercept",
+        "tb",
+        "age_0",
+        "tb_age_0",
+        "age_1",
+        "tb_age_1",
+        "age_2",
+        "tb_age_2",
+        "sex_Male",
+        "hiv_Positive",
+        "country_South Africa",
+        "country_Uganda",
+        "country_Vietnam",
+        "count_read_length_61x61"
+      ],
+      "redundant_columns_removed": []
+    },
+    "GHL": {
+      "patients": 93,
+      "residual_df": 83,
+      "max_leverage": 0.668874718101716,
+      "support_half_width_years": 7.5,
+      "minimum_per_diagnosis": 10,
+      "supported_report_ages": [
+        20.0,
+        30.0,
+        40.0
+      ],
+      "design_columns": [
+        "Intercept",
+        "tb",
+        "age_0",
+        "tb_age_0",
+        "age_1",
+        "tb_age_1",
+        "age_2",
+        "tb_age_2",
+        "sex_Male",
+        "hiv_Positive"
+      ],
+      "redundant_columns_removed": []
+    },
+    "PROTECT": {
+      "patients": 202,
+      "residual_df": 189,
+      "max_leverage": 0.23344709352639395,
+      "support_half_width_years": 2.0,
+      "minimum_per_diagnosis": 10,
+      "supported_report_ages": [
+        5.0,
+        10.0
+      ],
+      "design_columns": [
+        "Intercept",
+        "tb",
+        "age_0",
+        "tb_age_0",
+        "age_1",
+        "tb_age_1",
+        "age_2",
+        "tb_age_2",
+        "sex_Male",
+        "hiv_Positive",
+        "hiv_Unknown",
+        "country_The Gambia",
+        "country_Uganda"
+      ],
+      "redundant_columns_removed": []
+    },
+    "R2D2": {
+      "patients": 98,
+      "residual_df": 86,
+      "max_leverage": 0.9198920879937742,
+      "support_half_width_years": 7.5,
+      "minimum_per_diagnosis": 10,
+      "supported_report_ages": [
+        30.0,
+        50.0,
+        60.0
+      ],
+      "design_columns": [
+        "Intercept",
+        "tb",
+        "age_0",
+        "tb_age_0",
+        "age_1",
+        "tb_age_1",
+        "age_2",
+        "tb_age_2",
+        "sex_Male",
+        "hiv_Positive",
+        "country_Uganda",
+        "country_Vietnam"
+      ],
+      "redundant_columns_removed": []
+    },
+    "TBSQUARE": {
+      "patients": 60,
+      "residual_df": 49,
+      "max_leverage": 0.7889108147690107,
+      "support_half_width_years": 7.5,
+      "minimum_per_diagnosis": 10,
+      "supported_report_ages": [
+        30.0,
+        40.0
+      ],
+      "design_columns": [
+        "Intercept",
+        "tb",
+        "age_0",
+        "tb_age_0",
+        "age_1",
+        "tb_age_1",
+        "age_2",
+        "tb_age_2",
+        "sex_Male",
+        "sex_Unknown",
+        "hiv_Positive"
+      ],
+      "redundant_columns_removed": [
+        "hiv_Unknown"
+      ]
+    }
+  }
+}

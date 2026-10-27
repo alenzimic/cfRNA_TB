@@ -34,6 +34,15 @@ sample-level QC records.
 - Children and adults were sampled in different studies. The primary age curves are
   fitted separately by study and do not infer a continuous biological transition
   across unsampled adolescence. Sparse ages are masked, including internal gaps.
+- The declared-age follow-up estimates TB-minus-nonTB differences at reporting
+  ages 5, 10, 20, 30, 40, 50, 60 using the original study models and exact spline
+  contrasts. **0/750 supported comparisons pass age-contrast
+  FDR <0.05** (minimum q=0.151223). One BH family
+  covers all supported pathways, studies and reporting ages; unsupported planned
+  rows retain reasons/counts but have no estimate or p-value. These are evaluation
+  ages for an exploratory follow-up, not fitting bins or preregistered cutoffs.
+  The age-specific tests, global age interaction and any-TB omnibus tests answer
+  different questions. No continuous significant age interval is claimed.
 
 ## Different scores and questions
 
@@ -80,6 +89,10 @@ probability. Neither analysis establishes biochemical activity or causation.
   summary relies on the shared-shape assumption to represent the other studies.
   Faint dots show actual patient ages and observed standardized scores, before
   covariate adjustment. They remain visible where sparse support withholds curves.
+  The closer default vertical scale retains all model intervals; counts of patient
+  dots outside the displayed limits are printed explicitly. All observations remain
+  in the models. `pathway_patient_distributions_all.pdf` shows the full patient
+  score range, using the same pathway-to-page index.
 - `summary_*`: separate summary-model tests, complete predictions, diagnostics,
   and leave-one-adult-study-out checks. Its FDR families differ from the original
   study-specific primary analysis, which remains the basis of the manuscript
@@ -89,6 +102,9 @@ probability. Neither analysis establishes biochemical activity or causation.
   the reference population and do not constitute independent validation.
 - `pathway_age_explorer.html`: self-contained interactive view with one age axis,
   pathway/source selectors, optional confidence bands and a patient-dot toggle.
+  Its vertical-scale selector switches between Focus on curves and All patient
+  scores. Original-study views include exact-age effect/CI/q tables; these tests
+  are not assigned to the exploratory adult-summary or omission curves.
   Dots follow the study/omission selection and are embedded as transparent raster
   images, without patient identifiers or machine-readable patient rows. Numerical
   model estimates are aggregate results. The file requires no external scripts.
@@ -99,6 +115,17 @@ probability. Neither analysis establishes biochemical activity or causation.
 - `pathway_timeline_index.tsv`: pathway-to-page lookup, with a flag identifying
   the focus pathways shown in the notebook. Their `timeline_*.png` and `.pdf`
   figures are included individually.
+- `age_contrasts.tsv`: all planned study/pathway/reporting-age combinations,
+  with direct HC3/t effects, pointwise 95% CIs, p-values, global BH q-values and
+  support information. Original singscore-unit effects re-express the same SD
+  contrast; they are not fold changes, GSEA NES or independent evidence.
+  `age_contrast_diagnostics.json` documents the family and unchanged interaction
+  tests; `age_contrast_summary.tsv` summarizes results by study.
+- `age_contrast_heatmap.*`: all pathways at supported reporting ages; color is
+  effect size and a black dot would mark age-contrast q <0.05. Confidence intervals
+  are pointwise, so a CI can exclude zero without an FDR discovery.
+  `age_contrast_examples.*` compares group levels and direct difference curves
+  for four pairs selected by minimum age-specific q; the TSV records that choice.
 - `age_pathway_analysis.html`: archived HTML report with embedded figures and
   aggregate outputs. It loads MathJax/RequireJS from a CDN for rendering and is
   not an independently rerunnable analysis package.

@@ -35,6 +35,10 @@ AGGREGATE_FILES = [
     "summary_model_diagnostics.json",
     "summary_leave_one_study_out_curves.tsv",
     "summary_study_sensitivity.tsv",
+    "age_contrasts.tsv",
+    "age_contrast_summary.tsv",
+    "age_contrast_examples.tsv",
+    "age_contrast_diagnostics.json",
 ]
 FIGURES = [
     "age_support",
@@ -43,6 +47,8 @@ FIGURES = [
     "other_study_difference_curves",
     "pathway_age_atlas",
     "pathway_coverage",
+    "age_contrast_heatmap",
+    "age_contrast_examples",
 ]
 
 
@@ -302,6 +308,10 @@ def write_readable_comparison(out, focus):
 
 def write_readme(out, audit):
     overlap, comparison = audit["overlap"], audit["comparison"]
+    age_contrasts = pd.read_csv(out / "age_contrasts.tsv", sep="\t")
+    age_tests = int(age_contrasts.age_contrast_p.notna().sum())
+    age_hits = int(age_contrasts.age_contrast_q.lt(0.05).sum())
+    age_labels = ", ".join(f"{age:g}" for age in sorted(age_contrasts.age_years.unique()))
     (out / "README.md").write_text(f"""# Pathway analysis and continuous-age comparison
 
 This is an archived **aggregate result snapshot** from the executed local
@@ -338,6 +348,15 @@ sample-level QC records.
 - Children and adults were sampled in different studies. The primary age curves are
   fitted separately by study and do not infer a continuous biological transition
   across unsampled adolescence. Sparse ages are masked, including internal gaps.
+- The declared-age follow-up estimates TB-minus-nonTB differences at reporting
+  ages {age_labels} using the original study models and exact spline
+  contrasts. **{age_hits}/{age_tests} supported comparisons pass age-contrast
+  FDR <0.05** (minimum q={age_contrasts.age_contrast_q.min():.6f}). One BH family
+  covers all supported pathways, studies and reporting ages; unsupported planned
+  rows retain reasons/counts but have no estimate or p-value. These are evaluation
+  ages for an exploratory follow-up, not fitting bins or preregistered cutoffs.
+  The age-specific tests, global age interaction and any-TB omnibus tests answer
+  different questions. No continuous significant age interval is claimed.
 
 ## Different scores and questions
 
@@ -384,6 +403,10 @@ probability. Neither analysis establishes biochemical activity or causation.
   summary relies on the shared-shape assumption to represent the other studies.
   Faint dots show actual patient ages and observed standardized scores, before
   covariate adjustment. They remain visible where sparse support withholds curves.
+  The closer default vertical scale retains all model intervals; counts of patient
+  dots outside the displayed limits are printed explicitly. All observations remain
+  in the models. `pathway_patient_distributions_all.pdf` shows the full patient
+  score range, using the same pathway-to-page index.
 - `summary_*`: separate summary-model tests, complete predictions, diagnostics,
   and leave-one-adult-study-out checks. Its FDR families differ from the original
   study-specific primary analysis, which remains the basis of the manuscript
@@ -393,6 +416,9 @@ probability. Neither analysis establishes biochemical activity or causation.
   the reference population and do not constitute independent validation.
 - `pathway_age_explorer.html`: self-contained interactive view with one age axis,
   pathway/source selectors, optional confidence bands and a patient-dot toggle.
+  Its vertical-scale selector switches between Focus on curves and All patient
+  scores. Original-study views include exact-age effect/CI/q tables; these tests
+  are not assigned to the exploratory adult-summary or omission curves.
   Dots follow the study/omission selection and are embedded as transparent raster
   images, without patient identifiers or machine-readable patient rows. Numerical
   model estimates are aggregate results. The file requires no external scripts.
@@ -403,6 +429,17 @@ probability. Neither analysis establishes biochemical activity or causation.
 - `pathway_timeline_index.tsv`: pathway-to-page lookup, with a flag identifying
   the focus pathways shown in the notebook. Their `timeline_*.png` and `.pdf`
   figures are included individually.
+- `age_contrasts.tsv`: all planned study/pathway/reporting-age combinations,
+  with direct HC3/t effects, pointwise 95% CIs, p-values, global BH q-values and
+  support information. Original singscore-unit effects re-express the same SD
+  contrast; they are not fold changes, GSEA NES or independent evidence.
+  `age_contrast_diagnostics.json` documents the family and unchanged interaction
+  tests; `age_contrast_summary.tsv` summarizes results by study.
+- `age_contrast_heatmap.*`: all pathways at supported reporting ages; color is
+  effect size and a black dot would mark age-contrast q <0.05. Confidence intervals
+  are pointwise, so a CI can exclude zero without an FDR discovery.
+  `age_contrast_examples.*` compares group levels and direct difference curves
+  for four pairs selected by minimum age-specific q; the TSV records that choice.
 - `age_pathway_analysis.html`: archived HTML report with embedded figures and
   aggregate outputs. It loads MathJax/RequireJS from a CDN for rendering and is
   not an independently rerunnable analysis package.
@@ -454,6 +491,7 @@ def main():
             "02_pathway_enrichment_by_age.html": "age_pathway_analysis.html",
             "provenance.json": "age_analysis_provenance.json",
             "pathway_timelines_all.pdf": "pathway_timelines_all.pdf",
+            "pathway_patient_distributions_all.pdf": "pathway_patient_distributions_all.pdf",
             "pathway_age_explorer.html": "pathway_age_explorer.html",
         }
     )

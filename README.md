@@ -34,6 +34,12 @@ are exploratory summaries with fixed study composition and a shared-age-shape
 assumption; the original study-specific analyses remain the primary evidence.
 Faint patient dots show observed scores behind the adjusted curves. The explorer
 filters these dots with the study selection and includes a show/hide control.
+The default vertical scale focuses on the curves, with explicit counts of dots
+outside the view; **All patient scores** restores the full distribution. New
+exact-age contrasts provide effects, confidence intervals and one global FDR
+family across supported pathway/study/reporting-age comparisons. The current
+follow-up has 0/750 FDR discoveries (minimum q=0.151); these tests do not replace
+the original interaction or any-TB omnibus questions.
 
 Open the executed [gene-panel biology notebook](Scripts_For_Manuscript/gene_panel_biology.ipynb) for gene functions, curated pathway membership and observed adult TB associations. It reuses saved results without refitting models.
 
