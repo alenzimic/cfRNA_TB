@@ -7,6 +7,7 @@ No models are fitted and no participant-level data tables are copied to the expo
 import argparse
 import hashlib
 import json
+import re
 import shutil
 from datetime import UTC, datetime
 from pathlib import Path
@@ -48,6 +49,7 @@ AGGREGATE_FILES = [
     "pooled_age_bin_summary.tsv",
     "pooled_age_bin_diagnostics.json",
     "pooled_age_bin_leave_one_study_out.tsv",
+    "tb_pathway_focus.tsv",
 ]
 FIGURES = [
     "age_support",
@@ -330,6 +332,8 @@ def write_readme(out, audit):
     pooled_tests = int(pooled.pooled_p.notna().sum())
     pooled_hits = int(pooled.pooled_q.lt(0.05).sum())
     pooled_ages = ", ".join(pooled.loc[pooled.pooled_p.notna()].sort_values("bin_left").age_bin.drop_duplicates())
+    tb_focus = pd.read_csv(out / "tb_pathway_focus.tsv", sep="\t").sort_values("order")
+    focus_labels = "; ".join(tb_focus.label)
     (out / "README.md").write_text(f"""# Pathway analysis and continuous-age comparison
 
 This is an archived **aggregate result snapshot** from the executed local
@@ -340,6 +344,12 @@ figures and provenance. Faint patient dots show observed distributions in the
 figures; the interactive explorer embeds them as raster images. It does not
 include participant identifiers, individual score tables, raw counts or
 sample-level QC records.
+
+The main figures now focus on six TB-relevant immune programs: **{focus_labels}**.
+These are literature-led display choices, not pathways selected by significance
+in this dataset. `tb_pathway_focus.tsv` records the primary references, biological
+mapping and evidence limits. All 50 Hallmarks retain their original tests and
+FDR families. The six-page `pathway_age_tb_focus.pdf` is the compact starting point.
 
 ## Findings and interpretation
 
@@ -447,9 +457,9 @@ probability. Neither analysis establishes biochemical activity or causation.
   dots outside the displayed limits are printed explicitly. All observations remain
   in the models. `pathway_patient_distributions_all.pdf` shows the full patient
   score range, using the same pathway-to-page index.
-  A compact study coverage panel now sits immediately below the curve, sharing
-  its age axis. Neutral bars mark one-year intervals containing observed patients;
-  empty years remain blank. Coverage means observation, not model support.
+  Thin study coverage tracks sit immediately below the curve, sharing its age
+  axis. Adjacent occupied one-year intervals are merged into runs; every empty
+  year remains blank. Coverage means observation, not model support.
 - `summary_*`: separate summary-model tests, complete predictions, diagnostics,
   and leave-one-adult-study-out checks. Its FDR families differ from the original
   study-specific primary analysis, which remains the basis of the manuscript
@@ -467,6 +477,9 @@ probability. Neither analysis establishes biochemical activity or causation.
   The combined view also shows pooled bin evidence, explicitly separate from the
   continuous summary model. Study-omission curve views do not inherit full-sample
   pooled tests. Coverage rows follow the selected studies and omission setting.
+  The TB focus choices appear first while all 50 pathways remain selectable.
+  Exact effects, intervals, q-values, unavailable reasons and methods are retained
+  in labeled expandable details; the main view keeps only a compact evidence row.
   Dots follow the study/omission selection and are embedded as transparent raster
   images, without patient identifiers or machine-readable patient rows. Numerical
   model estimates are aggregate results. The file requires no external scripts.
@@ -496,13 +509,17 @@ probability. Neither analysis establishes biochemical activity or causation.
   at least 15 residual degrees of freedom, leverage below 0.95 and an identifiable
   TB effect after nuisance adjustment. Confidence intervals are not adjusted
   for multiplicity; a CI excluding zero is not equivalent to a bin FDR discovery.
-- `pathway_age_bins_all.pdf`: the original continuous estimates, study coverage
-  and separate study/pooled evidence in three panels with a shared age axis,
-  using the same 50-pathway page order. Horizontal
-  spans identify bins, not significant continuous-age windows. Filled markers
-  identify bin q<0.05 (blue higher TB, orange higher nonTB), open markers mean
-  no FDR discovery and crosses mean unavailable. `binned_timeline_*.png` and
-  `.pdf` are the same focus pathways shown in the original timeline figures.
+- `pathway_age_tb_focus.pdf`: six compact figures in the declared focus order,
+  each with two curves, thin observed-age tracks and one Combined bin-test row.
+  `tb_pathway_focus.tsv` records the literature rationale and scope for each set;
+  the literature does not establish cfRNA pathway activation in this dataset.
+- `pathway_age_bins_all.pdf`: the same compact design for all 50 Hallmarks in
+  alphabetical order. `pathway_age_bins_by_study_all.pdf` restores all five
+  individual-study test rows alongside the combined row for detailed inspection.
+  Horizontal spans identify bins, not significant continuous-age windows.
+  Filled markers identify bin q<0.05 (blue higher TB, orange higher nonTB), open
+  markers mean no FDR discovery and crosses mean unavailable. `binned_timeline_*.png`
+  and `.pdf` contain the six TB focus figures. The two FDR families remain separate.
 - `study_age_coverage.tsv`: complete study/year grid with observed counts by
   diagnosis, including empty cells. Intervals include their lower edge; the final
   interval also includes age 85. Bars do not fill unsampled years between ages.
@@ -566,6 +583,8 @@ def main():
             "pathway_timelines_all.pdf": "pathway_timelines_all.pdf",
             "pathway_patient_distributions_all.pdf": "pathway_patient_distributions_all.pdf",
             "pathway_age_bins_all.pdf": "pathway_age_bins_all.pdf",
+            "pathway_age_bins_by_study_all.pdf": "pathway_age_bins_by_study_all.pdf",
+            "pathway_age_tb_focus.pdf": "pathway_age_tb_focus.pdf",
             "pathway_age_explorer.html": "pathway_age_explorer.html",
         }
     )
@@ -576,6 +595,13 @@ def main():
             raise FileNotFoundError(path)
         shutil.copyfile(path, out / output_name)
         copied_sources[output_name] = {"source_path": str(path), "sha256": sha256(path)}
+    # Remove only formerly managed focus figures that the new index supersedes.
+    previous_manifest = out / "snapshot_manifest.json"
+    if previous_manifest.exists():
+        previously_copied = json.loads(previous_manifest.read_text())["copied_sources"]
+        for name in set(previously_copied) - set(copied_sources):
+            if re.fullmatch(r"(?:binned_)?timeline_[a-z0-9_]+\.(?:png|pdf)", name):
+                (out / name).unlink(missing_ok=True)
     audit, focus = compare_saved_results(root, overview, out)
     write_readable_comparison(out, focus)
     write_readme(out, audit)
